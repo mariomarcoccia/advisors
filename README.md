@@ -6,13 +6,15 @@
 
 The point isn't a cheering section. It's **counterpoints** — a council that disagrees with you well, surfaces the tradeoff you're avoiding, and tells you the thing you don't want to hear.
 
+**Who it's for:** built for founders first, but useful to *any* professional facing a hard call — operators, managers, ICs, or anyone weighing a career or strategy decision. `/frame` learns your context (and saves a reusable profile), so the advice fits *you*, not a generic stranger.
+
 > ⭐ If this is useful to you, **please star the repo** — it helps other people find it.
 
 ## The four skills
 
 | Skill | What it does |
 |---|---|
-| **`/frame`** | Run this **first**. Interviews you to turn a vague worry into a sharp decision and writes a context **brief** the other skills read. Great input → great counterpoints. |
+| **`/frame`** | Run this **first**. Learns who you are (saving a reusable **profile**) and interviews you until there's no doubt about your context, turning a vague worry into a sharp decision **brief** the other skills read. Great input → great counterpoints. |
 | **`/advice`** | Consult **one** advisor 1:1 in their voice, with follow-ups. Name them, or let it suggest the most relevant. Also manages the roster: `add` a new advisor (researched from their public work), `feed` new material into one, or `list` the council. |
 | **`/second-opinion`** | A dissenting view from a **different** advisor — one chosen because they'd likely disagree with the first — to challenge a recommendation. |
 | **`/boardroom`** | Convenes a **debate**: recommends which advisors belong in the room for *your* problem, runs a structured meeting where they challenge each other, and hands you minutes (recommendation, dissents, what would change their mind). |

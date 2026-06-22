@@ -27,12 +27,13 @@ ADVISORS_HOME="${ADVISORS_HOME:-$HOME/.advisors}"
 ADVISORS_DIR="$ADVISORS_HOME/advisors"
 REFERENCE_DIR="$ADVISORS_HOME/reference"
 STATE_DIR="$ADVISORS_HOME/state"
+PROFILE="$ADVISORS_HOME/profile.md"            # durable context about the person
 BRIEF="$STATE_DIR/current-brief.md"
 ```
 
 ## Context gate
 
-Read `$BRIEF` if present. If it's missing or stale for this topic, offer to run `/frame` first (invoke `frame` via `Skill`). The user may skip — note the thin context if so.
+Read `$PROFILE` if it exists — it tells you who you're advising (role, arena, what they optimize for); tailor the dissent to them. Then read `$BRIEF` if present. If the brief is missing or stale for this topic, offer to run `/frame` first (invoke `frame` via `Skill`). The user may skip — note the thin context if so.
 
 ## How it works
 

@@ -25,12 +25,13 @@ ADVISORS_HOME="${ADVISORS_HOME:-$HOME/.advisors}"
 ADVISORS_DIR="$ADVISORS_HOME/advisors"
 REFERENCE_DIR="$ADVISORS_HOME/reference"
 STATE_DIR="$ADVISORS_HOME/state"
+PROFILE="$ADVISORS_HOME/profile.md"            # durable context about the person
 BRIEF="$STATE_DIR/current-brief.md"
 ```
 
 ## Context gate
 
-Read `$BRIEF`. If missing or stale for this decision, **offer to run `/frame` first** (invoke `frame` via `Skill`) — a boardroom with no brief wastes everyone's time. User may skip; note thin context if so.
+Read `$PROFILE` if it exists — it tells the board who they're advising (role, arena, what they optimize for); the members should speak to *this* person, not a generic one. Then read `$BRIEF`. If the brief is missing or stale for this decision, **offer to run `/frame` first** (invoke `frame` via `Skill`) — a boardroom with no brief wastes everyone's time. User may skip; note thin context if so.
 
 ## How it works
 

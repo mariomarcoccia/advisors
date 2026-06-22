@@ -29,6 +29,7 @@ ADVISORS_HOME="${ADVISORS_HOME:-$HOME/.advisors}"
 ADVISORS_DIR="$ADVISORS_HOME/advisors"        # dossiers: <slug>.md
 REFERENCE_DIR="$ADVISORS_HOME/reference"       # persona-template.md, voice-guide.md
 STATE_DIR="$ADVISORS_HOME/state"               # runtime context briefs
+PROFILE="$ADVISORS_HOME/profile.md"            # durable context about the person being advised
 BRIEF="$STATE_DIR/current-brief.md"
 ```
 
@@ -50,10 +51,11 @@ Respond in the user's language. The dossiers themselves are written in English.
 ## Mode: CONSULT 1:1 (default)
 
 ### Context gate (before advising)
-Check `$BRIEF`:
-- If it's missing, or its `topic`/date doesn't match what the user is now asking, say so in one line and **offer to run `/frame`** first (invoke the `frame` skill via `Skill`). A sharp counterpoint needs real context — don't advise into a vacuum.
-- If a current brief exists, **read it** and let it shape who you pick and how you push back.
-- The user can say "skip frame" — then proceed, but note the context is thin.
+- **Read `$PROFILE` if it exists** — it tells you *who* you're advising (role, arena, stage, what they optimize for, what they won't trade). Tailor the advisor's voice and counterpoints to this person; advice that ignores their context is generic noise.
+- Check `$BRIEF`:
+  - If it's missing, or its `topic`/date doesn't match what the user is now asking, say so in one line and **offer to run `/frame`** first (invoke the `frame` skill via `Skill`). A sharp counterpoint needs real context — don't advise into a vacuum.
+  - If a current brief exists, **read it** and let it shape who you pick and how you push back.
+- The user can say "skip frame" — then proceed, but note the context is thin (and that running `/frame` once builds a reusable profile).
 
 ### The consult
 1. **Pick the advisor.**
