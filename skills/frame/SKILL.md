@@ -1,6 +1,6 @@
 ---
 name: frame
-description: "Frame the decision before you consult the council. Interviews you to turn a vague worry into a sharp, well-defined choice — what's really at stake, what you've tried, what you're optimizing for, and your current leaning — then writes a brief the other skills read. Run this FIRST, at the start of a session, before /council, /second-opinion, or /boardroom. Use when starting to think through a hard decision, or whenever the context brief is stale."
+description: "Frame the decision before you consult the council. Interviews you to turn a vague worry into a sharp, well-defined choice — what's really at stake, what you've tried, what you're optimizing for, and your current leaning — then writes a brief the other skills read. Run this FIRST, at the start of a session, before /advice, /second-opinion, or /boardroom. Use when starting to think through a hard decision, or whenever the context brief is stale."
 argument-hint: "[short topic, e.g. 'should we raise now' — optional]"
 model: opus
 allowed-tools:
@@ -65,7 +65,7 @@ leaning: <their current tilt, one line>
 ## Open questions the council should pressure-test
 ```
 
-Keep it tight — a board brief, not a memoir. Then tell the user the brief is set and they can now run `/council`, `/second-opinion`, or `/boardroom`, which will read it automatically.
+Keep it tight — a board brief, not a memoir. Then tell the user the brief is set and they can now run `/advice`, `/second-opinion`, or `/boardroom`, which will read it automatically.
 
 ## Rules
 - **No advice.** This skill only frames and gathers context. Save opinions for the consult skills.

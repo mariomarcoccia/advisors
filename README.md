@@ -8,16 +8,17 @@ The point isn't a cheering section. It's **counterpoints** — a council that di
 
 > ⭐ If this is useful to you, **please star the repo** — it helps other people find it.
 
-## The four skills
+## The five skills
 
 | Skill | What it does |
 |---|---|
 | **`/frame`** | Run this **first**. Interviews you to turn a vague worry into a sharp decision and writes a context **brief** the other skills read. Great input → great counterpoints. |
-| **`/council`** | Consult **one** advisor 1:1 in their voice, with follow-ups. Also manages the roster: `add` a new advisor (researched from their public work), `feed` new material into one, or `list` the council. |
-| **`/second-opinion`** | The **contrarian version** of a single advisor — the same mind arguing *against* its own first instinct, to stress-test a recommendation. |
+| **`/advice`** | Consult **one** advisor 1:1 in their voice, with follow-ups. Name them, or let it suggest the most relevant one. |
+| **`/second-opinion`** | A dissenting view from a **different** advisor — one chosen because they'd likely disagree with the first — to challenge a recommendation. |
 | **`/boardroom`** | Convenes a **debate**: recommends which advisors belong in the room for *your* problem, runs a structured meeting where they challenge each other, and hands you minutes (recommendation, dissents, what would change their mind). |
+| **`/advisors`** | Manage the roster: `add` a new advisor (researched from their public work), `feed` new material into one, or `list` the council. |
 
-Typical flow: `/frame` → `/boardroom` (or `/council`) → `/second-opinion` to pressure-test the answer.
+Typical flow: `/frame` → `/advice` (or `/boardroom`) → `/second-opinion` to pressure-test the answer.
 
 ## Install
 
@@ -30,13 +31,13 @@ cd ~/council && ./install.sh
 - links each skill in `skills/` into `~/.claude/skills/` so each becomes a `/command`, and
 - links the shared data (`advisors/`, `reference/`) into `~/.council/` and creates `~/.council/state/` for your context briefs.
 
-Then, in Claude Code: `/frame` to start, or `/council list` to see who's on the board.
+Then, in Claude Code: `/frame` to start, or `/advisors list` to see who's on the board.
 
 ## How a dossier is built
 
 Each advisor is one markdown file in [`advisors/`](advisors/) with structured frontmatter and sections for their core beliefs, mental models, decision heuristics, signature (and contrarian) positions, voice, and — importantly — their **blind spots and critiques**, so the simulation argues honestly instead of fawning. The schema lives in [`reference/persona-template.md`](reference/persona-template.md); the fidelity-and-ethics rules in [`reference/voice-guide.md`](reference/voice-guide.md).
 
-Grow the board anytime with `/council add "<anyone>"`, or enrich an advisor with `/council feed <name> <links or pasted transcripts>`.
+Grow the board anytime with `/advisors add "<anyone>"`, or enrich an advisor with `/advisors feed <name> <links or pasted transcripts>`.
 
 ## Starter council
 

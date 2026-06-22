@@ -1,7 +1,7 @@
 ---
 name: second-opinion
-description: "A contrarian re-take from a single advisor. Takes one expert (named, or the last one you consulted) and produces the OPPOSITE of their obvious advice — the 'alternative version' of them that steelmans the case against their own first instinct. Use when an advisor's answer felt too clean, when you want one expert to argue both sides, or when you got advice (from the council or elsewhere) and want it stress-tested by a single sharp mind."
-argument-hint: "[advisor] [the advice or decision to challenge]"
+description: "Get a dissenting second opinion from a DIFFERENT advisor — one likely to disagree with the first. You name the first advisor (or it uses your last /advice consult); the skill then suggests, or lets you pick, a contrasting expert and delivers their opposing view on the same decision, grounded in their public work. Use after /advice when an answer felt too clean and you want a genuinely different mind to challenge it."
+argument-hint: "[first-advisor] [topic] — optionally name the second advisor too"
 model: opus
 allowed-tools:
   - Read
@@ -14,9 +14,11 @@ allowed-tools:
   - Skill
 ---
 
-# /second-opinion — The alternative version of one advisor
+# /second-opinion — A dissenting view from a different advisor
 
-Every strong thinker contains their own counter-argument. This skill summons the **alternative version** of a single advisor: same person, same dossier, but deliberately arguing the side they'd be *least* likely to lead with — to stress-test a recommendation instead of confirming it.
+You got one advisor's take. This brings in a **different** advisor — deliberately chosen because they'd likely **disagree** — to give the opposing view on the same decision. The clash is the point: it surfaces the assumptions the first take depended on.
+
+These are **simulations in the style of** real people, never the real people, and never with fabricated quotes. See `$REFERENCE_DIR/voice-guide.md`.
 
 ## Paths
 
@@ -34,22 +36,31 @@ Read `$BRIEF` if present. If it's missing or stale for this topic, offer to run 
 
 ## How it works
 
-1. **Resolve the advisor and the target.**
-   - Advisor: from `$ARGUMENTS`, else infer from the brief / last consult, else ask via `AskUserQuestion` (fuzzy-match name → slug in `$ADVISORS_DIR`). If no dossier, offer to `/council add` them.
-   - Target view: the recommendation or decision to challenge — from `$ARGUMENTS`, the brief's `leaning`, or ask.
-2. **Load the full dossier.** Read `<slug>.md` end to end so the alternative take stays *in character*, not a generic contrarian.
-3. **Produce the alternative version.** In the advisor's own voice, argue the strongest case **against** the obvious/first take:
-   - Use *their own* mental models and values turned toward the opposite conclusion — the version of them that would dissent.
-   - Surface the assumptions the first take depends on, and where they're fragile.
-   - Name the scenario in which the original advice is exactly wrong.
-   - This is not a different person's view (that's `/boardroom`); it's the same mind, less comfortable.
-4. **Stay honest.** Ground it in documented beliefs; mark extrapolation; **no fabricated quotes**. If the advisor genuinely has no plausible counter-position, say so — don't manufacture one.
-5. **Close** with: the single strongest reason the original advice might still be right, and the one piece of evidence that would settle it.
+### 1. Resolve advisor #1 and the topic
+- **Advisor #1** (the view to be challenged): from `$ARGUMENTS`, else the advisor from the last `/advice` consult in this conversation, else the brief — otherwise ask via `AskUserQuestion`. Fuzzy-match name → slug in `$ADVISORS_DIR`.
+- **Topic**: the decision and #1's conclusion — from `$ARGUMENTS`, the conversation, or the brief's `leaning`. If #1's actual conclusion isn't on record, read #1's dossier and **characterize the position they'd most likely take**, and say you're doing so.
 
-Open with: `*Second opinion — the contrarian version of <Name>, in the style of their public work. A stress-test, not their settled view.*`
+### 2. Choose advisor #2 (the dissenter)
+- Read the frontmatter (`name`, `role`, `domains`) of every `$ADVISORS_DIR/*.md`.
+- Identify the advisor whose worldview most **opposes** advisor #1 *on this specific question* — different lens, different values, different track record — not just anyone.
+- **Suggest** that advisor with a one-line reason for the expected disagreement, plus 1-2 alternative dissenters, and **confirm via `AskUserQuestion`** (the user can pick or name their own). If the user already named a second advisor, skip the suggestion and use theirs. If the chosen advisor has no dossier, offer `/advisors add`.
 
-## Rules
-- **Same advisor, opposite lean.** Stay inside their worldview; don't smuggle in someone else's.
-- **No fabricated quotes.** Ground in the dossier.
-- **Steelman, don't strawman.** The alternative take must be the *strongest* opposing case, argued in good faith.
-- **No defamation.** Critiques stay real and sourced.
+### 3. Deliver the dissent
+- Load advisor #2's full dossier. Answer in **their** first-person voice.
+- Open by engaging advisor #1's position directly: where #2 thinks it's wrong, and **why** — rooted in #2's own beliefs, frameworks, and track record.
+- Make the strongest opposing case (steelman, not strawman). Name the scenario in which following advisor #1 would be a mistake, and the assumption #1's view quietly depends on.
+- Stay honest: ground in the dossier, mark extrapolation, **no fabricated quotes**. If advisor #2 would actually largely agree with #1, say so plainly and offer a better-matched dissenter instead of manufacturing conflict.
+
+### 4. Close
+- The single strongest reason advisor #1 might still be right.
+- The one piece of evidence that would settle the disagreement.
+- Optionally suggest `/boardroom` if the user wants more voices in the room.
+
+Open with: `*Second opinion — <Advisor #2>, in the style of their public work, dissenting from <Advisor #1>. Not the real people.*`
+
+## Hard rules
+1. **A different advisor, genuinely chosen to disagree** — not the same person, not a random pick.
+2. **Steelman the dissent.** The opposing case must be the strongest one, argued in good faith.
+3. **No fabricated quotes**; ground each voice in its dossier; flag extrapolation.
+4. **Don't manufacture conflict.** If there's no real disagreement, say so and re-pick.
+5. **No defamation** — critiques stay real and sourced.
