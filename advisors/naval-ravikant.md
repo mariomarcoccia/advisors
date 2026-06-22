@@ -4,9 +4,11 @@ slug: naval-ravikant
 role: Co-founder, AngelList; angel investor
 domains: [wealth, leverage, happiness, decision-making, startups, investing, philosophy]
 last_updated: 2026-06-22
-source_count: 14
+source_count: 16
 sources:
   - { type: book, title: "The Almanack of Naval Ravikant (Eric Jorgenson) — free PDF", url: "https://navalmanack.s3.amazonaws.com/Eric-Jorgenson_The-Almanack-of-Naval-Ravikant_Final.pdf" }
+  - { type: book, title: "The Almanack of Naval Ravikant — Table of Contents (navalmanack.com, book structure)", url: "https://www.navalmanack.com/almanack-of-naval-ravikant/table-of-contents" }
+  - { type: book, title: "The Almanack of Naval Ravikant — How to Get Lucky / the four kinds of luck (navalmanack.com)", url: "https://www.navalmanack.com/almanack-of-naval-ravikant/how-to-get-lucky" }
   - { type: essay, title: "How to Get Rich (without getting lucky) — nav.al", url: "https://nav.al/rich" }
   - { type: post, title: "Happiness Is Learned — Almanack of Naval Ravikant (navalmanack.com)", url: "https://www.navalmanack.com/almanack-of-naval-ravikant/happiness-is-learned" }
   - { type: interview, title: "The Knowledge Project #18: Naval Ravikant — The Angel Philosopher (Shane Parrish / Farnam Street)", url: "https://fs.blog/knowledge-project-podcast/naval-ravikant/" }
@@ -53,6 +55,13 @@ Naval Ravikant is an Indian-American entrepreneur and angel investor, co-founder
 - **Everyone is now a wizard.** AI hands "a magic wand to every human being on the planet" — the barrier between idea and product collapses. But abstractions leak: those who understand the underlying systems keep the edge, because they know when the tools fail. (Network State Conference 2024; thewizdomproject summary)
 - **Self-esteem = your reputation with yourself.** Repaired through a personal moral code plus doing things for others — internal trust that external validation can't substitute for. (Modern Wisdom #922)
 - **Stress = conflicting desires.** Anxiety is two or more desires pulling in different directions at once; the resolution is to identify which desire you'll drop, not to "manage" the feeling. (Modern Wisdom #922)
+- **The four kinds of luck (luck as a designable surface, not a coin flip).** From the Almanack's "How to Get Lucky": (1) *blind luck* — pure chance, outside your control; (2) *hustle luck* — luck stirred up by motion and persistence; (3) *opportunity-spotting luck* — being skilled enough in a field that you notice the lucky break others miss; (4) *character/brand luck* — the rarest: building a unique reputation so that luck *seeks you out* ("the best deep-sea diver" gets the call about the sunken treasure). Heuristic: you can't control (1), but you can engineer (2)–(4). (Almanack, "How to Get Lucky")
+- **Get paid for your judgment, not your time.** Once you have specific knowledge, accountability, and leverage, the highest-leverage labor is *judgment* — a CEO is paid for being right on a handful of decisions, not for hours. Judgment is the scarce input that pairs with code/capital to scale. (Almanack, "Get Paid for Your Judgment")
+- **Clear thinking = first principles minus ego.** The Almanack's "Building Judgment" set: think from the ground up, not by analogy; **shed your identity to see reality** — ego and a fixed self-image distort perception, so the more loosely you hold who you "are," the more clearly you see what *is*. Collect mental models across disciplines as a latticework for judgment. (Almanack, "How to Think Clearly," "Shed Your Identity to See Reality," "Collect Mental Models")
+- **Reading is the meta-skill.** "Read what you love until you love to read." The specific book matters less than the compounding habit; foundational reading (math, science, philosophy) beats chasing the latest. Reading can be "traded for" almost any other skill. (Almanack, "Learn to Love to Read")
+- **Envy is the tax on comparison.** Happiness's structural enemy isn't lack but envy — measuring yourself against others. The escape is the same move as escaping competition: stop entering the comparison set. (Almanack, "Envy Is the Enemy of Happiness")
+- **Save yourself — no one is coming.** "Doctors won't make you healthy. Nutritionists won't make you slim... Ultimately, you take responsibility. Save yourself." The greatest leverage on your own life is the ability to change yourself; external authorities and circumstances won't do it for you. (Almanack, "Choosing to Care for Yourself")
+- **Rational Buddhism.** Naval's self-label for his philosophy: keep the empirically useful, self-testable practices (meditation, desire-reduction, presence) and discard the supernatural metaphysics. Accept hard truths (impermanence, mortality) as the ground for peace rather than denying them. (Almanack, "Rational Buddhism," "The Present Is All We Have")
 
 ## Decision heuristics
 - **If you can't decide, the answer is no.** When a choice is hard and the options look close, default to declining — a clear yes is the only yes worth acting on. (Knowledge Project)
@@ -81,6 +90,33 @@ Naval Ravikant is an Indian-American entrepreneur and angel investor, co-founder
 
 ## Voice & style
 Aphoristic and compressed — ideas packaged as tweet-length, memorable lines built to stand alone. First-principles and reductive: he strips a topic (wealth, happiness) to a definition, then rebuilds from it. Calm, declarative, near-stoic in register; little hedging, few citations, heavy use of analogy (happiness "like fitness," compounding, games). The form is deliberately portable — the same line works in a tweet, a podcast, or a book — which is both the appeal and, critics argue, the limitation.
+
+## Books distilled
+
+### *The Almanack of Naval Ravikant* — Eric Jorgenson (2020, free at navalmanack.com)
+A compilation (not a written-through book) of a decade of Naval's tweets, essays, and interview transcripts, curated by Eric Jorgenson with Naval's endorsement and released free. Its architecture *is* the argument: two halves, **Wealth** and **Happiness**, on the premise that both are learnable skills.
+
+**Central thesis.** Wealth and happiness are not luck or temperament but *skills you can build deliberately* — and they are independent: you can get one without the other, so pursue both on purpose. The book's whole structure (build wealth → build judgment → learn happiness → free yourself → philosophy) is a curriculum, not a memoir.
+
+**Part I — Wealth.**
+- *Building Wealth* walks a ladder: understand how wealth is created (positive-sum, not zero-sum) → find/build **specific knowledge** (curiosity-led, unteachable, "feels like play to you but looks like work to others") → **play long-term games with long-term people** → take **accountability** under your own name (risk and credit are how you earn equity) → **own equity**, don't rent time → stack **leverage** (labor, capital, and the permissionless kind: code + media) → **get paid for your judgment** → prioritize, find work that feels like play, get lucky deliberately, be patient.
+- The wealth one-liner the book compresses to: *specific knowledge + accountability + leverage*, applied with judgment over a long time horizon. The aim is not money but **freedom** — money buys back your time and removes the sense that something external is owed.
+- *Building Judgment* is the often-overlooked second wealth chapter: think from first principles, **shed your identity to see reality**, learn decision-making as a skill, collect mental models, and **learn to love to read** (the meta-skill that trades for all others).
+
+**Part II — Happiness.**
+- *Learning Happiness*: happiness is **learned**, a **choice**, and requires **presence** and **peace**; it's "what's there when you remove the sense that something is missing." **Every desire is a chosen unhappiness.** Success does not earn happiness; **envy** is its structural enemy; happiness is built by **habits** and found in **acceptance**.
+- *Saving Yourself*: choose to be yourself, care for yourself, build and grow yourself, and free yourself — with the blunt premise that **"no one is coming to save you"** (doctors, nutritionists, gurus won't; you take responsibility). Meditation is framed as building mental strength and creating "the space between your thoughts."
+- *Philosophy*: **Rational Buddhism** — keep the testable practices, drop the supernatural; the present is all we have; live by your own values.
+
+**A few short, attributed signature lines** (verified against the free text):
+- "Seek wealth, not money or status."
+- "You're not going to get rich renting out your time."
+- "Learn to sell. Learn to build. If you can do both, you will be unstoppable."
+- "No one can compete with you on being you."
+- "Desire is a contract you make with yourself to be unhappy until you get what you want."
+- "A fit body, a calm mind, a house full of love. These things cannot be bought — they must be earned."
+
+**My synthesis (not the book's claim).** The book's power is its *compression* — each idea is engineered to survive as a standalone aphorism — and that's also its ceiling: the Wealth half is a genuinely sequenceable curriculum, but the Happiness half asserts more than it demonstrates, and the format omits the operational "how" (pricing, hiring, the mechanics of building leverage). Read it as a *map of what to optimize for*, then go elsewhere for execution. The "Building Judgment" and "Saving Yourself" chapters are the most underused parts of the book in popular summaries and the most useful for a decision-council lens.
 
 ## Blind spots / critiques
 - **Survivorship bias / underplayed luck.** Critics note the wealth advice "leans into survivorship bias (winners' patterns) and underplays luck/variance" — it generalizes from winners without controlled comparison or a methods section. (BetterSelfLabs)

@@ -4,7 +4,7 @@ slug: warren-buffett
 role: CEO, Berkshire Hathaway
 domains: [investing, capital-allocation, value, business-quality, long-term, management, temperament]
 last_updated: 2026-06-22
-source_count: 16
+source_count: 19
 sources:
   - { type: letter, title: "1977 Chairman's Letter (four criteria; return on equity; tailwinds vs. headwinds)", url: "https://www.berkshirehathaway.com/letters/1977.html" }
   - { type: letter, title: "1989 Letter — 'Mistakes of the First Twenty-five Years' (wonderful company at a fair price; 'I was a slow learner')", url: "https://www.berkshirehathaway.com/letters/1989.html" }
@@ -22,6 +22,9 @@ sources:
   - { type: interview, title: "Berkshire 2026 annual meeting recap — Buffett's last as CEO; 'gambling' in markets, no ideal ideas, Abel succession '100% successful' (CNBC)", url: "https://www.cnbc.com/2026/05/02/warren-buffett-berkshire-hathaway-annual-meeting-2026-live-updates.html" }
   - { type: profile, title: "Greg Abel rules out Berkshire break-up, stresses continuity at 2026 annual meeting (CNBC)", url: "https://www.cnbc.com/2026/05/03/berkshire-annual-meeting-greg-abel-rules-out-break-up-stressing-continuity-with-buffett.html" }
   - { type: profile, title: "Buffett's $397B cash hoard — record ~27% of assets; defended in Feb, vindicated as BRK +12% vs S&P -11% in 2026 (Yahoo Finance / Investing.com)", url: "https://finance.yahoo.com/news/warren-buffett-defended-his-massive-300-billion-cash-pile-in-february-now-he-doesnt-have-to-174312496.html" }
+  - { type: book, title: "The Essays of Warren Buffett: Lessons for Corporate America — arranged by Lawrence A. Cunningham (thematic spine: corporate governance; finance & investing; alternatives to common stock; common stock; M&A; accounting & valuation; tax). Distilled, not reproduced — copyrighted.", url: "https://www.cunninghamcunningham.com/the-essays-of-warren-buffett" }
+  - { type: letter, title: "1996 Letter ('look-through earnings'; 'intrinsic value, not book value'; 'index fund that charges minimal fees'; 'If you aren't willing to own a stock for ten years, don't even think about owning it for ten minutes')", url: "https://www.berkshirehathaway.com/letters/1996.html" }
+  - { type: letter, title: "Berkshire Owner's Manual ('our form is corporate, our attitude is partnership'; intrinsic value = 'discounted value of the cash that can be taken out of a business during its remaining life'; candid reporting; 'use debt sparingly')", url: "https://www.berkshirehathaway.com/owners.html" }
 ---
 
 ## Bio & context
@@ -55,6 +58,10 @@ He has not gone fully silent. In his **Nov 10, 2025 Thanksgiving letter** — hi
 - **Be fearful when others are greedy, and greedy when others are fearful.** His most famous contrarian rule, articulated in the 2008 financial crisis (PBS Charlie Rose interview and his Oct. 2008 NYT op-ed "Buy American. I Am.").
 - **"The Secret Sauce": a few huge winners carry the portfolio.** In the 2022 letter he names the discipline that actually produced the record: not a high batting average, but a handful of decades-long compounders (Coca-Cola and American Express bought ~1994–95) whose growth dwarfs everything else. "The weeds wither away in significance as the flowers bloom. Over time, it takes just a few winners to work wonders." Annual dividends from Coke grew from $75M (1994) to $704M (2022), and Amex from $41M to $302M — on a fixed, never-increased cost basis. The lesson he draws: "Our satisfactory results have been the product of about a dozen truly good decisions — that would be about one every five years."
 - **Compounding needs patience and a long runway, not cleverness.** The whole edifice rests on holding the flowers for decades and letting tax-deferred, reinvested earnings do the work — which is why selling a winner to "lock in gains" is, in his frame, usually the mistake.
+- **Intrinsic value = discounted future cash.** His one definition (Owner's Manual): intrinsic value "is the discounted value of the cash that can be taken out of a business during its remaining life." It is an estimate, not a precise number; two honest people will compute different figures. Book value is a poor proxy — "What counts at Berkshire is intrinsic value, not book value" (1996). Margin of safety is what protects you from your own estimation error.
+- **Look-through earnings.** Reported GAAP earnings understate an owner's true economics because they exclude the retained, undistributed earnings of investees. Buffett's fix (1996): look-through earnings = operating earnings reported + your share of investees' retained operating earnings (net of the tax that would apply if distributed). It is the metric that tells you whether a non-controlling stake is actually compounding for you.
+- **The retained-earnings test.** A dollar of earnings retained (not paid out) is only justified if it eventually creates at least a dollar of market value — over time, retained earnings must clear that bar or they should be returned to owners.
+- **The institutional imperative.** His name (1989) for the gravitational pull that makes otherwise-rational managers behave irrationally: institutions resist changing direction "as if governed by Newton's First Law of Motion"; projects and acquisitions "materialize to soak up available funds" (Parkinson's law of capital); any "craving of the leader, however foolish, will be quickly supported by detailed rate-of-return and strategic studies"; and peer behavior — expanding, acquiring, setting pay — "will be mindlessly imitated." Recognizing the imperative is half of resisting it.
 
 ## Decision heuristics
 
@@ -83,6 +90,32 @@ He has not gone fully silent. In his **Nov 10, 2025 Thanksgiving letter** — hi
 Folksy, plain-spoken, self-deprecating, teacherly. He reaches for homely analogies — "Whether we're talking about socks or stocks"; long-term winners "make the cash register ring like church bells"; a faithless manager hurts in a way that "can approach that of a failed marriage" (2024). He uses Midwestern understatement ("After I picked myself off the floor…"), gentle humor (the 2024 riff about his sister Bertie's cane, and "I will be sleeping" during the Sunday run), and quotes country songs and Tom Murphy ("praise by name, criticize by category"). He owns his errors out loud and names his own ("That move was a mistake — my mistake"). The effect is a brilliant analyst who deliberately talks like your smartest uncle so the lesson lands.
 
 The Nov 2025 Thanksgiving letter shows the late-career register: more memoirist than analyst, openly mortal, still wry. He personifies death — "Father Time… is undefeated; for him, everyone ends up on his score card as 'wins'" — and dates his own decline plainly ("balance, sight, hearing and memory are all on a persistently downward slope"). He closes a board of advisors could quote forever: "Kindness is costless but also priceless"; "Decide what you would like your obituary to say and live the life to deserve it"; "Get the right heroes and copy them. You can start with Tom Murphy; he was the best"; "Keep in mind that the cleaning lady is as much a human being as the Chairman." And the sign-off: "I wish all who read this a very happy Thanksgiving. Yes, even the jerks; it's never too late to change… Choose your heroes very carefully and then emulate them. You will never be perfect, but you can always be better."
+
+## Books distilled
+
+### The Essays of Warren Buffett: Lessons for Corporate America (arr. Lawrence Cunningham)
+
+Cunningham's editorial achievement was to take decades of Buffett's annual letters — written chronologically, scattered across topics — and **re-arrange the same passages by theme**, so that Buffett's worldview reads as a coherent treatise rather than a year-by-year diary. The distilled spine of that thematic organization:
+
+- **Corporate governance / the owner-related principles.** The book opens here because everything else descends from it. The Berkshire Owner's Manual creed: "Although our form is corporate, our attitude is partnership… we think of our shareholders as owner-partners." Managers are stewards of owners' capital, not principals; the board's job is to hire an able, honest CEO and get out of the way; and reporting must be candid — "We will be candid in our reporting to you, emphasizing the pluses and minuses important in appraising business value." The **institutional imperative** sits in this section as the central pathology of governance (see Mental models).
+- **Finance & investing.** The split between price and value; **Mr. Market** (Graham's manic-depressive partner who quotes you a price every day — you are free to ignore him, transact with him, or exploit him, but never let him instruct you); **margin of safety**; and the futility of forecasting markets vs. the tractability of appraising businesses. Volatility is not risk; permanent loss of capital is.
+- **Alternatives to common stock.** Where to put money when stocks are dear — high-grade bonds, arbitrage, cash, and "junk" only at genuinely distressed prices — always judged against the opportunity cost of the best available business. (Cunningham groups the zero-coupon, arbitrage, and convertible discussions here.)
+- **Common stock.** The case for being a reluctant seller and a patient owner; the folly of over-diversification for those who actually know what they own; index funds for everyone who doesn't ("Most investors… will find that the best way to own common stocks is through an index fund that charges minimal fees," 1996); and "If you aren't willing to own a stock for ten years, don't even think about owning it for ten minutes" (1996).
+- **Mergers & acquisitions.** Issuing stock to buy a business gives away a piece of a wonderful company you already own — so acquisitions paid for in shares are usually mistakes unless what you receive is worth as much as what you surrender. He prefers cash purchases of whole businesses run by managers who want to keep running them.
+- **Accounting & valuation.** Distrust of GAAP cosmetics; **look-through earnings** as the truer measure; intrinsic value as discounted future cash, never book value; depreciation is a real expense (hence the contempt for **EBITDA**); and **stock options must be expensed** — "If options aren't a form of compensation, what are they? If compensation isn't an expense, what is it? And, if expenses shouldn't go into the calculation of earnings, where in the world should they go?" (his recurring three-question challenge).
+- **Tax.** Deferred tax on unrealized gains is an effective interest-free loan from the Treasury that compounds for the long-term holder — another structural argument for not selling winners.
+
+### The annual letters (berkshirehathaway.com)
+
+The recurring teachings that run across the letters, distilled:
+
+- **The owner's-manual principles** anchor every letter: treat shareholders as partners, report with candor (admit mistakes by name), use debt sparingly — "We use debt sparingly and, when we do borrow, we attempt to structure our loans on a long-term fixed-rate basis" (Owner's Manual).
+- **Wonderful company at a fair price** (1989) — the Munger-driven pivot away from Graham cigar-butts. "Good jockeys will do well on good horses, but not on broken-down nags" (1989), and the reputation test: "When a management with a reputation for brilliance tackles a business with a reputation for bad economics, it is the reputation of the business that remains intact" (1989).
+- **Float & insurance economics** — the engine that supplied low-cost, often negative-cost investable capital, viable only under the iron rule of never writing underpriced policies.
+- **Mr. Market & margin of safety** — exploit the quote, never obey it; buy below intrinsic value.
+- **"Be fearful when others are greedy, and greedy when others are fearful"** — the contrarian temperament made concrete in 2008.
+- **Look-through earnings, the retained-earnings test, against EBITDA, options-as-expense** — the accounting discipline (see above; all recur across letters).
+- **The mistakes register** — he scores his own omissions ("sucking my thumb," 2008) more harshly than his commissions, on the theory that the costliest errors are usually inaction.
 
 ## Blind spots / critiques (real, sourced)
 
