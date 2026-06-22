@@ -47,3 +47,10 @@ How thick/thin the source base is, what's well-documented vs. inferred, and any 
 - **≥5 real sources** for a normal advisor; reclusive figures may have fewer — record that in `source_count` and Provenance notes.
 - Every quoted line must be traceable to a `sources[]` entry.
 - Prefer primary sources (their own words) over secondary commentary.
+
+### Size: signal over volume
+A dossier is a **decision-making lens**, not a biography — it can't capture a whole human, and shouldn't try. It steers a model that already knows these public figures; its job is to anchor verified positions, enforce the voice, and supply the blind spots. So optimize for **density, not length**:
+- **Primary voice and range beat tonnage.** Add real quotes and *new kinds of situations* the person addressed — not a seventh example of a framework already captured.
+- **Cut redundancy before adding.** The same idea restated across Core beliefs / Mental models / Books distilled is the first thing to trim.
+- **No hard word cap**, but ~2,000–4,000 words is the healthy zone; marquee thinkers may run to ~5,000–6,000 if the extra is primary voice or genuinely new lenses. Past that, you're usually adding filler, and `/boardroom` loads several dossiers at once — keep each tight.
+- If a dossier feels shallow, the fix is **better sources, not more words**.

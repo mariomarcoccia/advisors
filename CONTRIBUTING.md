@@ -18,6 +18,7 @@ These keep the project honest and safe — see [`reference/voice-guide.md`](refe
 3. **Separate documented from extrapolated.** "They argued X" (sourced) vs. "extending that, they'd likely say Y" (inference) — make the seam visible.
 4. **Critiques must be real and sourced.** No invented scandal, no defamation. Report controversies neutrally, with links.
 5. **A thin source base stays thin.** Don't pad reclusive figures with invention — fewer sources, more hedging.
+6. **Signal over volume.** A dossier is a decision-making lens, not a biography. Optimize for primary voice, real frameworks, and range of situations — not length. ~2,000–4,000 words is the healthy zone (~5,000–6,000 for marquee thinkers if it's primary voice or new lenses). Cut redundancy before adding; if a dossier feels shallow, the fix is better sources, not more words. See `reference/persona-template.md` → "Size: signal over volume".
 
 ## How to add a new advisor
 
