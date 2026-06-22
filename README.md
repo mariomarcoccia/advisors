@@ -48,6 +48,16 @@ Paul Graham · Michael Seibel · Nicolas Dessaigne · Reid Hoffman · Dalton Cal
 
 Reclusive figures (e.g. Larry Page, Sergey Brin, Alice Walton) have intentionally thinner dossiers — the `source_count` and provenance notes say so. The council never pads thin material with invention.
 
+## Contributing
+
+Anyone can help grow the council — no write access needed.
+
+- **Suggest an advisor** or **report an error**: open an [Issue](https://github.com/mariomarcoccia/advisors/issues/new/choose).
+- **Add or enrich a dossier**, or improve a skill: fork → branch → **Pull Request**. A maintainer reviews and merges.
+- **Ideas & questions**: use [Discussions](https://github.com/mariomarcoccia/advisors/discussions).
+
+Dossiers follow strict sourcing rules (public material only, no fabricated quotes, sourced critiques). Read [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`reference/voice-guide.md`](reference/voice-guide.md) before opening a PR.
+
 ## ⚠️ Disclaimer — personal use, no infringement intended
 
 This is a **personal-use thinking tool**, shared in the hope it's useful to others.
