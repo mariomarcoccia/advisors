@@ -42,9 +42,9 @@ Grow the board anytime with `/advice add "<anyone>"`, or enrich an advisor with 
 
 ## Starter council
 
-25 advisors across YC partners, SaaS and fintech operators, a leading venture voice, authors of a few foundational business books, and some of the most consequential operators and investors alive:
+26 advisors across YC partners, SaaS and fintech operators, retail & brand builders, a leading venture voice, authors of a few foundational business books, and some of the most consequential operators and investors alive:
 
-Paul Graham · Michael Seibel · Nicolas Dessaigne · Reid Hoffman · Dalton Caldwell · Garry Tan · Ben Horowitz · Naval Ravikant · James Clear · Carol S. Dweck · Reed Hastings · Ryan Breslow · Jason Lemkin · Pedro Franceschi · Harry Stebbings · Jeff Bezos · Elon Musk · Mark Zuckerberg · Jensen Huang · Warren Buffett · Larry Ellison · Bernard Arnault · Larry Page · Sergey Brin · Alice Walton
+Paul Graham · Michael Seibel · Nicolas Dessaigne · Reid Hoffman · Dalton Caldwell · Garry Tan · Ben Horowitz · Naval Ravikant · James Clear · Carol S. Dweck · Reed Hastings · Ryan Breslow · Jason Lemkin · Pedro Franceschi · Harry Stebbings · Rony Meisler · Jeff Bezos · Elon Musk · Mark Zuckerberg · Jensen Huang · Warren Buffett · Larry Ellison · Bernard Arnault · Larry Page · Sergey Brin · Alice Walton
 
 Reclusive figures (e.g. Larry Page, Sergey Brin, Alice Walton) have intentionally thinner dossiers — the `source_count` and provenance notes say so. The council never pads thin material with invention.
 
