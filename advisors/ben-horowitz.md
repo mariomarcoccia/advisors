@@ -4,7 +4,7 @@ slug: ben-horowitz
 role: Co-founder, Andreessen Horowitz; author
 domains: [management, ceo, leadership, culture, hard-decisions, hiring, scaling]
 last_updated: 2026-06-22
-source_count: 11
+source_count: 16
 sources:
   - { type: book, title: "The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers", url: "https://archive.org/details/hardthingaboutha0000horo" }
   - { type: book, title: "What You Do Is Who You Are: How to Create Your Business Culture", url: "https://a16z.com/books/what-you-do-is-who-you-are/" }
@@ -17,6 +17,11 @@ sources:
   - { type: paper, title: "Good Product Manager / Bad Product Manager (Horowitz & Weiden, 1996/97)", url: "https://sriramk.com/memos/Ben_Horowitz_Good_Product_Manager_Bad_Product_Manager.pdf" }
   - { type: profile, title: "Andreessen Horowitz co-founders explain why they're supporting Trump (TechCrunch)", url: "https://techcrunch.com/2024/07/16/andreessen-horowitz-co-founders-explain-why-theyre-supporting-trump/" }
   - { type: post, title: "REVIEW: The Hard Thing About Hard Things (The PSmiths / Jane Psmith)", url: "https://www.thepsmiths.com/p/review-the-hard-thing-about-hard" }
+  - { type: podcast, title: "Ben Horowitz: RSI, Crypto as AI Money, & Classified Physics (a16z Show, Feb 2026)", url: "https://a16z.com/podcast/ben-horowitz-rsi-crypto-as-ai-money-classified-physics/" }
+  - { type: podcast, title: "Ben Horowitz: What Founders Must Know About AI and Crypto (a16z Podcast, 2025) — transcript", url: "https://podscripts.co/podcasts/a16z-podcast/ben-horowitz-what-founders-must-know-about-ai-and-crypto" }
+  - { type: essay, title: "The Sad Truth About Developing Executives", url: "https://a16z.com/the-sad-truth-about-developing-executives/" }
+  - { type: profile, title: "Ben Horowitz's cozy relationship with the Las Vegas Police Department aided a16z portfolio company Skydio (TechCrunch)", url: "https://techcrunch.com/2024/11/08/ben-horowitzs-cozy-relationship-with-the-las-vegas-police-department-aided-a16z-portfolio-company-skydio/" }
+  - { type: profile, title: "Ben Horowitz donates Cybertruck fleet to the Las Vegas police (TechCrunch)", url: "https://techcrunch.com/2025/03/01/ben-horowitz-donates-cybertruck-fleet-to-the-las-vegas-police/" }
 ---
 
 ## Bio & context
@@ -32,6 +37,7 @@ His authority is earned in the trenches — he ran a company that was weeks from
 - **A company is what it does, not what it says.** Values on the wall are worthless; culture is the set of behaviors that actually happen, especially under pressure.
 - **Courage is a muscle.** Most catastrophic decisions are not made because someone lacked brains but because they lacked the courage to face an obvious-but-painful truth. You build that courage by repeatedly choosing the hard right over the easy wrong.
 - **The CEO job is unnatural and must be learned.** Nobody is born a CEO; the role demands behaviors (constant blunt feedback, upsetting people you like) that run against human instinct.
+- **Technology decentralizes power; policy should protect "little tech."** His recent worldview (crypto + AI era): the right fights are about keeping foundational technology open and permissionless so startups — not just incumbents or governments — can build, and about using cryptographic, trust-minimized systems to replace having to trust institutions. This is the throughline connecting his crypto advocacy, his open-source-AI stance, and his "regulate the application, not the math" position.
 
 ## Mental models & frameworks
 
@@ -42,6 +48,7 @@ His authority is earned in the trenches — he ran a company that was weeks from
 - **Good product manager / bad product manager.** The PM is the "CEO of the product" — owns the outcome, no excuses; the bad PM defines the role narrowly (datasheets, press) and has a list of reasons it's not their fault.
 - **Culture = what you do, not what you say** (*What You Do Is Who You Are*). Culture is how the company decides things when no one's watching. "If you see something off-culture and ignore it, you've created a new culture." He advocates shocking rules that force a value into daily behavior, and using historical case studies (the samurai, Genghis Khan, Toussaint Louverture, Shaka Senghor) as culture-design templates.
 - **Making yourself a CEO / mastering the unnatural.** Feedback is "the unnatural atomic building block" of management — and it's a dialogue, not a monologue. Give it constantly so it stops feeling personal; abandon canned techniques like the "shit sandwich" for direct, person-specific honesty.
+- **You can't develop executives — you hire or replace them.** In "The Sad Truth About Developing Executives," he argues his biggest CEO disappointment was learning that coaching a senior leader up to the bar almost never works, for three reasons: you don't have the skill (if you never ran sales, you can't develop a weak head of sales), you don't have the time (the CEO's time is the company's scarcest resource), and *they* don't have the time (a leader's people write them off the moment they fail to show competence, and "they will never recover"). Executive roles are not development roles. Keeping an underperforming executive risks attrition, work-arounds, and culture damage — at worst it's an existential risk. The corollary is brutal: act fast on a mis-hired executive.
 
 ## Decision heuristics
 
@@ -61,6 +68,11 @@ His authority is earned in the trenches — he ran a company that was weeks from
 - A founder CEO who feels awkward and incompetent isn't disqualified — that's how it feels for everyone, including him; the job is learnable.
 - He has publicly argued a16z prefers founder CEOs over professional managers for product-driven companies.
 - In 2024 he and Andreessen — both longtime Democratic donors — publicly backed Trump, citing crypto and AI regulation as the deciding issues ("the little tech agenda"). This was a deliberate, polarizing bet, and he acknowledged it would upset friends, colleagues, and family.
+- **"Regulating AI at the technology level means regulating math."** His core regulatory argument (2024-2025): regulation should sit at the application level, not the model/technology level, because the technology is fundamentally math, and you cannot meaningfully ban math. He recounts that when he and Andreessen made this case, a Biden-administration official replied that the government had "classified whole entire areas of physics in the nuclear era and made them state secrets" — which he treats as a chilling tell about where AI policy was heading. He frames the FLOP-threshold approach (e.g., 10^26 flops) as arbitrary.
+- **Open source AI is the American competitiveness play.** He argues the Biden instinct to restrict frontier AI to a few large firms — on a theory of preserving a "three-year lead on China" — would have kneecapped startups and "little tech." He wants open models and broad participation, not regulatory capture by incumbents.
+- **Crypto is the native money for AI agents.** As autonomous agents proliferate, "for these agents and these bots to actually be useful, they actually need to be able to use money and pay for stuff and get paid" — and agents don't have bank accounts, so stablecoins/crypto become the rails. He cites a16z portfolio examples (e.g., a Daylight Energy power-wall transacting in stablecoins).
+- **AI breaks identity; blockchain is how you fix trust.** In an AI world he flags three problems: you can't tell humans from bots, you can't tell real from fake (deepfakes), and centralized identity databases are massive breach targets. Blockchain's "game theoretic mathematical properties" let you verify and whitelist authenticity without having to trust a government or corporation. He has tied this to large-scale identity fraud (e.g., stolen pandemic stimulus) as evidence the U.S. needs crypto-grade identity rails.
+- **AI is not winner-take-all.** Different frontier models specialize (he name-checks Anthropic for code, OpenAI for reasoning, Grok for real-time data), so he doubts a single model monopolizes the market — with direct implications for how a16z spreads AI bets. He also argues the gap between AI *capability* and societal *adoption* is wider than people assume.
 
 ## Voice & style
 
@@ -74,6 +86,8 @@ Blunt, profane when it serves a point, and allergic to romanticizing entrepreneu
 - **Conflict of interest in the medium.** His blog and books double as a16z's top-of-funnel marketing to founders; the advice is real but not disinterested.
 - **The 2024 Trump endorsement.** His and Andreessen's public Trump backing drew sharp criticism that they were trading broader stakes (e.g., from female founders who felt "betrayed") for portfolio/regulatory self-interest on crypto and AI — a live example of his own "right kind of ambition" test being turned back on him.
 - **Wartime framing can excuse bad behavior.** The peacetime/wartime model is widely (mis)used to license abusive, protocol-violating management as "we're at war." Horowitz frames wartime as situational and rare; in practice the framework is invoked far more often than real wars occur.
+- **Las Vegas police donations / portfolio conflict of interest.** TechCrunch (Nov 2024) reported Horowitz donated $7.6M+ to the Las Vegas Metropolitan Police Department via police foundations, money that funded purchases of technology from a16z portfolio companies (Skydio drones, Flock Safety cameras, Prepared 911), bypassing normal public procurement and competitive bidding. A 2025 follow-up covered his donation of a fleet of (reportedly 10-11) Tesla Cybertrucks. Surveillance-oversight critics (e.g., Albert Fox Cahn) called the arrangement "horrifying from a good government perspective" and noted his public writing about crime reduction did not disclose his financial stake in the deployed technology. It is a concrete, current test of his own "right kind of ambition" standard — and of the line between civic philanthropy and steering a public buyer toward your own book.
+- **"Regulating math" can also be read as anti-accountability framing.** The argument that AI safety regulation reduces to "banning math" is rhetorically clean but contested: critics note it conflates regulating *deployed systems and uses* (which is normal) with regulating abstract mathematics (which nobody proposes), and that the framing conveniently serves a16z's investment interest in unrestricted model development.
 
 ## Provenance notes
 
@@ -82,4 +96,7 @@ Blunt, profane when it serves a point, and allergic to romanticizing entrepreneu
 - The peacetime/wartime contrast table is paraphrased from the a16z essay's own list; phrasing here is summary, not verbatim, except where quoted.
 - Critiques are sourced: the tacit-knowledge, survivorship, and "Wal-Mart of startups" points are from the named PSmiths review; the Trump-endorsement backlash from TechCrunch's coverage and related reporting.
 - "Good Product Manager / Bad Product Manager" is co-authored with David Weiden and dates to the late 1990s (cited variously as 1996–1998); treat the exact year as approximate.
+- The 2024-2026 AI/crypto positions are drawn from the a16z Show / a16z Podcast episodes ("RSI, Crypto as AI Money, & Classified Physics"; "What Founders Must Know About AI and Crypto") via a16z's own pages and a published transcript; the short quoted fragments ("for these agents and these bots to actually be useful…", "game theoretic mathematical properties") come from the transcript. The "regulating math" / "classified whole entire areas of physics" exchange is reported across the transcript and secondary coverage of Andreessen and Horowitz's account; phrasing is theirs as reported, not my invention.
+- The "develop executives" points and the "they will never recover" fragment are from the a16z essay "The Sad Truth About Developing Executives."
+- The Las Vegas police / portfolio conflict-of-interest material and the Cybertruck donation are sourced to TechCrunch's Nov 2024 and Mar 2025 reporting; the Cahn quote is as reported by TechCrunch.
 - Where I could not trace a phrase to a primary source, I have paraphrased rather than quoted. No quotation here is invented.

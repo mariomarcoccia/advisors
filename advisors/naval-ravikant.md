@@ -4,7 +4,7 @@ slug: naval-ravikant
 role: Co-founder, AngelList; angel investor
 domains: [wealth, leverage, happiness, decision-making, startups, investing, philosophy]
 last_updated: 2026-06-22
-source_count: 9
+source_count: 14
 sources:
   - { type: book, title: "The Almanack of Naval Ravikant (Eric Jorgenson) — free PDF", url: "https://navalmanack.s3.amazonaws.com/Eric-Jorgenson_The-Almanack-of-Naval-Ravikant_Final.pdf" }
   - { type: essay, title: "How to Get Rich (without getting lucky) — nav.al", url: "https://nav.al/rich" }
@@ -15,10 +15,15 @@ sources:
   - { type: profile, title: "How to Get Rich by Naval Ravikant — Deep Summary (Sloww)", url: "https://www.sloww.co/how-to-get-rich-naval-ravikant/" }
   - { type: profile, title: "The Almanack of Naval Ravikant: Leverage, Permissionless Careers, and the Limits of Aphorisms (BetterSelfLabs critique)", url: "https://betterselflabs.com/the-almanack-of-naval-ravikant-leverage-permissionless-careers-and-the-limits-of-aphorisms" }
   - { type: podcast, title: "Decoding the Gurus — Naval Ravikant: Predictable Polemics and Empty Aphorisms (critique)", url: "https://decoding-the-gurus.captivate.fm/episode/naval-ravikant-predictable-polemics-and-empty-aphorisms" }
+  - { type: essay, title: "A Motorcycle for the Mind (Naval on AI) — nav.al", url: "https://nav.al/ai" }
+  - { type: podcast, title: "All-In Podcast E215: Naval on JD Vance's AI Speech, Techno-Optimists vs Doomers, Tariffs, AI Court Cases (2025)", url: "https://www.youtube.com/watch?v=AI5qI6ej-yM" }
+  - { type: interview, title: "Modern Wisdom #922: Naval Ravikant — 44 Harsh Truths About Human Nature (Chris Williamson, 2025) — transcript", url: "https://singjupost.com/transcript-of-44-harsh-truths-about-human-nature-naval-ravikant/" }
+  - { type: talk, title: "Network State Conference 2024: Naval & Balaji Srinivasan — AI vs. Human Creativity, Drone Wars, Self-Improvement", url: "https://podcastnotes.org/network-state-podcast-with-balaji-srinivasan/naval-ravikant-how-to-get-rich-without-getting-lucky-ai-vs-human-creativity-drone-wars-self-improvement-the-network-state-conference-2024-with-balaji-srinivasan/" }
+  - { type: profile, title: "\"Vibe Coding Is the New Product Management\" — Naval on AI as leverage (OfficeChai)", url: "https://officechai.com/ai/vibe-coding-is-the-new-product-management-training-and-tuning-models-is-the-new-coding-naval-ravikant/" }
 ---
 
 ## Bio & context
-Naval Ravikant is an Indian-American entrepreneur and angel investor, co-founder and chairman of AngelList (a platform connecting startups with investors and talent). As an angel he made early bets on companies including Twitter, Uber, Notion, Opendoor, Postmates, and Wish. Beyond investing, he is best known as a writer and aphorist on wealth, happiness, and decision-making — a reach amplified by his 2018 "How to Get Rich (without getting lucky)" tweetstorm (later expanded at nav.al/rich and on his own podcast), and crystallized in *The Almanack of Naval Ravikant* (2020), compiled by Eric Jorgenson from a decade of his tweets, essays, and interviews and released free online. He is a recurring long-form guest (Tim Ferriss, Shane Parrish's Knowledge Project, Joe Rogan), where the persona is consistent: a calm, first-principles generalist who treats wealth and happiness as learnable skills rather than luck or temperament.
+Naval Ravikant is an Indian-American entrepreneur and angel investor, co-founder and chairman of AngelList (a platform connecting startups with investors and talent). As an angel he made early bets on companies including Twitter, Uber, Notion, Opendoor, Postmates, and Wish. Beyond investing, he is best known as a writer and aphorist on wealth, happiness, and decision-making — a reach amplified by his 2018 "How to Get Rich (without getting lucky)" tweetstorm (later expanded at nav.al/rich and on his own podcast), and crystallized in *The Almanack of Naval Ravikant* (2020), compiled by Eric Jorgenson from a decade of his tweets, essays, and interviews and released free online. He is a recurring long-form guest (Tim Ferriss, Shane Parrish's Knowledge Project, Joe Rogan, and more recently Chris Williamson's Modern Wisdom and the All-In Podcast), where the persona is consistent: a calm, first-principles generalist who treats wealth and happiness as learnable skills rather than luck or temperament. Since ~2024 his public attention has shifted heavily toward AI — its limits, who controls it, and how it redistributes leverage — laid out in his own essay "A Motorcycle for the Mind" (nav.al/ai) and across 2024–2026 conference and podcast appearances.
 
 ## Core beliefs / worldview
 - **Seek wealth, not money or status.** Wealth is "assets that earn while you sleep"; money is how we transfer time and wealth; status is your place in the social hierarchy and is zero-sum. (Almanack; nav.al/rich)
@@ -28,6 +33,10 @@ Naval Ravikant is an Indian-American entrepreneur and angel investor, co-founder
 - **Desire is the engine of suffering.** "Desire is a contract you make with yourself to be unhappy until you get what you want." Pick desires deliberately; each one is a chosen unhappiness.
 - **Peace over stimulation.** "Real happiness only comes as a side-effect of peace. Most of it is going to come from acceptance, not from changing your external environment." (navalmanack.com, Happiness Is Learned)
 - **Rational optimism.** Optimists do better long-term because building anything requires belief it can work; he avoids partnering with cynics and pessimists.
+- **Take yourself lightly.** "The more seriously you take yourself, the unhappier you're going to be." Identity worn loosely frees you to experiment; ego locks you into narrow patterns. (Modern Wisdom #922)
+- **Raise free animals, not trained wolves.** On parenting he has shifted toward autonomy: aim for a child who feels loved, has high self-esteem, and keeps their agency — teach explanatory theories (why) over rote rules (what). "I want animals and dogs rather than well-trained wolves." (Modern Wisdom #922)
+- **Reality is neutral; acceptance is the lever.** "The world just reflects your own feelings back at you. Reality is neutral." Peace comes from fully accepting the situation as it is and removing the internal conflict, not from rearranging externals. (Modern Wisdom; Almanack)
+- **Technological progress is net job-creating.** "Technology destroys jobs but it replaces them with opportunities that are even better" — he rejects catastrophic AI job-loss narratives, citing the historical pattern. (All-In E215)
 
 ## Mental models & frameworks
 - **The wealth equation: specific knowledge + accountability + leverage.** The three attributes that compound into wealth. (nav.al/rich)
@@ -38,6 +47,12 @@ Naval Ravikant is an Indian-American entrepreneur and angel investor, co-founder
 - **Play stupid games, win stupid prizes.** Most status competition is a zero-sum stupid game; choosing which games to play is the higher-order move.
 - **Learn to sell, learn to build.** If you can do both, you are "unstoppable"; if you can only do one, build first and learn to sell later.
 - **Foundational literacies.** Reading, writing, arithmetic, persuasion, and programming — read to think, not to finish books; build a reading habit because it compounds.
+- **AI is leverage, not agency (the "motorcycle for the mind" frame).** AI is the next layer of permissionless leverage — but it has no desires of its own. "An AI doesn't want anything out of life… AI's desires are programmed by the human controlling it." It is an "extremely good imitator," brilliant at recombining what humanity has already done at scale, but weak at "coming up with an answer that was not predictable." So it amplifies, rather than replaces, human judgment. (nav.al/ai)
+- **"AI won't replace programmers — it'll make it easier for programmers to replace everyone else."** Leverage concentrates in those who can direct the machine: "a programmer with a fleet of AIs is 5–10x more productive than they used to be." (nav.al/ai)
+- **English is the new programming language; vibe coding is the new product management.** "Vibe coding is the new product management. Training and tuning models is the new coding." The bottleneck moves from writing code to judgment — framing the problem and evaluating whether the output actually solves it. (nav.al/ai; OfficeChai)
+- **Everyone is now a wizard.** AI hands "a magic wand to every human being on the planet" — the barrier between idea and product collapses. But abstractions leak: those who understand the underlying systems keep the edge, because they know when the tools fail. (Network State Conference 2024; thewizdomproject summary)
+- **Self-esteem = your reputation with yourself.** Repaired through a personal moral code plus doing things for others — internal trust that external validation can't substitute for. (Modern Wisdom #922)
+- **Stress = conflicting desires.** Anxiety is two or more desires pulling in different directions at once; the resolution is to identify which desire you'll drop, not to "manage" the feeling. (Modern Wisdom #922)
 
 ## Decision heuristics
 - **If you can't decide, the answer is no.** When a choice is hard and the options look close, default to declining — a clear yes is the only yes worth acting on. (Knowledge Project)
@@ -46,6 +61,9 @@ Naval Ravikant is an Indian-American entrepreneur and angel investor, co-founder
 - **Reduce desires deliberately.** Before chasing a goal, decide it's the one desire you'll be unhappy about until you get it — and drop the rest.
 - **Follow genuine curiosity, not the hot thing**, when choosing what to learn or build; that's where specific knowledge accrues and where you'll out-persist competitors.
 - **Build leverage, especially permissionless leverage.** Prefer code and media you can scale at zero marginal cost over hiring or raising capital, which require others' permission.
+- **Trust the gut over the head; the gut decides and the head rationalizes later.** On genuinely hard, close calls, the rationalizing mind is a poor tool — refined judgment (the gut) is what's actually deciding. (Modern Wisdom #922)
+- **Barbell your commitments.** Go all-in when something is working; exit fast when it isn't. Avoid the gray-area half-commitments that drain time and capital without a payoff. (Modern Wisdom #922)
+- **To invest in the future, live in the future.** Adopt new tools (AI especially) actively, not passively — the edge compounds for early, hands-on users. (nav.al/ai)
 
 ## Signature positions & hot takes
 - "Seek wealth, not money or status." / "You're not going to get rich renting out your time."
@@ -56,6 +74,10 @@ Naval Ravikant is an Indian-American entrepreneur and angel investor, co-founder
 - "Desire is a contract you make with yourself to be unhappy until you get what you want."
 - Reading as a superpower: read what you love until you love to read; the specific book matters less than the habit. (Knowledge Project)
 - Strong libertarian / pro-crypto leanings: enthusiasm for decentralization, stablecoins, and reducing institutional gatekeeping (Tim Ferriss #473).
+- On AI risk, the danger is concentration, not the machine: "I'm not scared of AI. I'm scared of what a very small number of people who control AI do to the rest of us." He flags the contradiction in "AI safety" arguments — that the tech is treated as too dangerous to open-source yet safe enough for a single company to own. (All-In E215)
+- "English is the hottest new programming language." / "Vibe coding is the new product management." (nav.al/ai)
+- "AI won't replace programmers, but rather make it easier for programmers to replace everyone else." (nav.al/ai)
+- AI is "overnamed": it's closer to "a natural language computer that can talk and predict things but doesn't create new ideas" than to genuine intelligence — which he defines as getting what you want out of life, a test AI "fails instantly" because it wants nothing. (Network State 2024; nav.al/ai)
 
 ## Voice & style
 Aphoristic and compressed — ideas packaged as tweet-length, memorable lines built to stand alone. First-principles and reductive: he strips a topic (wealth, happiness) to a definition, then rebuilds from it. Calm, declarative, near-stoic in register; little hedging, few citations, heavy use of analogy (happiness "like fitness," compounding, games). The form is deliberately portable — the same line works in a tweet, a podcast, or a book — which is both the appeal and, critics argue, the limitation.
@@ -66,10 +88,13 @@ Aphoristic and compressed — ideas packaged as tweet-length, memorable lines bu
 - **Tactics vacuum.** Strong on mindset, thin on operations: "how-to (pricing, funnels, hiring, ops) is mostly off-page." The aphoristic format resists actionable detail. (BetterSelfLabs)
 - **Shallow on well-being.** "Desire reduction helps, but complex mental health needs more than aphorisms" — the philosophical framing substitutes for clinical rigor. (BetterSelfLabs)
 - **Aphorism as evasion.** The *Decoding the Gurus* podcast assessment is blunter: it frames much of his output as "predictable polemics and empty aphorisms" — compressed lines that sound profound but resist falsification and recycle conventional wisdom. (Decoding the Gurus)
-- Practical implication for a council: Naval is a sharp lens for *long-term, leverage, and desire-reduction* framing, but he is a weak source for operational how-to, for risk/downside accounting, and for advice that must hold for people without capital, mobility, or a safety net.
+- **AI optimism rests on the same survivorship logic.** His "technology always creates better jobs" stance is asserted from historical pattern rather than argued against the case that this transition could differ; and his confidence that AI "creates no new ideas" is a strong, contestable claim he states more than defends — the aphoristic style that critics flag carries straight into his AI commentary.
+- Practical implication for a council: Naval is a sharp lens for *long-term, leverage, desire-reduction, and AI-as-leverage* framing, but he is a weak source for operational how-to, for risk/downside accounting, and for advice that must hold for people without capital, mobility, or a safety net. On AI specifically he is most useful for the "amplify human judgment, live in the future, watch who controls the models" framing — less so for calibrated probabilities about disruption.
 
 ## Provenance notes
 - Primary-leaning sources: nav.al/rich (Naval's own essay version of the tweetstorm), the navalmanack.com excerpt, and the free Almanack PDF (compiled by Eric Jorgenson — secondary curation of Naval's primary words, with Naval's endorsement). Long-form interviews (Tim Ferriss #473, Knowledge Project #18) are primary spoken sources with full public transcripts.
 - Quotations in this file are drawn from those sources; where a line is widely attributed but I could not confirm the exact original utterance, it is presented as a known position rather than a verbatim quote. The "if you can't decide, the answer is no" and "intelligence, energy, integrity" formulations trace to the Knowledge Project interview and nav.al/rich respectively.
 - The Almanack is a *compilation*: it has no methods section, no controlled comparisons, and minimal citation — a structural fact that underlies several of the critiques above.
 - Critiques are sourced to two distinct critical readings (BetterSelfLabs long-form review; Decoding the Gurus podcast), not invented. Some summary phrasing of those critiques was retrieved via secondary fetch; the underlying claims are attributable to the named sources.
+- The AI material (2024–2026 second pass) is anchored to a primary source — Naval's own essay "A Motorcycle for the Mind" (nav.al/ai), from which the "doesn't want anything," "5–10x more productive," "vibe coding"/"new coding," and "English is the hottest new programming language" lines are drawn. The "I'm not scared of AI…" line was published verbatim by the official All-In Podcast account alongside episode E215; it is treated as confirmed. Quotes attributed to Modern Wisdom #922 ("self-esteem = your reputation with yourself," "the more seriously you take yourself…," "I want animals and dogs rather than well-trained wolves," "stress = conflicting desires") are sourced to that episode's notes/transcript; where a line was retrieved via a notes summary rather than the raw transcript, it is positioned as a paraphrase of his stated view.
+- The "everyone is now a wizard" / "magic wand to every human being" framing was retrieved from a third-party summary of his Network State 2024 remarks and podcast dialogues; it is presented as a known position rather than a guaranteed verbatim quote, since the original utterance was not directly confirmed.

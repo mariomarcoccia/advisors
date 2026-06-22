@@ -4,7 +4,7 @@ slug: larry-page
 role: Co-founder, Google; co-founder, Alphabet
 domains: [moonshots, 10x-thinking, technology, long-term-bets, ambition, product]
 last_updated: 2026-06-22
-source_count: 6
+source_count: 9
 sources:
   - { type: letter, title: "2004 Founders' IPO Letter: An Owner's Manual for Google's Shareholders (Alphabet Investor Relations)", url: "https://abc.xyz/investor/founders-letters/ipo-letter/default.aspx" }
   - { type: talk, title: "Larry Page's University of Michigan Commencement Address (Google Press, 2009)", url: "https://googlepress.blogspot.com/2009/05/larry-pages-university-of-michigan.html" }
@@ -12,11 +12,16 @@ sources:
   - { type: talk, title: "Computing is still too clunky: Charlie Rose and Larry Page in conversation (TED 2014, TED Blog)", url: "https://blog.ted.com/computing-is-still-too-clunky-charlie-rose-and-larry-page-in-conversation/" }
   - { type: profile, title: "Google's Larry Page: The Most Ambitious CEO in the Universe (Miguel Helft, Fortune, Nov 2014)", url: "https://fortune.com/2014/11/13/googles-larry-page-the-most-ambitious-ceo-in-the-universe/" }
   - { type: profile, title: "In Silicon Valley, Mergers Must Meet the Toothbrush Test (David Gelles, New York Times, Aug 2014)", url: "https://www.nytimes.com/2014/08/19/technology/in-silicon-valley-mergers-must-meet-the-toothbrush-test.html" }
+  - { type: talk, title: "Hello Larry: Google's Page on negativity, laws, and competitors — full Google I/O 2013 fireside Q&A transcript (PCWorld, May 2013)", url: "https://www.pcworld.com/article/451887/hello-larry-googles-page-on-negativity-laws-and-competitors.html" }
+  - { type: talk, title: "Google CEO Larry Page Shares His Philosophy At I/O: 'We Should Be Building Great Things That Don't Exist' (TechCrunch, May 2013)", url: "https://techcrunch.com/2013/05/15/google-ceo-larry-page-takes-the-stage-at-ceo-to-wrap-up-the-io-keynote/" }
+  - { type: profile, title: "Google co-founder Larry Page reportedly has a new AI startup [Dynatomics] (TechCrunch, Mar 2025; originally reported by Jessica E. Lessin, The Information)", url: "https://techcrunch.com/2025/03/06/google-co-founder-larry-page-reportedly-has-a-new-ai-startup/" }
 ---
 
 ## Bio & context
 
 Larry Page co-founded Google with Sergey Brin in 1998 out of a Stanford PhD project (the PageRank link-analysis algorithm). He served as Google's first CEO, stepped aside for Eric Schmidt's "adult supervision" era (2001–2011), returned as CEO in 2011, and in 2015 engineered the reorganization of Google into Alphabet — a holding company designed to let Google's cash-cow ads business fund a portfolio of unrelated long-term bets ("Other Bets": Waymo self-driving, Verily life sciences, the balloon-internet Loon project, etc.). He stepped down as Alphabet CEO in December 2019, handing the role to Sundar Pichai, while retaining significant voting control through Alphabet's dual-class share structure.
+
+Since leaving Alphabet he has founded rather than commented: he has backed and built personal eVTOL/"flying car" ventures (Zee.Aero, later Kitty Hawk, wound down in 2022), and in March 2025 The Information (Jessica E. Lessin) reported — confirmed by TechCrunch — that he had quietly formed a new AI startup, **Dynatomics**, working with a small group of engineers to use large language models to generate "highly optimized" designs for physical objects and then have factories build them; Chris Anderson, former CTO of Kitty Hawk, is reportedly running the stealth effort. It is a telling data point: even his "return," at ~52, is an attempt to apply a 10x lens to manufacturing, and it is happening in characteristic near-silence (no public statement, the news broke via reporting, not from Page).
 
 Two facts shape any reading of him. First, he is genuinely reclusive: he disclosed in 2013 that he has vocal cord paralysis (per CBS News and the Fortune profile, his voice became "almost inaudible" before stabilizing), and he largely withdrew from earnings calls, product launches, and press after ~2014–2015. Second, because of that, the documented record of him speaking in his own words is unusually thin for someone of his stature — see Provenance notes.
 
@@ -27,6 +32,8 @@ Two facts shape any reading of him. First, he is genuinely reclusive: he disclos
 - **Most institutions waste their potential.** He told Wired he worried "something has gone seriously wrong with the way we run companies," criticizing an industry mindset that treats business like a sporting event — beating a near-identical competitor.
 - **The long term is the only frame that matters.** The 2004 IPO letter is explicit: Google "will not shy away from high-risk, high-reward projects" and would deliberately avoid managing to quarterly expectations.
 - **Users first, monetization follows.** "Serving our end users is at the heart of what we do and remains our number one priority" (2004 IPO letter).
+- **We are at ~1% of what's possible.** A recurring frame from the 2013 Google I/O fireside: the constraint on progress is not technical limits but negativity and zero-sum thinking. "We should be building great things that don't exist" (Google I/O 2013).
+- **Negativity is the enemy of progress.** "Being negative is not how we make progress" (Google I/O 2013). He argued the press and industry frame technology as "us versus some other company," when "most of the opportunities... are not zero-sum" — cooperation on open standards would advance the whole field faster than competition does.
 
 ## Mental models & frameworks
 
@@ -53,6 +60,9 @@ Two facts shape any reading of him. First, he is genuinely reclusive: he disclos
 - Computing is "still too clunky"; the interface between people and machines should largely disappear (TED 2014).
 - The internet should reach the two-thirds of the world without good access — hence balloons (Project Loon), which he had reportedly researched since grad school (TED 2014; Fortune 2014).
 - Public markets' obsession with quarterly results is a distortion to be resisted, not served (2004 IPO letter).
+- Law and regulation can't keep pace with technology and shouldn't be allowed to freeze it: "Law can't be right if it's 50 years old. Like, it's before the Internet" (Google I/O 2013).
+- We need protected zones to experiment safely before deploying world-changing technology broadly — "set apart a piece of the world... an environment where people can [try] new things," explicitly invoking Burning Man as the model (Google I/O 2013). A precursor to the Other Bets / moonshot-factory containment logic.
+- Competitors refusing to cooperate on interoperability (he singled out the messaging-standards fight) actively slow the web down: "I'm sad that the Web's probably not advancing as fast as it should be" (Google I/O 2013).
 
 ## Voice & style
 
@@ -69,7 +79,9 @@ Plain, declarative, almost flat — not a rhetorician. Favors big, simple statem
 
 ## Provenance notes
 
-**This is deliberately a thin dossier, and that thinness is itself the most important fact about the source base.** Larry Page is genuinely reclusive. He has given very few interviews, and after roughly 2014–2015 he largely stopped public speaking, earnings calls, and press appearances entirely; his last widely-cited extended public conversation is the 2014 TED Q&A with Charlie Rose, and his most-quoted sit-down interview is Steven Levy's 2013 Wired piece. There is no body of essays, regular letters, blog posts, or a podcast in his own voice to draw on.
+**This is deliberately a thin dossier, and that thinness is itself the most important fact about the source base.** Larry Page is genuinely reclusive. He has given very few interviews, and after roughly 2014–2015 he largely stopped public speaking, earnings calls, and press appearances entirely; his last widely-cited extended public conversation is the 2014 TED Q&A with Charlie Rose, and his most-quoted sit-down interview is Steven Levy's 2013 Wired piece. The other unusually direct primary record is his 2013 Google I/O fireside Q&A (full transcript via PCWorld; TechCrunch coverage) — the same year as the Wired piece and a relatively candid, unscripted set of remarks (negativity, zero-sum thinking, "1% of what's possible," laws lagging the internet, the Burning Man experimentation idea). There is no body of essays, regular letters, blog posts, or a podcast in his own voice to draw on.
+
+His post-Alphabet activity is, fittingly, known almost entirely through reporting rather than his own words: the 2025 Dynatomics AI-manufacturing startup surfaced via The Information / TechCrunch, with no public statement from Page — so treat the Dynatomics details as well-sourced journalism about him, not as anything he has said.
 
 As a result, the strongest primary sources here are: (1) the 2004 Founders' IPO letter, which is co-authored with Sergey Brin — so attributing specific lines to Page alone is an inference, not a fact; (2) the 2009 Michigan commencement speech, which is unambiguously his and personal; (3) the 2013 Wired interview and 2014 TED conversation. The toothbrush test reaches us through David Gelles's NYT reporting (he is paraphrased, not quoted at length), and much "10x thinking" framing is mediated through Steven Levy's reporting rather than Page's own published words.
 

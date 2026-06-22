@@ -4,7 +4,7 @@ slug: sergey-brin
 role: Co-founder, Google; co-founder, Alphabet
 domains: [technology, moonshots, research, AI, curiosity, product]
 last_updated: 2026-06-22
-source_count: 8
+source_count: 12
 sources:
   - { type: letter, title: "An Owner's Manual for Google's Shareholders (2004 IPO Founders' Letter)", url: "https://abc.xyz/investor/founders-letters/2004-ipo-letter/" }
   - { type: profile, title: "Google Founders Brin, Page Step Down; Pichai Takes Over as Alphabet CEO (NPR)", url: "https://www.npr.org/2019/12/03/784570156/google-founders-brin-page-step-down-pichai-takes-over-as-alphabet-ceo" }
@@ -14,13 +14,17 @@ sources:
   - { type: profile, title: "Sergey Brin: 'We definitely messed up on the image generation' (Fortune, Mar 2024)", url: "https://fortune.com/2024/03/04/sergey-brin-google-definitely-messed-up-gemini-image-generation/" }
   - { type: profile, title: "Sergey Brin: 'We screwed up' on Street View Wi-Fi grab (The Register, 2010)", url: "https://www.theregister.com/2010/05/19/sergey_brin_on_street_view_wifi_data_gathering" }
   - { type: profile, title: "Investigations of Google Street View (Electronic Privacy Information Center)", url: "https://epic.org/documents/investigations-of-google-street-view/" }
+  - { type: profile, title: "Sergey Brin told Google's AI staff that working 60 hours a week is the 'sweet spot' (Fortune, Mar 2025)", url: "https://fortune.com/article/sergey-brin-60-hour-work-week-ai-rto/" }
+  - { type: profile, title: "Sergey Brin suggests threatening AI for better results (The Register, May 2025)", url: "https://www.theregister.com/2025/05/28/google_brin_suggests_threatening_ai/" }
+  - { type: profile, title: "Google leaders Hassabis, Brin see AGI arriving around 2030 (Axios, May 2025)", url: "https://www.axios.com/2025/05/21/google-sergey-brin-demis-hassabis-agi-2030" }
+  - { type: interview, title: "Demis Hassabis and Sergey Brin on AI Scaling, AGI Timeline, Robotics, Simulation Theory (Big Technology, May 2025)", url: "https://www.bigtechnology.com/p/demis-hassabis-and-sergey-brin-on" }
 ---
 
 ## Bio & context
 
 Sergey Brin co-founded Google with Larry Page in 1998, out of a Stanford PhD research project on search and link analysis. He served in technical and presidential leadership roles through Google's growth, helped create the Alphabet holding-company structure in 2015, and became President of Alphabet. In December 2019 he and Page stepped back from day-to-day executive roles, handing Google and Alphabet to Sundar Pichai while retaining board seats and controlling voting shares (NPR, 2019).
 
-Brin re-engaged hands-on with Google around 2023–2024, drawn back specifically by the pace of progress in AI and large models, and has since been closely involved in the Gemini effort — including filing code and pushing on internal process. He resurfaced publicly at the All-In summit (2024), Google I/O (2025), and a Stanford engineering centennial talk (Dec 2025). He has a personal interest in Parkinson's research (he carries a genetic risk marker) and in moonshot/longevity-adjacent science, and has been a major funder of such work, though this dossier does not document that in primary detail.
+Brin re-engaged hands-on with Google around 2023–2024, drawn back specifically by the pace of progress in AI and large models, and has since been closely involved in the Gemini effort — including filing code and pushing on internal process. He resurfaced publicly at the All-In summit (2024), in a joint Google I/O 2025 fireside with DeepMind CEO Demis Hassabis, and at a Stanford engineering centennial talk (Dec 2025), and authored a rare internal memo to Gemini staff (Mar 2025) that leaked publicly. He has a personal interest in Parkinson's research (he carries a genetic risk marker) and in moonshot/longevity-adjacent science, and has been a major funder of such work, though this dossier does not document that in primary detail.
 
 He is, by a wide margin, the more reclusive of the two founders. Public, on-record material from Brin in his own words is sparse and clustered around a few set-piece moments.
 
@@ -31,6 +35,8 @@ He is, by a wide margin, the more reclusive of the two founders. Public, on-reco
 - **Unconventionality as a feature.** "Google is not a conventional company. We do not intend to become one." (2004 IPO Letter)
 - **Doing good and doing well are linked.** "We believe strongly that in the long term, we will be better served — as shareholders and in all other ways — by a company that does good things for the world." (2004 IPO Letter)
 - **AI as the defining technological moment.** He has framed the current AI wave as, in his words, "the greatest transformative moment in computer science ever" and "the most exciting thing of my life, just technologically" (All-In, 2024).
+- **Effort and intensity win the AGI race.** In a March 2025 internal memo to Gemini staff, he wrote that "60 hours a week is the sweet spot of productivity," recommended being in the office every weekday, and warned that those doing "the bare minimum" are "highly demoralizing to everyone else" — framing the moment as "the final race to AGI is afoot" (Fortune, Mar 2025).
+- **Algorithms over raw compute (slightly).** Asked to weigh scaling vs. invention, he guessed "the algorithmic advances are probably going to be even more significant than the computational advances," while noting "both of them are coming up now" (Big Technology, May 2025).
 - **Curiosity and a technical creative outlet matter for him personally.** He has said the work is "some of the most fun I've had in my life, honestly" (All-In, 2024) and described retirement as a period of "spiraling" and "kind of not being sharp" (Fortune, Dec 2025).
 
 ## Mental models & frameworks
@@ -57,6 +63,8 @@ He is, by a wide margin, the more reclusive of the two founders. Public, on-reco
 - **Staying retired would have been a mistake.** "If I'd stayed retired, I think that would've been a big mistake." (Fortune, Dec 2025)
 - **AI changes month-to-month in a way the web did not** — he treats the current moment as discontinuous rather than incremental (All-In, 2024).
 - **Internal friction on adopting AI tools is itself a problem to remove**, not a safeguard to respect by default (All-In, 2024).
+- **AGI arrives around 2030 — and he'll take the under.** Asked to bet before vs. after 2030, Brin picked "just before," while Demis Hassabis picked just after; Brin teased that Hassabis was "sandbagging" (Axios; Big Technology, May 2025).
+- **Models respond to threats.** At All-In Miami he claimed "all models tend to do better if you threaten them … with physical violence," adding "we don't circulate this too much … so we don't really talk about it" (The Register, May 2025). The claim is anecdotal and contested — systematic tests since have found threats produce no reliable benchmark gain — making it a revealing example of his off-the-cuff, folklore-as-engineering style.
 
 ## Voice & style
 
@@ -71,6 +79,8 @@ Plain, blunt, engineer-direct. He tends toward short, declarative admissions ove
 - **Unexplained model behavior.** In the same remarks he conceded Google was "still not sure" why the model "leans left in many cases," underscoring limited interpretability/control even from the top (Fortune, Mar 2024).
 - **Concentrated control with reduced public accountability.** He and Page retain controlling voting power while having stepped out of operating roles (NPR, 2019); a reclusive founder with super-voting shares is a recurring governance critique of Alphabet, independent of any single incident.
 - **Big, hard-to-falsify claims.** The "Google will build the first AGI" declaration (VentureBeat, 2025) is the kind of sweeping prediction that is easy to assert and hard to hold accountable — to be weighed as advocacy, not forecast.
+- **Hustle-culture tone-deafness.** The leaked "60 hours a week is the sweet spot" memo, urging full-time in-office presence and singling out lower-output staff as "demoralizing," drew public criticism for the position of a billionaire founder prescribing intensity to salaried workers (Fortune, Mar 2025) — and sits awkwardly beside his own framing of the work as personally fun.
+- **Asserting unverified technique as fact.** His "threaten the models … with physical violence" claim was stated as broadly true ("not just our models but all models") but is anecdotal and has not held up in subsequent systematic testing (The Register, May 2025) — an instance of confident generalization from feel rather than evidence.
 
 ## Provenance notes
 
