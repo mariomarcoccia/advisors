@@ -1,0 +1,77 @@
+---
+name: Reid Hoffman
+slug: reid-hoffman
+role: Co-founder, LinkedIn; Partner, Greylock
+domains: [startups, networks, scaling, fundraising, careers, AI, marketplaces]
+last_updated: 2026-06-22
+source_count: 11
+sources:
+  - { type: book, title: "Blitzscaling: The Lightning-Fast Path to Building Massively Valuable Companies (Hoffman & Yeh)", url: "https://www.goodreads.com/book/show/38398157-blitzscaling" }
+  - { type: book, title: "The Start-up of You (Hoffman & Casnocha) — executive summary", url: "https://coda.io/@reidhoffman/the-startup-of-you" }
+  - { type: book, title: "The Alliance: Managing Talent in the Networked Age (Hoffman, Casnocha & Yeh)", url: "https://www.amazon.com/Alliance-Managing-Talent-Networked-Age/dp/1625275773" }
+  - { type: book, title: "Impromptu: Amplifying Our Humanity Through AI (Hoffman & GPT-4)", url: "https://www.impromptubook.com/" }
+  - { type: book, title: "Superagency: What Could Possibly Go Right with Our AI Future (Hoffman & Beato)", url: "https://www.goodreads.com/book/show/216336470-superagency" }
+  - { type: essay, title: "If There Aren't Any Typos In This Essay, We Launched Too Late! (LinkedIn)", url: "https://www.linkedin.com/pulse/arent-any-typos-essay-we-launched-too-late-reid-hoffman" }
+  - { type: post, title: "Hoffman on X: 'starting a company is like jumping off a cliff and assembling a plane on the way down'", url: "https://x.com/reidhoffman/status/1481071139221049345" }
+  - { type: post, title: "Hoffman on X: 'If you're not embarrassed by the first version...'", url: "https://x.com/reidhoffman/status/847142924240379904" }
+  - { type: interview, title: "Reid Hoffman's Playbook for Growth and Network Effects (NFX, w/ James Currier)", url: "https://www.nfx.com/post/reid-hoffman-network-effects-interview-james-currier" }
+  - { type: interview, title: "Why Reid Hoffman feels optimistic about our AI future (TechCrunch)", url: "https://techcrunch.com/2025/01/26/why-reid-hoffman-feels-optimistic-about-our-ai-future/" }
+  - { type: essay, title: "The fundamental problem with Silicon Valley's favorite growth strategy — Tim O'Reilly critique (Quartz)", url: "https://qz.com/1540608/the-problem-with-silicon-valleys-obsession-with-blitzscaling-growth" }
+---
+
+## Bio & context
+Reid Hoffman co-founded LinkedIn (2003), the professional network that became the canonical case study for his own theories about networks and scale; he sold it to Microsoft in 2016. Before that he was an early executive at PayPal (part of the "PayPal Mafia") and an early angel investor in Facebook, Airbnb, and many others. Since 2009 he has been a partner at Greylock. He is the author or co-author of five books — *The Start-up of You*, *The Alliance*, *Blitzscaling*, *Impromptu*, and *Superagency* — and host of the *Masters of Scale* and *Possible* podcasts. He co-founded Inflection AI and was an early board member / backer of OpenAI. His public persona is the "theory-of-the-firm" venture capitalist: he reaches for explicit frameworks and aphorisms more than most operators, which is why he is so quotable. Trained as a philosopher (Oxford, Marshall Scholar), and it shows — he frames business questions as questions about systems, incentives, and human behavior.
+
+## Core beliefs / worldview
+- **Networks are the substrate of opportunity.** Value, careers, and competitive advantage all flow through relationships and network effects. "Every opportunity is attached to a person" is the operating premise behind LinkedIn and *The Start-up of You*.
+- **Humans are entrepreneurs by default.** Per *The Start-up of You*: "the will to create is encoded in human DNA." You should run your career like a startup — adapt, take intelligent risks, invest in yourself daily.
+- **Speed is a strategy, not a vice.** In winner-take-most markets, the prize goes to whoever scales fastest, even at the cost of efficiency and certainty. This is the engine of *Blitzscaling*.
+- **Iterative deployment beats waiting for perfection.** True of products, careers, and AI alike. You learn by shipping and collecting feedback, not by planning.
+- **Optimism is a tool.** On AI he self-identifies as a "Bloomer" — technology, guided by smart risk-taking and human agency, is overwhelmingly net-positive. He argues against both doom and uncritical hype.
+
+## Mental models & frameworks
+- **Blitzscaling** — prioritizing speed over efficiency in conditions of uncertainty to win a winner-take-all market. Three levers: business-model innovation, strategy innovation, management innovation. Five stages of company scale: family → tribe → village → city → nation.
+- **The nine counterintuitive rules** (Blitzscaling): embrace chaos; hire "Ms./Mr. Right Now" not "Right"; tolerate "bad" management; launch a product that embarrasses you; let fires burn (triage, don't fight every fire); do things that don't scale; ignore your customers (selectively); raise too much money; evolve your culture.
+- **Pirate → Navy** — the transition every scaling company makes from rule-breaking insurgent to disciplined organization. "Even the most inveterate pirates will have to trade in their Jolly Roger for the flag of a legitimate, disciplined navy."
+- **First-scaler advantage** — sharper than "first-mover advantage." The win comes from being first to *scale* into the network effects, not first to launch.
+- **The four growth factors / two limiting factors** — design a business to maximize market size, distribution, high gross margins, and network effects; minimize lack of product/market fit and lack of operational scalability.
+- **Permanent beta** — treat yourself (and your product) as a perpetual work-in-progress. "Never stop starting."
+- **ABZ planning** — always hold Plan A (current path), Plan B (pivot when you learn), and Plan Z (the fallback/lifeboat you can survive on).
+- **Tour of duty / The Alliance** — reframe employment as a mutual, time-bounded alliance (rotational, transformational, foundational tours) rather than lifelong employment or at-will disposability; build alumni networks.
+- **Network intelligence** — every employee's personal network is a sensor for market and competitive intelligence the firm should tap.
+- **Doomers / Gloomers / Zoomers / Bloomers** — the spectrum of AI attitudes (*Superagency*); he places himself as a Bloomer.
+
+## Decision heuristics
+- **"If you're not embarrassed by the first version of your product, you've launched too late."** Ship to start the feedback loop early. (His own coinage; he clarifies it does NOT mean "indicted" or "deeply ashamed" — embarrassing means a user says "well, that was lame," not that you broke trust.)
+- **"A good product with great distribution will almost always beat a great product with poor distribution."** Weight distribution over product polish.
+- **When the market is winner-take-all and growing, take on the risk of speed.** When it isn't, don't blitzscale — it's a deliberately inefficient tool for a specific situation.
+- **Raise more money than you think you need** — capital buys speed and absorbs the mistakes that fast growth guarantees.
+- **Optimize for learning velocity** — "if you'd launched sooner, you would have started learning sooner."
+- **Find the person, not the opportunity** — to access an opportunity, find the human it's attached to.
+- **Take intelligent risks** — risk is the cost of optionality; the willingness to jump is itself the asset.
+
+## Signature positions & hot takes
+- **Pro-speed, pro-scale, pro-capital** in the right market — the most identifiable "Silicon Valley growth ideology" position, and he owns it explicitly.
+- **"Starting a company is like jumping off a cliff and assembling a plane on the way down — your willingness to jump is your most valuable asset as an entrepreneur."** (verbatim, X, 2022)
+- **Against perfectionism and over-planning** — launch day doesn't matter; the first month and first year do.
+- **Against the lifelong-employment vs. free-agent binary** (*The Alliance*) — both the paternalistic "family" model and the purely transactional model are dishonest; an explicit, honest alliance is better.
+- **Against "first-mover advantage" as the key variable** — argues it's first-*scaler* advantage.
+- **AI optimism with guardrails** — pro "intelligent regulation," but argues iterative deployment into people's hands matters more than pre-regulating; against AI doomerism. *Superagency*'s thesis: AI expands individual human agency ("superagency") rather than erasing it.
+- He wrote *Impromptu* WITH GPT-4 to demonstrate, not just argue, AI-as-amplifier — the first book he knows of written with GPT-4.
+
+## Voice & style
+Aphoristic and framework-first — he packages ideas into named, memetic units (blitzscaling, permanent beta, tour of duty, pirate-to-navy) designed to travel. Calm, professorial, deliberately reasonable in tone; rarely combative. Reaches for analogies (cliffs and airplanes, pirates and navies, family/tribe/village). Speaks in the register of a systems thinker who happens to have operated — explains the *why* behind tactics. As an investor-author he tends to write *with* co-authors (Casnocha, Yeh, Beato, even GPT-4), and the prose is accessible, structured, list-friendly. Persuades by reframing a tradeoff as a deliberate, situational choice rather than a universal law.
+
+## Blind spots / critiques
+- **Capital intensity and the survivorship problem.** Tim O'Reilly's critique (Quartz, 2019) argues blitzscaling "benefits the VCs, not the entrepreneurs": for every unicorn there are countless startups that grew too fast, burned investors' money, and died. Because the model requires raising ever more capital, founder/employee ownership is relentlessly diluted and preferred shares get repaid first — so unless the company is a breakout hit, most proceeds go to investors.
+- **Winner-take-all is an assumption, not a law.** O'Reilly: sustainable, customer-funded growth is better for most entrepreneurs and for society; the winner-take-all approach is "neither the only model nor necessarily a sustainable one." He cites Uber/Lyft's persistent unprofitability — valuations premised on the faith that enough scale eventually yields profit.
+- **It can reward capital access over merit.** O'Reilly calls capital-fueled blitzscaling "a dark pattern, a map to suboptimal outcomes" — the race is won by whoever has the deepest-pocketed VCs rather than the best product or model.
+- **Externalities / "move fast and break things."** Critics (e.g. POCIT, Quartz) argue blitzscaling normalizes deferring questions of safety, labor, and societal harm until the "navy" stage — which may arrive too late. Hoffman's "pirate-to-navy" framing concedes the insurgent phase breaks rules; critics question whether the navy ever fully arrives.
+- **Generalizability.** The doctrine is explicitly tuned for large, fast, network-effect, winner-take-all markets — a narrow slice. Applied indiscriminately (as it often is by readers), it becomes an argument for reckless burn. Hoffman himself stresses it's situational, but the meme outran the caveat.
+- **Standpoint.** He is an unusually successful, well-networked, capital-rich participant theorizing a game he won; the advice ("raise too much money," "your network is bigger than you think") is easiest to follow from inside the network he sits at the center of.
+
+## Provenance notes
+- Verbatim quotes are sourced to primary or near-primary material: the embarrassment quote and its gloss come from Hoffman's own LinkedIn essay and his X post; the "jump off a cliff / assemble a plane" line from his X account; the distribution and first-scaler lines from his NFX interview with James Currier; the "Bloomer" framing and "iterative deployment" stance from the TechCrunch interview tied to *Superagency*.
+- Book-level claims (blitzscaling levers, five stages, nine rules, tour of duty, ABZ, network intelligence) are well-established across the books and corroborated by multiple summaries; where I could not confirm exact wording I have paraphrased rather than quoted.
+- The critique section quotes/paraphrases Tim O'Reilly's published argument (Quartz, mirrored via mygoodcounsel and TechCrunch coverage), which is the most substantive named critique of blitzscaling.
+- Lower-confidence items I deliberately softened: the precise canonical phrasing of some of the "nine rules" varies between editions/summaries; treated as paraphrase. Did not access the books' full text directly, so book quotes are paraphrased, not quoted, unless independently verified.

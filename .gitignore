@@ -1,0 +1,12 @@
+# OS / editor cruft
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Playwright/MCP scratch, if it ever lands here
+.playwright-mcp/
+
+# Runtime state lives in ~/.council/state, never in the repo — but ignore it just in case
+state/
+*.local.md
