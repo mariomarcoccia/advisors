@@ -19,8 +19,8 @@ The council is only as sharp as the context it has. Before any consult, this ski
 ## Paths
 
 ```bash
-COUNCIL_HOME="${COUNCIL_HOME:-$HOME/.council}"
-STATE_DIR="$COUNCIL_HOME/state"
+ADVISORS_HOME="${ADVISORS_HOME:-$HOME/.advisors}"
+STATE_DIR="$ADVISORS_HOME/state"
 BRIEF="$STATE_DIR/current-brief.md"
 mkdir -p "$STATE_DIR"
 ```

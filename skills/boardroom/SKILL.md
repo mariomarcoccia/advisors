@@ -21,10 +21,10 @@ For decisions with several competing dimensions. You don't want one voice — yo
 ## Paths
 
 ```bash
-COUNCIL_HOME="${COUNCIL_HOME:-$HOME/.council}"
-ADVISORS_DIR="$COUNCIL_HOME/advisors"
-REFERENCE_DIR="$COUNCIL_HOME/reference"
-STATE_DIR="$COUNCIL_HOME/state"
+ADVISORS_HOME="${ADVISORS_HOME:-$HOME/.advisors}"
+ADVISORS_DIR="$ADVISORS_HOME/advisors"
+REFERENCE_DIR="$ADVISORS_HOME/reference"
+STATE_DIR="$ADVISORS_HOME/state"
 BRIEF="$STATE_DIR/current-brief.md"
 ```
 
@@ -39,7 +39,7 @@ Read `$BRIEF`. If missing or stale for this decision, **offer to run `/frame` fi
 - Identify the decision's **2-4 core tensions** (e.g. speed vs. durability, growth vs. focus, capital vs. discipline, product vs. distribution).
 - Recommend **3-5 advisors** chosen to *cover and oppose* across those tensions — maximize productive disagreement, not seniority. Briefly justify each seat: which tension they hold down.
 - Deliberately seat at least one likely **dissenter** to your `leaning`.
-- Confirm the roster with `AskUserQuestion` (let the user swap members or add a requested advisor). If a desired advisor has no dossier, offer to `/advisors add` them.
+- Confirm the roster with `AskUserQuestion` (let the user swap members or add a requested advisor). If a desired advisor has no dossier, offer to `/advice add` them.
 
 ### 2. Run the meeting
 Load each seated advisor's full dossier before speaking for them. Then run it as a real session, you (the model) acting as **chair**:

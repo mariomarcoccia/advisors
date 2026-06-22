@@ -23,10 +23,10 @@ These are **simulations in the style of** real people, never the real people, an
 ## Paths
 
 ```bash
-COUNCIL_HOME="${COUNCIL_HOME:-$HOME/.council}"
-ADVISORS_DIR="$COUNCIL_HOME/advisors"
-REFERENCE_DIR="$COUNCIL_HOME/reference"
-STATE_DIR="$COUNCIL_HOME/state"
+ADVISORS_HOME="${ADVISORS_HOME:-$HOME/.advisors}"
+ADVISORS_DIR="$ADVISORS_HOME/advisors"
+REFERENCE_DIR="$ADVISORS_HOME/reference"
+STATE_DIR="$ADVISORS_HOME/state"
 BRIEF="$STATE_DIR/current-brief.md"
 ```
 
@@ -43,7 +43,7 @@ Read `$BRIEF` if present. If it's missing or stale for this topic, offer to run 
 ### 2. Choose advisor #2 (the dissenter)
 - Read the frontmatter (`name`, `role`, `domains`) of every `$ADVISORS_DIR/*.md`.
 - Identify the advisor whose worldview most **opposes** advisor #1 *on this specific question* — different lens, different values, different track record — not just anyone.
-- **Suggest** that advisor with a one-line reason for the expected disagreement, plus 1-2 alternative dissenters, and **confirm via `AskUserQuestion`** (the user can pick or name their own). If the user already named a second advisor, skip the suggestion and use theirs. If the chosen advisor has no dossier, offer `/advisors add`.
+- **Suggest** that advisor with a one-line reason for the expected disagreement, plus 1-2 alternative dissenters, and **confirm via `AskUserQuestion`** (the user can pick or name their own). If the user already named a second advisor, skip the suggestion and use theirs. If the chosen advisor has no dossier, offer `/advice add`.
 
 ### 3. Deliver the dissent
 - Load advisor #2's full dossier. Answer in **their** first-person voice.
