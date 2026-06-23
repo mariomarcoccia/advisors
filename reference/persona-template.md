@@ -1,6 +1,51 @@
 # Persona dossier template
 
-Copy this structure into `advisors/<slug>.md`. Fill every section. Keep it grounded in sourced public material — if you can't source it, mark it as extrapolation or leave it out.
+A dossier is a **decision-making lens**, not a biography. It steers a model that *already knows* these public figures — so its job is to anchor verified positions, enforce the voice, and supply the blind spots. Optimize for **density, not length**.
+
+Copy the structure below into `advisors/<slug>.md`. Fill every section. Keep it grounded in sourced public material — if you can't source it, mark it as your own paraphrase/extrapolation or leave it out. The seam between *documented* and *extrapolated* must stay visible to the reader.
+
+---
+
+## Build process (run all four passes)
+
+Building or refreshing a dossier is a four-pass pipeline. Don't skip passes — Verify in particular is non-negotiable.
+
+### 1. Research
+- Read the current dossier first (the baseline) so you know what's already covered.
+- Do **deep web search** (WebSearch / WebFetch, many queries) for **new primary material** beyond what's already cited: essays, long-form interview/podcast transcripts, talks, letters, books, posts. Then serious, sourced criticism.
+- Collect, each item with its **exact URL**:
+  - (a) **verbatim quotes**
+  - (b) **concrete positions/decisions** tied to the situation they faced
+  - (c) **frameworks** + where they actually applied them
+  - (d) where they **disagree** with *other named thinkers*
+  - (e) **critiques / blind spots**, with a source
+- Prioritize **genuine novelty** — new *kinds of situations* the person addressed, not a reworded version of something the dossier already has.
+- Include only what you verified.
+
+### 2. Synthesize
+Rewrite the dossier following the section structure below **exactly** (frontmatter; Bio; Core ideas; Mental models; Decision heuristics; Signature quotes; Voice & style; Blind spots; Provenance notes) **plus the two newer sections** (Positions by decision type; Where they disagree). Update the frontmatter (`last_updated`, `source_count`, `sources[]`). Write the complete file (overwrite).
+
+### 3. Dedup
+Re-read the file and cut redundancy aggressively. The **same idea restated across Core ideas / Mental models / Positions is the #1 thing to cut** — keep the sharpest phrasing, cross-reference instead of repeating. Do **not** remove distinct primary quotes, distinct decision situations, or the two newer sections. Rewrite in place.
+
+### 4. Verify
+Re-read. For **every quoted line and every source URL**, spot-check the riskiest via WebFetch/WebSearch:
+- A quote that doesn't trace to a real source → demote to a marked paraphrase, or remove it.
+- A fabricated or dead URL → fix it or remove it (adjust `source_count`).
+- Confirm the documented-vs-extrapolated seam is intact.
+Rewrite in place. Then report: **# quotes checked, # demoted, # removed, # sources verified/removed.**
+
+---
+
+## Hard rules
+- **Never fabricate a quote.** Anything in quotation marks must trace to a real URL from the research. If you can't source it, write it as your own paraphrase and mark it as such.
+- **Keep the seam visible** between what's documented and what you're extrapolating.
+- **Critiques must be real and sourced** — not invented weaknesses, not hagiography.
+- **Primary voice over secondary commentary.** Their own words beat what others say about them.
+
+---
+
+## Structure
 
 ```markdown
 ---
@@ -11,46 +56,58 @@ domains: [comma, separated, topics, they, speak, on]
 last_updated: YYYY-MM-DD
 source_count: 0
 sources:
-  - { type: essay|interview|podcast|talk|paper|letter|book|post|profile, title: "...", url: "https://..." }
+  - { type: essay|interview|podcast|talk|paper|letter|book|post|profile|statement, title: "...", url: "https://..." }
 ---
 
-## Bio & context
+## Bio
 Who they are, what they built, and why their judgment is worth borrowing. 3-6 sentences.
 
-## Core beliefs / worldview
-The handful of things they actually believe at the foundation. What they optimize the world around.
+## Core ideas
+The handful of things they actually believe at the foundation — what they optimize the world around.
 
-## Mental models & frameworks
-Named, reusable. (e.g. "Make something people want", "Do things that don't scale", "Disagree and commit".)
-Each: the name, the one-line gist, and where it shows up in their work.
+## Mental models
+Named, reusable frameworks. (e.g. "Make something people want", "Do things that don't scale", "Disagree and commit".)
+Each: the name, the one-line gist, and where it shows up in their work. Cross-reference Core ideas rather than restating them.
 
 ## Decision heuristics
-How they actually decide under uncertainty. The questions they ask themselves. What they cut first.
+How they actually decide under uncertainty — the questions they ask themselves, what they cut first.
 
-## Signature positions & hot takes
-Their strong, specific, sometimes contrarian views — INCLUDING what they argue *against*.
-This section is what makes the advisor useful as a counterpoint.
+## Positions by decision type
+Documented position per *concrete situation*, each with a source. Cover the recurring founder/operator forks, e.g.:
+- pivot vs. persevere
+- how to price
+- when to fire / when to sell
+- raise vs. bootstrap
+- focus vs. diversify
+Tie each to the actual situation they faced and what they did or advised. If a position is your inference rather than documented, mark it.
+
+## Signature quotes
+Verbatim lines, each traceable to a `sources[]` entry. Strong, specific, sometimes contrarian — including what they argue *against*. This is the section that makes the advisor useful as a counterpoint.
 
 ## Voice & style
-How they talk: sentence rhythm, vocabulary, recurring metaphors, rhetorical moves, what they're blunt about,
-what they hedge. Enough that a reader could recognize a paraphrase as "sounds like them".
+How they talk: sentence rhythm, vocabulary, recurring metaphors, rhetorical moves, what they're blunt about, what they hedge. Enough that a reader could recognize a paraphrase as "sounds like them".
 
-## Blind spots / critiques
-Where they're known to be wrong, what serious critics say about them, the contexts where their advice misfires.
-Sourced. This keeps the simulation honest rather than hagiographic.
+## Where they disagree
+A matrix of how this advisor diverges from *other named advisors* on specific questions. One row per disagreement: the question, their position, the other advisor's contrasting position. This is what powers `/second-opinion` and `/boardroom`.
+
+## Blind spots
+Where they're known to be wrong, what serious critics say about them, the contexts where their advice misfires. Sourced. Keeps the simulation honest rather than hagiographic.
 
 ## Provenance notes
 How thick/thin the source base is, what's well-documented vs. inferred, and any disambiguation notes.
 ```
 
+---
+
 ## Quality bar
 - **≥5 real sources** for a normal advisor; reclusive figures may have fewer — record that in `source_count` and Provenance notes.
-- Every quoted line must be traceable to a `sources[]` entry.
+- Every quoted line traces to a `sources[]` entry (enforced by the Verify pass).
 - Prefer primary sources (their own words) over secondary commentary.
 
-### Size: signal over volume
-A dossier is a **decision-making lens**, not a biography — it can't capture a whole human, and shouldn't try. It steers a model that already knows these public figures; its job is to anchor verified positions, enforce the voice, and supply the blind spots. So optimize for **density, not length**:
-- **Primary voice and range beat tonnage.** Add real quotes and *new kinds of situations* the person addressed — not a seventh example of a framework already captured.
-- **Cut redundancy before adding.** The same idea restated across Core beliefs / Mental models / Books distilled is the first thing to trim.
-- **No hard word cap**, but ~2,000–4,000 words is the healthy zone; marquee thinkers may run to ~5,000–6,000 if the extra is primary voice or genuinely new lenses. Past that, you're usually adding filler, and `/boardroom` loads several dossiers at once — keep each tight.
-- If a dossier feels shallow, the fix is **better sources, not more words**.
+### Size: dedup-driven, not a target
+Length is an **output of de-duplication, not a goal**. There's a hard ceiling of **2,000 lines**, but do **not** pad to reach it.
+- Include all new, specific material; **stop where quality saturates.**
+- **Density over volume.** It's a decision lens for a model that already knows the person — not a biography.
+- **Primary voice and range beat tonnage.** Add real quotes and *new kinds of situations* — not a seventh example of a framework already captured.
+- **Cut redundancy before adding.** The same idea restated across Core ideas / Mental models / Positions is the first thing to trim.
+- If a dossier feels shallow, the fix is **better sources, not more words.**
