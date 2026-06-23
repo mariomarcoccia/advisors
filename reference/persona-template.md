@@ -4,6 +4,8 @@ A dossier is a **decision-making lens**, not a biography. It steers a model that
 
 **What the lens is made of: worked examples, not abstractions.** The model already has the abstractions — "make something people want", "disagree and commit". Restating those adds nothing. What it lacks, and what makes a simulated board member useful in a *debate*, is **situated reasoning**: when this person faced *that* situation, what they did, and the verbatim line they said it in. A worked example is `situation → what they did/argued → verbatim quote → source`. Examples are what let the advisor take a defensible position on a *new* problem by analogy — so a framework without an example is half-built. This is "the essence of all their texts" the dossier is reaching for: not one line per essay, but enough concrete cases that the reasoning pattern is reconstructable.
 
+**Examples are the default, not a quota.** Aim for a sourced example on *every* core idea, mental model, heuristic, and position — it's strongly desirable everywhere, and required for mental models. But where you genuinely can't source one, **keep the item and leave it visibly example-less** — never invent an example to fill the slot (that violates the no-fabricated-quotes rule). A missing example is a signal to find a better source, not a license to manufacture one.
+
 Copy the structure below into `advisors/<slug>.md`. Fill every section. Keep it grounded in sourced public material — if you can't source it, mark it as your own paraphrase/extrapolation or leave it out. The seam between *documented* and *extrapolated* must stay visible to the reader.
 
 ---
