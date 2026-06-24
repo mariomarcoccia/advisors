@@ -42,7 +42,7 @@ Read `$PROFILE` if it exists — it tells you who you're advising (role, arena, 
 - **Topic**: the decision and #1's conclusion — from `$ARGUMENTS`, the conversation, or the brief's `leaning`. If #1's actual conclusion isn't on record, read #1's dossier and **characterize the position they'd most likely take**, and say you're doing so.
 
 ### 2. Choose advisor #2 (the dissenter)
-- Read the frontmatter (`name`, `role`, `domains`) of every `$ADVISORS_DIR/*.md`.
+- Read the frontmatter (`name`, `role`, `domains`) **and the `## Summary`** of every `$ADVISORS_DIR/*.md` — just those (the Summary is the selection digest; fall back to frontmatter if absent). Full dossiers are loaded only for the advisor actually chosen.
 - Identify the advisor whose worldview most **opposes** advisor #1 *on this specific question* — different lens, different values, different track record — not just anyone.
 - **Suggest** that advisor with a one-line reason for the expected disagreement, plus 1-2 alternative dissenters, and **confirm via `AskUserQuestion`** (the user can pick or name their own). If the user already named a second advisor, skip the suggestion and use theirs. If the chosen advisor has no dossier, offer `/advice add`.
 

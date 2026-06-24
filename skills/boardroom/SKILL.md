@@ -36,7 +36,7 @@ Read `$PROFILE` if it exists — it tells the board who they're advising (role, 
 ## How it works
 
 ### 1. Compose the board (recommend, then confirm)
-- Read the frontmatter (`name`, `role`, `domains`) of every `$ADVISORS_DIR/*.md`.
+- Read the frontmatter (`name`, `role`, `domains`) **and the `## Summary`** of every `$ADVISORS_DIR/*.md` — extract just those (the Summary is a 2-4 sentence digest for exactly this selection step; don't load full dossiers yet — those are loaded only for the advisors actually seated). If a dossier has no `## Summary`, fall back to its frontmatter.
 - Identify the decision's **2-4 core tensions** (e.g. speed vs. durability, growth vs. focus, capital vs. discipline, product vs. distribution).
 - Recommend **3-5 advisors** chosen to *cover and oppose* across those tensions — maximize productive disagreement, not seniority. Briefly justify each seat: which tension they hold down.
 - Deliberately seat at least one likely **dissenter** to your `leaning`.
