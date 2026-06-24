@@ -40,6 +40,16 @@ Each advisor is one markdown file in [`advisors/`](advisors/) with structured fr
 
 Grow the board anytime with `/advice add "<anyone>"`, or enrich an advisor with `/advice feed <name> <links or pasted transcripts>`.
 
+## Feeding the board from a video or podcast
+
+`/content-extract` turns a long-form appearance (a talk, podcast, or interview) into **sourced dossier material**. It discovers the media, downloads it, transcribes it (an existing transcript → YouTube captions → Whisper), isolates the target person's speech, and emits verbatim quotes, positions, and frameworks — each carrying a **URL + timestamp** — following the persona schema, so `/advice feed <slug>` can fold it straight into a dossier. It enforces the same rules: never fabricate a quote, keep the documented-vs-extrapolated seam visible, and flag any name garbled by the auto-caption instead of guessing it.
+
+```bash
+/content-extract "<podcast or video URL>" --person "<advisor>" --mode persona
+```
+
+Other modes (`article`, `quotes`, `transcript`) reuse the same pipeline for general content — e.g. turning your own appearances into blog posts.
+
 ## Starter council
 
 26 advisors across YC partners, SaaS and fintech operators, retail & brand builders, a leading venture voice, authors of a few foundational business books, and some of the most consequential operators and investors alive:
