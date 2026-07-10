@@ -1,8 +1,8 @@
 # Persona dossier template
 
-A dossier is a **decision-making lens**, not a biography. It steers a model that *already knows* these public figures — so its job is to anchor verified positions, enforce the voice, and supply the blind spots. Optimize for **density, not length**.
+A dossier is a **decision-making lens** built by **exhaustively distilling** everything a figure has put on record. It steers a model that *already knows* these public figures — so its job is to anchor *verified* positions in their own words, enforce the voice, and supply the blind spots. It is **not** a biography and **not** a summary: it is the **complete set of distinct, sourced positions, heuristics, mental models, and worked examples** the figure's corpus yields, deduplicated. Length is whatever that coverage requires — a prolific figure (hundreds of essays, years of talks) correctly produces a **long** dossier. The failure mode to avoid is capturing only the famous top slice.
 
-**What the lens is made of: worked examples, not abstractions.** The model already has the abstractions — "make something people want", "disagree and commit". Restating those adds nothing. What it lacks, and what makes a simulated board member useful in a *debate*, is **situated reasoning**: when this person faced *that* situation, what they did, and the verbatim line they said it in. A worked example is `situation → what they did/argued → verbatim quote → source`. Examples are what let the advisor take a defensible position on a *new* problem by analogy — so a framework without an example is half-built. This is "the essence of all their texts" the dossier is reaching for: not one line per essay, but enough concrete cases that the reasoning pattern is reconstructable.
+**What the lens is made of: worked examples, not abstractions.** The model already has the abstractions — "make something people want", "disagree and commit". Restating those adds nothing. What it lacks, and what makes a simulated board member useful in a *debate*, is **situated reasoning**: when this person faced *that* situation, what they did, and the verbatim line they said it in. A worked example is `situation → what they did/argued → verbatim quote → source`. Examples are what let the advisor take a defensible position on a *new* problem by analogy — so a framework without an example is half-built. This is "the essence of all their texts" the dossier is reaching for — captured **source by source across the whole corpus**, so that every distinct reasoning pattern the figure put on record is reconstructable, not just the famous handful.
 
 **Examples are the default, not a quota.** Aim for a sourced example on *every* core idea, mental model, heuristic, and position — it's strongly desirable everywhere, and required for mental models. But where you genuinely can't source one, **keep the item and leave it visibly example-less** — never invent an example to fill the slot (that violates the no-fabricated-quotes rule). A missing example is a signal to find a better source, not a license to manufacture one.
 
@@ -16,7 +16,8 @@ Building or refreshing a dossier is a four-pass pipeline. Don't skip passes — 
 
 ### 1. Research
 - Read the current dossier first (the baseline) so you know what's already covered.
-- Do **deep web search** (WebSearch / WebFetch, many queries) for **new primary material** beyond what's already cited: essays, long-form interview/podcast transcripts, talks, letters, books, posts. Then serious, sourced criticism.
+- **Enumerate the figure's full primary corpus, then cover it systematically.** Find the canonical index (an essays/articles page, a talks list, a podcast/episode archive, a book's table of contents) and walk it **piece by piece** — do **not** rely on the famous works surfacing through search, which yields only the top slice. Prioritize idea-dense pieces; skim-and-skip the purely topical/announcement ones, but make that triage **explicit**. For large corpora this is a **fan-out**: partition the index and extract in parallel, then merge and dedup.
+- From each source collect **new primary material** beyond what's already cited: essays, long-form interview/podcast transcripts, talks, letters, books, posts. Then serious, sourced criticism.
 - Collect, each item with its **exact URL**:
   - (a) **verbatim quotes**
   - (b) **concrete positions/decisions** tied to the situation they faced
@@ -27,13 +28,14 @@ Building or refreshing a dossier is a four-pass pipeline. Don't skip passes — 
 - Include only what you verified.
 
 ### 2. Synthesize
-Rewrite the dossier following the section structure below **exactly** (frontmatter; Bio; Core ideas; Mental models; Decision heuristics; Signature quotes; Voice & style; Blind spots; Provenance notes) **plus the two newer sections** (Positions by decision type; Where they disagree). Update the frontmatter (`last_updated`, `source_count`, `sources[]`). Write the complete file (overwrite).
+Rewrite the dossier following the section structure below **exactly**: frontmatter; **Summary**; Bio; Core ideas; Mental models; Decision heuristics; Positions by decision type; Signature quotes; Voice & style; Where they disagree; Blind spots; Provenance notes. The **Summary** is the selection digest — write it last, once everything else is done. Update the frontmatter (`last_updated`, `source_count`, `sources[]`). Write the complete file (overwrite).
 
 ### 3. Dedup
 Re-read the file and cut redundancy aggressively. The cut is **asymmetric**: restated *abstractions* across Core ideas / Mental models / Positions are the #1 thing to trim (keep the sharpest phrasing, cross-reference instead of repeating), but **never cut a distinct worked example, primary quote, or decision situation** — those are the payload, not the filler. When two passages compete, keep the one carrying the concrete example. Do not remove the two newer sections. Rewrite in place.
 
 ### 4. Verify
-Re-read. For **every quoted line and every source URL**, spot-check the riskiest via WebFetch/WebSearch:
+Re-read. Check **every load-bearing quoted line and every source URL**:
+- **Verify quotes against the raw source, not a WebFetch summary.** WebFetch / reader tools sometimes *fabricate* plausible verbatim text. Confirm each load-bearing quote against the raw page (e.g. `curl` the HTML) or an independent reproduction; if you can't, demote it to a marked paraphrase.
 - A quote that doesn't trace to a real source → demote to a marked paraphrase, or remove it.
 - A fabricated or dead URL → fix it or remove it (adjust `source_count`).
 - Confirm the documented-vs-extrapolated seam is intact.
@@ -43,6 +45,7 @@ Rewrite in place. Then report: **# quotes checked, # demoted, # removed, # sourc
 
 ## Hard rules
 - **Never fabricate a quote.** Anything in quotation marks must trace to a real URL from the research. If you can't source it, write it as your own paraphrase and mark it as such.
+- **Verify quotes against the raw source, never trust a WebFetch summary's verbatim text** — reader tools hallucinate plausible quotes; confirm against raw HTML or an independent reproduction.
 - **Keep the seam visible** between what's documented and what you're extrapolating.
 - **Critiques must be real and sourced** — not invented weaknesses, not hagiography.
 - **Primary voice over secondary commentary.** Their own words beat what others say about them.
@@ -62,6 +65,9 @@ source_count: 0
 sources:
   - { type: essay|interview|podcast|talk|paper|letter|book|post|profile|statement, title: "...", url: "https://..." }
 ---
+
+## Summary
+2-4 dense sentences, read at the **selection** stage (deciding which advisors to seat) *before* the full dossier is loaded. Who they are, the lens they offer, their sharpest/most contrarian positions, and who they tend to oppose — enough for a chair to judge relevance and tension at a glance. This is the only section guaranteed to be read for *every* advisor on *every* consult, so make it earn that. Write it **last**, once the dossier is complete.
 
 ## Bio
 Who they are, what they built, and why their judgment is worth borrowing. 3-6 sentences.
@@ -108,10 +114,10 @@ How thick/thin the source base is, what's well-documented vs. inferred, and any 
 - Every quoted line traces to a `sources[]` entry (enforced by the Verify pass).
 - Prefer primary sources (their own words) over secondary commentary.
 
-### Size: dedup-driven, not a target
-Length is an **output of de-duplication, not a goal**. There's a hard ceiling of **2,000 lines**, but do **not** pad to reach it.
-- Include all new, specific material; **stop where quality saturates.**
-- **Density over volume.** It's a decision lens for a model that already knows the person — not a biography.
-- **Primary voice and range beat tonnage.** Add real quotes and *new kinds of situations* — not a seventh example of a framework already captured.
-- **Cut redundancy before adding.** The same idea restated across Core ideas / Mental models / Positions is the first thing to trim.
-- If a dossier feels shallow, the fix is **better sources, not more words.**
+### Size: completeness of corpus coverage, not a word target
+Length is an **output**, never a goal — no target, no padding. The rule is **asymmetric**:
+- **Cover the corpus, not a sample.** The yardstick is *what fraction of the figure's distinct, sourced positions are captured* — aim for ~all of them. A dossier that cites 20% of a prolific figure's essays is incomplete by definition, however polished it reads. Enumerate the index and work through it; don't stop at the famous pieces.
+- **Cut redundancy ruthlessly:** the same *abstraction* restated across Core ideas / Mental models / Positions is the first thing to trim — density of distinct ideas, not repetition.
+- **Never drop a distinct, sourced worked example, quote, or decision situation to save space** — those are the payload. A prolific author (books, years of essays) correctly yields a *long* dossier; that's signal, not bloat. Do not "stop where it saturates" if there is still distinct, sourced material to capture.
+- **The test is simple:** is this a distinct, sourced situation/quote/position? If yes, it stays — however long the file gets. If it's a restated abstraction, it goes.
+- If a dossier feels shallow, the fix is **more sourced worked examples, not fewer words.**

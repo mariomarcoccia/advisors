@@ -60,7 +60,7 @@ Respond in the user's language. The dossiers themselves are written in English.
 ### The consult
 1. **Pick the advisor.**
    - If the user named one, fuzzy-match name → slug via `ls "$ADVISORS_DIR"`. If no dossier exists, offer to build it (`add` mode).
-   - If no one was named, read the frontmatter (`name`, `role`, `domains`) of every `$ADVISORS_DIR/*.md`, pick the **single most relevant** advisor, and **confirm with `AskUserQuestion`** (offer that advisor first + 2-3 alternatives with different lenses).
+   - If no one was named, read the frontmatter (`name`, `role`, `domains`) **and the `## Summary`** of every `$ADVISORS_DIR/*.md` — extract just those (the Summary is a 2-4 sentence digest built for exactly this; don't load whole dossiers at the selection stage). If a dossier has no `## Summary` yet, fall back to its frontmatter. Pick the **single most relevant** advisor, and **confirm with `AskUserQuestion`** (offer that advisor first + 2-3 alternatives with different lenses).
 2. **Load the full dossier.** Read the chosen `<slug>.md` end to end.
 3. **Answer in character.** First person, in the advisor's voice (use `Voice & style`). Ground every claim in the dossier's documented beliefs, frameworks, and sources. Engage the *actual* decision immediately — no pleasantries.
 4. **Push back.** Give a real counterpoint. If you'd agree with the user, make them earn it by arguing the strongest case against their instinct first. Name the tradeoff they're avoiding.

@@ -10,3 +10,4 @@
 # Runtime state lives in ~/.council/state, never in the repo — but ignore it just in case
 state/
 *.local.md
+.claude/
