@@ -43,6 +43,22 @@ Rewrite in place. Then report: **# quotes checked, # demoted, # removed, # sourc
 
 ---
 
+## Model split (cost vs. quality)
+
+The four passes above are model-agnostic, but they don't cost the same to get right. Use the seams the pipeline already gives you: **draft the volume on a cheaper model, then spend the expensive model where the dossier lives or dies.**
+
+- **Sonnet — Research, Dedup, and the preliminary Verify.** Corpus enumeration, quote/position/URL extraction, the asymmetric dedup against explicit rules, and the raw-source quote comparison (it's string-matching — a cheaper model handles it, and its false positives are cheap to review).
+- **Opus — one consolidated pass over the whole file.** Not scoped to the template's Verify. It does three things:
+  1. **Fidelity** — the Verify pass as specified above (every quote against the raw source, demote fabrications, fix dead URLs).
+  2. **Completeness** — audit corpus coverage: did Research walk the full canonical index, or stop at the *famous top slice*? Missing distinct positions is the #1 silent failure of a cheaper Research pass, and a fidelity check never surfaces it.
+  3. **Depth, fixed in place** — where synthesis went shallow (worked examples collapsed into restated abstractions, a thin "Where they disagree" matrix), **rewrite it**, don't just flag it. Opus is already reading the whole file to verify; letting it repair shallow synthesis in the same pass captures most of the value of running Synthesize on Opus, at a fraction of the cost.
+
+**Why not "draft everything on the cheap model, then just verify with the expensive one":** a Verify pass by definition checks *what's on the page against its sources* — it guards **fidelity** only. The two failure modes a cheaper model is most prone to here are modes of *absence* — incomplete corpus coverage and shallow synthesis — and no fidelity check recovers them. That's why the Opus pass must also audit completeness and repair depth, not just quotes.
+
+**Rule of thumb:** the expensive model doesn't validate quotes — it validates **quotes + completeness + depth, and fixes the last two in place.**
+
+---
+
 ## Hard rules
 - **Never fabricate a quote.** Anything in quotation marks must trace to a real URL from the research. If you can't source it, write it as your own paraphrase and mark it as such.
 - **Verify quotes against the raw source, never trust a WebFetch summary's verbatim text** — reader tools hallucinate plausible quotes; confirm against raw HTML or an independent reproduction.
