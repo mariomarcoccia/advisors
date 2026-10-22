@@ -16,7 +16,11 @@ export const SpecSchema = z
     person: z.string().min(20),
     example: z.string().regex(SLUG).optional(),
     notes: z
-      .object({ focus: z.string().min(10).optional(), attribution: z.string().min(10).optional() })
+      .object({
+        focus: z.string().min(10).optional(),
+        attribution: z.string().min(10).optional(),
+        exclude: z.string().min(10).optional(),
+      })
       .strict()
       .optional(),
     enumPrompts: z

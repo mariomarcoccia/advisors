@@ -25,7 +25,8 @@ Specs are embedded at render time instead of passed as Workflow `args` because l
   "example": "michael-seibel",
   "notes": {
     "focus": "Book content is the highest-priority payload: ...",
-    "attribution": "She co-hosts a podcast with John Roe: distinguish her words from his."
+    "attribution": "She co-hosts a podcast with John Roe: distinguish her words from his.",
+    "exclude": "Her family members' private lives are out of scope for this dossier."
   },
   "enumPrompts": [
     { "label": "own-writing", "prompt": "Enumerate essays by {{PERSON}} ..." }
@@ -37,7 +38,7 @@ Specs are embedded at render time instead of passed as Workflow `args` because l
 - `corpus`: `thin` (reclusive or low-output figures: the pipeline is told not to pad), `normal`, or `large` (books, letters, years of essays: a long dossier is earned).
 - `person`: the disambiguating description every prompt uses. End it with who they are NOT.
 - `example` (optional): the dossier used as a calibration example. Defaults to `caito-maia` for `pt` and `michael-seibel` for `en`.
-- `notes` (optional): `focus` becomes an explicit priority in extraction, synthesis, and consolidation; `attribution` warns every phase about voices that are easy to confuse.
+- `notes` (optional): `focus` becomes an explicit priority in extraction, synthesis, and consolidation; `attribution` warns every phase about voices that are easy to confuse; `exclude` names topics the dossier must not cover (a maintainer decision or the subject's own request), and every phase is told not to search for, extract, or cite them.
 - `enumPrompts` (optional): targeted enumeration sweeps. Only `{{PERSON}}` and `{{DATE}}` are filled. Without them the engine runs three generic sweeps (own writing, long-form spoken, critiques).
 
 ## Running a build

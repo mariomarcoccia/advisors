@@ -4,6 +4,9 @@
   "lang": "pt",
   "corpus": "thin",
   "person": "Manoel Conde Neto, founder and chairman/president of Farma Conde (Brazilian pharmacy retail chain founded in a garage in Ubatuba, São Paulo state, in 1993, grown into a chain with roughly R$1.7 billion in revenue). Gave a full video interview on the TALK+ show/podcast (episode #137). Profiled in Metrópole magazine. Classic founder-from-nothing narrative. NOT any other Manoel Conde.",
+  "notes": {
+    "exclude": "Legal proceedings, investigations, plea or collaboration agreements, court decisions, and tax or criminal allegations involving him, his family, or Farma Conde are out of scope for this dossier."
+  },
   "enumPrompts": [
     {
       "label": "historia-fundacao",
@@ -15,7 +18,7 @@
     },
     {
       "label": "criticas",
-      "prompt": "Enumerate CRITIQUES and adversarial or complicating material on {{PERSON}}.\n1. Any critique of Farma Conde's business performance, expansion pace, or competitive position vs. national drugstore chains.\n2. Any press skepticism about regional pharmacy chains' long-term viability against national consolidation in Brazil.\n3. Any controversy connected to labor practices, supply chain, or governance that names him specifically.\nReturn exact URLs, type=critique, 4-8 items, be honest if adversarial material specifically targeting him personally is thin (this is a regional, less-covered figure, say so if true rather than padding)."
+      "prompt": "Enumerate CRITIQUES and adversarial or complicating material on {{PERSON}}.\n1. Any critique of Farma Conde's business performance, expansion pace, or competitive position vs. national drugstore chains.\n2. Any press skepticism about regional pharmacy chains' long-term viability against national consolidation in Brazil.\n3. Any controversy connected to labor practices, supply chain, or store operations that names him specifically.\nReturn exact URLs, type=critique, 4-8 items, be honest if adversarial material specifically targeting him personally is thin (this is a regional, less-covered figure, say so if true rather than padding)."
     }
   ]
 }

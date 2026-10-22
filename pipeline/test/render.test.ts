@@ -75,6 +75,14 @@ describe("rendered workflow", () => {
     expect(all).not.toMatch(/Manoel Conde\.\./);
   });
 
+  it("applies a spec's exclusion to every phase, and only for that spec", async () => {
+    const manoel = await simulate("manoel-conde-neto");
+    const phases = manoel.prompts.filter((p) => !p.startsWith("Verify these quotes") && !p.startsWith("Read the dossier at"));
+    expect(phases.every((p) => p.includes("OUT OF SCOPE (hard rule)"))).toBe(true);
+    expect(manoel.prompts.join("\n")).not.toMatch(/governance that names him/);
+    expect((await simulate("caito-maia")).prompts.join("\n")).not.toContain("OUT OF SCOPE");
+  });
+
   it("create mode never claims a baseline dossier exists", async () => {
     const { prompts } = await simulate("tom-brown", "create");
     expect(prompts.join("\n")).toContain("from-scratch build");

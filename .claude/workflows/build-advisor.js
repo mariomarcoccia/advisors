@@ -634,6 +634,9 @@ const SPECS = {
     "lang": "pt",
     "corpus": "thin",
     "person": "Manoel Conde Neto, founder and chairman/president of Farma Conde (Brazilian pharmacy retail chain founded in a garage in Ubatuba, São Paulo state, in 1993, grown into a chain with roughly R$1.7 billion in revenue). Gave a full video interview on the TALK+ show/podcast (episode #137). Profiled in Metrópole magazine. Classic founder-from-nothing narrative. NOT any other Manoel Conde.",
+    "notes": {
+      "exclude": "Legal proceedings, investigations, plea or collaboration agreements, court decisions, and tax or criminal allegations involving him, his family, or Farma Conde are out of scope for this dossier."
+    },
     "enumPrompts": [
       {
         "label": "historia-fundacao",
@@ -645,7 +648,7 @@ const SPECS = {
       },
       {
         "label": "criticas",
-        "prompt": "Enumerate CRITIQUES and adversarial or complicating material on {{PERSON}}.\n1. Any critique of Farma Conde's business performance, expansion pace, or competitive position vs. national drugstore chains.\n2. Any press skepticism about regional pharmacy chains' long-term viability against national consolidation in Brazil.\n3. Any controversy connected to labor practices, supply chain, or governance that names him specifically.\nReturn exact URLs, type=critique, 4-8 items, be honest if adversarial material specifically targeting him personally is thin (this is a regional, less-covered figure, say so if true rather than padding)."
+        "prompt": "Enumerate CRITIQUES and adversarial or complicating material on {{PERSON}}.\n1. Any critique of Farma Conde's business performance, expansion pace, or competitive position vs. national drugstore chains.\n2. Any press skepticism about regional pharmacy chains' long-term viability against national consolidation in Brazil.\n3. Any controversy connected to labor practices, supply chain, or store operations that names him specifically.\nReturn exact URLs, type=critique, 4-8 items, be honest if adversarial material specifically targeting him personally is thin (this is a regional, less-covered figure, say so if true rather than padding)."
       }
     ]
   },
@@ -1094,6 +1097,11 @@ const CORPUS_CALIBRATION = {
 
 const ATTRIBUTION = spec.notes?.attribution ? `\nATTRIBUTION CAUTION: ${spec.notes.attribution}` : ''
 const FOCUS = spec.notes?.focus ? `\nEXPLICIT PRIORITY: ${spec.notes.focus}` : ''
+// Topics a dossier must not cover (a maintainer decision or the subject's request).
+// Every phase gets it, so excluded material is never searched for, extracted, or cited.
+const EXCLUDE = spec.notes?.exclude
+  ? `\nOUT OF SCOPE (hard rule): ${spec.notes.exclude} Do not search for it, extract it, cite it, or mention it, even as a blind spot or provenance note; skip any source whose main subject it is.`
+  : ''
 const STRAY_NOTES = `If the notes directory is empty or incomplete (known bug: agents sometimes write to "undefined/" relative to their own working directory), look for stray batch-*.md files in ${repo}/undefined/, ~/undefined/, and ~/.advisors/undefined/ before proceeding, and move them into ${notesDir}/.`
 const BASELINE = mode === 'rebuild'
   ? `Read the CURRENT dossier at ${dossierPath} first: it is the baseline. This is an EXPANSION: nothing distinct and sourced in it may be lost.`
@@ -1104,7 +1112,7 @@ const DEFAULT_ENUM_PROMPTS = [
   { label: 'long-form-spoken', prompt: `Enumerate LONG-FORM SPOKEN material by ${PERSON}: podcast episodes, long interviews, talks, and lectures, preferring pages with full transcripts. Cover different years and venues, not one famous appearance. Return exact URLs, each marked high/medium/low priority.` },
   { label: 'critiques', prompt: `Enumerate serious, sourced CRITIQUES of ${PERSON} and their ideas or decisions (named critics, analysts, journalists, academics), plus documented disagreements with other named thinkers. No gossip or private matters. Return exact URLs, each marked high/medium/low priority.` },
 ]
-const enumPrompts = (spec.enumPrompts ?? DEFAULT_ENUM_PROMPTS).map((p) => ({ label: p.label, prompt: fill(p.prompt) }))
+const enumPrompts = (spec.enumPrompts ?? DEFAULT_ENUM_PROMPTS).map((p) => ({ label: p.label, prompt: fill(p.prompt) + EXCLUDE }))
 
 // ---------- 1. enumerate ----------
 
@@ -1164,7 +1172,7 @@ For each source extract, with the EXACT URL attached to every item:
 (b) named frameworks/mental models + a worked example of each (the payload: a framework without an example is half-built)
 (c) decision heuristics and positions on specific hard-call situations
 (d) explicit or implicit disagreements with named thinkers
-(e) critiques/blind spots with source${ATTRIBUTION}${FOCUS}
+(e) critiques/blind spots with source${ATTRIBUTION}${FOCUS}${EXCLUDE}
 Prioritize NOVELTY: new kinds of situations, not restatements.
 IMPORTANT (known bug): write your notes to the FULL ABSOLUTE path ${notesDir}/batch-${i + 1}.md, never a relative path, even if it looks equivalent. Double-check the path is absolute before writing. Return file path, covered count, failed URLs, 3-5 highlights.`,
     { label: `extract:batch-${i + 1}`, phase: 'Extract', schema: EXTRACT_SCHEMA, model: SONNET })
@@ -1182,7 +1190,7 @@ const draft = await agent(`Write ${mode === 'rebuild' ? 'a DRAFT rebuild of the'
 2. Read the template at ${templatePath} and the voice guide at ${voiceGuidePath}; follow the section structure EXACTLY, including "Writing for the index (cards)" if present.
 3. ${CORPUS_CALIBRATION} ${LANGUAGE_CONVENTION}
 4. Read ALL research notes: every .md file in ${notesDir}/ (list the directory first). ${STRAY_NOTES}
-5. ${mode === 'rebuild' ? 'OVERWRITE' : 'WRITE'} ${dossierPath} as a complete file: slug: ${spec.slug}, last_updated: ${date}; sources[] = every source actually cited; source_count matches exactly; quote any frontmatter value containing a colon.${mode === 'rebuild' ? ' Keep every existing mental model, heuristic, worked example, and "Where they disagree" row; add new ones.' : ''} Never quote anything the notes don't show verbatim with a URL. Where a section is thin, say so honestly in Provenance notes rather than padding. Write the Summary last.${FOCUS}${ATTRIBUTION}
+5. ${mode === 'rebuild' ? 'OVERWRITE' : 'WRITE'} ${dossierPath} as a complete file: slug: ${spec.slug}, last_updated: ${date}; sources[] = every source actually cited; source_count matches exactly; quote any frontmatter value containing a colon.${mode === 'rebuild' ? ' Keep every existing mental model, heuristic, worked example, and "Where they disagree" row; add new ones.' : ''} Never quote anything the notes don't show verbatim with a URL. Where a section is thin, say so honestly in Provenance notes rather than padding. Write the Summary last.${FOCUS}${ATTRIBUTION}${EXCLUDE}
 6. Return: final source_count, the enumerated source URLs NOT cited in the final draft (for the completeness audit downstream), and a 3-4 sentence report. Do NOT return placeholder or example values: every field must reflect this run's real output.`,
   { label: 'synthesize:draft', phase: 'Synthesize', model: SONNET, effort: 'high',
     schema: { type: 'object', required: ['sourceCount', 'unusedSources', 'report'], properties: {
@@ -1236,7 +1244,7 @@ For each, check the research notes in ${notesDir}/ (${STRAY_NOTES}): did the dra
 
 3. **Depth repair.** Read the whole dossier critically. Where synthesis went shallow (a mental model with no worked example, a generic "Where they disagree" row, a Core idea without a concrete situation), REWRITE that section in place with specific, sourced content from the notes. ${LANGUAGE_CONVENTION}
 
-Rules: never invent a quote; anything in quotation marks must trace to a URL in the notes or one you verified yourself. Keep slug, last_updated, and source_count consistent. Edit ${dossierPath} in place (Edit/Write tools).
+Rules: never invent a quote; anything in quotation marks must trace to a URL in the notes or one you verified yourself.${EXCLUDE ? ` If the dossier contains any out-of-scope material, remove it and its sources.${EXCLUDE}` : ''} Keep slug, last_updated, and source_count consistent. Edit ${dossierPath} in place (Edit/Write tools).
 
 Return: # quotes fixed, # completeness gaps closed, # sections deepened, final source_count, and a short report. No placeholder values.`,
   { label: 'consolidate:opus', phase: 'Consolidate', model: OPUS, effort: 'high',
