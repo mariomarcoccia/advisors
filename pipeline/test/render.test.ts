@@ -18,7 +18,6 @@ function fakeAgent(prompts: string[]): Agent {
     if (label.startsWith("enumerate:")) return { sources: [{ title: "t", url: `https://example.com/${label}`, type: "essay", priority: "high" }] };
     if (label.startsWith("extract:")) return { file: "/n/batch-1.md", covered: 1, failed: [] };
     if (label === "synthesize:draft") return { sourceCount: 3, unusedSources: ["https://example.com/u"], report: "r" };
-    if (label === "read:draft") return '---\nname: x\n---\n"A real quote here" (src)';
     if (label === "pre-verify:pick-quotes") return { quotes: [{ quote: "A real quote here", url: "https://example.com/q" }] };
     if (label.startsWith("pre-verify:batch")) return { verdicts: [{ quote: "A real quote here", url: "https://example.com/q", verdict: "not_found" }] };
     return { quotesFixed: 1, completenessGapsClosed: 0, sectionsDeepened: 1, finalSourceCount: 3, report: "done" };
@@ -66,6 +65,14 @@ describe("rendered workflow", () => {
     expect(caito).toContain("[translation]");
     expect(brin).toContain("genuinely thin public corpus");
     expect(brin).not.toContain("[translation]");
+  });
+
+  it("never relays the dossier through a model and never doubles punctuation", async () => {
+    const { prompts } = await simulate("manoel-conde-neto");
+    const all = prompts.join("\n");
+    expect(all).not.toContain("return its FULL raw text verbatim");
+    expect(all).toContain("Read the dossier at /repo/advisors/advisors/manoel-conde-neto.md and extract");
+    expect(all).not.toMatch(/Manoel Conde\.\./);
   });
 
   it("create mode never claims a baseline dossier exists", async () => {

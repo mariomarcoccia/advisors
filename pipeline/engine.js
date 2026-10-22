@@ -46,7 +46,8 @@ const templatePath = `${repo}/reference/persona-template.md`
 const voiceGuidePath = `${repo}/reference/voice-guide.md`
 const exampleSlug = spec.example ?? (spec.lang === 'pt' ? 'caito-maia' : 'michael-seibel')
 const examplePath = `${repo}/advisors/${exampleSlug}.md`
-const PERSON = spec.person
+// Prompts append their own punctuation after PERSON, so drop a trailing period.
+const PERSON = spec.person.replace(/\.+$/, '')
 const fill = (text) => text.replaceAll('{{PERSON}}', PERSON).replaceAll('{{DATE}}', date)
 
 // ---------- per-spec wording ----------
@@ -173,15 +174,12 @@ log(`Draft (Sonnet): ${draft.sourceCount} sources cited, ${draft.unusedSources.l
 // ---------- 4. pre-verify ----------
 
 phase('Pre-verify')
-const dossierText = await agent(`Read the file at ${dossierPath} and return its FULL raw text verbatim: no summary, no commentary, just the complete file content.`,
-  { label: 'read:draft', phase: 'Pre-verify', model: SONNET })
-
 const QUOTES_SCHEMA = { type: 'object', required: ['quotes'], properties: { quotes: { type: 'array', maxItems: 24, items: {
   type: 'object', required: ['quote', 'url'], properties: { quote: { type: 'string' }, url: { type: 'string' } },
 } } } }
-const quotesToCheck = await agent(`Read this dossier text and extract the 15-24 most LOAD-BEARING verbatim quotes (in quotation marks) with the source URL each is attributed to (check sources[] in the frontmatter and inline citations). Prioritize quotes used in Core ideas, Mental models, and Signature quotes. Return each quote in its ORIGINAL language exactly as it appears (do not translate) so it can be string-matched against the raw source. Do NOT return placeholder values.
-
-${dossierText}`,
+// The picker reads the file itself: relaying ~30 KB of dossier through another
+// model's output is slow and can alter the very text being verified.
+const quotesToCheck = await agent(`Read the dossier at ${dossierPath} and extract the 15-24 most LOAD-BEARING verbatim quotes (in quotation marks) with the source URL each is attributed to (check sources[] in the frontmatter and inline citations). Prioritize quotes used in Core ideas, Mental models, and Signature quotes. Return each quote in its ORIGINAL language exactly as it appears (do not translate) so it can be string-matched against the raw source. Do NOT return placeholder values.`,
   { label: 'pre-verify:pick-quotes', phase: 'Pre-verify', model: SONNET, schema: QUOTES_SCHEMA })
 
 const VERDICTS_SCHEMA = { type: 'object', required: ['verdicts'], properties: { verdicts: { type: 'array', items: {
