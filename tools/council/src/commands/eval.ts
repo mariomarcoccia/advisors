@@ -25,7 +25,7 @@ export async function runEval(ctx: CommandContext): Promise<number> {
   const targetsPath = resolve(requireFlag(ctx.flags.targets, "targets"));
   const targets = loadTargets(targetsPath);
   const index = loadFreshIndex(ctx.paths.indexDir, ctx.paths.advisorsDir);
-  const kinds = listFlag(ctx.flags.scorers ?? "bm25,jev");
+  const kinds = ctx.flags.all && mode === "pool" ? [] : listFlag(ctx.flags.scorers ?? "bm25,jev");
   const scorers = kinds.map((kind) => makeScorer(parseScorerKind(kind), ctx));
   const evalDir = dirname(targetsPath);
   return mode === "pool" ? writePools(ctx, evalDir, targets, index, scorers) : report(ctx, evalDir, targets, index, scorers);
@@ -42,8 +42,12 @@ function loadTargets(path: string): Target[] {
   );
 }
 
+function rankableCards(index: CouncilIndex, target: Target): CouncilIndex["cards"] {
+  return index.cards.filter((c) => c.advisor === target.advisor && RANKED_KINDS.has(c.kind));
+}
+
 async function rank(index: CouncilIndex, target: Target, scorer: Scorer): Promise<string[]> {
-  const cards = index.cards.filter((c) => c.advisor === target.advisor && RANKED_KINDS.has(c.kind));
+  const cards = rankableCards(index, target);
   if (cards.length === 0) throw new UsageError(`no rankable cards for advisor "${target.advisor}"`);
   const items = cards.map((card) => ({ id: card.id, material: card.text }));
   const scores = await scorer.score(readDecision(target.decisionPath), items, CARD_RELEVANCE);
@@ -55,8 +59,9 @@ const poolFile = (evalDir: string, dir: string, t: Target): string => join(evalD
 async function writePools(ctx: CommandContext, evalDir: string, targets: Target[], index: CouncilIndex, scorers: Scorer[]): Promise<number> {
   mkdirSync(join(evalDir, "pools"), { recursive: true });
   for (const target of targets) {
-    const rankings = await Promise.all(scorers.map((scorer) => rank(index, target, scorer)));
-    const ids = pool(rankings, POOL_DEPTH);
+    const ids = ctx.flags.all
+      ? rankableCards(index, target).map((card) => card.id)
+      : pool(await Promise.all(scorers.map((scorer) => rank(index, target, scorer))), POOL_DEPTH);
     const candidates = ids.map((id) => index.cards.find((card) => card.id === id)).filter((card) => card !== undefined);
     const payload = {
       decision: target.decisionId,

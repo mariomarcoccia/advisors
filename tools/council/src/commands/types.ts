@@ -13,6 +13,7 @@ export interface Flags {
   "min-words"?: string | undefined;
   "targets"?: string | undefined;
   "check"?: boolean | undefined;
+  "all"?: boolean | undefined;
   "json"?: boolean | undefined;
   "allow-sensitive"?: boolean | undefined;
   "help"?: boolean | undefined;

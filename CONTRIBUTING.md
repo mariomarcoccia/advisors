@@ -26,14 +26,17 @@ These keep the project honest and safe — see [`reference/voice-guide.md`](refe
 2. Copy the structure in [`reference/persona-template.md`](reference/persona-template.md) into `advisors/<slug>.md` (`<slug>` is kebab-case, e.g. `jane-doe`).
 3. Fill **every** section, grounded in **≥5 real sources** (reclusive figures may have fewer — note it in `source_count` and Provenance).
 4. Complete the frontmatter: `name, slug, role, domains, last_updated` (today's date), `source_count`, and a `sources` list with working URLs.
-5. Open a PR. The checklist will appear automatically.
+5. Write for the index: one self-contained position per bullet, see "Writing for the index (cards)" in the template.
+6. Run `cd tools/council && npm ci && node src/cli.ts lint && node src/cli.ts index`, and commit the updated `index/` with your dossier. CI fails on lint errors or a stale index.
+7. Open a PR. The checklist will appear automatically.
 
 ## How to enrich an existing advisor
 
 1. Edit `advisors/<slug>.md`.
 2. **Append** new entries to `sources[]` (keep the existing ones), bump `source_count`, set `last_updated` to today.
 3. Add/sharpen only the sections the new material touches — don't gut accurate existing content.
-4. Open a PR describing what you added.
+4. Re-run `node src/cli.ts lint` and `node src/cli.ts index` in `tools/council`, and commit `index/` too.
+5. Open a PR describing what you added.
 
 ## Reporting without coding
 

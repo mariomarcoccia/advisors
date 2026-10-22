@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { parseArgs } from "node:util";
 import { resolvePaths } from "./config.ts";
+import { runCheck } from "./commands/check.ts";
 import { runEval } from "./commands/eval.ts";
 import { runGraph, runIndex, runLint, runStats } from "./commands/index-cmds.ts";
 import { runJev } from "./commands/jev.ts";
@@ -16,6 +17,7 @@ const USAGE = `council <command> [options]
 
   index [--check]                       rebuild index/ from advisors/ (--check: fail if stale)
   lint                                  validate every dossier (frontmatter, sections, counts)
+  check <decision.en.md>                is this abstract anonymized, English, and decision-dense?
   stats                                 dossier vs. pack token footprint
   select --decision F [--k 5] [--tension T ...] [--exclude a,b]
                                         rank advisors and compose a board for a decision
@@ -23,12 +25,13 @@ const USAGE = `council <command> [options]
                                         build decision-specific context packs
   graph <slug> [--json]                 documented disagreements for an advisor
   verify <answer.md> --advisors a,b     check quotes and card ids against the dossiers
-  eval pool|run ...                     retrieval evaluation (see evals/README.md)
+  eval pool|run --targets F [--all]     retrieval evaluation (see evals/README.md)
   jev ping                              check the TypeSafe key and model
 
 Common: --scorer auto|jev|jev-pair|bm25 (default auto) · --json · --allow-sensitive`;
 
 const COMMANDS: Record<string, (ctx: CommandContext) => Promise<number>> = {
+  check: runCheck,
   index: runIndex,
   lint: runLint,
   stats: runStats,
@@ -57,6 +60,7 @@ async function main(argv: string[]): Promise<number> {
       "min-words": { type: "string" },
       "targets": { type: "string" },
       "check": { type: "boolean" },
+      "all": { type: "boolean" },
       "json": { type: "boolean" },
       "allow-sensitive": { type: "boolean" },
       "help": { type: "boolean", short: "h" },

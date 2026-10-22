@@ -1,10 +1,11 @@
 ---
 name: second-opinion
-description: "Get a dissenting second opinion from a DIFFERENT advisor — one likely to disagree with the first. You name the first advisor (or it uses your last /advice consult); the skill then suggests, or lets you pick, a contrasting expert and delivers their opposing view on the same decision, grounded in their public work. Use after /advice when an answer felt too clean and you want a genuinely different mind to challenge it."
-argument-hint: "[first-advisor] [topic] — optionally name the second advisor too"
+description: "Get a dissenting second opinion from a DIFFERENT advisor, one likely to disagree with the first. You name the first advisor (or it uses your last /advice consult); the skill finds members with a documented disagreement with them (the council's disagreement graph) and ranks them for your decision, then delivers the strongest opposing view, grounded in a decision-specific pack and with every quote verified. Use after /advice when an answer felt too clean and you want a genuinely different mind to challenge it."
+argument-hint: "[first-advisor] [topic]; optionally name the second advisor too"
 model: opus
 allowed-tools:
   - Read
+  - Write
   - Glob
   - Grep
   - Bash
@@ -14,54 +15,43 @@ allowed-tools:
   - Skill
 ---
 
-# /second-opinion — A dissenting view from a different advisor
+# /second-opinion: a dissenting view from a different advisor
 
-You got one advisor's take. This brings in a **different** advisor — deliberately chosen because they'd likely **disagree** — to give the opposing view on the same decision. The clash is the point: it surfaces the assumptions the first take depended on.
+You got one advisor's take. This brings in a **different** advisor, chosen because they'd likely **disagree**, to argue the opposing view on the same decision. The clash is the point: it surfaces the assumptions the first take depended on.
 
-These are **simulations in the style of** real people, never the real people, and never with fabricated quotes. See `$REFERENCE_DIR/voice-guide.md`.
-
-## Paths
-
-```bash
-ADVISORS_HOME="${ADVISORS_HOME:-$HOME/.advisors}"
-ADVISORS_DIR="$ADVISORS_HOME/advisors"
-REFERENCE_DIR="$ADVISORS_HOME/reference"
-STATE_DIR="$ADVISORS_HOME/state"
-PROFILE="$ADVISORS_HOME/profile.md"            # durable context about the person
-BRIEF="$STATE_DIR/current-brief.md"
-```
-
-## Context gate
-
-Read `$PROFILE` if it exists — it tells you who you're advising (role, arena, what they optimize for); tailor the dissent to them. Then read `$BRIEF` if present. If the brief is missing or stale for this topic, offer to run `/frame` first (invoke `frame` via `Skill`). The user may skip — note the thin context if so.
+**First, read `$ADVISORS_HOME/reference/runtime.md`** (default `~/.advisors/reference/runtime.md`): context gate, `council` CLI, packs, and the citation contract apply here. Ethics: `voice-guide.md`.
 
 ## How it works
 
-### 1. Resolve advisor #1 and the topic
-- **Advisor #1** (the view to be challenged): from `$ARGUMENTS`, else the advisor from the last `/advice` consult in this conversation, else the brief — otherwise ask via `AskUserQuestion`. Fuzzy-match name → slug in `$ADVISORS_DIR`.
-- **Topic**: the decision and #1's conclusion — from `$ARGUMENTS`, the conversation, or the brief's `leaning`. If #1's actual conclusion isn't on record, read #1's dossier and **characterize the position they'd most likely take**, and say you're doing so.
+### 1. Resolve advisor #1 and their position
+- **Advisor #1**: from `$ARGUMENTS`, else the last `/advice` consult in this conversation, else the newest file in `$CURRENT/consults/`; otherwise ask via `AskUserQuestion`.
+- **Their position**: from the conversation or that consult file. If #1's conclusion isn't on record, build #1's pack (`"$COUNCIL" pack <slug1> ...`) and characterize the position they'd most likely take, saying you're doing so.
 
 ### 2. Choose advisor #2 (the dissenter)
-- Read the frontmatter (`name`, `role`, `domains`) **and the `## Summary`** of every `$ADVISORS_DIR/*.md` — just those (the Summary is the selection digest; fall back to frontmatter if absent). Full dossiers are loaded only for the advisor actually chosen.
-- Identify the advisor whose worldview most **opposes** advisor #1 *on this specific question* — different lens, different values, different track record — not just anyone.
-- **Suggest** that advisor with a one-line reason for the expected disagreement, plus 1-2 alternative dissenters, and **confirm via `AskUserQuestion`** (the user can pick or name their own). If the user already named a second advisor, skip the suggestion and use theirs. If the chosen advisor has no dossier, offer `/advice add`.
+- **Documented clashes first:** `"$COUNCIL" graph <slug1>` lists members with a sourced disagreement with #1, with the card ids behind each.
+- **Relevance second:** `"$COUNCIL" select --decision "$CURRENT/decision.en.md" --k 8 --exclude <slug1>` plus the brief's tensions.
+- Prefer a member who is both on the graph list **and** relevant to this decision; a documented clash on an unrelated topic is not a dissent on this one. Read the graph labels to judge.
+- **Suggest** your pick with a one-line reason for the expected disagreement (cite the graph card when there is one), plus 1-2 alternatives, and **confirm via `AskUserQuestion`**. If the user already named #2, use theirs. No dossier: offer `/advice add`.
 
 ### 3. Deliver the dissent
-- Load advisor #2's full dossier. Answer in **their** first-person voice.
-- Open by engaging advisor #1's position directly: where #2 thinks it's wrong, and **why** — rooted in #2's own beliefs, frameworks, and track record.
-- Make the strongest opposing case (steelman, not strawman). Name the scenario in which following advisor #1 would be a mistake, and the assumption #1's view quietly depends on.
-- Stay honest: ground in the dossier, mark extrapolation, **no fabricated quotes**. If advisor #2 would actually largely agree with #1, say so plainly and offer a better-matched dissenter instead of manufacturing conflict.
+- `"$COUNCIL" pack <slug2> --decision "$CURRENT/decision.en.md" --out "$CURRENT/packs"`, then read it. Answer in **#2's** first-person voice.
+- Open by engaging #1's position directly: where #2 thinks it's wrong and **why**, rooted in #2's cited positions, frameworks, and track record. If a graph card documents this exact clash, use it.
+- Make the strongest opposing case (steelman, not strawman). Name the scenario in which following #1 would be a mistake, and the assumption #1's view quietly depends on.
+- If #2 would actually largely agree with #1, say so plainly and offer a better-matched dissenter instead of manufacturing conflict.
 
 ### 4. Close
-- The single strongest reason advisor #1 might still be right.
+- The single strongest reason #1 might still be right.
 - The one piece of evidence that would settle the disagreement.
-- Optionally suggest `/boardroom` if the user wants more voices in the room.
+- Optionally suggest `/boardroom` for more voices.
 
-Open with: `*Second opinion — <Advisor #2>, in the style of their public work, dissenting from <Advisor #1>. Not the real people.*`
+### 5. Verify, then show
+Write it to `"$CURRENT/consults/$(date +%Y%m%d-%H%M)-<slug2>-vs-<slug1>.md"` and run `"$COUNCIL" verify <file> --advisors <slug2>,<slug1>` (quoting #1 to rebut them is allowed). Fix until PASS, then show it with the footer line.
+
+Open with: `*Second opinion: <Advisor #2>, in the style of their public work, dissenting from <Advisor #1>. Not the real people.*`
 
 ## Hard rules
-1. **A different advisor, genuinely chosen to disagree** — not the same person, not a random pick.
+1. **A different advisor, genuinely chosen to disagree**: not the same person, not a random pick.
 2. **Steelman the dissent.** The opposing case must be the strongest one, argued in good faith.
-3. **No fabricated quotes**; ground each voice in its dossier; flag extrapolation.
-4. **Don't manufacture conflict.** If there's no real disagreement, say so and re-pick.
-5. **No defamation** — critiques stay real and sourced.
+3. **No fabricated quotes, enforced** by `council verify`; mark extrapolation.
+4. **Don't manufacture conflict.** No real disagreement: say so and re-pick.
+5. **No defamation**: critiques stay real and sourced.

@@ -26,3 +26,19 @@ describe("readDecision", () => {
     expect(() => readDecision(join(dir, "e.md"))).toThrow(SensitiveDecisionError);
   });
 });
+
+describe("council check", () => {
+  it("accepts a clean abstract and flags sensitive, short, or Portuguese text", async () => {
+    const { runCheck } = await import("../src/commands/check.ts");
+    const dir = mkdtempSync(join(tmpdir(), "chk-"));
+    const clean = join(dir, "clean.md");
+    const bad = join(dir, "bad.md");
+    writeFileSync(clean, "A founder must decide between harvesting a mature niche business and pivoting. ".repeat(6));
+    writeFileSync(bad, "A empresa faturou R$ 3M e você não sabe a decisão.");
+    const out: string[] = [];
+    const ctx = (path: string) => ({ args: [path], flags: {}, paths: {} as never, env: {}, out: (t: string) => void out.push(t), warn: () => {} });
+    expect(await runCheck(ctx(clean))).toBe(0);
+    expect(await runCheck(ctx(bad))).toBe(1);
+    expect(out[1]).toMatch(/currency amount[\s\S]*too short[\s\S]*non-English/);
+  });
+});
