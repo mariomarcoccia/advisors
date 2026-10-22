@@ -25,7 +25,8 @@ done
 # Council CLI: Node >= 22.18 runs the TypeScript sources directly.
 if command -v node >/dev/null 2>&1; then
   if node -e 'const [a,b]=process.versions.node.split(".").map(Number); process.exit(a>22||(a===22&&b>=18)?0:1)'; then
-    (cd "$REPO/tools/council" && npm ci --omit=dev --silent)
+    # Install runtime deps only when missing, so a dev checkout keeps vitest/tsc.
+    [ -d "$REPO/tools/council/node_modules/zod" ] || (cd "$REPO/tools/council" && npm ci --omit=dev --silent)
     "$REPO/tools/council/bin/council" index --check >/dev/null || "$REPO/tools/council/bin/council" index
     echo "  council CLI ready: $ADVISORS_HOME/tools/council/bin/council"
   else
