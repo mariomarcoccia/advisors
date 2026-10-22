@@ -1,7 +1,6 @@
 import { Bm25 } from "./bm25.ts";
-import { JEV_REQUEST_TOKEN_BUDGET } from "./config.ts";
-import { mapLimit, nouls, type JevQuestion, type JevTransport } from "./jev.ts";
-import { estimateTokens } from "./text.ts";
+import { JEV_MAX_QUESTIONS_PER_REQUEST, JEV_REQUEST_TOKEN_BUDGET } from "./config.ts";
+import { JevApiError, mapLimit, nouls, type JevQuestion, type JevTransport } from "./jev.ts";
 
 export interface Item {
   id: string;
@@ -74,14 +73,16 @@ export class JevFanoutScorer implements Scorer {
   }
 
   async score(decision: string, items: Item[], spec: NoulSpec): Promise<Map<string, number>> {
-    const chunks = chunkByTokens(items, this.budget - estimateTokens(decision));
+    const room = this.budget - conservativeTokens(JSON.stringify({ decision }));
+    if (room < this.budget / 2) throw new JevApiError(400, "decision text is too long for Jev requests; shorten decision.en.md");
+    const chunks = chunkQuestions(items, spec, room);
     const parts = await mapLimit(chunks, this.concurrency, async (chunk) => {
       const questions: Record<string, JevQuestion> = {};
       chunk.forEach((item, i) => {
         questions[`q${i}`] = noulQuestion(spec, item.material);
       });
       const answers = nouls(await this.jev.systemOne({ state: { decision }, questions }));
-      return chunk.map((item, i): [string, number] => [item.id, answers.get(`q${i}`) ?? 0]);
+      return chunk.map((item, i): [string, number] => [item.id, requireAnswer(answers, `q${i}`)]);
     });
     return new Map(parts.flat());
   }
@@ -106,7 +107,7 @@ export class JevPairScorer implements Scorer {
       const answers = nouls(
         await this.jev.systemOne({ state: { decision, material: item.material }, questions: { q: question } }),
       );
-      return [item.id, answers.get("q") ?? 0];
+      return [item.id, requireAnswer(answers, "q")];
     });
     return new Map(scored);
   }
@@ -116,13 +117,28 @@ function noulQuestion(spec: NoulSpec, material: string): JevQuestion {
   return { type: "noul", instructions: { task: spec.task, material }, criteria: spec.criteria };
 }
 
-export function chunkByTokens(items: Item[], budget: number): Item[][] {
+export function requireAnswer(answers: Map<string, number>, id: string): number {
+  const value = answers.get(id);
+  if (value === undefined) throw new JevApiError(200, `no noul answer for question ${id}`);
+  return value;
+}
+
+// chars / 3 overestimates tokens for English and JSON, which is the safe side.
+export function conservativeTokens(text: string): number {
+  return Math.ceil(text.length / 3);
+}
+
+// Packs items into requests by the real size of each question (material, task,
+// and criteria as sent), capped by count. An item too large for any request is a
+// dossier problem worth surfacing, not something to send and fail on.
+export function chunkQuestions(items: Item[], spec: NoulSpec, budget: number): Item[][] {
   const chunks: Item[][] = [];
   let current: Item[] = [];
   let used = 0;
   for (const item of items) {
-    const cost = estimateTokens(item.material) + 80;
-    if (current.length > 0 && used + cost > budget) {
+    const cost = conservativeTokens(JSON.stringify(noulQuestion(spec, item.material))) + 10;
+    if (cost > budget) throw new JevApiError(400, `item ${item.id} is too large for one Jev request (~${cost} tokens)`);
+    if (current.length > 0 && (used + cost > budget || current.length >= JEV_MAX_QUESTIONS_PER_REQUEST)) {
       chunks.push(current);
       current = [];
       used = 0;

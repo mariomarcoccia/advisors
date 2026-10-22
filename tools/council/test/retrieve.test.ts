@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { Bm25Scorer, CARD_RELEVANCE, chunkByTokens, JevFanoutScorer, JevPairScorer } from "../src/retrieve.ts";
+import { Bm25Scorer, CARD_RELEVANCE, chunkQuestions, JevFanoutScorer, JevPairScorer } from "../src/retrieve.ts";
+import { JevApiError } from "../src/jev.ts";
 import { FakeJev } from "./helpers.ts";
 
 const items = [
@@ -9,12 +10,21 @@ const items = [
 ];
 const decision = "Should we raise prices for retailers and risk churn?";
 
-describe("chunkByTokens", () => {
-  it("packs items under the budget and never drops one", () => {
-    const many = Array.from({ length: 10 }, (_, i) => ({ id: String(i), material: "x".repeat(400) }));
-    const chunks = chunkByTokens(many, 400);
+describe("chunkQuestions", () => {
+  it("charges the full question (criteria included) and never drops an item", () => {
+    const many = Array.from({ length: 10 }, (_, i) => ({ id: String(i), material: "x".repeat(300) }));
+    const chunks = chunkQuestions(many, CARD_RELEVANCE, 600);
     expect(chunks.flat()).toHaveLength(10);
-    expect(chunks.length).toBeGreaterThan(1);
+    expect(chunks.every((c) => c.length <= 2)).toBe(true);
+  });
+
+  it("caps questions per request", () => {
+    const tiny = Array.from({ length: 300 }, (_, i) => ({ id: String(i), material: "x" }));
+    expect(chunkQuestions(tiny, CARD_RELEVANCE, 10_000_000).map((c) => c.length)).toEqual([120, 120, 60]);
+  });
+
+  it("refuses an item larger than a whole request", () => {
+    expect(() => chunkQuestions([{ id: "big", material: "x".repeat(10_000) }], CARD_RELEVANCE, 500)).toThrow(JevApiError);
   });
 });
 
@@ -27,7 +37,7 @@ describe("scorers", () => {
 
   it("fan-out sends one request per chunk with one question per item", async () => {
     const fake = new FakeJev();
-    const scores = await new JevFanoutScorer(fake, 40_000).score(decision, items, CARD_RELEVANCE);
+    const scores = await new JevFanoutScorer(fake, 28_000).score(decision, items, CARD_RELEVANCE);
     expect(fake.calls).toHaveLength(1);
     expect(Object.keys(fake.calls[0]?.questions ?? {})).toHaveLength(3);
     expect(scores.get("a")).toBeGreaterThan(scores.get("b") ?? 1);
@@ -35,7 +45,7 @@ describe("scorers", () => {
 
   it("fan-out splits into several requests when over budget", async () => {
     const fake = new FakeJev();
-    await new JevFanoutScorer(fake, 120).score(decision, items, CARD_RELEVANCE);
+    await new JevFanoutScorer(fake, 400).score(decision, items, CARD_RELEVANCE);
     expect(fake.calls.length).toBeGreaterThan(1);
   });
 
@@ -44,5 +54,16 @@ describe("scorers", () => {
     const scores = await new JevPairScorer(fake).score(decision, items, CARD_RELEVANCE);
     expect(fake.calls).toHaveLength(3);
     expect(scores.get("c")).toBeGreaterThan(scores.get("b") ?? 1);
+  });
+});
+
+describe("missing answers", () => {
+  it("throws instead of scoring a missing answer as 0", async () => {
+    const empty = { systemOne: async () => ({ model: "m", answers: {}, usage: { input_tokens: 1, output_tokens: 1 } }) };
+    await expect(new JevFanoutScorer(empty).score(decision, items, CARD_RELEVANCE)).rejects.toThrow(/no noul answer/);
+  });
+
+  it("refuses a decision too long to leave room for questions", async () => {
+    await expect(new JevFanoutScorer(new FakeJev(), 1000).score("x".repeat(3000), items, CARD_RELEVANCE)).rejects.toThrow(/too long/);
   });
 });

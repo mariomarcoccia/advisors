@@ -17,11 +17,14 @@ export function jevModel(env: NodeJS.ProcessEnv): string {
   return env["COUNCIL_JEV_MODEL"] ?? DEFAULT_JEV_MODEL;
 }
 
-export function makeJev(ctx: ScorerContext): CachedJev {
+export function makeJevClient(ctx: ScorerContext): JevClient {
   const apiKey = ctx.env["TYPESAFE_API_KEY"] ?? "";
   if (!apiKey) throw new JevConfigError("TYPESAFE_API_KEY is not set (create one at https://console.typesafe.ai/keys)");
-  const model = jevModel(ctx.env);
-  return new CachedJev(new JevClient({ apiKey, model }), ctx.paths.cacheDir, model);
+  return new JevClient({ apiKey, model: jevModel(ctx.env) });
+}
+
+export function makeJev(ctx: ScorerContext): CachedJev {
+  return new CachedJev(makeJevClient(ctx), ctx.paths.cacheDir, jevModel(ctx.env));
 }
 
 // "auto" degrades to BM25 without a key so the skills keep working offline;
@@ -36,8 +39,12 @@ export function makeScorer(kind: ScorerKind, ctx: ScorerContext): Scorer {
   return kind === "jev-pair" ? new JevPairScorer(jev) : new JevFanoutScorer(jev);
 }
 
+function isScorerKind(value: string): value is ScorerKind {
+  return (SCORER_KINDS as string[]).includes(value);
+}
+
 export function parseScorerKind(value: string | undefined): ScorerKind {
-  const kind = (value ?? "auto") as ScorerKind;
-  if (!SCORER_KINDS.includes(kind)) throw new JevConfigError(`unknown scorer "${value}"; use ${SCORER_KINDS.join("|")}`);
+  const kind = value ?? "auto";
+  if (!isScorerKind(kind)) throw new JevConfigError(`unknown scorer "${kind}"; use ${SCORER_KINDS.join("|")}`);
   return kind;
 }

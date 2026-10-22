@@ -41,12 +41,27 @@ export function countWords(text: string): number {
 }
 
 // Splits a quote on ellipses so elided quotes can be matched fragment by fragment.
-export function quoteFragments(quote: string, minWords = 3): string[] {
+// Every fragment with a letter or digit is kept, however short: dropping short
+// fragments would let a fabricated tail ride on one real fragment.
+export function quoteFragments(quote: string): string[] {
   return quote
-    .split(/\.{3}|…|\[\.\.\.\]/)
+    .split(/\.{3}|\u2026|\[\.\.\.\]/)
     .map((part) => part.trim())
-    .filter((part) => countWords(part) >= minWords);
+    .filter((part) => /[\p{L}\p{N}]/u.test(part));
 }
+
+// Index of `needle` in `haystack` where the match starts and ends on word
+// boundaries (no letter or digit just outside it), searching from `from`.
+export function indexOfWords(haystack: string, needle: string, from = 0): number {
+  for (let at = haystack.indexOf(needle, from); at !== -1; at = haystack.indexOf(needle, at + 1)) {
+    const before = haystack[at - 1] ?? " ";
+    const after = haystack[at + needle.length] ?? " ";
+    if (!WORD_CHAR.test(before) && !WORD_CHAR.test(after)) return at;
+  }
+  return -1;
+}
+
+const WORD_CHAR = /[\p{L}\p{N}]/u;
 
 const STOPWORDS = new Set(
   "a an the and or but if of to in on for with at by from as is are was were be been being it its this that these those i you he she we they them his her their our your my me us do does did not no so than then there here what which who whom how why when where can could should would will just about into over under more most less very also have has had".split(" "),

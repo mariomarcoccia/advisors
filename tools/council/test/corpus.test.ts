@@ -2,7 +2,8 @@ import { describe, expect, it } from "vitest";
 import { resolvePaths } from "../src/config.ts";
 import { buildIndex, dossierHash, loadIndex, readDossierFiles } from "../src/indexer.ts";
 import { lintDossiers } from "../src/lint.ts";
-import { normalizeForMatch } from "../src/text.ts";
+import { normalizeForMatch, quoteFragments } from "../src/text.ts";
+import { inOrder } from "../src/verify.ts";
 
 // Integration checks over the real council: these are the invariants the skills rely on.
 const paths = resolvePaths();
@@ -26,7 +27,19 @@ describe("real corpus", () => {
     expect(missing).toEqual([]);
   });
 
-  it("committed index/ is fresh", () => {
-    expect(loadIndex(paths.indexDir).manifest.dossierHash).toBe(dossierHash(files));
+  it("every extracted quote passes the strict verifier against its own card", () => {
+    const trim = (t: string) => normalizeForMatch(t.replace(/^[\s,.;:!?'"()-]+|[\s,.;:!?'"()-]+$/g, ""));
+    const failing = index.cards.flatMap((c) => {
+      const text = normalizeForMatch(c.text);
+      return c.quotes.filter((q) => !inOrder(quoteFragments(q).map(trim), text)).map((q) => `${c.id}: ${q}`);
+    });
+    expect(failing).toEqual([]);
+  });
+
+  it("committed index/ is fresh and matches what the current parser builds", () => {
+    const committed = loadIndex(paths.indexDir);
+    expect(committed.manifest.dossierHash).toBe(dossierHash(files));
+    expect(committed.cards).toEqual(index.cards);
+    expect(committed.edges).toEqual(index.edges);
   });
 });

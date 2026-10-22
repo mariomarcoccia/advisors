@@ -3,7 +3,8 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { CachedJev } from "../src/cache.ts";
-import { backoffMs, JevApiError, JevClient, JevConfigError, mapLimit, nouls } from "../src/jev.ts";
+import { writeFileSync } from "node:fs";
+import { backoffMs, JevApiError, JevClient, JevConfigError, JevNetworkError, mapLimit, nouls } from "../src/jev.ts";
 import { FakeJev } from "./helpers.ts";
 
 const OK_BODY = { model: "jev-1.13.0", answers: { q: { type: "noul", noul: 0.9 } }, usage: { input_tokens: 5, output_tokens: 1 } };
@@ -66,6 +67,39 @@ describe("JevClient", () => {
   });
 });
 
+describe("JevClient: review regressions", () => {
+  const failing = (errors: unknown[], then: Response[] = []): typeof fetch =>
+    ((() => {
+      const next = errors.shift();
+      if (next !== undefined) return Promise.reject(next);
+      const response = then.shift();
+      if (!response) throw new Error("no scripted response left");
+      return Promise.resolve(response);
+    }) as unknown) as typeof fetch;
+
+  it("retries network errors and timeouts, then succeeds", async () => {
+    const fetchImpl = failing([new TypeError("fetch failed"), new DOMException("t", "TimeoutError")], [json(200, OK_BODY)]);
+    const client = new JevClient({ apiKey: "k", model: "m", fetchImpl, sleep: async () => {} });
+    expect(nouls(await client.systemOne(REQUEST)).get("q")).toBe(0.9);
+  });
+
+  it("gives up on persistent network errors with a typed error", async () => {
+    const fetchImpl = failing([new TypeError("a"), new TypeError("b")]);
+    const client = new JevClient({ apiKey: "k", model: "m", fetchImpl, maxRetries: 1, sleep: async () => {} });
+    await expect(client.systemOne(REQUEST)).rejects.toThrow(JevNetworkError);
+  });
+
+  it("turns a non-JSON 200 into a typed error", async () => {
+    const { fetchImpl } = scripted([new Response("<html>oops</html>", { status: 200 })]);
+    await expect(new JevClient({ apiKey: "k", model: "m", fetchImpl }).systemOne(REQUEST)).rejects.toThrow(/malformed response/);
+  });
+
+  it("rejects a 200 that skips a question", async () => {
+    const { fetchImpl } = scripted([json(200, { ...OK_BODY, answers: {} })]);
+    await expect(new JevClient({ apiKey: "k", model: "m", fetchImpl }).systemOne(REQUEST)).rejects.toThrow(/missing answers/);
+  });
+});
+
 describe("backoffMs", () => {
   it("is exponential and capped, or follows retry-after", () => {
     expect([0, 1, 2, 10].map((a) => backoffMs(a, null))).toEqual([500, 1000, 2000, 8000]);
@@ -98,5 +132,19 @@ describe("CachedJev", () => {
     const second = await cached.systemOne(request);
     expect(second).toEqual(first);
     expect([fake.calls.length, cached.hits, cached.misses]).toEqual([1, 1, 1]);
+  });
+
+  it("treats a corrupt entry as a miss and repairs it", async () => {
+    const dir = mkdtempSync(join(tmpdir(), "jev-"));
+    const fake = new FakeJev();
+    const cached = new CachedJev(fake, dir, "m");
+    const request = { state: { decision: "x" }, questions: { q: { type: "noul" as const, instructions: { material: "x" } } } };
+    await cached.systemOne(request);
+    const { readdirSync } = await import("node:fs");
+    const file = readdirSync(dir)[0] ?? "";
+    writeFileSync(join(dir, file), "{ truncated");
+    await cached.systemOne(request);
+    await cached.systemOne(request);
+    expect([fake.calls.length, cached.hits]).toEqual([2, 1]);
   });
 });

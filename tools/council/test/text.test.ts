@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { countWords, estimateTokens, extractQuotes, normalizeForMatch, quoteFragments, tokenize } from "../src/text.ts";
+import { countWords, estimateTokens, extractQuotes, indexOfWords, normalizeForMatch, quoteFragments, tokenize } from "../src/text.ts";
 
 describe("normalizeForMatch", () => {
   it("unifies curly quotes, dashes, emphasis and whitespace", () => {
@@ -20,8 +20,8 @@ describe("extractQuotes", () => {
 });
 
 describe("quoteFragments", () => {
-  it("splits on ellipses and drops tiny fragments", () => {
-    expect(quoteFragments("first part of it ... second part here … ok")).toEqual(["first part of it", "second part here"]);
+  it("splits on ellipses, keeps short fragments, drops punctuation-only ones", () => {
+    expect(quoteFragments("first part of it ... second part here … ok ... !")).toEqual(["first part of it", "second part here", "ok"]);
   });
 });
 
@@ -33,5 +33,13 @@ describe("tokenize / counts", () => {
   it("estimates tokens and words", () => {
     expect(estimateTokens("abcdefgh")).toBe(2);
     expect(countWords("  one two  three ")).toBe(3);
+  });
+});
+
+describe("indexOfWords", () => {
+  it("only matches on word boundaries", () => {
+    expect(indexOfWords("make something people want", "ake something")).toBe(-1);
+    expect(indexOfWords("other make something", "make something")).toBe(6);
+    expect(indexOfWords("ação boa", "ção")).toBe(-1);
   });
 });

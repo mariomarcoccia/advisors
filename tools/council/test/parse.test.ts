@@ -51,3 +51,21 @@ describe("parseBlocks", () => {
     expect(blocks[0]?.heading).toBe("Book (2020)");
   });
 });
+
+describe("parseBlocks: review regressions", () => {
+  it("keeps a wrapped line that starts with a year inside its bullet", () => {
+    const blocks = parseBlocks(["- **Exit.** He sold the company in", "2019. The buyer kept the team."]);
+    expect(blocks).toHaveLength(1);
+    expect(blocks[0]?.text).toContain("2019. The buyer");
+  });
+
+  it("still splits real numbered lists", () => {
+    const blocks = parseBlocks(["1. first", "2. second", "", "3. third"]);
+    expect(blocks.map((b) => b.text)).toEqual(["first", "second", "third"]);
+  });
+
+  it("strips blockquote markers so wrapped quotes stay matchable", () => {
+    const blocks = parseBlocks(["> \"A quote that wraps", "> onto a second line\""]);
+    expect(blocks[0]?.text).toBe('"A quote that wraps\nonto a second line"');
+  });
+});

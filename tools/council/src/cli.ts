@@ -10,7 +10,7 @@ import { runVerify } from "./commands/verify.ts";
 import { UsageError, type CommandContext } from "./commands/types.ts";
 import { SensitiveDecisionError } from "./decision.ts";
 import { StaleIndexError } from "./indexer.ts";
-import { JevApiError, JevConfigError } from "./jev.ts";
+import { JevApiError, JevConfigError, JevNetworkError } from "./jev.ts";
 import { DossierFormatError } from "./parse.ts";
 
 const USAGE = `council <command> [options]
@@ -84,14 +84,14 @@ async function main(argv: string[]): Promise<number> {
 }
 
 // Expected failures print one actionable line; anything else is a bug and keeps its stack.
-const KNOWN_ERRORS = [UsageError, SensitiveDecisionError, StaleIndexError, JevApiError, JevConfigError, DossierFormatError];
+const KNOWN_ERRORS = [UsageError, SensitiveDecisionError, StaleIndexError, JevApiError, JevConfigError, JevNetworkError, DossierFormatError];
 
 async function entry(): Promise<number> {
   try {
     return await main(process.argv.slice(2));
   } catch (error) {
-    if (!KNOWN_ERRORS.some((known) => error instanceof known)) throw error;
-    process.stderr.write(`council: ${(error as Error).message}\n`);
+    if (!(error instanceof Error) || !KNOWN_ERRORS.some((known) => error instanceof known)) throw error;
+    process.stderr.write(`council: ${error.message}\n`);
     return 2;
   }
 }

@@ -85,6 +85,7 @@ function classify(line: string): LineKind {
 interface BlockState {
   blocks: Block[];
   open: Block | undefined;
+  openNumbered: boolean;
   heading: string | undefined;
   afterBlank: boolean;
   tableHeaderPending: boolean;
@@ -96,6 +97,7 @@ export function parseBlocks(lines: string[]): Block[] {
   const state: BlockState = {
     blocks: [],
     open: undefined,
+    openNumbered: false,
     heading: undefined,
     afterBlank: false,
     tableHeaderPending: true,
@@ -125,13 +127,22 @@ function consumeLine(state: BlockState, kind: LineKind, line: string): void {
   state.tableHeaderPending = false;
 }
 
-function appendLine(state: BlockState, kind: LineKind, line: string): void {
+// A wrapped line that happens to start with "2019. " is a continuation, not a
+// numbered item: numbers only open an item after a blank line or another item.
+function demoteFalseNumbering(state: BlockState, kind: LineKind, line: string): LineKind {
+  const numbered = /^\d+\. /.test(line);
+  if (kind !== "bullet" || !numbered || !state.open || state.afterBlank || state.openNumbered) return kind;
+  return "text";
+}
+
+function appendLine(state: BlockState, rawKind: LineKind, line: string): void {
+  const kind = demoteFalseNumbering(state, rawKind, line);
   const open = state.open;
   const continues =
     open !== undefined &&
     (kind === "nested" ? open.type === "bullet" : kind === "text" && !state.afterBlank && open.type !== "row");
   if (continues) {
-    open.text = `${open.text}\n${line.trim()}`;
+    open.text = `${open.text}\n${stripBlockquote(line.trim())}`;
     return;
   }
   const type: BlockType = kind === "row" ? "row" : kind === "text" ? "para" : "bullet";
@@ -139,6 +150,11 @@ function appendLine(state: BlockState, kind: LineKind, line: string): void {
   if (state.heading) block.heading = state.heading;
   state.blocks.push(block);
   state.open = block;
+  state.openNumbered = kind === "bullet" && /^\d+\. /.test(line);
+}
+
+function stripBlockquote(text: string): string {
+  return text.replace(/^>\s?/, "");
 }
 
 function cleanLine(kind: LineKind, line: string): string {
@@ -149,5 +165,5 @@ function cleanLine(kind: LineKind, line: string): string {
       .filter(Boolean)
       .join(" | ");
   }
-  return line.replace(/^\s*([-*]|\d+\.)\s+/, "").trim();
+  return stripBlockquote(line.trim()).replace(/^\s*([-*]|\d+\.)\s+/, "").trim();
 }

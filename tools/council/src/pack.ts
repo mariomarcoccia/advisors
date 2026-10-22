@@ -8,6 +8,9 @@ export interface PackOptions {
   // Cap per kind as a share of the retrieved budget, so 40 signature quotes
   // cannot crowd out every worked example.
   kindShare: Partial<Record<CardKind, number>>;
+  // Cards scoring below this are never packed, even with budget left: an
+  // irrelevant card costs the reader attention and dilutes the voice.
+  minScore: number;
 }
 
 export const DEFAULT_PACK: PackOptions = {
@@ -15,6 +18,7 @@ export const DEFAULT_PACK: PackOptions = {
   minBlindSpots: 2,
   minDisagreements: 1,
   kindShare: { quote: 0.3, blind_spot: 0.2, disagreement: 0.2 },
+  minScore: 0.05,
 };
 
 export interface ScoredCard {
@@ -53,8 +57,9 @@ export async function buildPack(
   return { advisor, scorer: scorer.name, alwaysOn, retrieved, tokens: fixedTokens + sumScored(retrieved) };
 }
 
-// Honesty floor first (best-ranked blind spots and disagreements are always in),
-// then fill by relevance under per-kind caps.
+// Honesty floor first (the best-ranked blind spots and disagreements go in even
+// below minScore, but never past the budget), then fill by relevance under
+// per-kind caps, stopping at minScore.
 export function selectWithinBudget(ranked: ScoredCard[], budget: number, options: PackOptions): ScoredCard[] {
   const chosen: ScoredCard[] = [];
   const used = new Map<CardKind, number>();
@@ -66,12 +71,18 @@ export function selectWithinBudget(ranked: ScoredCard[], budget: number, options
     ["blind_spot", options.minBlindSpots],
     ["disagreement", options.minDisagreements],
   ];
-  for (const [kind, count] of floors) ranked.filter((e) => e.card.kind === kind).slice(0, count).forEach(take);
+  for (const [kind, count] of floors) {
+    ranked.filter((e) => e.card.kind === kind && withinBudget(e, chosen, budget)).slice(0, count).forEach(take);
+  }
   for (const entry of ranked) {
-    if (chosen.includes(entry) || !fits(entry, chosen, used, budget, options)) continue;
-    take(entry);
+    if (entry.score < options.minScore) break;
+    if (!chosen.includes(entry) && fits(entry, chosen, used, budget, options)) take(entry);
   }
   return chosen.sort((a, b) => b.score - a.score);
+}
+
+function withinBudget(entry: ScoredCard, chosen: ScoredCard[], budget: number): boolean {
+  return sumScored(chosen) + entry.card.tokens <= budget;
 }
 
 function fits(
@@ -81,7 +92,7 @@ function fits(
   budget: number,
   options: PackOptions,
 ): boolean {
-  if (sumScored(chosen) + entry.card.tokens > budget) return false;
+  if (!withinBudget(entry, chosen, budget)) return false;
   const share = options.kindShare[entry.card.kind];
   return share === undefined || (used.get(entry.card.kind) ?? 0) + entry.card.tokens <= share * budget;
 }

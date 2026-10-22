@@ -48,6 +48,10 @@ export class JevApiError extends Error {
   }
 }
 
+export class JevNetworkError extends Error {
+  override name = "JevNetworkError";
+}
+
 export class JevConfigError extends Error {
   override name = "JevConfigError";
 }
@@ -76,7 +80,7 @@ export class JevClient implements JevTransport {
     this.options = {
       baseUrl: JEV_BASE_URL,
       maxRetries: 4,
-      timeoutMs: 30_000,
+      timeoutMs: 90_000,
       fetchImpl: fetch,
       sleep: (ms) => new Promise((resolve) => setTimeout(resolve, ms)),
       ...options,
@@ -86,13 +90,27 @@ export class JevClient implements JevTransport {
   async systemOne(request: JevRequest): Promise<JevResponse> {
     const body = JSON.stringify({ model: this.options.model, ...request });
     for (let attempt = 0; ; attempt += 1) {
-      const response = await this.post(body);
-      if (response.ok) return JevResponseSchema.parse(await response.json());
+      const response = await this.attempt(body, attempt);
+      if (response === undefined) continue;
+      if (response.ok) return parseResponse(await response.text(), Object.keys(request.questions));
       const text = await response.text();
       if (!RETRYABLE.has(response.status) || attempt >= this.options.maxRetries) {
         throw new JevApiError(response.status, text);
       }
       await this.options.sleep(backoffMs(attempt, response.headers.get("retry-after")));
+    }
+  }
+
+  // Transport failures (DNS, reset, timeout) get the same bounded backoff as a
+  // 5xx; returns undefined when the caller should retry.
+  private async attempt(body: string, attempt: number): Promise<Response | undefined> {
+    try {
+      return await this.post(body);
+    } catch (error) {
+      if (!isTransportError(error)) throw error;
+      if (attempt >= this.options.maxRetries) throw new JevNetworkError(`Jev unreachable: ${error.message}`);
+      await this.options.sleep(backoffMs(attempt, null));
+      return undefined;
     }
   }
 
@@ -106,6 +124,30 @@ export class JevClient implements JevTransport {
       body,
       signal: AbortSignal.timeout(this.options.timeoutMs),
     });
+  }
+}
+
+function isTransportError(error: unknown): error is Error {
+  if (error instanceof TypeError) return true;
+  return error instanceof DOMException && (error.name === "TimeoutError" || error.name === "AbortError");
+}
+
+// A 200 is only a success if it parses and answers every question asked:
+// a silently missing answer would otherwise rank that card as irrelevant.
+export function parseResponse(text: string, questionIds: string[]): JevResponse {
+  const parsed = JevResponseSchema.safeParse(safeJson(text));
+  if (!parsed.success) throw new JevApiError(200, `malformed response: ${parsed.error.message.slice(0, 200)}`);
+  const missing = questionIds.filter((id) => !(id in parsed.data.answers));
+  if (missing.length > 0) throw new JevApiError(200, `response is missing answers for: ${missing.slice(0, 5).join(", ")}`);
+  return parsed.data;
+}
+
+function safeJson(text: string): unknown {
+  try {
+    return JSON.parse(text);
+  } catch (error) {
+    if (error instanceof SyntaxError) return undefined;
+    throw error;
   }
 }
 

@@ -37,6 +37,34 @@ describe("verifyAnswer", () => {
   });
 });
 
+describe("verifyAnswer: review regressions", () => {
+  it("rejects a fabricated tail glued to a real fragment with an ellipsis", () => {
+    const report = verifyAnswer('"The market doesn\'t give ... xx yy" [pg/quote-000001]', cards, opts);
+    expect(report.problems).toEqual([{ kind: "unsourced_quote", quote: "The market doesn't give ... xx yy" }]);
+  });
+
+  it("requires elided fragments in order within one card", () => {
+    expect(verifyAnswer('"how hard you worked ... The market doesn\'t give" [pg/quote-000001]', cards, opts).ok).toBe(false);
+  });
+
+  it("verifies quotes whose fragments are all short", () => {
+    const short = [card("pg", "quote", '"Be bold. Then win. Then rest." (x)', 9)];
+    expect(verifyAnswer('"Be bold ... win ... rest" [pg/quote-000009]', short, opts).ok).toBe(true);
+  });
+
+  it("rejects spans that cut words at the edges", () => {
+    expect(verifyAnswer('"he market doesn\'t give a sh" [pg/quote-000001]', cards, opts).ok).toBe(false);
+  });
+
+  it("flags an answer that cites nothing", () => {
+    expect(verifyAnswer("Just my opinion, no sources.", cards, opts).problems).toEqual([{ kind: "nothing_cited" }]);
+  });
+
+  it("flags malformed card ids instead of ignoring them", () => {
+    expect(verifyAnswer("A claim [pg/q-zzzzzz].", cards, opts).problems).toEqual([{ kind: "unknown_card", cardId: "pg/q-zzzzzz" }]);
+  });
+});
+
 describe("citedCardIds", () => {
   it("dedupes ids and accepts collision suffixes", () => {
     expect(citedCardIds("[a/q-abcdef] x [a/q-abcdef] [b/mm-012345-2]")).toEqual(["a/q-abcdef", "b/mm-012345-2"]);

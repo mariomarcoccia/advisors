@@ -51,3 +51,18 @@ describe("selectWithinBudget", () => {
     expect(chosen.map((e) => e.card.kind)).toEqual(["position"]);
   });
 });
+
+describe("selectWithinBudget: review regressions", () => {
+  const entry = (kind: "position" | "blind_spot", n: number, score: number, size = 400) => ({ card: card("a", kind, "x".repeat(size), n), score });
+
+  it("never lets floors exceed the budget", () => {
+    const chosen = selectWithinBudget([entry("blind_spot", 1, 0.9, 4000)], 500, DEFAULT_PACK);
+    expect(chosen).toEqual([]);
+  });
+
+  it("stops filling below minScore instead of padding with irrelevant cards", () => {
+    const ranked = [entry("position", 1, 0.9), entry("position", 2, 0.01), entry("position", 3, 0)];
+    const chosen = selectWithinBudget(ranked, 10_000, { ...DEFAULT_PACK, minBlindSpots: 0, minDisagreements: 0 });
+    expect(chosen.map((e) => e.score)).toEqual([0.9]);
+  });
+});

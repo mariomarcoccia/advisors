@@ -7,9 +7,11 @@ import { fileURLToPath } from "node:url";
 export const DEFAULT_JEV_MODEL = "jev-1.13.0";
 export const JEV_BASE_URL = "https://api.typesafe.ai";
 
-// Default request budget stays well under Jev's 64k per-request context, leaving
-// room for the state and question scaffolding.
-export const JEV_REQUEST_TOKEN_BUDGET = 40_000;
+// Request budget, in conservative tokens (chars / 3, counting each question's full
+// JSON), kept far under Jev's 64k per-request context because our estimate is not
+// Jev's tokenizer.
+export const JEV_REQUEST_TOKEN_BUDGET = 28_000;
+export const JEV_MAX_QUESTIONS_PER_REQUEST = 120;
 
 export interface Paths {
   repoRoot: string;
