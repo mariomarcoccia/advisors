@@ -1,0 +1,28 @@
+{
+  "slug": "james-clear",
+  "name": "James Clear",
+  "lang": "en",
+  "corpus": "large",
+  "person": "James Clear, author of Atomic Habits (~20M copies), writer of the twice-weekly essay archive and the 3-2-1 newsletter (3M+ readers) at jamesclear.com. Writes on habits, behavior change, systems, decision-making, and continuous improvement. NOT a founder/investor, a synthesizer-writer. Started publishing essays at jamesclear.com around 2012, well before the 2018 book.",
+  "notes": {
+    "focus": "Cover the full corpus: essays since 2012, the weekly newsletter archive, \"Atomic Habits\", and long podcast transcripts. A longer dossier is justified if the material earns it."
+  },
+  "enumPrompts": [
+    {
+      "label": "ensaios",
+      "prompt": "Enumerate the ESSAY ARCHIVE of {{PERSON}}\nWalk the canonical article index at https://jamesclear.com/articles (or the sitemap/archive listing if that's more complete) and list HIGH-VALUE essays beyond the 5 already known (marginal-gains, identity-based-habits, goals-systems, habit-stacking, atomic-habits-summary). He has published twice-weekly since ~2012, do not try to list all several hundred; instead prioritize his most-referenced/canonical essays: on deliberate practice, motivation, focus, decision-making, \"the akrasia effect,\" \"how long to form a habit,\" procrastination, willpower, the \"Feynman technique,\" \"warren buffett\" essay if any, famous failures, \"how to stop being lazy,\" transformation, and any essay he himself flags as a favorite or most-read (check if he has a \"start here\" or \"best articles\" page). Also confirm the Atomic Habits book's official page and any author's-own chapter-by-chapter summary beyond what's already cited. Return 15-25 items with exact URLs, priority-marked (his most load-bearing frameworks = high)."
+    },
+    {
+      "label": "newsletter-321",
+      "prompt": "Enumerate the 3-2-1 NEWSLETTER archive of {{PERSON}}\nWalk the archive index at https://jamesclear.com/3-2-1 (it lists past issues) and select a SPREAD across years (not just recent ones already cited: Jan/Feb/Apr/May/Jun 2026, Jul/Sep/Dec 2025), go back further: 2022, 2023, 2024 issues, picking ones with distinctive, quotable ideas (not just any issue, skim titles/preview text for substance). Aim for 15-20 NEW issues spanning multiple years to show the newsletter's range over time, avoiding duplicates of the 8 already in the dossier. Return exact URLs with a one-line \"why\" (what idea each issue contributes), priority=high for issues with clearly novel/distinctive frameworks not already covered."
+    },
+    {
+      "label": "podcasts-talks",
+      "prompt": "Enumerate PODCAST/TALK appearances of {{PERSON}} beyond the 4 already known (The Knowledge Project #263, Diary of a CEO Dec 2025, Tim Ferriss #648, Adam Grant \"Rethinking\").\nLook for: Lex Fridman podcast, Impact Theory, Modern Wisdom, The School of Greatness (Lewis Howes), How I Built This, any TED talk, university commencement or guest-lecture appearances, and any interview specifically about \"3-2-1\" newsletter's origin or his writing process. Prefer sources with full transcripts (podscripts.co, tim.blog, official transcripts). Return 8-15 items with exact URLs, priority-marked."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and third-party material for {{PERSON}} beyond Dr. Gina Cleo's critique and the Wikipedia reception section.\n1. Fetch the ACTUAL Guardian and New Yorker pieces referenced secondhand via Wikipedia's \"Atomic Habits\" critical-reception section, find their real URLs and read them directly (don't just cite Wikipedia citing them).\n2. Other serious critiques: behavioral-science researchers or psychologists who've critiqued the book's rigor, claims about the \"66 days\" habit-formation figure, criticism that the book is repackaged existing research, any critique of the newsletter/personal-brand business model, or criticism of over-simplification for people with executive-function/mental-health conditions.\n3. Any profile/long-form journalism about James Clear himself (not just the book), his background, how he built the newsletter business, revenue/business model reporting if it exists.\nReturn exact URLs, type=critique for critiques, 8-12 items."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "nicolas-dessaigne",
+  "name": "Nicolas Dessaigne",
+  "lang": "en",
+  "corpus": "normal",
+  "person": "Nicolas Dessaigne, co-founder and former CEO of Algolia (search/discovery API, 2012-2020, stepped down as CEO in 2020, remained board member), now Group Partner at Y Combinator. Co-founded Algolia with Julien Lemoine. NOT any other Nicolas Dessaigne.",
+  "enumPrompts": [
+    {
+      "label": "ensaios-talks",
+      "prompt": "Enumerate PRIMARY content from {{PERSON}} beyond what's already known (YC Startup School talk \"How To Start A Dev Tools Company\", SaaStr \"Culture That Scales\", SaaStr Podcast #015, YC profile page, a 2025 Substack piece on YC/AI).\n1. Walk the YC Startup Library (ycombinator.com/library) and YC's YouTube/blog for any Dessaigne talk or essay not yet cited.\n2. Look for any Algolia company blog posts, engineering blog posts, or \"Inside Algolia\" pieces authored by or featuring him directly (not just PR).\n3. Find any 2024-2026 talks/essays about his transition into YC Group Partner, what he looks for in dev-tools/infra founders now, patterns he sees across YC batches.\nReturn exact URLs, priority=high for anything with substantial first-person content, one-line \"why\" per item."
+    },
+    {
+      "label": "entrevistas-recentes",
+      "prompt": "Enumerate INTERVIEW/PODCAST appearances of {{PERSON}} beyond the ones already known (TechCrunch on stepping down as CEO, STATION F fireside chat, EU-Startups AI-search interview, 20VC, Lago pricing interview, VentureBeat devrel interview, AppSelekt \"14 Minutes of SaaS\", \"Understanding-as-a-Service\" conversational-interface piece, DEV Community advice piece).\n1. Any 2024-2026 podcast/interview appearances as a YC Group Partner discussing AI, dev tools, or founder advice.\n2. Any interview specifically about the Algolia founding story (2012, with Julien Lemoine), the early pivot from a mobile SDK idea to search-as-a-service, or the YC S14 batch experience.\n3. Any interview or talk about the decision to step down as CEO in 2020 and hand over to Bernadette Nixon, what prompted it, how the transition went, board dynamics.\nReturn exact URLs, priority-marked, 8-12 items with transcripts preferred."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material on {{PERSON}} and Algolia under his leadership (2012-2020).\n1. Glassdoor/employee-review critiques of Algolia culture under his tenure as CEO, the existing dossier cites the Glassdoor review page itself but may not have pulled specific quoted reviews.\n2. Any founder-community critique of Algolia's pricing model (usage-based search pricing) as confusing or misaligned, search Hacker News threads, dev-tools pricing critiques.\n3. Any critique of the CEO transition (2020), was it read as a forced step-down, board pressure, or a clean voluntary handoff? Any competitor (Elasticsearch, Typesense, Meilisearch) commentary contrasting Algolia's trajectory under him.\nReturn exact URLs, type=critique, 5-8 items, be honest if little adversarial material exists (he's a lower-controversy figure than most of the roster)."
+    }
+  ]
+}

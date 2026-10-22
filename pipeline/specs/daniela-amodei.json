@@ -1,0 +1,24 @@
+{
+  "slug": "daniela-amodei",
+  "name": "Daniela Amodei",
+  "lang": "en",
+  "corpus": "normal",
+  "person": "Daniela Amodei, Co-founder & President of Anthropic (founded 2021), running operations, business, finance, legal, policy, and communications. Before Anthropic she worked at OpenAI in operations/safety roles, and before that spent several years at Stripe leading risk operations, and earlier in the humanitarian/human-rights sector (including at the US Department of the Treasury on human trafficking policy). Sister of Anthropic CEO Dario Amodei; co-founded the company with him and several ex-OpenAI colleagues. Known for a management/operations-focused public voice rather than technical research output, interviews on scaling a values-driven AI company, hiring philosophy, and the operational side of running a frontier AI lab. NOT her brother Dario Amodei (a separate advisor) or any unrelated Daniela Amodei.",
+  "notes": {
+    "attribution": "Do not confuse her with her brother, Dario Amodei (Anthropic CEO), who has a separate dossier."
+  },
+  "enumPrompts": [
+    {
+      "label": "entrevistas-primarias",
+      "prompt": "Enumerate LONG-FORM INTERVIEWS and PANEL APPEARANCES featuring {{PERSON}}, President and co-founder of Anthropic.\nSpecifically look for and verify these known leads, plus find any others:\n1. Sixth Street podcast appearance (~May 2026).\n2. Future of Life Institute panel/interview alongside her brother Dario Amodei (~2023), possibly transcribed on LessWrong or the Future of Life Institute site.\n3. Notion \"First Block\" interview series (~2023).\n4. Stanford GSB \"View From the Top\" talk (~May 2026).\n5. Grit Podcast episode #177 (~Feb 2024).\n6. Fortune interview (~Feb 2026) about hiring/humanities backgrounds at Anthropic.\nReturn exact URLs (verify each lead actually exists and get the real URL, do not guess), priority=high for anything with substantial first-person content, one-line \"why\" per item."
+    },
+    {
+      "label": "outras-fontes",
+      "prompt": "Enumerate any OTHER primary material, essays, company blog posts, or additional interviews/podcasts, where {{PERSON}} speaks in her own voice about: Anthropic's founding story and the decision to leave OpenAI, operational/hiring philosophy at Anthropic, running a \"safety-focused\" company at commercial scale, or her views on AI policy/regulation from an operations (not research) angle. Also check for any co-authored Anthropic company statements or letters where she is a named voice. Return exact URLs, priority-marked, one-line \"why\" per item."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material about {{PERSON}} and Anthropic's operations/business strategy under her leadership.\n1. Critiques of Anthropic's fundraising and valuation trajectory (e.g. criticism of raising from sovereign wealth funds or defense-adjacent deals conflicting with a \"safety-first\" public stance).\n2. Critiques of Anthropic's business model (enterprise/API pricing, competitive positioning vs. OpenAI/Google) that specifically implicate operational/business leadership.\n3. Any specific public disagreement between her and other named tech/AI executives on business strategy or company culture.\nReturn exact URLs, type=critique, 4-8 items, be honest about how substantial vs. thin the critical material is (she has a much lower public profile than her brother; critical material specifically about her may be thin)."
+    }
+  ]
+}

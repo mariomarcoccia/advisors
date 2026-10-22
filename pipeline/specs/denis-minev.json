@@ -1,0 +1,21 @@
+{
+  "slug": "denis-minev",
+  "name": "Denis Benchimol Minev",
+  "lang": "pt",
+  "corpus": "thin",
+  "person": "Denis Benchimol Minev, CEO of Bemol (Brazilian retail chain based in Manaus, Amazonas state). Educated at Stanford and Wharton. Former Secretary of Planning of the State of Amazonas. Founder of multiple Amazon-region-focused NGOs/nonprofits. Named a special envoy for COP30 (the UN climate conference held in Belém, Brazil). Recurrent, substantive interviews (NeoFeed, O Globo, Jornal do Commercio) articulating an original economic thesis about the Amazon region (sustainable development, bioeconomy). NOT any other Denis Minev.",
+  "enumPrompts": [
+    {
+      "label": "tese-amazonia",
+      "prompt": "Enumerate PRIMARY interview/essay content on {{PERSON}}, focused on his economic thesis about the Amazon region and bioeconomy.\n1. Find the NeoFeed interview/profile, and any O Globo or Jornal do Commercio piece where he articulates his own economic framework for sustainable development in the Amazon.\n2. Find any op-ed, column, or long-form essay he has authored (Valor Econômico, Folha, or similar) about Amazon economic policy, bioeconomy, or regional development.\n3. Find content related to his COP30 special-envoy role, statements, interviews, or panel appearances where he speaks in his own words about climate/Amazon policy.\nReturn exact URLs, priority=high for anything with substantial first-person verbatim content, one-line \"why\" per item. Content will mostly be in Portuguese, that's expected and correct."
+    },
+    {
+      "label": "carreira-bemol-governo",
+      "prompt": "Enumerate INTERVIEWS and TALKS by {{PERSON}} about his business and government career.\n1. Find interviews about running Bemol (retail chain in Manaus), strategy, competitive positioning in the Amazon regional market, and how the family business background shaped his approach.\n2. Find interviews/press coverage of his tenure as Secretary of Planning of Amazonas state, specific policy decisions or initiatives he led.\n3. Find interviews about the NGOs/nonprofits he founded focused on the Amazon, his own account of why he started them and what they do.\nReturn exact URLs, priority-marked, prioritizing full transcripts or extensive direct quotation over short event-listing pages."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial or complicating material on {{PERSON}}.\n1. Any critique of Bemol's business performance or competitive position in the Amazonas retail market.\n2. Any critique or skepticism of his Amazon economic/bioeconomy thesis, his tenure as Secretary of Planning, or his NGO work (effectiveness, conflicts of interest between his business and policy roles).\n3. Any controversy connected to his COP30 role, government relationships, or governance that names him specifically.\nReturn exact URLs, type=critique, 4-8 items, be honest if adversarial material specifically targeting him personally is thin (this is a less internationally-covered figure, say so if true rather than padding)."
+    }
+  ]
+}

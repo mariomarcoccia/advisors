@@ -1,0 +1,21 @@
+{
+  "slug": "chris-olah",
+  "name": "Chris Olah",
+  "lang": "en",
+  "corpus": "normal",
+  "person": "Chris Olah, Co-founder of Anthropic and leader of its interpretability/mechanistic-interpretability research team. Previously at Google Brain and OpenAI. Co-founder of Distill.pub (an online journal, active ~2016-2021, for rigorous, visual, \"explorable\" explanations of machine learning research, distinct in style from traditional academic papers). Widely known in the ML community for foundational, personally-authored blog essays on colah.github.io (e.g. \"Understanding LSTM Networks,\" \"Neural Networks, Manifolds, and Topology,\" \"Visual Information Theory\") written years before Anthropic, in a distinctive first-person, intuition-building, heavily-diagrammed style. At Anthropic he leads and writes for the \"Transformer Circuits Thread\" (transformer-circuits.pub), a series of interpretability research publications written in an essayistic, first-person register rather than as anonymous multi-author papers. NOT any unrelated Chris/Christopher Olah.",
+  "enumPrompts": [
+    {
+      "label": "ensaios-blog-pessoal",
+      "prompt": "Enumerate PRIMARY WRITTEN material authored by {{PERSON}} in his own personal voice.\n1. Walk his personal blog at colah.github.io, find his classic essays (e.g. \"Understanding LSTM Networks,\" \"Neural Networks, Manifolds, and Topology,\" \"Visual Information Theory,\" \"Conv Nets: A Modular Perspective,\" and others), these are foundational, highly-cited, personally-written pieces predating Anthropic.\n2. Find pieces he wrote or co-wrote for Distill.pub (distill.pub) during his time co-founding/editing it, especially ones where his personal voice/framing is prominent (editorial pieces, \"Thread\" experiments, or his own research articles), not just any Distill paper.\n3. Find entries in Anthropic's \"Transformer Circuits Thread\" (transformer-circuits.pub) that he personally authored or led, and any of his X/Twitter threads laying out interpretability findings or opinions in his own words.\nReturn exact URLs, priority=high for anything with substantial first-person voice, one-line \"why\" per item."
+    },
+    {
+      "label": "entrevistas-talks",
+      "prompt": "Enumerate LONG-FORM INTERVIEWS, PODCASTS, and TALKS featuring {{PERSON}}.\n1. His appearance(s) on the 80,000 Hours Podcast, there are at least two distinct episodes (one from around 2021 on interpretability, one more recent, potentially 2025, about his unconventional career path), find both.\n2. His appearance on Lex Fridman's podcast (look for one specifically framed around \"mechanistic interpretability explained\" or similar).\n3. Any other substantial long-form interview or conference talk about interpretability research, why he left traditional academia/credentials path, or his research philosophy.\nPrioritize sources with full transcripts over short clips. Return exact URLs, priority-marked, one-line \"why\" per item."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material relevant to {{PERSON}} and his research program.\n1. Critiques from other ML researchers of mechanistic interpretability as a research agenda, e.g. skepticism that it will scale to frontier models, or that it's too slow/academic relative to the pace of capability advances.\n2. Any critique of Distill.pub's shutdown/discontinuation (~2021), reasons cited, and any reflection (his own or others') on why the format didn't sustain itself as a journal.\n3. Critiques of Anthropic's interpretability work being used for \"safety-washing\" (i.e. that it provides a veneer of safety rigor without actually constraining deployment decisions).\nReturn exact URLs, type=critique, 4-8 items, be honest about how substantial vs. thin the critical material is (he is a research figure, not a business executive, so adversarial coverage may be limited to technical-community discourse)."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@advisors/pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Renders the dossier build workflow (.claude/workflows/build-advisor.js) from engine.js and specs/.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "render": "node src/render.ts",
+    "render:check": "node src/render.ts --check",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm test && npm run render:check"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}

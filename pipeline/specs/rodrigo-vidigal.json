@@ -1,0 +1,21 @@
+{
+  "slug": "rodrigo-vidigal",
+  "name": "Rodrigo Vidigal",
+  "lang": "pt",
+  "corpus": "thin",
+  "person": "Rodrigo Vidigal, President of Motorola Mobility Brazil. Gives recurrent interviews (Forbes Brasil, Mobile Time, Tecnoblog, Bloomberg Línea) articulating a consistent, repeated thesis that Brazil functions as a \"global laboratory\" for Motorola's product/brand strategy, features and campaigns tested in Brazil before global rollout. NOT any other Rodrigo Vidigal.",
+  "enumPrompts": [
+    {
+      "label": "tese-laboratorio-global",
+      "prompt": "Enumerate PRIMARY interview content on {{PERSON}} where he articulates the \"Brazil as global laboratory\" thesis for Motorola.\n1. Find the Forbes Brasil, Mobile Time, and Tecnoblog interviews (or similar tech/business press) where he discusses Brazil's role in Motorola's global product strategy, get the fullest versions with direct quotes.\n2. Find any Bloomberg Línea interview or press piece where he discusses Motorola Brazil's market strategy, brand positioning vs. Samsung/Apple/Xiaomi, or specific product launches tested first in Brazil.\n3. Find any additional interview or talk where he discusses his own career path or leadership approach at Motorola Brazil.\nReturn exact URLs, priority=high for anything with substantial first-person verbatim content, one-line \"why\" per item. Content will mostly be in Portuguese, that's expected and correct."
+    },
+    {
+      "label": "estrategia-mercado-br",
+      "prompt": "Enumerate INTERVIEWS and TALKS by {{PERSON}} about Motorola's business strategy in the Brazilian smartphone market.\n1. Find interviews about specific product launches, market-share data, or competitive positioning in Brazil (vs. Samsung, Apple, Xiaomi).\n2. Find interviews about manufacturing/local production strategy (Motorola has a factory in the Manaus Free Trade Zone) and how that factors into pricing or market strategy.\n3. Find any interview about marketing/distribution strategy specific to the Brazilian market (retail partnerships, carrier deals, price segmentation).\nReturn exact URLs, priority-marked, prioritizing full transcripts or extensive direct quotation over short event-listing pages."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial or complicating material on {{PERSON}}.\n1. Any critique of Motorola's market-share performance, product quality issues, or competitive position in Brazil under his leadership.\n2. Any analyst or press skepticism about the \"Brazil as global laboratory\" thesis or Motorola's broader strategy in Latin America.\n3. Any controversy connected to labor practices at the Manaus factory, supply chain, or governance that names him specifically.\nReturn exact URLs, type=critique, 4-8 items, be honest if adversarial material specifically targeting him personally (vs. generic industry/company criticism) is thin."
+    }
+  ]
+}

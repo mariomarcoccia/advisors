@@ -26,7 +26,8 @@ These keep the project honest and safe — see [`reference/voice-guide.md`](refe
 2. Copy the structure in [`reference/persona-template.md`](reference/persona-template.md) into `advisors/<slug>.md` (`<slug>` is kebab-case, e.g. `jane-doe`).
 3. Fill **every** section, grounded in **≥5 real sources** (reclusive figures may have fewer — note it in `source_count` and Provenance).
 4. Complete the frontmatter: `name, slug, role, domains, last_updated` (today's date), `source_count`, and a `sources` list with working URLs.
-5. Open a PR. The checklist will appear automatically.
+5. Add `pipeline/specs/<slug>.json` (see [`pipeline/README.md`](pipeline/README.md)) and run `npm run render` in `pipeline/`. Every dossier needs a spec so anyone can rebuild it; CI fails without one. If you use Claude Code, the `build-advisor` workflow can draft the dossier from the spec.
+6. Open a PR. The checklist will appear automatically.
 
 ## How to enrich an existing advisor
 

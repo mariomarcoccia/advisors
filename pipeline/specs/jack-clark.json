@@ -1,0 +1,21 @@
+{
+  "slug": "jack-clark",
+  "name": "Jack Clark",
+  "lang": "en",
+  "corpus": "normal",
+  "person": "Jack Clark, Co-founder & Head of Policy at Anthropic. Former journalist (Bloomberg, covering AI), former Policy Director at OpenAI, co-founder of the Stanford HAI \"AI Index\" report. Since roughly 2016 he has written the weekly newsletter \"Import AI\" (importai.substack.com / jack-clark.net), which combines AI research summaries with his own policy analysis and, notably, original speculative-fiction vignettes about AI futures (\"Import AI fiction\"). Frequent speaker/witness on AI policy at bodies like the OECD and in congressional/parliamentary testimony. NOT any unrelated Jack Clark (e.g. sports figures or unrelated tech people of the same name).",
+  "enumPrompts": [
+    {
+      "label": "import-ai-ensaios",
+      "prompt": "Enumerate PRIMARY WRITTEN material authored by {{PERSON}}.\n1. Walk the archive of his newsletter \"Import AI\" (importai.substack.com, or its older home jack-clark.net), find as many individual issues as possible, prioritizing ones with substantial personal policy commentary or his original speculative-fiction pieces about AI futures, not just research-paper roundups.\n2. Find any essays or blog posts he has personally authored on the Anthropic website (anthropic.com/news) about AI policy, safety, or the \"Core Views on AI Safety\" type content.\n3. Find his written policy testimony/submissions to government bodies (US Congress, UK Parliament, OECD, etc.), the actual submitted text, not just news coverage.\nReturn exact URLs, priority=high for anything with substantial first-person authored content, one-line \"why\" per item."
+    },
+    {
+      "label": "entrevistas-talks",
+      "prompt": "Enumerate LONG-FORM INTERVIEWS, PODCASTS, and TALKS featuring {{PERSON}}.\n1. Any podcast appearances discussing AI policy, Import AI, or his path from journalist to OpenAI to Anthropic co-founder.\n2. Any recorded talks/panels at policy-focused conferences (OECD, Davos, AI safety summits, congressional hearings) where his own remarks (not just testimony text) are available as video/transcript.\n3. Any interview specifically about Anthropic's founding story or his role as Head of Policy.\nPrioritize sources with full transcripts over short clips. Return exact URLs, priority-marked, one-line \"why\" per item."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material about {{PERSON}} and his policy positions.\n1. Critiques of Anthropic's policy advocacy being self-serving (e.g. accusations that Anthropic lobbies for AI regulation that would entrench incumbents like itself, \"regulatory capture\" critique).\n2. Any specific public disagreement between him and other named AI policy figures (e.g. accelerationists like Marc Andreessen, or open-source AI advocates like Yann LeCun) on regulation or openness.\n3. Critiques of the \"AI Index\" methodology he co-founded, or of his framing of AI risk/capability trends in Import AI.\nReturn exact URLs, type=critique, 4-8 items, be honest about how substantial vs. thin the critical material is."
+    }
+  ]
+}

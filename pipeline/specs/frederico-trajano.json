@@ -1,0 +1,24 @@
+{
+  "slug": "frederico-trajano",
+  "name": "Frederico Trajano",
+  "lang": "pt",
+  "corpus": "normal",
+  "person": "Frederico Trajano, CEO do Magazine Luiza (Magalu) desde 2016, terceira geração da família fundadora, filho de Luiza Helena Trajano (presidente do conselho). Liderou a transformação digital do Magalu (ecossistema 3P, fintech MagaluPay, Magalu Cloud) e desde 2026 lidera o \"ciclo de IA\" (AI-commerce, \"cérebro da Lu\"). NÃO é a mãe Luiza Helena Trajano nem nenhum outro Frederico Trajano.",
+  "notes": {
+    "attribution": "Do not confuse him with his mother, Luiza Helena Trajano (chair of the board), who has a separate dossier."
+  },
+  "enumPrompts": [
+    {
+      "label": "transformacao-ecossistema",
+      "prompt": "Enumere material sobre a TRANSFORMAÇÃO DIGITAL e o ECOSSISTEMA do Magalu sob {{PERSON}}, além do já conhecido (InfoMoney perfil, Exame INSIGHT 7 anos, Seu Dinheiro 2020, NeoFeed várias, Experience Club, Brazil Journal x2, Exame \"vira-lata\", InvestNews x2, Mercado&Consumo, Meio&Mensagem).\n1. Entrevistas/perfis adicionais em Forbes BR, Época Negócios, Valor Econômico, Veja Negócios sobre a estratégia de plataforma 3P, fintech (MagaluPay/Magalu Bank), Magalu Cloud, ou a parceria com Amazon (jun/2026).\n2. Qualquer podcast de negócios (Braincast, Market Makers, Sala de Investimento, Os Sócios, G4 Educação) com participação dele mais longa e citável.\n3. Material sobre a origem da \"Lu\" (assistente virtual) e sua evolução para IA generativa/\"cérebro da Lu\", cobertura de lançamento, prêmios (Cannes), métricas de conversão.\nRetorne URLs exatas, priorize citações diretas dele, 10-15 itens."
+    },
+    {
+      "label": "ia-atualizado",
+      "prompt": "Enumere cobertura ATUALIZADA (2026, principalmente pós-jun/2026, já que hoje é {{DATE}}) sobre o \"ciclo de IA\"/AI-commerce de {{PERSON}} no Magalu, além do já conhecido (Seu Dinheiro 2026 \"resolve o que nem o ChatGPT\", NeoFeed \"cérebro da Lu\").\n1. Desdobramentos mais recentes do WhatsApp da Lu com a Meta (lançado dez/2025), métricas atualizadas de conversas/conversão, expansão de funcionalidades.\n2. Resultados trimestrais mais recentes do Magalu (2026) com comentários dele sobre a estratégia de IA, margem, ou a parceria com Amazon/AliExpress.\n3. Qualquer nova declaração dele sobre concorrência com Mercado Livre, Shopee, TikTok Shop, ou sobre a \"terceira revolução do varejo\".\nRetorne URLs exatas, 8-12 itens, com datas o mais recentes possível."
+    },
+    {
+      "label": "criticas-governanca",
+      "prompt": "Enumere CRÍTICAS e material adversarial sobre {{PERSON}} além do já conhecido (o colapso de ~R$170bi em valor de mercado/queda de ~97% da ação, a falha contábil de 2023, a diluição de minoritários no aumento de capital de 2024, o corte de ~10 mil empregos, a \"contradição\" entre defender isonomia tributária e depois fazer parceria com AliExpress/Amazon).\n1. Análises de mercado/analistas (XP, BTG, Itaú BBA, JP Morgan) sobre a governança do Magalu ou a sustentabilidade do turnaround.\n2. Cobertura trabalhista/sindical sobre os cortes de empregos e fechamento de lojas durante o turnaround.\n3. Qualquer crítica adicional à parceria com a Amazon (jun/2026), ela é vista como fraqueza estratégica por algum analista/jornalista?\n4. Reclamações de consumidor (Reclame Aqui, Procon) sobre o marketplace 3P, qualidade de sellers terceiros, prazo de entrega.\nRetorne URLs exatas, tipo=critique, 8-12 itens."
+    }
+  ]
+}

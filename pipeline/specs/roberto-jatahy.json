@@ -1,0 +1,21 @@
+{
+  "slug": "roberto-jatahy",
+  "name": "Roberto Jatahy",
+  "lang": "pt",
+  "corpus": "normal",
+  "person": "Roberto Jatahy, CEO of Grupo Soma (Brazilian fashion retail group, B3 ticker SOMA3, whose brands include Farm, Animale, NV, and Hering, among others). Named to the Business of Fashion 500/BoF list (2023) as one of very few Brazilians recognized. EY Entrepreneur of the Year Brazil (2020). Featured on the cover of Exame magazine (profile on \"estilo bilionário\" / billionaire style). Gives frequent interviews about multi-brand M&A/consolidation strategy in fashion retail, including investor talks (XP) and business press. NOT any other Roberto Jatahy.",
+  "enumPrompts": [
+    {
+      "label": "perfil-fundador",
+      "prompt": "Enumerate PRIMARY interview/profile content on {{PERSON}}.\n1. Find the Exame magazine cover profile (\"estilo bilionário\" or similar), get the fullest version with direct quotes.\n2. Find the EY Entrepreneur of the Year 2020 Brazil recognition content (interview, acceptance remarks, profile) and any Business of Fashion 500 (2023) feature/interview.\n3. Find any long-form interview or podcast where he discusses his own career path and the founding/scaling of Grupo Soma.\nReturn exact URLs, priority=high for anything with substantial first-person verbatim content, one-line \"why\" per item. Content will mostly be in Portuguese, that's expected and correct."
+    },
+    {
+      "label": "estrategia-ma",
+      "prompt": "Enumerate INTERVIEWS and TALKS by {{PERSON}} about Grupo Soma's M&A and multi-brand consolidation strategy.\n1. Find investor talks or interviews (XP Investimentos, InfoMoney, Bloomberg Línea, NeoFeed) about specific acquisitions (Hering, Animale/NV, or others) and the logic behind buying vs. building brands.\n2. Find interviews about how he manages a multi-brand portfolio (creative independence vs. shared back-office/logistics), his own framework if named.\n3. Find any interview specifically addressing succession, family involvement, or the transition from single-brand founder to multi-brand group CEO.\nReturn exact URLs, priority-marked, prioritizing full transcripts or extensive direct quotation over short event-listing pages."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial or complicating material on {{PERSON}}.\n1. Any critique of Grupo Soma's stock performance, integration execution after acquisitions (especially Hering), or margin pressure.\n2. Any analyst or press skepticism about the roll-up/multi-brand consolidation strategy in Brazilian fashion retail.\n3. Any controversy connected to labor practices, supply chain, or governance during his tenure that names him specifically.\nReturn exact URLs, type=critique, 4-8 items, be honest if adversarial material specifically targeting him personally (vs. generic sector criticism) is thin."
+    }
+  ]
+}

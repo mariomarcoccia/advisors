@@ -10,4 +10,11 @@
 # Runtime state lives in ~/.council/state, never in the repo — but ignore it just in case
 state/
 *.local.md
-.claude/
+# Local Claude Code config stays local; the dossier build workflow is versioned.
+.claude/*
+!.claude/workflows/
+.claude/workflows/*
+!.claude/workflows/build-advisor.js
+
+# Research notes written during dossier builds
+.build/

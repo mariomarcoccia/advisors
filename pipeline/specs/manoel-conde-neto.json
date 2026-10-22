@@ -1,0 +1,21 @@
+{
+  "slug": "manoel-conde-neto",
+  "name": "Manoel Conde Neto",
+  "lang": "pt",
+  "corpus": "thin",
+  "person": "Manoel Conde Neto, founder and chairman/president of Farma Conde (Brazilian pharmacy retail chain founded in a garage in Ubatuba, São Paulo state, in 1993, grown into a chain with roughly R$1.7 billion in revenue). Gave a full video interview on the TALK+ show/podcast (episode #137). Profiled in Metrópole magazine. Classic founder-from-nothing narrative. NOT any other Manoel Conde.",
+  "enumPrompts": [
+    {
+      "label": "historia-fundacao",
+      "prompt": "Enumerate PRIMARY interview/profile content on {{PERSON}}, focused on the founding story of Farma Conde.\n1. Find the full TALK+ video interview (episode #137 or the correct episode number, confirm via search), get the fullest transcript/description with direct quotes.\n2. Find the Metrópole magazine profile piece, and any other profile covering the garage-in-Ubatuba origin story and growth to ~R$1.7 billion revenue.\n3. Find any additional interview or podcast where he discusses founding decisions, near-failure moments, or how the business scaled from a single store.\nReturn exact URLs, priority=high for anything with substantial first-person verbatim content, one-line \"why\" per item. Content will mostly be in Portuguese, that's expected and correct."
+    },
+    {
+      "label": "estrategia-farmacia",
+      "prompt": "Enumerate INTERVIEWS and TALKS by {{PERSON}} about running/growing Farma Conde as a regional pharmacy chain.\n1. Find interviews about competing against national chains (Raia Drogasil, Pague Menos, Panvel) as a regional player based on the São Paulo coast.\n2. Find any interview about specific expansion decisions, private-label strategy, or store-format innovation at Farma Conde.\n3. Find any interview or press piece about succession planning or family involvement in the business.\nReturn exact URLs, priority-marked, prioritizing full transcripts or extensive direct quotation over short event-listing pages."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial or complicating material on {{PERSON}}.\n1. Any critique of Farma Conde's business performance, expansion pace, or competitive position vs. national drugstore chains.\n2. Any press skepticism about regional pharmacy chains' long-term viability against national consolidation in Brazil.\n3. Any controversy connected to labor practices, supply chain, or governance that names him specifically.\nReturn exact URLs, type=critique, 4-8 items, be honest if adversarial material specifically targeting him personally is thin (this is a regional, less-covered figure, say so if true rather than padding)."
+    }
+  ]
+}
