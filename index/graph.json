@@ -1,0 +1,3110 @@
+[
+  {
+    "from": "alexandre-birman",
+    "to": "rony-meisler",
+    "external": false,
+    "label": "vs. Rony Meisler — does a founder's \"alma\" survive a roll-up?",
+    "cardId": "alexandre-birman/dis-8dcc24"
+  },
+  {
+    "from": "alexandre-birman",
+    "to": "bernard-arnault",
+    "external": false,
+    "label": "vs. Bernard Arnault — same model, opposite temperament on luxury",
+    "cardId": "alexandre-birman/dis-eaeceb"
+  },
+  {
+    "from": "alexandre-birman",
+    "to": "roberto-jatahy",
+    "external": false,
+    "label": "vs. Warren Buffett — aligned on durability and debt-aversion in principle, divergent on cadence, control, and practice",
+    "cardId": "alexandre-birman/dis-74a5b5"
+  },
+  {
+    "from": "alexandre-birman",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett — aligned on durability and debt-aversion in principle, divergent on cadence, control, and practice",
+    "cardId": "alexandre-birman/dis-74a5b5"
+  },
+  {
+    "from": "alexandre-birman",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Jeff Bezos — the merger-of-equals as a structure",
+    "cardId": "alexandre-birman/dis-fc99eb"
+  },
+  {
+    "from": "alexandre-birman",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "vs. Frederico Trajano / Luiza Helena Trajano — omnichannel timing and founder-control",
+    "cardId": "alexandre-birman/dis-70febf"
+  },
+  {
+    "from": "alexandre-birman",
+    "to": "luiza-helena-trajano",
+    "external": false,
+    "label": "vs. Frederico Trajano / Luiza Helena Trajano — omnichannel timing and founder-control",
+    "cardId": "alexandre-birman/dis-70febf"
+  },
+  {
+    "from": "alexandre-birman",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Buffett/Bezos generally — *extrapolated*",
+    "cardId": "alexandre-birman/dis-d94765"
+  },
+  {
+    "from": "alexandre-birman",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Buffett/Bezos generally — *extrapolated*",
+    "cardId": "alexandre-birman/dis-d94765"
+  },
+  {
+    "from": "alexandre-ostrowiecki",
+    "to": "bernard-arnault",
+    "external": false,
+    "label": "vs. Bernard Arnault — on price and brand",
+    "cardId": "alexandre-ostrowiecki/dis-61ab70"
+  },
+  {
+    "from": "alexandre-ostrowiecki",
+    "to": "alexandre-birman",
+    "external": false,
+    "label": "vs. Alexandre Birman / Rony Meisler — on brand vs. price as the moat (a Brazilian split)",
+    "cardId": "alexandre-ostrowiecki/dis-644d5b"
+  },
+  {
+    "from": "alexandre-ostrowiecki",
+    "to": "rony-meisler",
+    "external": false,
+    "label": "vs. Alexandre Birman / Rony Meisler — on brand vs. price as the moat (a Brazilian split)",
+    "cardId": "alexandre-ostrowiecki/dis-644d5b"
+  },
+  {
+    "from": "alexandre-ostrowiecki",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett — on circle of competence",
+    "cardId": "alexandre-ostrowiecki/dis-a230fe"
+  },
+  {
+    "from": "alexandre-ostrowiecki",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Jeff Bezos — on inventory and the customer-vs-cash tension",
+    "cardId": "alexandre-ostrowiecki/dis-171bdd"
+  },
+  {
+    "from": "alexandre-ostrowiecki",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "vs. Frederico Trajano — on the route to the mass Brazilian consumer",
+    "cardId": "alexandre-ostrowiecki/dis-ab816a"
+  },
+  {
+    "from": "alexandre-ostrowiecki",
+    "to": "luiza-helena-trajano",
+    "external": false,
+    "label": "vs. Frederico Trajano — on the route to the mass Brazilian consumer",
+    "cardId": "alexandre-ostrowiecki/dis-ab816a"
+  },
+  {
+    "from": "alexandre-ostrowiecki",
+    "to": "external",
+    "external": true,
+    "label": "vs. free-market libertarian allies — on the destination, not just the direction",
+    "cardId": "alexandre-ostrowiecki/dis-b8c2fc"
+  },
+  {
+    "from": "alexandre-ostrowiecki",
+    "to": "external",
+    "external": true,
+    "label": "vs. his own co-author, Renato Feder — on retracting youthful ideology once in public office",
+    "cardId": "alexandre-ostrowiecki/dis-d58112"
+  },
+  {
+    "from": "alice-walton",
+    "to": "elon-musk",
+    "external": false,
+    "label": "vs. Jeff Bezos / Elon Musk (what wealth is for)",
+    "cardId": "alice-walton/dis-067503"
+  },
+  {
+    "from": "alice-walton",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Jeff Bezos / Elon Musk (what wealth is for)",
+    "cardId": "alice-walton/dis-067503"
+  },
+  {
+    "from": "alice-walton",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett (giving model)",
+    "cardId": "alice-walton/dis-c7ef86"
+  },
+  {
+    "from": "alice-walton",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "vs. Frederico/Luiza Helena Trajano & Rony Meisler (metrics vs. conviction)",
+    "cardId": "alice-walton/dis-32d333"
+  },
+  {
+    "from": "alice-walton",
+    "to": "luiza-helena-trajano",
+    "external": false,
+    "label": "vs. Frederico/Luiza Helena Trajano & Rony Meisler (metrics vs. conviction)",
+    "cardId": "alice-walton/dis-32d333"
+  },
+  {
+    "from": "alice-walton",
+    "to": "rony-meisler",
+    "external": false,
+    "label": "vs. Frederico/Luiza Helena Trajano & Rony Meisler (metrics vs. conviction)",
+    "cardId": "alice-walton/dis-32d333"
+  },
+  {
+    "from": "alice-walton",
+    "to": "naval-ravikant",
+    "external": false,
+    "label": "vs. Naval Ravikant / Paul Graham (leverage vs. permanence)",
+    "cardId": "alice-walton/dis-66ca41"
+  },
+  {
+    "from": "alice-walton",
+    "to": "paul-graham",
+    "external": false,
+    "label": "vs. Naval Ravikant / Paul Graham (leverage vs. permanence)",
+    "cardId": "alice-walton/dis-66ca41"
+  },
+  {
+    "from": "alice-walton",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "vs. Reed Hastings (institutional culture)",
+    "cardId": "alice-walton/dis-60500d"
+  },
+  {
+    "from": "ben-horowitz",
+    "to": "jason-lemkin",
+    "external": false,
+    "label": "vs. Paul Graham / Michael Seibel / Jason Lemkin (the optimistic founder genre)",
+    "cardId": "ben-horowitz/dis-d6a61c"
+  },
+  {
+    "from": "ben-horowitz",
+    "to": "michael-seibel",
+    "external": false,
+    "label": "vs. Paul Graham / Michael Seibel / Jason Lemkin (the optimistic founder genre)",
+    "cardId": "ben-horowitz/dis-d6a61c"
+  },
+  {
+    "from": "ben-horowitz",
+    "to": "paul-graham",
+    "external": false,
+    "label": "vs. Paul Graham / Michael Seibel / Jason Lemkin (the optimistic founder genre)",
+    "cardId": "ben-horowitz/dis-d6a61c"
+  },
+  {
+    "from": "ben-horowitz",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "vs. Reed Hastings (culture)",
+    "cardId": "ben-horowitz/dis-5223a5"
+  },
+  {
+    "from": "ben-horowitz",
+    "to": "james-clear",
+    "external": false,
+    "label": "vs. Naval Ravikant / James Clear (career & self)",
+    "cardId": "ben-horowitz/dis-b5c6f7"
+  },
+  {
+    "from": "ben-horowitz",
+    "to": "naval-ravikant",
+    "external": false,
+    "label": "vs. Naval Ravikant / James Clear (career & self)",
+    "cardId": "ben-horowitz/dis-b5c6f7"
+  },
+  {
+    "from": "ben-horowitz",
+    "to": "reid-hoffman",
+    "external": false,
+    "label": "vs. Warren Buffett / Reid Hoffman on AI & crypto policy",
+    "cardId": "ben-horowitz/dis-cc578f"
+  },
+  {
+    "from": "ben-horowitz",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett / Reid Hoffman on AI & crypto policy",
+    "cardId": "ben-horowitz/dis-cc578f"
+  },
+  {
+    "from": "ben-horowitz",
+    "to": "external",
+    "external": true,
+    "label": "vs. his former partner John O'Farrell (intramural)",
+    "cardId": "ben-horowitz/dis-67bfa4"
+  },
+  {
+    "from": "ben-horowitz",
+    "to": "external",
+    "external": true,
+    "label": "vs. Jim Collins (*Good to Great*, on CEO succession)",
+    "cardId": "ben-horowitz/dis-6364ae"
+  },
+  {
+    "from": "ben-horowitz",
+    "to": "elon-musk",
+    "external": false,
+    "label": "vs. David Shaywitz / Patrick Henry (named critiques of Peacetime/Wartime CEO)",
+    "cardId": "ben-horowitz/dis-2f5e55"
+  },
+  {
+    "from": "ben-horowitz",
+    "to": "external",
+    "external": true,
+    "label": "vs. Julia Gaffield (historian, on the Louverture chapter)",
+    "cardId": "ben-horowitz/dis-fde8e8"
+  },
+  {
+    "from": "bernard-arnault",
+    "to": "harry-stebbings",
+    "external": false,
+    "label": "vs. Jason Lemkin / Harry Stebbings (SaaS growth)",
+    "cardId": "bernard-arnault/dis-18490b"
+  },
+  {
+    "from": "bernard-arnault",
+    "to": "jason-lemkin",
+    "external": false,
+    "label": "vs. Jason Lemkin / Harry Stebbings (SaaS growth)",
+    "cardId": "bernard-arnault/dis-18490b"
+  },
+  {
+    "from": "bernard-arnault",
+    "to": "ben-horowitz",
+    "external": false,
+    "label": "vs. Ben Horowitz / Elon Musk (urgency, P&L focus)",
+    "cardId": "bernard-arnault/dis-f53fb0"
+  },
+  {
+    "from": "bernard-arnault",
+    "to": "elon-musk",
+    "external": false,
+    "label": "vs. Ben Horowitz / Elon Musk (urgency, P&L focus)",
+    "cardId": "bernard-arnault/dis-f53fb0"
+  },
+  {
+    "from": "bernard-arnault",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Jeff Bezos (scale & availability)",
+    "cardId": "bernard-arnault/dis-a08b45"
+  },
+  {
+    "from": "bernard-arnault",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "vs. Reed Hastings (no controlling stake, \"context not control\")",
+    "cardId": "bernard-arnault/dis-63f8b9"
+  },
+  {
+    "from": "bernard-arnault",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett (agree on patience and concentration, disagree on when to let go)",
+    "cardId": "bernard-arnault/dis-95b857"
+  },
+  {
+    "from": "bernard-arnault",
+    "to": "external",
+    "external": true,
+    "label": "vs. Gabriel Zucman (wealth-tax economics)",
+    "cardId": "bernard-arnault/dis-0c4b5e"
+  },
+  {
+    "from": "bernard-arnault",
+    "to": "alexandre-birman",
+    "external": false,
+    "label": "vs. Alexandre Birman / Caito Maia / Luiz Seabra (brand-builder peers)",
+    "cardId": "bernard-arnault/dis-731cb0"
+  },
+  {
+    "from": "bernard-arnault",
+    "to": "caito-maia",
+    "external": false,
+    "label": "vs. Alexandre Birman / Caito Maia / Luiz Seabra (brand-builder peers)",
+    "cardId": "bernard-arnault/dis-731cb0"
+  },
+  {
+    "from": "bernard-arnault",
+    "to": "luiz-seabra",
+    "external": false,
+    "label": "vs. Alexandre Birman / Caito Maia / Luiz Seabra (brand-builder peers)",
+    "cardId": "bernard-arnault/dis-731cb0"
+  },
+  {
+    "from": "bernard-arnault",
+    "to": "external",
+    "external": true,
+    "label": "vs. François Pinault / Kering (named rival, off-roster reference)",
+    "cardId": "bernard-arnault/dis-a2078f"
+  },
+  {
+    "from": "bernard-arnault",
+    "to": "external",
+    "external": true,
+    "label": "vs. Domenico De Sole (Gucci's CEO during the takeover war, off-roster reference)",
+    "cardId": "bernard-arnault/dis-ab2a0e"
+  },
+  {
+    "from": "caito-maia",
+    "to": "rony-meisler",
+    "external": false,
+    "label": "vs. Rony Meisler — brand-as-story vs. brand-as-purpose",
+    "cardId": "caito-maia/dis-d92e0b"
+  },
+  {
+    "from": "caito-maia",
+    "to": "rony-meisler",
+    "external": false,
+    "label": "vs. Rony Meisler — keep control vs. sell and hand off",
+    "cardId": "caito-maia/dis-a96d19"
+  },
+  {
+    "from": "caito-maia",
+    "to": "rony-meisler",
+    "external": false,
+    "label": "vs. Rony Meisler — convergent, not opposed: reject \"the first million\" as the goal",
+    "cardId": "caito-maia/dis-e4587c"
+  },
+  {
+    "from": "caito-maia",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett — durable moat vs. perpetual reinvention",
+    "cardId": "caito-maia/dis-697a17"
+  },
+  {
+    "from": "caito-maia",
+    "to": "bernard-arnault",
+    "external": false,
+    "label": "vs. Bernard Arnault — accessible ubiquity vs. scarcity",
+    "cardId": "caito-maia/dis-1c6a56"
+  },
+  {
+    "from": "caito-maia",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Jeff Bezos — story/relationship-first vs. customer-metric-first — now partly first-party documented, not just inferred",
+    "cardId": "caito-maia/dis-e88fd5"
+  },
+  {
+    "from": "caito-maia",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Steve Jobs — genius acknowledged, explicitly not adopted as a model",
+    "cardId": "caito-maia/dis-07491d"
+  },
+  {
+    "from": "caito-maia",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "vs. Frederico Trajano — narrative-led brand vs. data/platform-led retail",
+    "cardId": "caito-maia/dis-1e9af6"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "james-clear",
+    "external": false,
+    "label": "vs. James Clear",
+    "cardId": "carol-dweck/dis-187880"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "naval-ravikant",
+    "external": false,
+    "label": "vs. Naval Ravikant",
+    "cardId": "carol-dweck/dis-dc57c8"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "elon-musk",
+    "external": false,
+    "label": "vs. Jensen Huang / Elon Musk (founder-genius archetype)",
+    "cardId": "carol-dweck/dis-cb0eb4"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "jensen-huang",
+    "external": false,
+    "label": "vs. Jensen Huang / Elon Musk (founder-genius archetype)",
+    "cardId": "carol-dweck/dis-cb0eb4"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "larry-ellison",
+    "external": false,
+    "label": "vs. Warren Buffett / Larry Ellison on hiring stars",
+    "cardId": "carol-dweck/dis-2c12f0"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett / Larry Ellison on hiring stars",
+    "cardId": "carol-dweck/dis-2c12f0"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "ben-horowitz",
+    "external": false,
+    "label": "vs. Ben Horowitz",
+    "cardId": "carol-dweck/dis-e293da"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "external",
+    "external": true,
+    "label": "vs. Alfie Kohn",
+    "cardId": "carol-dweck/dis-611fc2"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "external",
+    "external": true,
+    "label": "vs. David Didau",
+    "cardId": "carol-dweck/dis-a295a9"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "external",
+    "external": true,
+    "label": "vs. Timothy Bates & Yue Li",
+    "cardId": "carol-dweck/dis-2b1a26"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "external",
+    "external": true,
+    "label": "vs. Nick Brown",
+    "cardId": "carol-dweck/dis-e96841"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "external",
+    "external": true,
+    "label": "vs. Jennifer Crocker",
+    "cardId": "carol-dweck/dis-5f4f53"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "external",
+    "external": true,
+    "label": "vs. Andrew Gelman",
+    "cardId": "carol-dweck/dis-e07151"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "ben-horowitz",
+    "external": false,
+    "label": "(Disagreements are extrapolated from each advisor's documented positions against Dweck's documented claims unless a direct exchange is cited; the contrasts i...",
+    "cardId": "carol-dweck/dis-694608"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "elon-musk",
+    "external": false,
+    "label": "(Disagreements are extrapolated from each advisor's documented positions against Dweck's documented claims unless a direct exchange is cited; the contrasts i...",
+    "cardId": "carol-dweck/dis-694608"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "jensen-huang",
+    "external": false,
+    "label": "(Disagreements are extrapolated from each advisor's documented positions against Dweck's documented claims unless a direct exchange is cited; the contrasts i...",
+    "cardId": "carol-dweck/dis-694608"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "larry-ellison",
+    "external": false,
+    "label": "(Disagreements are extrapolated from each advisor's documented positions against Dweck's documented claims unless a direct exchange is cited; the contrasts i...",
+    "cardId": "carol-dweck/dis-694608"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "naval-ravikant",
+    "external": false,
+    "label": "(Disagreements are extrapolated from each advisor's documented positions against Dweck's documented claims unless a direct exchange is cited; the contrasts i...",
+    "cardId": "carol-dweck/dis-694608"
+  },
+  {
+    "from": "carol-dweck",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "(Disagreements are extrapolated from each advisor's documented positions against Dweck's documented claims unless a direct exchange is cited; the contrasts i...",
+    "cardId": "carol-dweck/dis-694608"
+  },
+  {
+    "from": "chris-olah",
+    "to": "external",
+    "external": true,
+    "label": "What explains the \"beauty\" of deep learning succeeding at scale | \"The beauty of deep learning and scale is a kind of biological beauty... just as the simpli...",
+    "cardId": "chris-olah/dis-f0bde4"
+  },
+  {
+    "from": "chris-olah",
+    "to": "jack-clark",
+    "external": false,
+    "label": "Whether current AI interpretability/safety claims are ready to be trusted as evidence of real safety | Consistently hedges hard even on his own team's flagsh...",
+    "cardId": "chris-olah/dis-3ab36c"
+  },
+  {
+    "from": "chris-olah",
+    "to": "external",
+    "external": true,
+    "label": "Whether attention weights / linear probes are sufficient evidence of what a model is \"really\" doing | Treats naive attention-weight or single-basis-probe int...",
+    "cardId": "chris-olah/dis-c3f09d"
+  },
+  {
+    "from": "chris-olah",
+    "to": "external",
+    "external": true,
+    "label": "Whether cherry-picked, small-N qualitative evidence can be trusted | Explicitly argues yes, if the structure is extreme enough: \"Hooke seeing cells through a...",
+    "cardId": "chris-olah/dis-2a9c28"
+  },
+  {
+    "from": "chris-olah",
+    "to": "external",
+    "external": true,
+    "label": "Whether mentors' critical feedback helps or hurts a young researcher's taste | Actively recommends seeking it (Exercise 1: mentor-rated idea lists) while exp...",
+    "cardId": "chris-olah/dis-ceb651"
+  },
+  {
+    "from": "chris-olah",
+    "to": "jack-clark",
+    "external": false,
+    "label": "How to relate to fast-moving AI capability progress as an individual/institution | Treats direct, hands-on reverse-engineering of frontier models — done by h...",
+    "cardId": "chris-olah/dis-e448a3"
+  },
+  {
+    "from": "dalton-caldwell",
+    "to": "paul-graham",
+    "external": false,
+    "label": "vs. Paul Graham / Brian Chesky (on \"founder mode\")",
+    "cardId": "dalton-caldwell/dis-df88be"
+  },
+  {
+    "from": "dalton-caldwell",
+    "to": "harry-stebbings",
+    "external": false,
+    "label": "vs. most VCs (incl. peers like Jason Lemkin / Harry Stebbings on raising)",
+    "cardId": "dalton-caldwell/dis-4cb257"
+  },
+  {
+    "from": "dalton-caldwell",
+    "to": "jason-lemkin",
+    "external": false,
+    "label": "vs. most VCs (incl. peers like Jason Lemkin / Harry Stebbings on raising)",
+    "cardId": "dalton-caldwell/dis-4cb257"
+  },
+  {
+    "from": "dalton-caldwell",
+    "to": "larry-ellison",
+    "external": false,
+    "label": "vs. Ryan Breslow / Larry Ellison (myth-making founders)",
+    "cardId": "dalton-caldwell/dis-eb8da1"
+  },
+  {
+    "from": "dalton-caldwell",
+    "to": "ryan-breslow",
+    "external": false,
+    "label": "vs. Ryan Breslow / Larry Ellison (myth-making founders)",
+    "cardId": "dalton-caldwell/dis-eb8da1"
+  },
+  {
+    "from": "dalton-caldwell",
+    "to": "mark-zuckerberg",
+    "external": false,
+    "label": "vs. Mark Zuckerberg / Twitter's ad-model faction (platforms)",
+    "cardId": "dalton-caldwell/dis-dd8e2f"
+  },
+  {
+    "from": "dalton-caldwell",
+    "to": "external",
+    "external": true,
+    "label": "vs. growth-at-all-costs operators",
+    "cardId": "dalton-caldwell/dis-7c215a"
+  },
+  {
+    "from": "dalton-caldwell",
+    "to": "external",
+    "external": true,
+    "label": "vs. market-size-obsessed investors",
+    "cardId": "dalton-caldwell/dis-fb5c55"
+  },
+  {
+    "from": "daniela-amodei",
+    "to": "dario-amodei",
+    "external": false,
+    "label": "vs. the standard consumer-tech ad-engagement business model (Google/Facebook-era playbook) — implicit, not a named individual",
+    "cardId": "daniela-amodei/dis-e5ea5a"
+  },
+  {
+    "from": "daniela-amodei",
+    "to": "external",
+    "external": true,
+    "label": "vs. Google's \"20% time\" model for exploratory work",
+    "cardId": "daniela-amodei/dis-23fd85"
+  },
+  {
+    "from": "daniela-amodei",
+    "to": "dario-amodei",
+    "external": false,
+    "label": "vs. Matthew Tokson (law professor) and The Intercept's fundraising-ethics framing — unaddressed, not rebutted",
+    "cardId": "daniela-amodei/dis-d3b224"
+  },
+  {
+    "from": "daniela-amodei",
+    "to": "dario-amodei",
+    "external": false,
+    "label": "vs. critics of Anthropic's stated distance from the Effective Altruism community",
+    "cardId": "daniela-amodei/dis-245df3"
+  },
+  {
+    "from": "daniela-amodei",
+    "to": "sam-altman",
+    "external": false,
+    "label": "Light, implicit needling of OpenAI/Sam Altman on hype culture — not a substantive dispute",
+    "cardId": "daniela-amodei/dis-8e6f50"
+  },
+  {
+    "from": "dario-amodei",
+    "to": "external",
+    "external": true,
+    "label": "vs. Yann LeCun — on whether scaling alone gets anywhere near AGI, and on Amodei's basic good faith",
+    "cardId": "dario-amodei/dis-2bcfeb"
+  },
+  {
+    "from": "dario-amodei",
+    "to": "jensen-huang",
+    "external": false,
+    "label": "vs. Jensen Huang — on chip export controls and the \"monopolize safety\" accusation",
+    "cardId": "dario-amodei/dis-f4d20f"
+  },
+  {
+    "from": "dario-amodei",
+    "to": "external",
+    "external": true,
+    "label": "vs. Tyler Cowen — on takeoff-speed timelines",
+    "cardId": "dario-amodei/dis-fa0565"
+  },
+  {
+    "from": "dario-amodei",
+    "to": "external",
+    "external": true,
+    "label": "vs. Gary Marcus — on moving AGI-timeline goalposts and commercial incentive",
+    "cardId": "dario-amodei/dis-c757a4"
+  },
+  {
+    "from": "dario-amodei",
+    "to": "external",
+    "external": true,
+    "label": "vs. Demis Hassabis — on whether scaling alone reaches AGI",
+    "cardId": "dario-amodei/dis-2da170"
+  },
+  {
+    "from": "dario-amodei",
+    "to": "external",
+    "external": true,
+    "label": "vs. Dwarkesh Patel — a recurring sparring partner, not a settled disagreement",
+    "cardId": "dario-amodei/dis-450391"
+  },
+  {
+    "from": "dario-amodei",
+    "to": "external",
+    "external": true,
+    "label": "vs. Rich Sutton (\"The Bitter Lesson\") — on what pretraining's sample inefficiency implies",
+    "cardId": "dario-amodei/dis-4c3006"
+  },
+  {
+    "from": "dario-amodei",
+    "to": "external",
+    "external": true,
+    "label": "vs. Bill Joy — partial agreement, partial critique",
+    "cardId": "dario-amodei/dis-a2b5b3"
+  },
+  {
+    "from": "dario-amodei",
+    "to": "external",
+    "external": true,
+    "label": "vs. Carlo Iacono / Hybrid Horizons — on whether Anthropic can credibly define its own regulatory regime",
+    "cardId": "dario-amodei/dis-59832d"
+  },
+  {
+    "from": "dario-amodei",
+    "to": "external",
+    "external": true,
+    "label": "vs. Nikhil Kamath — on regulatory capture and rhetorical style",
+    "cardId": "dario-amodei/dis-1361fc"
+  },
+  {
+    "from": "dario-amodei",
+    "to": "external",
+    "external": true,
+    "label": "vs. Sen. Josh Hawley — on concentration of Big-Tech-backed AI power",
+    "cardId": "dario-amodei/dis-137720"
+  },
+  {
+    "from": "denis-minev",
+    "to": "external",
+    "external": true,
+    "label": "A matrix of how this figure diverges from other named advisors in this corpus. No source shows Minev naming or directly responding to any of these figures — ...",
+    "cardId": "denis-minev/dis-5e1abe"
+  },
+  {
+    "from": "denis-minev",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "vs. Frederico Trajano (Magalu) — geographic friction as a moat vs. technology as the universal scale solution",
+    "cardId": "denis-minev/dis-807dc8"
+  },
+  {
+    "from": "denis-minev",
+    "to": "manoel-conde-neto",
+    "external": false,
+    "label": "vs. Manoel Conde Neto (Farma Conde) — friction as moat vs. disruption as forcing function",
+    "cardId": "denis-minev/dis-d1a355"
+  },
+  {
+    "from": "denis-minev",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett — urgency vs. patience, on different objects",
+    "cardId": "denis-minev/dis-1424d4"
+  },
+  {
+    "from": "denis-minev",
+    "to": "luiz-seabra",
+    "external": false,
+    "label": "vs. Luiz Seabra (Natura) — market-pricing the environmental relationship vs. a non-transactional relational philosophy",
+    "cardId": "denis-minev/dis-d18cf4"
+  },
+  {
+    "from": "elon-musk",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "Is hard-tech / rocketry investable? | Pursue it as a moral imperative even when the \"probable outcome is failure\"; physics permits it, so attempt it (60 Min,...",
+    "cardId": "elon-musk/dis-ec7eea"
+  },
+  {
+    "from": "elon-musk",
+    "to": "luiza-helena-trajano",
+    "external": false,
+    "label": "How should you treat employees to get peak output? | \"Extremely hardcore,\" long hours at high intensity, only exceptional performance passes; tolerate churn ...",
+    "cardId": "elon-musk/dis-93fc31"
+  },
+  {
+    "from": "elon-musk",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "How should you treat employees to get peak output? | \"Extremely hardcore,\" long hours at high intensity, only exceptional performance passes; tolerate churn ...",
+    "cardId": "elon-musk/dis-93fc31"
+  },
+  {
+    "from": "elon-musk",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "What's the right tempo for reusable rockets? | Move fastest, blow things up, \"failure is an option,\" iterate in public | **Jeff Bezos** — \"gradatim ferociter...",
+    "cardId": "elon-musk/dis-bf495e"
+  },
+  {
+    "from": "elon-musk",
+    "to": "bernard-arnault",
+    "external": false,
+    "label": "Is a patent moat worth defending? | No — patents are \"small protection indeed\"; open them and win on talent (2014 pledge) | **Larry Ellison / Bernard Arnault...",
+    "cardId": "elon-musk/dis-fd3315"
+  },
+  {
+    "from": "elon-musk",
+    "to": "larry-ellison",
+    "external": false,
+    "label": "Is a patent moat worth defending? | No — patents are \"small protection indeed\"; open them and win on talent (2014 pledge) | **Larry Ellison / Bernard Arnault...",
+    "cardId": "elon-musk/dis-fd3315"
+  },
+  {
+    "from": "elon-musk",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "Should a leader concentrate or split a scarce dollar across bets? | In 2008 split his last funds across Tesla and SpaceX, refusing to let either die, accepti...",
+    "cardId": "elon-musk/dis-a401b2"
+  },
+  {
+    "from": "elon-musk",
+    "to": "james-clear",
+    "external": false,
+    "label": "Is the goal usefulness/work, or status/glory? | \"Don't aspire to glory, aspire to work\" — utility × scale | Aligned with **James Clear / Naval Ravikant** on ...",
+    "cardId": "elon-musk/dis-a8d921"
+  },
+  {
+    "from": "elon-musk",
+    "to": "naval-ravikant",
+    "external": false,
+    "label": "Is the goal usefulness/work, or status/glory? | \"Don't aspire to glory, aspire to work\" — utility × scale | Aligned with **James Clear / Naval Ravikant** on ...",
+    "cardId": "elon-musk/dis-a8d921"
+  },
+  {
+    "from": "elon-musk",
+    "to": "larry-page",
+    "external": false,
+    "label": "Is AI safety compatible with the lab that's building it? | Founded OpenAI specifically as \"a counterweight to Google,\" then xAI as a counterweight to OpenAI'...",
+    "cardId": "elon-musk/dis-5892b2"
+  },
+  {
+    "from": "elon-musk",
+    "to": "larry-page",
+    "external": false,
+    "label": "Should founders hold majority/super-voting control? | Target ~25% — enough to block an unwarranted ouster, not enough to be unremovable (\"if I go crazy\") (CN...",
+    "cardId": "elon-musk/dis-06a1da"
+  },
+  {
+    "from": "elon-musk",
+    "to": "sergey-brin",
+    "external": false,
+    "label": "Should founders hold majority/super-voting control? | Target ~25% — enough to block an unwarranted ouster, not enough to be unremovable (\"if I go crazy\") (CN...",
+    "cardId": "elon-musk/dis-06a1da"
+  },
+  {
+    "from": "elon-musk",
+    "to": "luiza-helena-trajano",
+    "external": false,
+    "label": "Is unmediated empathy a civilizational asset or a vulnerability? | Empathy \"needs to think it through,\" or it becomes an \"exploit\" adversaries use against We...",
+    "cardId": "elon-musk/dis-396f11"
+  },
+  {
+    "from": "elon-musk",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "Is unmediated empathy a civilizational asset or a vulnerability? | Empathy \"needs to think it through,\" or it becomes an \"exploit\" adversaries use against We...",
+    "cardId": "elon-musk/dis-396f11"
+  },
+  {
+    "from": "elon-musk",
+    "to": "reid-hoffman",
+    "external": false,
+    "label": "Is a serious, unproven public allegation against a named tech figure acceptable discourse? | Publicly claimed, without independent corroboration in this sour...",
+    "cardId": "elon-musk/dis-42ff9e"
+  },
+  {
+    "from": "frederico-trajano",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Jeff Bezos — sobre lojas físicas e \"calor humano\"",
+    "cardId": "frederico-trajano/dis-b12ad0"
+  },
+  {
+    "from": "frederico-trajano",
+    "to": "luiza-helena-trajano",
+    "external": false,
+    "label": "vs. Luiza Helena Trajano (mãe) — sobre separar ou integrar canais, e sobre o próprio legado dela",
+    "cardId": "frederico-trajano/dis-33dfbc"
+  },
+  {
+    "from": "frederico-trajano",
+    "to": "rony-meisler",
+    "external": false,
+    "label": "vs. Rony Meisler — marca vs. plataforma",
+    "cardId": "frederico-trajano/dis-ddc43b"
+  },
+  {
+    "from": "frederico-trajano",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett — alavancagem e negócios \"legíveis\"",
+    "cardId": "frederico-trajano/dis-5fad25"
+  },
+  {
+    "from": "frederico-trajano",
+    "to": "alexandre-ostrowiecki",
+    "external": false,
+    "label": "vs. Alexandre Ostrowiecki — plataforma/ecossistema vs. indústria/preço",
+    "cardId": "frederico-trajano/dis-581a69"
+  },
+  {
+    "from": "frederico-trajano",
+    "to": "reid-hoffman",
+    "external": false,
+    "label": "vs. fundadores \"blitzscaling\" (ex.: Reid Hoffman)",
+    "cardId": "frederico-trajano/dis-a9e7ee"
+  },
+  {
+    "from": "frederico-trajano",
+    "to": "external",
+    "external": true,
+    "label": "vs. ortodoxia liberal de livre-mercado",
+    "cardId": "frederico-trajano/dis-fa31b1"
+  },
+  {
+    "from": "garry-tan",
+    "to": "alexandre-ostrowiecki",
+    "external": false,
+    "label": "Raise venture vs. bootstrap | Pro-venture; YC's model is to fund and scale many ambitious bets, just cap fundraising time and don't over-raise | **Alexandre ...",
+    "cardId": "garry-tan/dis-3e7999"
+  },
+  {
+    "from": "garry-tan",
+    "to": "rony-meisler",
+    "external": false,
+    "label": "Raise venture vs. bootstrap | Pro-venture; YC's model is to fund and scale many ambitious bets, just cap fundraising time and don't over-raise | **Alexandre ...",
+    "cardId": "garry-tan/dis-3e7999"
+  },
+  {
+    "from": "garry-tan",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "Is AI safety a reason for heavy regulation? | No — existing law covers misuse (\"Creating bio-terror weapons is already illegal\"); over-regulation kills Littl...",
+    "cardId": "garry-tan/dis-5bd738"
+  },
+  {
+    "from": "garry-tan",
+    "to": "reid-hoffman",
+    "external": false,
+    "label": "Is AI safety a reason for heavy regulation? | No — existing law covers misuse (\"Creating bio-terror weapons is already illegal\"); over-regulation kills Littl...",
+    "cardId": "garry-tan/dis-5bd738"
+  },
+  {
+    "from": "garry-tan",
+    "to": "jensen-huang",
+    "external": false,
+    "label": "Concentrate the market or fragment it? | Fragment — \"thousands of companies,\" break Big Tech gatekeeping | **Larry Ellison** / **Mark Zuckerberg** — built an...",
+    "cardId": "garry-tan/dis-3c3b9f"
+  },
+  {
+    "from": "garry-tan",
+    "to": "larry-ellison",
+    "external": false,
+    "label": "Concentrate the market or fragment it? | Fragment — \"thousands of companies,\" break Big Tech gatekeeping | **Larry Ellison** / **Mark Zuckerberg** — built an...",
+    "cardId": "garry-tan/dis-3c3b9f"
+  },
+  {
+    "from": "garry-tan",
+    "to": "mark-zuckerberg",
+    "external": false,
+    "label": "Concentrate the market or fragment it? | Fragment — \"thousands of companies,\" break Big Tech gatekeeping | **Larry Ellison** / **Mark Zuckerberg** — built an...",
+    "cardId": "garry-tan/dis-3c3b9f"
+  },
+  {
+    "from": "garry-tan",
+    "to": "bernard-arnault",
+    "external": false,
+    "label": "Is the founder's own résumé/polish the signal? | No — earnestness, craft, and high agency over pedigree; \"you don't need finishing school\" | **Bernard Arnaul...",
+    "cardId": "garry-tan/dis-2e173b"
+  },
+  {
+    "from": "garry-tan",
+    "to": "larry-ellison",
+    "external": false,
+    "label": "Is the founder's own résumé/polish the signal? | No — earnestness, craft, and high agency over pedigree; \"you don't need finishing school\" | **Bernard Arnaul...",
+    "cardId": "garry-tan/dis-2e173b"
+  },
+  {
+    "from": "garry-tan",
+    "to": "harry-stebbings",
+    "external": false,
+    "label": "Fundraising as milestone? | It's the *starting gun*, time-boxed to two weeks | **Harry Stebbings** / **Jason Lemkin** treat fundraising strategy and ownershi...",
+    "cardId": "garry-tan/dis-6a2b71"
+  },
+  {
+    "from": "garry-tan",
+    "to": "jason-lemkin",
+    "external": false,
+    "label": "Fundraising as milestone? | It's the *starting gun*, time-boxed to two weeks | **Harry Stebbings** / **Jason Lemkin** treat fundraising strategy and ownershi...",
+    "cardId": "garry-tan/dis-6a2b71"
+  },
+  {
+    "from": "garry-tan",
+    "to": "james-clear",
+    "external": false,
+    "label": "Speed of building vs. deliberate craft | AI lets tiny teams ship fast (\"vibe coding\"); ship the minimum viable everything | **Warren Buffett** / **James Clea...",
+    "cardId": "garry-tan/dis-c481d5"
+  },
+  {
+    "from": "garry-tan",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "Speed of building vs. deliberate craft | AI lets tiny teams ship fast (\"vibe coding\"); ship the minimum viable everything | **Warren Buffett** / **James Clea...",
+    "cardId": "garry-tan/dis-c481d5"
+  },
+  {
+    "from": "garry-tan",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "Should a builder enter combative public politics? | Yes — \"we need our own parallel media… our own machine\" | **Buffett**-style reticence: keep your powder d...",
+    "cardId": "garry-tan/dis-a4e580"
+  },
+  {
+    "from": "garry-tan",
+    "to": "ben-horowitz",
+    "external": false,
+    "label": "Can two people share command (co-CEO)? | No, near-universally — cites Horowitz on why shared command breeds \"frustration, chaos, and delay\"; names Google as ...",
+    "cardId": "garry-tan/dis-55b053"
+  },
+  {
+    "from": "garry-tan",
+    "to": "larry-page",
+    "external": false,
+    "label": "Can two people share command (co-CEO)? | No, near-universally — cites Horowitz on why shared command breeds \"frustration, chaos, and delay\"; names Google as ...",
+    "cardId": "garry-tan/dis-55b053"
+  },
+  {
+    "from": "garry-tan",
+    "to": "sergey-brin",
+    "external": false,
+    "label": "Can two people share command (co-CEO)? | No, near-universally — cites Horowitz on why shared command breeds \"frustration, chaos, and delay\"; names Google as ...",
+    "cardId": "garry-tan/dis-55b053"
+  },
+  {
+    "from": "garry-tan",
+    "to": "michael-seibel",
+    "external": false,
+    "label": "Rough-and-shipped MVP vs. invisible craft | Emphasizes finishing \"the back of the cabinet\" — craft and taste as the differentiator, even pre-PMF | **Michael ...",
+    "cardId": "garry-tan/dis-2d579e"
+  },
+  {
+    "from": "garry-tan",
+    "to": "naval-ravikant",
+    "external": false,
+    "label": "Is extreme personal imbalance the price of outlier success? | Yes, for founders chasing the biggest outcomes specifically — \"you win by being extremely unbal...",
+    "cardId": "garry-tan/dis-0d7c33"
+  },
+  {
+    "from": "garry-tan",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "Should a scaled leader stay personally hands-on with the frontier tool/technology? | Yes — came back to coding himself; \"I'd be an idiot to experience it fro...",
+    "cardId": "garry-tan/dis-04283c"
+  },
+  {
+    "from": "guilherme-horn",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Jeff Bezos — should you ask the customer what they want?",
+    "cardId": "guilherme-horn/dis-baaf86"
+  },
+  {
+    "from": "guilherme-horn",
+    "to": "michael-seibel",
+    "external": false,
+    "label": "vs. Michael Seibel — is \"talk to your users\" the right early-stage doctrine?",
+    "cardId": "guilherme-horn/dis-151cd1"
+  },
+  {
+    "from": "guilherme-horn",
+    "to": "reid-hoffman",
+    "external": false,
+    "label": "vs. Reid Hoffman — hire fast to blitzscale, or wait for certainty?",
+    "cardId": "guilherme-horn/dis-84d454"
+  },
+  {
+    "from": "guilherme-horn",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "vs. Frederico Trajano — where does \"humanizing\" digital commerce happen?",
+    "cardId": "guilherme-horn/dis-02b3be"
+  },
+  {
+    "from": "guilherme-horn",
+    "to": "paul-graham",
+    "external": false,
+    "label": "vs. Paul Graham — has Founder Mode actually been transcended?",
+    "cardId": "guilherme-horn/dis-262b7c"
+  },
+  {
+    "from": "harry-stebbings",
+    "to": "external",
+    "external": true,
+    "label": "vs. Peter Walker (Carta, data/empiricist — not on roster but the cleanest sourced foil)",
+    "cardId": "harry-stebbings/dis-b97656"
+  },
+  {
+    "from": "harry-stebbings",
+    "to": "jason-lemkin",
+    "external": false,
+    "label": "vs. Jason Lemkin (jason-lemkin)",
+    "cardId": "harry-stebbings/dis-21a0f9"
+  },
+  {
+    "from": "harry-stebbings",
+    "to": "ben-horowitz",
+    "external": false,
+    "label": "vs. Ben Horowitz (ben-horowitz)",
+    "cardId": "harry-stebbings/dis-42bd46"
+  },
+  {
+    "from": "harry-stebbings",
+    "to": "garry-tan",
+    "external": false,
+    "label": "vs. Garry Tan (garry-tan) / Paul Graham (paul-graham, YC)",
+    "cardId": "harry-stebbings/dis-1f014c"
+  },
+  {
+    "from": "harry-stebbings",
+    "to": "paul-graham",
+    "external": false,
+    "label": "vs. Garry Tan (garry-tan) / Paul Graham (paul-graham, YC)",
+    "cardId": "harry-stebbings/dis-1f014c"
+  },
+  {
+    "from": "harry-stebbings",
+    "to": "reid-hoffman",
+    "external": false,
+    "label": "vs. Reid Hoffman (reid-hoffman)",
+    "cardId": "harry-stebbings/dis-25f658"
+  },
+  {
+    "from": "harry-stebbings",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett (warren-buffett)",
+    "cardId": "harry-stebbings/dis-a8c64d"
+  },
+  {
+    "from": "harry-stebbings",
+    "to": "external",
+    "external": true,
+    "label": "vs. David Cahn (Sequoia — not on roster, a live on-air disagreement)",
+    "cardId": "harry-stebbings/dis-fa186a"
+  },
+  {
+    "from": "harry-stebbings",
+    "to": "external",
+    "external": true,
+    "label": "vs. his own mentor, Pat Grady (Sequoia — not on roster)",
+    "cardId": "harry-stebbings/dis-65e54a"
+  },
+  {
+    "from": "harry-stebbings",
+    "to": "external",
+    "external": true,
+    "label": "vs. Nicolas Colin (The Family — not on roster, Project Europe critic)",
+    "cardId": "harry-stebbings/dis-0474b2"
+  },
+  {
+    "from": "harry-stebbings",
+    "to": "external",
+    "external": true,
+    "label": "vs. Lucas Bédout (Hyperline — not on roster, Project Europe critic)",
+    "cardId": "harry-stebbings/dis-878c38"
+  },
+  {
+    "from": "harry-stebbings",
+    "to": "external",
+    "external": true,
+    "label": "vs. Suranga Chandratillake (Balderton Capital — not on roster, 996 critic)",
+    "cardId": "harry-stebbings/dis-41bad1"
+  },
+  {
+    "from": "harry-stebbings",
+    "to": "external",
+    "external": true,
+    "label": "vs. Sarah Wernér (Husmus — not on roster, 996 critic)",
+    "cardId": "harry-stebbings/dis-2e6184"
+  },
+  {
+    "from": "harry-stebbings",
+    "to": "external",
+    "external": true,
+    "label": "vs. himself, across audiences",
+    "cardId": "harry-stebbings/dis-6882b1"
+  },
+  {
+    "from": "jack-clark",
+    "to": "external",
+    "external": true,
+    "label": "Present-tense AI consciousness | Frames current model responsiveness as \"a tongue without a brain\" — reflexive, not evidence of a self — while stressing deep...",
+    "cardId": "jack-clark/dis-7ee940"
+  },
+  {
+    "from": "jack-clark",
+    "to": "external",
+    "external": true,
+    "label": "AI-driven economic growth, 10-year horizon | Bear case 3%, bull case ~5% GDP growth, grounded in Braudel's material-life skepticism of abstract capability cl...",
+    "cardId": "jack-clark/dis-c2fabf"
+  },
+  {
+    "from": "jack-clark",
+    "to": "mark-zuckerberg",
+    "external": false,
+    "label": "Anthropic's regulatory advocacy (SB53, disclosure rules, cyberattack disclosure) | Frames it as substantive, fact-forward advocacy filling a federal vacuum, ...",
+    "cardId": "jack-clark/dis-54f699"
+  },
+  {
+    "from": "jack-clark",
+    "to": "external",
+    "external": true,
+    "label": "Centralized vs. decentralized control of AI values | His \"positive alignment\" framework (Import AI 456): good outcomes require plural, decentralized, *contes...",
+    "cardId": "jack-clark/dis-489707"
+  },
+  {
+    "from": "jack-clark",
+    "to": "dario-amodei",
+    "external": false,
+    "label": "\"Country of geniuses in a datacenter\" as the operative framing of near-term AI | Uses Dario Amodei's framing verbatim in his own congressional testimony to a...",
+    "cardId": "jack-clark/dis-48c382"
+  },
+  {
+    "from": "jack-clark",
+    "to": "external",
+    "external": true,
+    "label": "Whether AI-agent workflows make people more effective or just busier | Concedes the risk largely rather than defending it: echoes Klein's framing back almost...",
+    "cardId": "jack-clark/dis-895afe"
+  },
+  {
+    "from": "jack-clark",
+    "to": "external",
+    "external": true,
+    "label": "Whether safety-testing investment is keeping pace with capability investment | Cites Anthropic's bio-weapon-testing regime build-out (\"zero to... effective.....",
+    "cardId": "jack-clark/dis-215262"
+  },
+  {
+    "from": "james-clear",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "Goals vs. systems | Forget goals; build systems — \"you fall to the level of your systems\" | **Jeff Bezos** runs on long-term *goal* commitment and big bets (...",
+    "cardId": "james-clear/dis-96a548"
+  },
+  {
+    "from": "james-clear",
+    "to": "carol-dweck",
+    "external": false,
+    "label": "Mindset & identity | Behavior change *is* identity change; act your way into believing | **Carol Dweck** largely *agrees* (growth vs. fixed mindset) — natura...",
+    "cardId": "james-clear/dis-26c31d"
+  },
+  {
+    "from": "james-clear",
+    "to": "naval-ravikant",
+    "external": false,
+    "label": "Compounding & long games | Compounding via tiny daily reps and long-half-life work | **Naval Ravikant** *agrees* on compounding and leverage — natural pairin...",
+    "cardId": "james-clear/dis-5a6550"
+  },
+  {
+    "from": "james-clear",
+    "to": "paul-graham",
+    "external": false,
+    "label": "Curiosity, contrarianism, and great work | Motivation is overrated in general, but *cites Paul Graham approvingly* on \"work on something you're deeply intere...",
+    "cardId": "james-clear/dis-cfaa6e"
+  },
+  {
+    "from": "james-clear",
+    "to": "elon-musk",
+    "external": false,
+    "label": "Ambition & 10x | Small consistent units, sustainable systems; \"what can I stick to on my worst day\" | **Elon Musk** optimizes for non-linear 10x leaps, bruta...",
+    "cardId": "james-clear/dis-f4ab5e"
+  },
+  {
+    "from": "james-clear",
+    "to": "ben-horowitz",
+    "external": false,
+    "label": "Where advantage comes from | Personal habits, consistency, environment design | **Ben Horowitz** locates the hard things in org/leadership crucibles and wart...",
+    "cardId": "james-clear/dis-16a6b7"
+  },
+  {
+    "from": "james-clear",
+    "to": "reid-hoffman",
+    "external": false,
+    "label": "Role of motivation/desire | Motivation is overrated; engineer context | **Reid Hoffman**-style network/timing bets emphasize seizing windows and blitzscaling...",
+    "cardId": "james-clear/dis-3053f2"
+  },
+  {
+    "from": "james-clear",
+    "to": "external",
+    "external": true,
+    "label": "Narrow mastery vs. broad models | Holds both: narrow focus for skill (\"fall in love with boredom,\" Feynman's one integral trick) and broad cross-disciplinary...",
+    "cardId": "james-clear/dis-f061da"
+  },
+  {
+    "from": "james-clear",
+    "to": "ben-horowitz",
+    "external": false,
+    "label": "*(Disagreements with Bezos/Musk/Horowitz/Hoffman are my extrapolation from Clear's documented positions vs. theirs, not direct on-record exchanges; the Dweck...",
+    "cardId": "james-clear/dis-8d1baa"
+  },
+  {
+    "from": "james-clear",
+    "to": "carol-dweck",
+    "external": false,
+    "label": "*(Disagreements with Bezos/Musk/Horowitz/Hoffman are my extrapolation from Clear's documented positions vs. theirs, not direct on-record exchanges; the Dweck...",
+    "cardId": "james-clear/dis-8d1baa"
+  },
+  {
+    "from": "james-clear",
+    "to": "elon-musk",
+    "external": false,
+    "label": "*(Disagreements with Bezos/Musk/Horowitz/Hoffman are my extrapolation from Clear's documented positions vs. theirs, not direct on-record exchanges; the Dweck...",
+    "cardId": "james-clear/dis-8d1baa"
+  },
+  {
+    "from": "james-clear",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "*(Disagreements with Bezos/Musk/Horowitz/Hoffman are my extrapolation from Clear's documented positions vs. theirs, not direct on-record exchanges; the Dweck...",
+    "cardId": "james-clear/dis-8d1baa"
+  },
+  {
+    "from": "james-clear",
+    "to": "naval-ravikant",
+    "external": false,
+    "label": "*(Disagreements with Bezos/Musk/Horowitz/Hoffman are my extrapolation from Clear's documented positions vs. theirs, not direct on-record exchanges; the Dweck...",
+    "cardId": "james-clear/dis-8d1baa"
+  },
+  {
+    "from": "james-clear",
+    "to": "paul-graham",
+    "external": false,
+    "label": "*(Disagreements with Bezos/Musk/Horowitz/Hoffman are my extrapolation from Clear's documented positions vs. theirs, not direct on-record exchanges; the Dweck...",
+    "cardId": "james-clear/dis-8d1baa"
+  },
+  {
+    "from": "james-clear",
+    "to": "reid-hoffman",
+    "external": false,
+    "label": "*(Disagreements with Bezos/Musk/Horowitz/Hoffman are my extrapolation from Clear's documented positions vs. theirs, not direct on-record exchanges; the Dweck...",
+    "cardId": "james-clear/dis-8d1baa"
+  },
+  {
+    "from": "james-hawkins",
+    "to": "jason-lemkin",
+    "external": false,
+    "label": "vs. Jason Lemkin — on sales-led SaaS GTM",
+    "cardId": "james-hawkins/dis-0bc73e"
+  },
+  {
+    "from": "james-hawkins",
+    "to": "ben-horowitz",
+    "external": false,
+    "label": "vs. Ben Horowitz — on the role of product managers and management",
+    "cardId": "james-hawkins/dis-5fcc17"
+  },
+  {
+    "from": "james-hawkins",
+    "to": "elon-musk",
+    "external": false,
+    "label": "vs. Elon Musk — on artificial deadlines and crunch",
+    "cardId": "james-hawkins/dis-f0e4a4"
+  },
+  {
+    "from": "james-hawkins",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "vs. Reed Hastings — on \"team not family,\" with a caveat",
+    "cardId": "james-hawkins/dis-065b4d"
+  },
+  {
+    "from": "james-hawkins",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Jeff Bezos — on metrics and measurement",
+    "cardId": "james-hawkins/dis-a81e5e"
+  },
+  {
+    "from": "james-hawkins",
+    "to": "michael-seibel",
+    "external": false,
+    "label": "vs. Paul Graham / Michael Seibel (YC) — on validation vs. velocity",
+    "cardId": "james-hawkins/dis-af7453"
+  },
+  {
+    "from": "james-hawkins",
+    "to": "paul-graham",
+    "external": false,
+    "label": "vs. Paul Graham / Michael Seibel (YC) — on validation vs. velocity",
+    "cardId": "james-hawkins/dis-af7453"
+  },
+  {
+    "from": "james-hawkins",
+    "to": "external",
+    "external": true,
+    "label": "vs. conventional pricing-simplicity advocates",
+    "cardId": "james-hawkins/dis-bae518"
+  },
+  {
+    "from": "jason-lemkin",
+    "to": "paul-graham",
+    "external": false,
+    "label": "vs. Paul Graham (on founder mode and sales)",
+    "cardId": "jason-lemkin/dis-aefcf4"
+  },
+  {
+    "from": "jason-lemkin",
+    "to": "michael-seibel",
+    "external": false,
+    "label": "vs. Michael Seibel / YC orthodoxy (on MVP, speed, and financing)",
+    "cardId": "jason-lemkin/dis-380314"
+  },
+  {
+    "from": "jason-lemkin",
+    "to": "garry-tan",
+    "external": false,
+    "label": "vs. Garry Tan (on age, founder-mode enthusiasm, and youth-cult)",
+    "cardId": "jason-lemkin/dis-b812fb"
+  },
+  {
+    "from": "jason-lemkin",
+    "to": "ben-horowitz",
+    "external": false,
+    "label": "vs. Ben Horowitz (on management as the answer)",
+    "cardId": "jason-lemkin/dis-66a876"
+  },
+  {
+    "from": "jason-lemkin",
+    "to": "james-hawkins",
+    "external": false,
+    "label": "vs. James Hawkins / PostHog (on inbound-only, low-touch sales)",
+    "cardId": "jason-lemkin/dis-3b057e"
+  },
+  {
+    "from": "jason-lemkin",
+    "to": "naval-ravikant",
+    "external": false,
+    "label": "vs. Naval Ravikant (on sales as leverage)",
+    "cardId": "jason-lemkin/dis-bc6c51"
+  },
+  {
+    "from": "jason-lemkin",
+    "to": "harry-stebbings",
+    "external": false,
+    "label": "vs. Harry Stebbings (on volume investing)",
+    "cardId": "jason-lemkin/dis-49ef52"
+  },
+  {
+    "from": "jeff-bezos",
+    "to": "bernard-arnault",
+    "external": false,
+    "label": "Customers vs. competitors as strategic anchor | Obsess over customers, never competitors; \"fast follow\" is a Day 2 trap (2016); competitor focus is inherentl...",
+    "cardId": "jeff-bezos/dis-3e879f"
+  },
+  {
+    "from": "jeff-bezos",
+    "to": "larry-ellison",
+    "external": false,
+    "label": "Customers vs. competitors as strategic anchor | Obsess over customers, never competitors; \"fast follow\" is a Day 2 trap (2016); competitor focus is inherentl...",
+    "cardId": "jeff-bezos/dis-3e879f"
+  },
+  {
+    "from": "jeff-bezos",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "How to reach a decision | Disagree-and-commit; \"compromise… spreads accountability\" (Lex #405) | **Reed Hastings**' \"Keeper Test\" / context-not-control trust...",
+    "cardId": "jeff-bezos/dis-f88056"
+  },
+  {
+    "from": "jeff-bezos",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "Profit timing | Run no profit for years; \"take the cash flows\" over GAAP optics (1997); reinvest against the short-term math on price cuts (2005) | **Warren ...",
+    "cardId": "jeff-bezos/dis-69ecbe"
+  },
+  {
+    "from": "jeff-bezos",
+    "to": "elon-musk",
+    "external": false,
+    "label": "AI and jobs | Productivity \"bulldozer\"; net more work, not fewer jobs; \"those people are wrong\" who preach AI-driven pessimism (2026) | **Elon Musk** and AI-...",
+    "cardId": "jeff-bezos/dis-0ad44a"
+  },
+  {
+    "from": "jeff-bezos",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "Reversible decisions | Most are two-way doors — decide fast, delegate, course-correct (2015) | A Buffett-style \"I make ~3 big decisions a year\" deliberatenes...",
+    "cardId": "jeff-bezos/dis-98f7f1"
+  },
+  {
+    "from": "jeff-bezos",
+    "to": "larry-ellison",
+    "external": false,
+    "label": "Org design for invention | Small two-pizza teams + single-threaded owners + written narratives; explicitly aspires to Disney's team-mobilizing mode over Edis...",
+    "cardId": "jeff-bezos/dis-88c0d6"
+  },
+  {
+    "from": "jeff-bezos",
+    "to": "garry-tan",
+    "external": false,
+    "label": "Communication tooling | Ban PowerPoint; force six-page prose | Pitch/deck-native cultures (much of VC, e.g. **Garry Tan**/YC demo-day norms) treat the slide ...",
+    "cardId": "jeff-bezos/dis-2e967d"
+  },
+  {
+    "from": "jeff-bezos",
+    "to": "elon-musk",
+    "external": false,
+    "label": "Purpose and strategy of space exploration | \"There is no plan B. We have to save Earth\" — space is for moving heavy industry and pollution off-planet, not es...",
+    "cardId": "jeff-bezos/dis-04d1f9"
+  },
+  {
+    "from": "jeff-bezos",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "Succession — how to let go | Clean handoff framed as reallocating attention, not retiring, then a \"parent raising an independent child\" metaphor for why stay...",
+    "cardId": "jeff-bezos/dis-2e961b"
+  },
+  {
+    "from": "jensen-huang",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett (and Buffett-style multiple discipline) — on valuation & the AI capex cycle",
+    "cardId": "jensen-huang/dis-97f3f4"
+  },
+  {
+    "from": "jensen-huang",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "vs. Reed Hastings — on org design under uncertainty",
+    "cardId": "jensen-huang/dis-83578c"
+  },
+  {
+    "from": "jensen-huang",
+    "to": "elon-musk",
+    "external": false,
+    "label": "vs. Elon Musk — on talent management",
+    "cardId": "jensen-huang/dis-b535af"
+  },
+  {
+    "from": "jensen-huang",
+    "to": "external",
+    "external": true,
+    "label": "vs. China-hawk policymakers / export-control advocates — on chips to China",
+    "cardId": "jensen-huang/dis-b2ee5f"
+  },
+  {
+    "from": "jensen-huang",
+    "to": "external",
+    "external": true,
+    "label": "vs. John Mearsheimer's realist, zero-sum framing of great-power competition",
+    "cardId": "jensen-huang/dis-838868"
+  },
+  {
+    "from": "jensen-huang",
+    "to": "external",
+    "external": true,
+    "label": "vs. Geoffrey Hinton — on the radiologist-displacement prediction",
+    "cardId": "jensen-huang/dis-e154cc"
+  },
+  {
+    "from": "jensen-huang",
+    "to": "external",
+    "external": true,
+    "label": "vs. unnamed fellow AI-CEOs on doom rhetoric",
+    "cardId": "jensen-huang/dis-84702f"
+  },
+  {
+    "from": "jensen-huang",
+    "to": "external",
+    "external": true,
+    "label": "vs. AI-doomer / \"circular financing\" critics (Goldman, Wedbush's Matthew Bryson, Mizuho) — on demand durability",
+    "cardId": "jensen-huang/dis-dfec22"
+  },
+  {
+    "from": "jensen-huang",
+    "to": "external",
+    "external": true,
+    "label": "vs. Michael Burry — on depreciation schedules, a distinct mechanism from circular financing",
+    "cardId": "jensen-huang/dis-18c10a"
+  },
+  {
+    "from": "jensen-huang",
+    "to": "external",
+    "external": true,
+    "label": "vs. Jim Chanos — on depreciation risk and historical analogy",
+    "cardId": "jensen-huang/dis-2dd9fd"
+  },
+  {
+    "from": "jensen-huang",
+    "to": "external",
+    "external": true,
+    "label": "vs. France's Autorité de la concurrence — the same mechanism, read two ways",
+    "cardId": "jensen-huang/dis-daee9a"
+  },
+  {
+    "from": "jensen-huang",
+    "to": "external",
+    "external": true,
+    "label": "vs. AI job-loss pessimists — on labor",
+    "cardId": "jensen-huang/dis-7fd746"
+  },
+  {
+    "from": "jonas-marques-neto",
+    "to": "external",
+    "external": true,
+    "label": "How this advisor diverges from other named advisors in this corpus on specific questions. Rows marked \"(general public record)\" characterize the counterpart'...",
+    "cardId": "jonas-marques-neto/dis-7f2a3b"
+  },
+  {
+    "from": "jonas-marques-neto",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "Where does a CEO turnaround actually begin? | People and culture first, numbers deliberately deferred: \"a primeira coisa que eu tenho atração de ver é dar um...",
+    "cardId": "jonas-marques-neto/dis-1364c5"
+  },
+  {
+    "from": "jonas-marques-neto",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "How much of a regulated, physical-trust retail category should bet on marketplace/AI disruption? | Skeptical and regulation-anchored: dismisses Amazon's thre...",
+    "cardId": "jonas-marques-neto/dis-d18436"
+  },
+  {
+    "from": "jonas-marques-neto",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "What kind of feedback culture builds a high-performing team? | Gentle, vulnerability-first, safety-before-candor: \"feedback é um presente,\" grounded explicit...",
+    "cardId": "jonas-marques-neto/dis-fe732c"
+  },
+  {
+    "from": "jonas-marques-neto",
+    "to": "external",
+    "external": true,
+    "label": "How should a leader respond after a capital raise? | Doctrine of continued scarcity — deliberately refuses to loosen underwriting discipline on new stores ju...",
+    "cardId": "jonas-marques-neto/dis-4dbf60"
+  },
+  {
+    "from": "jonas-marques-neto",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "Should a company brand itself around low prices or premium curation? | Deliberate access/low-price positioning tied to weak brand loyalty in the category and...",
+    "cardId": "jonas-marques-neto/dis-d84fa5"
+  },
+  {
+    "from": "larry-ellison",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Jeff Bezos (Amazon/AWS) — cloud architecture & security, complicated by real coopetition",
+    "cardId": "larry-ellison/dis-b8fba3"
+  },
+  {
+    "from": "larry-ellison",
+    "to": "external",
+    "external": true,
+    "label": "vs. Bill Gates / Microsoft — \"the perfect enemy,\" not simple rivalry",
+    "cardId": "larry-ellison/dis-b7cabc"
+  },
+  {
+    "from": "larry-ellison",
+    "to": "external",
+    "external": true,
+    "label": "vs. Marc Benioff (Salesforce) — SaaS lock-in",
+    "cardId": "larry-ellison/dis-b6ef1f"
+  },
+  {
+    "from": "larry-ellison",
+    "to": "external",
+    "external": true,
+    "label": "vs. Marc Andreessen — does bigness kill or enable innovation?",
+    "cardId": "larry-ellison/dis-89a449"
+  },
+  {
+    "from": "larry-ellison",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett — leverage & conviction",
+    "cardId": "larry-ellison/dis-f7cc9d"
+  },
+  {
+    "from": "larry-ellison",
+    "to": "external",
+    "external": true,
+    "label": "vs. Senator Bernie Sanders — surveillance as a democracy/oligarchy problem, not a security win",
+    "cardId": "larry-ellison/dis-83e93e"
+  },
+  {
+    "from": "larry-ellison",
+    "to": "larry-page",
+    "external": false,
+    "label": "vs. privacy-minded technologists (and arguably Sergey Brin/Larry Page's early \"don't be evil\" framing) — surveillance",
+    "cardId": "larry-ellison/dis-df46d9"
+  },
+  {
+    "from": "larry-ellison",
+    "to": "sergey-brin",
+    "external": false,
+    "label": "vs. privacy-minded technologists (and arguably Sergey Brin/Larry Page's early \"don't be evil\" framing) — surveillance",
+    "cardId": "larry-ellison/dis-df46d9"
+  },
+  {
+    "from": "larry-ellison",
+    "to": "external",
+    "external": true,
+    "label": "vs. \"best-of-breed\" advocates — integration",
+    "cardId": "larry-ellison/dis-06aa1f"
+  },
+  {
+    "from": "larry-ellison",
+    "to": "elon-musk",
+    "external": false,
+    "label": "Notable alignment, not disagreement — Elon Musk",
+    "cardId": "larry-ellison/dis-47d484"
+  },
+  {
+    "from": "larry-ellison",
+    "to": "mark-zuckerberg",
+    "external": false,
+    "label": "Notable alignment, not disagreement — Elon Musk",
+    "cardId": "larry-ellison/dis-47d484"
+  },
+  {
+    "from": "larry-ellison",
+    "to": "sam-altman",
+    "external": false,
+    "label": "Notable alignment, not disagreement — Elon Musk",
+    "cardId": "larry-ellison/dis-47d484"
+  },
+  {
+    "from": "larry-page",
+    "to": "external",
+    "external": true,
+    "label": "vs. Steve Jobs (and the focus school) — focus vs. diversify, later partly conceded",
+    "cardId": "larry-page/dis-7573cb"
+  },
+  {
+    "from": "larry-page",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett — speculative moonshots vs. circle of competence / quarterly accountability",
+    "cardId": "larry-page/dis-8a0b86"
+  },
+  {
+    "from": "larry-page",
+    "to": "sergey-brin",
+    "external": false,
+    "label": "vs. Sergey Brin — temperament within the same mission",
+    "cardId": "larry-page/dis-f93aad"
+  },
+  {
+    "from": "larry-page",
+    "to": "mark-zuckerberg",
+    "external": false,
+    "label": "vs. Mark Zuckerberg — public accountability",
+    "cardId": "larry-page/dis-7ad1be"
+  },
+  {
+    "from": "larry-page",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Jeff Bezos — long-term, but Page resists the single-flywheel discipline",
+    "cardId": "larry-page/dis-72ddae"
+  },
+  {
+    "from": "larry-page",
+    "to": "external",
+    "external": true,
+    "label": "vs. regulators / Franklin Foer (critic) — innovation vs. restraint",
+    "cardId": "larry-page/dis-48f3c9"
+  },
+  {
+    "from": "larry-page",
+    "to": "external",
+    "external": true,
+    "label": "vs. Haydn Shaughnessy (named critic) — what actually made Google succeed",
+    "cardId": "larry-page/dis-2d9bdf"
+  },
+  {
+    "from": "luiz-seabra",
+    "to": "bernard-arnault",
+    "external": false,
+    "label": "vs. Bernard Arnault — on what a beauty/luxury brand is *for*",
+    "cardId": "luiz-seabra/dis-70b41d"
+  },
+  {
+    "from": "luiz-seabra",
+    "to": "miguel-krigsner",
+    "external": false,
+    "label": "vs. Miguel Krigsner (O Boticário) — direct-sales relationship vs. franchise retail",
+    "cardId": "luiz-seabra/dis-ecdab8"
+  },
+  {
+    "from": "luiz-seabra",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett — on leverage, focus, and diworsification",
+    "cardId": "luiz-seabra/dis-3f4f6f"
+  },
+  {
+    "from": "luiz-seabra",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Jeff Bezos / Reed Hastings — distribution and \"the relationship is the product.\"",
+    "cardId": "luiz-seabra/dis-716202"
+  },
+  {
+    "from": "luiz-seabra",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "vs. Jeff Bezos / Reed Hastings — distribution and \"the relationship is the product.\"",
+    "cardId": "luiz-seabra/dis-716202"
+  },
+  {
+    "from": "luiz-seabra",
+    "to": "larry-ellison",
+    "external": false,
+    "label": "vs. the profit-maximization default (e.g. a Larry Ellison-style operator)",
+    "cardId": "luiz-seabra/dis-a4cce7"
+  },
+  {
+    "from": "luiza-helena-trajano",
+    "to": "rony-meisler",
+    "external": false,
+    "label": "vs. Rony Meisler — what a brand is built on",
+    "cardId": "luiza-helena-trajano/dis-951a14"
+  },
+  {
+    "from": "luiza-helena-trajano",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Jeff Bezos — customer obsession vs. employee-first",
+    "cardId": "luiza-helena-trajano/dis-5596f7"
+  },
+  {
+    "from": "luiza-helena-trajano",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett — family succession",
+    "cardId": "luiza-helena-trajano/dis-274c26"
+  },
+  {
+    "from": "luiza-helena-trajano",
+    "to": "naval-ravikant",
+    "external": false,
+    "label": "vs. Naval Ravikant — interdependence vs. autonomy",
+    "cardId": "luiza-helena-trajano/dis-05c8a1"
+  },
+  {
+    "from": "luiza-helena-trajano",
+    "to": "ben-horowitz",
+    "external": false,
+    "label": "vs. Ben Horowitz / Bernard Arnault — perfection and control vs. fast, messy correction",
+    "cardId": "luiza-helena-trajano/dis-5aafc0"
+  },
+  {
+    "from": "luiza-helena-trajano",
+    "to": "bernard-arnault",
+    "external": false,
+    "label": "vs. Ben Horowitz / Bernard Arnault — perfection and control vs. fast, messy correction",
+    "cardId": "luiza-helena-trajano/dis-5aafc0"
+  },
+  {
+    "from": "luiza-helena-trajano",
+    "to": "external",
+    "external": true,
+    "label": "vs. free-market meritocrats (e.g. the individualist line common among tech founders) — quotas",
+    "cardId": "luiza-helena-trajano/dis-8a3532"
+  },
+  {
+    "from": "luiza-helena-trajano",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "vs. Frederico Trajano (her son and successor) — caution vs. risk appetite",
+    "cardId": "luiza-helena-trajano/dis-4eca6b"
+  },
+  {
+    "from": "manoel-conde-neto",
+    "to": "external",
+    "external": true,
+    "label": "How this figure diverges from other named council members. Largely inferred from each side's documented record, since no source shows Conde Neto naming or di...",
+    "cardId": "manoel-conde-neto/dis-b9b23f"
+  },
+  {
+    "from": "manoel-conde-neto",
+    "to": "jonas-marques-neto",
+    "external": false,
+    "label": "vs. Jonas Marques Neto (Pague Menos) — numbers-first vs. people-first, in the same industry",
+    "cardId": "manoel-conde-neto/dis-2b3cee"
+  },
+  {
+    "from": "manoel-conde-neto",
+    "to": "miguel-krigsner",
+    "external": false,
+    "label": "vs. Miguel Krigsner (O Boticário) — what a franchisor owes the franchisee",
+    "cardId": "manoel-conde-neto/dis-2b7b22"
+  },
+  {
+    "from": "manoel-conde-neto",
+    "to": "luiz-seabra",
+    "external": false,
+    "label": "vs. Luiz Seabra (Natura) — operator's numbers vs. founder-philosopher's values",
+    "cardId": "manoel-conde-neto/dis-a1918c"
+  },
+  {
+    "from": "mark-zuckerberg",
+    "to": "dario-amodei",
+    "external": false,
+    "label": "Open-source vs. closed frontier AI — vs. Sam Altman / OpenAI & Dario Amodei",
+    "cardId": "mark-zuckerberg/dis-e4819a"
+  },
+  {
+    "from": "mark-zuckerberg",
+    "to": "sam-altman",
+    "external": false,
+    "label": "Open-source vs. closed frontier AI — vs. Sam Altman / OpenAI & Dario Amodei",
+    "cardId": "mark-zuckerberg/dis-e4819a"
+  },
+  {
+    "from": "mark-zuckerberg",
+    "to": "sam-altman",
+    "external": false,
+    "label": "\"Missionaries vs. mercenaries\" on talent — vs. Sam Altman",
+    "cardId": "mark-zuckerberg/dis-1d8dd0"
+  },
+  {
+    "from": "mark-zuckerberg",
+    "to": "external",
+    "external": true,
+    "label": "LLM scaling vs. world models — vs. Yann LeCun (his own former chief AI scientist)",
+    "cardId": "mark-zuckerberg/dis-6e6102"
+  },
+  {
+    "from": "mark-zuckerberg",
+    "to": "external",
+    "external": true,
+    "label": "Concentrated founder control vs. shareholder accountability — vs. governance-minded investors (e.g. CalSTRS) and the public-market norm",
+    "cardId": "mark-zuckerberg/dis-20ff73"
+  },
+  {
+    "from": "mark-zuckerberg",
+    "to": "external",
+    "external": true,
+    "label": "Spend-through-uncertainty vs. capital discipline — vs. investors like Altimeter's Brad Gerstner",
+    "cardId": "mark-zuckerberg/dis-9e6d31"
+  },
+  {
+    "from": "mark-zuckerberg",
+    "to": "external",
+    "external": true,
+    "label": "Speed/ship-first vs. safety-first product caution — vs. trust-and-safety orthodoxy",
+    "cardId": "mark-zuckerberg/dis-d28f98"
+  },
+  {
+    "from": "mark-zuckerberg",
+    "to": "external",
+    "external": true,
+    "label": "App-centric vs. people-centric computing platforms — vs. Ben Thompson (Stratechery)",
+    "cardId": "mark-zuckerberg/dis-951255"
+  },
+  {
+    "from": "mark-zuckerberg",
+    "to": "external",
+    "external": true,
+    "label": "Business model as the cause of harm vs. ranking already optimized for satisfaction — vs. Rep. David Cicilline",
+    "cardId": "mark-zuckerberg/dis-a757f2"
+  },
+  {
+    "from": "mark-zuckerberg",
+    "to": "external",
+    "external": true,
+    "label": "\"Reducing censorship = more free expression\" vs. \"removing protections removes free expression for targeted groups\" — vs. GLAAD (Sarah Kate Ellis)",
+    "cardId": "mark-zuckerberg/dis-54c192"
+  },
+  {
+    "from": "mark-zuckerberg",
+    "to": "external",
+    "external": true,
+    "label": "Whether the Oversight Board should have been consulted on the 2025 fact-checking rollback — vs. Michael McConnell (Stanford Law professor, the Board's own co...",
+    "cardId": "mark-zuckerberg/dis-fb572b"
+  },
+  {
+    "from": "mark-zuckerberg",
+    "to": "external",
+    "external": true,
+    "label": "Open, developer-permissive platform architecture vs. closed, integrated platform control — vs. Apple",
+    "cardId": "mark-zuckerberg/dis-86174a"
+  },
+  {
+    "from": "mark-zuckerberg",
+    "to": "external",
+    "external": true,
+    "label": "Co-CEO/business-content separability — vs. Daniel Ek (Spotify), a light contrast rather than a conflict",
+    "cardId": "mark-zuckerberg/dis-2c644d"
+  },
+  {
+    "from": "michael-seibel",
+    "to": "external",
+    "external": true,
+    "label": "vs. the \"Steve Jobs\" perfectionist myth (design-led founders)",
+    "cardId": "michael-seibel/dis-d863ea"
+  },
+  {
+    "from": "michael-seibel",
+    "to": "paul-graham",
+    "external": false,
+    "label": "vs. Paul Graham / Brian Chesky on \"founder mode.\"",
+    "cardId": "michael-seibel/dis-f64e3e"
+  },
+  {
+    "from": "michael-seibel",
+    "to": "external",
+    "external": true,
+    "label": "vs. Peter Thiel (convergence by a different route)",
+    "cardId": "michael-seibel/dis-a75f1c"
+  },
+  {
+    "from": "michael-seibel",
+    "to": "external",
+    "external": true,
+    "label": "vs. local/regional startup \"experts,\" accelerators, and growth gurus",
+    "cardId": "michael-seibel/dis-4f8559"
+  },
+  {
+    "from": "michael-seibel",
+    "to": "dalton-caldwell",
+    "external": false,
+    "label": "vs. the credentialist / \"join a group of smart people\" path",
+    "cardId": "michael-seibel/dis-78c536"
+  },
+  {
+    "from": "michael-seibel",
+    "to": "external",
+    "external": true,
+    "label": "vs. valuation-maximizers (and many VCs)",
+    "cardId": "michael-seibel/dis-cf6042"
+  },
+  {
+    "from": "michael-seibel",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. idea-credit equity splits",
+    "cardId": "michael-seibel/dis-c969be"
+  },
+  {
+    "from": "michael-seibel",
+    "to": "mark-zuckerberg",
+    "external": false,
+    "label": "vs. idea-credit equity splits",
+    "cardId": "michael-seibel/dis-c969be"
+  },
+  {
+    "from": "michael-seibel",
+    "to": "external",
+    "external": true,
+    "label": "vs. cap-table-as-magic-ingredient investors and founders",
+    "cardId": "michael-seibel/dis-7e7513"
+  },
+  {
+    "from": "michael-seibel",
+    "to": "external",
+    "external": true,
+    "label": "vs. the \"get more traction before applying to an accelerator\" school",
+    "cardId": "michael-seibel/dis-57f305"
+  },
+  {
+    "from": "michael-seibel",
+    "to": "external",
+    "external": true,
+    "label": "vs. \"neg-only\" anti-YC critics",
+    "cardId": "michael-seibel/dis-ecfe60"
+  },
+  {
+    "from": "michael-seibel",
+    "to": "sam-altman",
+    "external": false,
+    "label": "vs. Ryan Bethencourt / IndieBio (institutional, on regulated industries)",
+    "cardId": "michael-seibel/dis-54b44f"
+  },
+  {
+    "from": "miguel-krigsner",
+    "to": "rony-meisler",
+    "external": false,
+    "label": "vs. Rony Meisler — build a dynasty to transmit vs. build a brand to (eventually) sell",
+    "cardId": "miguel-krigsner/dis-1a2193"
+  },
+  {
+    "from": "miguel-krigsner",
+    "to": "rony-meisler",
+    "external": false,
+    "label": "vs. Rony Meisler — purpose as quiet structure vs. purpose as the marketing engine",
+    "cardId": "miguel-krigsner/dis-da7829"
+  },
+  {
+    "from": "miguel-krigsner",
+    "to": "bernard-arnault",
+    "external": false,
+    "label": "vs. Bernard Arnault — patient relationship-network vs. aggressive consolidation",
+    "cardId": "miguel-krigsner/dis-5551b9"
+  },
+  {
+    "from": "miguel-krigsner",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett — aligned on the long game, divergent on the leap",
+    "cardId": "miguel-krigsner/dis-c82e7f"
+  },
+  {
+    "from": "miguel-krigsner",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "vs. lean-startup / \"test before you scale\" orthodoxy",
+    "cardId": "miguel-krigsner/dis-c9df27"
+  },
+  {
+    "from": "miguel-krigsner",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "vs. lean-startup / \"test before you scale\" orthodoxy",
+    "cardId": "miguel-krigsner/dis-c9df27"
+  },
+  {
+    "from": "miguel-krigsner",
+    "to": "luiz-seabra",
+    "external": false,
+    "label": "vs. Luiz Seabra (Natura) — franchise/reseller hybrid vs. direct-sales relationship",
+    "cardId": "miguel-krigsner/dis-63a385"
+  },
+  {
+    "from": "naval-ravikant",
+    "to": "paul-graham",
+    "external": false,
+    "label": "vs. Paul Graham — on raising money and growth",
+    "cardId": "naval-ravikant/dis-9f527e"
+  },
+  {
+    "from": "naval-ravikant",
+    "to": "paul-graham",
+    "external": false,
+    "label": "vs. Paul Graham — on schooling and children",
+    "cardId": "naval-ravikant/dis-db2f69"
+  },
+  {
+    "from": "naval-ravikant",
+    "to": "ben-horowitz",
+    "external": false,
+    "label": "vs. Ben Horowitz / Jason Lemkin — on capital and headcount as signals of health",
+    "cardId": "naval-ravikant/dis-5946f4"
+  },
+  {
+    "from": "naval-ravikant",
+    "to": "jason-lemkin",
+    "external": false,
+    "label": "vs. Ben Horowitz / Jason Lemkin — on capital and headcount as signals of health",
+    "cardId": "naval-ravikant/dis-5946f4"
+  },
+  {
+    "from": "naval-ravikant",
+    "to": "external",
+    "external": true,
+    "label": "vs. most VCs — on whether they add value",
+    "cardId": "naval-ravikant/dis-6ddb46"
+  },
+  {
+    "from": "naval-ravikant",
+    "to": "external",
+    "external": true,
+    "label": "vs. Nassim Taleb — the surprise is *agreement*",
+    "cardId": "naval-ravikant/dis-53cbd1"
+  },
+  {
+    "from": "naval-ravikant",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett — aligned on horizon, divergent on leverage and capital",
+    "cardId": "naval-ravikant/dis-d2500d"
+  },
+  {
+    "from": "naval-ravikant",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Jeff Bezos — money's diminishing returns to the person",
+    "cardId": "naval-ravikant/dis-561b1b"
+  },
+  {
+    "from": "naval-ravikant",
+    "to": "external",
+    "external": true,
+    "label": "vs. Steve Jobs — on the nature of creativity",
+    "cardId": "naval-ravikant/dis-0e6ae1"
+  },
+  {
+    "from": "naval-ravikant",
+    "to": "external",
+    "external": true,
+    "label": "vs. a doomer / AI-safety advocate",
+    "cardId": "naval-ravikant/dis-4ef398"
+  },
+  {
+    "from": "naval-ravikant",
+    "to": "external",
+    "external": true,
+    "label": "vs. his own libertarian allies — on tariffs",
+    "cardId": "naval-ravikant/dis-c9360e"
+  },
+  {
+    "from": "naval-ravikant",
+    "to": "external",
+    "external": true,
+    "label": "vs. mainstream \"work-life balance\" / wellness advice",
+    "cardId": "naval-ravikant/dis-b5af90"
+  },
+  {
+    "from": "nicolas-dessaigne",
+    "to": "paul-graham",
+    "external": false,
+    "label": "vs. Paul Graham on hiring / \"do things that don't scale.\"",
+    "cardId": "nicolas-dessaigne/dis-2d2784"
+  },
+  {
+    "from": "nicolas-dessaigne",
+    "to": "external",
+    "external": true,
+    "label": "vs. \"hire ahead of growth\" VC orthodoxy",
+    "cardId": "nicolas-dessaigne/dis-fd3135"
+  },
+  {
+    "from": "nicolas-dessaigne",
+    "to": "external",
+    "external": true,
+    "label": "vs. \"build a DevRel team to scale evangelism\" (standard growth advice)",
+    "cardId": "nicolas-dessaigne/dis-faeb51"
+  },
+  {
+    "from": "nicolas-dessaigne",
+    "to": "external",
+    "external": true,
+    "label": "vs. lean/\"keep it scrappy\" support purists",
+    "cardId": "nicolas-dessaigne/dis-3dc697"
+  },
+  {
+    "from": "nicolas-dessaigne",
+    "to": "external",
+    "external": true,
+    "label": "vs. cost-plus / margin-first pricing thinkers",
+    "cardId": "nicolas-dessaigne/dis-8f989d"
+  },
+  {
+    "from": "nicolas-dessaigne",
+    "to": "external",
+    "external": true,
+    "label": "vs. \"build core infra in-house for control.\"",
+    "cardId": "nicolas-dessaigne/dis-68e213"
+  },
+  {
+    "from": "nicolas-dessaigne",
+    "to": "external",
+    "external": true,
+    "label": "vs. open-source monetization via support-and-services",
+    "cardId": "nicolas-dessaigne/dis-ec92e9"
+  },
+  {
+    "from": "nicolas-dessaigne",
+    "to": "external",
+    "external": true,
+    "label": "vs. founders who hold the CEO seat to the end",
+    "cardId": "nicolas-dessaigne/dis-4c04ee"
+  },
+  {
+    "from": "nicolas-dessaigne",
+    "to": "external",
+    "external": true,
+    "label": "vs. AI-era \"the code is the product\" view",
+    "cardId": "nicolas-dessaigne/dis-23f12f"
+  },
+  {
+    "from": "nicolas-dessaigne",
+    "to": "external",
+    "external": true,
+    "label": "vs. a fellow YC panelist's \"reduce scope, wrap a third-party API\" instinct",
+    "cardId": "nicolas-dessaigne/dis-9f5af0"
+  },
+  {
+    "from": "nicolas-dessaigne",
+    "to": "external",
+    "external": true,
+    "label": "vs. \"copy a proven competitor's GTM.\"",
+    "cardId": "nicolas-dessaigne/dis-ff5e0d"
+  },
+  {
+    "from": "paul-graham",
+    "to": "ben-horowitz",
+    "external": false,
+    "label": "Founder mode vs. professional management — vs. Ben Horowitz",
+    "cardId": "paul-graham/dis-27eaba"
+  },
+  {
+    "from": "paul-graham",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "Founder mode vs. radical delegation — vs. Reed Hastings",
+    "cardId": "paul-graham/dis-46827a"
+  },
+  {
+    "from": "paul-graham",
+    "to": "jensen-huang",
+    "external": false,
+    "label": "Scale-management — vs. Jensen Huang",
+    "cardId": "paul-graham/dis-a16aa7"
+  },
+  {
+    "from": "paul-graham",
+    "to": "naval-ravikant",
+    "external": false,
+    "label": "Stay-small / abundance vs. growth-at-scale — vs. Naval Ravikant",
+    "cardId": "paul-graham/dis-7b5712"
+  },
+  {
+    "from": "paul-graham",
+    "to": "michael-seibel",
+    "external": false,
+    "label": "Idea evaluation — vs. the \"validate first / listen to the market\" reflex (e.g. Michael Seibel's lean-validation emphasis)",
+    "cardId": "paul-graham/dis-9536d0"
+  },
+  {
+    "from": "paul-graham",
+    "to": "external",
+    "external": true,
+    "label": "Keep-your-identity-small vs. identity-as-asset — vs. brand-builders",
+    "cardId": "paul-graham/dis-18efe3"
+  },
+  {
+    "from": "paul-graham",
+    "to": "larry-page",
+    "external": false,
+    "label": "Determination vs. raw talent in selection — vs. the \"hire the smartest people\" reflex (e.g. Larry Page / Sergey Brin's hiring ethos)",
+    "cardId": "paul-graham/dis-575294"
+  },
+  {
+    "from": "paul-graham",
+    "to": "sergey-brin",
+    "external": false,
+    "label": "Determination vs. raw talent in selection — vs. the \"hire the smartest people\" reflex (e.g. Larry Page / Sergey Brin's hiring ethos)",
+    "cardId": "paul-graham/dis-575294"
+  },
+  {
+    "from": "paul-graham",
+    "to": "external",
+    "external": true,
+    "label": "Wealth/inequality — vs. zero-sum critics",
+    "cardId": "paul-graham/dis-aa513a"
+  },
+  {
+    "from": "paul-graham",
+    "to": "bernard-arnault",
+    "external": false,
+    "label": "Brand vs. growth-marketing — vs. operators who build moats through brand (e.g. Bernard Arnault / LVMH)",
+    "cardId": "paul-graham/dis-96bbf8"
+  },
+  {
+    "from": "paulo-correa",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "vs. Frederico Trajano (Magalu) — governance and ownership structure under a public-market mandate",
+    "cardId": "paulo-correa/dis-4aa9ad"
+  },
+  {
+    "from": "paulo-correa",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. a Buffett-style capital-discipline standard — cash discipline without full minority-shareholder alignment",
+    "cardId": "paulo-correa/dis-b7d930"
+  },
+  {
+    "from": "paulo-correa",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "vs. a Trajano/Bezos-style physical-store thesis — omnichannel as customer-led sequence, not a designed funnel",
+    "cardId": "paulo-correa/dis-22f2ef"
+  },
+  {
+    "from": "paulo-correa",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. a Trajano/Bezos-style physical-store thesis — omnichannel as customer-led sequence, not a designed funnel",
+    "cardId": "paulo-correa/dis-22f2ef"
+  },
+  {
+    "from": "paulo-nassar",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "How to fund growth at scale | Zero debt for 37 years; self-funded expansion; brought in equity only when bundled with governance/M&A readiness (Kinea, 2021) ...",
+    "cardId": "paulo-nassar/dis-23526d"
+  },
+  {
+    "from": "paulo-nassar",
+    "to": "stephane-maquaire",
+    "external": false,
+    "label": "Pace of post-merger integration | Deliberately slow: five-year synergy-capture curve (2026–2030), no forced timeline to unify loyalty programs or private lab...",
+    "cardId": "paulo-nassar/dis-c074a7"
+  },
+  {
+    "from": "paulo-nassar",
+    "to": "stephane-maquaire",
+    "external": false,
+    "label": "Crisis response ownership, same disaster (May 2024 RS floods) | Cobasi's public response came entirely through corporate legal counsel, disclaiming operation...",
+    "cardId": "paulo-nassar/dis-945a55"
+  },
+  {
+    "from": "paulo-nassar",
+    "to": "manoel-conde-neto",
+    "external": false,
+    "label": "Path to consolidating a fragmented market | Merged with Cobasi's most direct historical rival (Petz) to build scale, then defended the deal publicly as pro-c...",
+    "cardId": "paulo-nassar/dis-82b012"
+  },
+  {
+    "from": "pedro-franceschi",
+    "to": "jason-lemkin",
+    "external": false,
+    "label": "vs. Jason Lemkin (org structure)",
+    "cardId": "pedro-franceschi/dis-b33cf1"
+  },
+  {
+    "from": "pedro-franceschi",
+    "to": "jason-lemkin",
+    "external": false,
+    "label": "vs. Jason Lemkin (fundraising strategy — a distinct, second disagreement)",
+    "cardId": "pedro-franceschi/dis-524596"
+  },
+  {
+    "from": "pedro-franceschi",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "vs. Reed Hastings (process)",
+    "cardId": "pedro-franceschi/dis-47f379"
+  },
+  {
+    "from": "pedro-franceschi",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Amazon / Jeff Bezos (two-pizza teams)",
+    "cardId": "pedro-franceschi/dis-b1775f"
+  },
+  {
+    "from": "pedro-franceschi",
+    "to": "external",
+    "external": true,
+    "label": "vs. Spencer Skates (Amplitude) on what going public is for",
+    "cardId": "pedro-franceschi/dis-38f0a8"
+  },
+  {
+    "from": "pedro-franceschi",
+    "to": "harry-stebbings",
+    "external": false,
+    "label": "vs. Harry Stebbings / prevailing pace norms (intensity)",
+    "cardId": "pedro-franceschi/dis-ea912a"
+  },
+  {
+    "from": "pedro-franceschi",
+    "to": "ryan-breslow",
+    "external": false,
+    "label": "vs. Ryan Breslow (fellow young fintech founder, on positioning)",
+    "cardId": "pedro-franceschi/dis-c943d2"
+  },
+  {
+    "from": "pedro-franceschi",
+    "to": "external",
+    "external": true,
+    "label": "vs. Eric Glyman (Ramp, on customer alignment during a segmentation cutoff)",
+    "cardId": "pedro-franceschi/dis-8273d4"
+  },
+  {
+    "from": "pedro-franceschi",
+    "to": "external",
+    "external": true,
+    "label": "vs. Ron Shevlin (Forbes) on what the Capital One deal actually means",
+    "cardId": "pedro-franceschi/dis-0781db"
+  },
+  {
+    "from": "pedro-franceschi",
+    "to": "garry-tan",
+    "external": false,
+    "label": "vs. Michael Seibel / Garry Tan (YC) on founder happiness as strategy",
+    "cardId": "pedro-franceschi/dis-785ea6"
+  },
+  {
+    "from": "pedro-franceschi",
+    "to": "michael-seibel",
+    "external": false,
+    "label": "vs. Michael Seibel / Garry Tan (YC) on founder happiness as strategy",
+    "cardId": "pedro-franceschi/dis-785ea6"
+  },
+  {
+    "from": "pedro-franceschi",
+    "to": "paul-graham",
+    "external": false,
+    "label": "vs. Michael Seibel / Garry Tan (YC) on founder happiness as strategy",
+    "cardId": "pedro-franceschi/dis-785ea6"
+  },
+  {
+    "from": "reed-hastings",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett — on the source of durable advantage",
+    "cardId": "reed-hastings/dis-235ceb"
+  },
+  {
+    "from": "reed-hastings",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. Jeff Bezos — on process",
+    "cardId": "reed-hastings/dis-a9f190"
+  },
+  {
+    "from": "reed-hastings",
+    "to": "ben-horowitz",
+    "external": false,
+    "label": "vs. Ben Horowitz — on whether a company is a family",
+    "cardId": "reed-hastings/dis-855533"
+  },
+  {
+    "from": "reed-hastings",
+    "to": "luiza-helena-trajano",
+    "external": false,
+    "label": "vs. Luiza Helena Trajano — on tenure and belonging",
+    "cardId": "reed-hastings/dis-5a30fa"
+  },
+  {
+    "from": "reed-hastings",
+    "to": "carol-dweck",
+    "external": false,
+    "label": "vs. James Clear / Carol Dweck — on growth vs. replacement",
+    "cardId": "reed-hastings/dis-40be6e"
+  },
+  {
+    "from": "reed-hastings",
+    "to": "james-clear",
+    "external": false,
+    "label": "vs. James Clear / Carol Dweck — on growth vs. replacement",
+    "cardId": "reed-hastings/dis-40be6e"
+  },
+  {
+    "from": "reed-hastings",
+    "to": "paul-graham",
+    "external": false,
+    "label": "vs. Paul Graham — on rules early",
+    "cardId": "reed-hastings/dis-6b056a"
+  },
+  {
+    "from": "reed-hastings",
+    "to": "elon-musk",
+    "external": false,
+    "label": "vs. Elon Musk — on mission as a substitute for pay",
+    "cardId": "reed-hastings/dis-a1c443"
+  },
+  {
+    "from": "reed-hastings",
+    "to": "external",
+    "external": true,
+    "label": "vs. Bill Belichick and Andy Grove — on rhetorically overstated team-building maxims",
+    "cardId": "reed-hastings/dis-4abe3f"
+  },
+  {
+    "from": "reed-hastings",
+    "to": "reid-hoffman",
+    "external": false,
+    "label": "vs. Reid Hoffman — on policy prescriptions for \"middle powers\" in AI",
+    "cardId": "reed-hastings/dis-a04b01"
+  },
+  {
+    "from": "reed-hastings",
+    "to": "external",
+    "external": true,
+    "label": "vs. Boris Cherny (Anthropic) — on whether software engineering survives AI",
+    "cardId": "reed-hastings/dis-dffb4a"
+  },
+  {
+    "from": "reed-hastings",
+    "to": "external",
+    "external": true,
+    "label": "vs. Diane Ravitch — on charter schools and democratic governance",
+    "cardId": "reed-hastings/dis-16ff48"
+  },
+  {
+    "from": "reid-hoffman",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett — speed/uncertainty vs. margin of safety",
+    "cardId": "reid-hoffman/dis-5bef13"
+  },
+  {
+    "from": "reid-hoffman",
+    "to": "jason-lemkin",
+    "external": false,
+    "label": "vs. Jason Lemkin — blitzscaling vs. capital-efficient SaaS",
+    "cardId": "reid-hoffman/dis-7f447f"
+  },
+  {
+    "from": "reid-hoffman",
+    "to": "james-hawkins",
+    "external": false,
+    "label": "vs. James Hawkins (PostHog) — buy-speed-with-capital vs. low-burn product-led GTM",
+    "cardId": "reid-hoffman/dis-fab9fa"
+  },
+  {
+    "from": "reid-hoffman",
+    "to": "naval-ravikant",
+    "external": false,
+    "label": "vs. Naval Ravikant — scale-via-network-effects vs. leverage-via-small-teams",
+    "cardId": "reid-hoffman/dis-7c33ee"
+  },
+  {
+    "from": "reid-hoffman",
+    "to": "paul-graham",
+    "external": false,
+    "label": "vs. Paul Graham — growth, agreed; capital intensity, not",
+    "cardId": "reid-hoffman/dis-a806db"
+  },
+  {
+    "from": "reid-hoffman",
+    "to": "ben-horowitz",
+    "external": false,
+    "label": "vs. Ben Horowitz — wartime/peacetime CEO vs. blitzscaling as a lifecycle phase",
+    "cardId": "reid-hoffman/dis-ffafe4"
+  },
+  {
+    "from": "reid-hoffman",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "vs. Reed Hastings — culture & talent",
+    "cardId": "reid-hoffman/dis-56d46d"
+  },
+  {
+    "from": "reid-hoffman",
+    "to": "elon-musk",
+    "external": false,
+    "label": "vs. Elon Musk — SpaceX, AI, and the public break",
+    "cardId": "reid-hoffman/dis-efe954"
+  },
+  {
+    "from": "reid-hoffman",
+    "to": "external",
+    "external": true,
+    "label": "vs. AI Doomers and Zoomers",
+    "cardId": "reid-hoffman/dis-016cc9"
+  },
+  {
+    "from": "reid-hoffman",
+    "to": "external",
+    "external": true,
+    "label": "vs. his own Greylock partner John Lilly",
+    "cardId": "reid-hoffman/dis-9b442b"
+  },
+  {
+    "from": "roberto-jatahy",
+    "to": "alexandre-birman",
+    "external": false,
+    "label": "vs. Alexandre Birman — does founder autonomy survive inside a merger of equals?",
+    "cardId": "roberto-jatahy/dis-ab0465"
+  },
+  {
+    "from": "roberto-jatahy",
+    "to": "bernard-arnault",
+    "external": false,
+    "label": "vs. Bernard Arnault — discreet, non-luxury roll-up vs. LVMH's aggressive, exposed luxury consolidation",
+    "cardId": "roberto-jatahy/dis-128c9e"
+  },
+  {
+    "from": "roberto-jatahy",
+    "to": "alexandre-birman",
+    "external": false,
+    "label": "vs. Rony Meisler — the founder whose autonomy Jatahy's philosophy was supposed to protect",
+    "cardId": "roberto-jatahy/dis-39cecc"
+  },
+  {
+    "from": "roberto-jatahy",
+    "to": "rony-meisler",
+    "external": false,
+    "label": "vs. Rony Meisler — the founder whose autonomy Jatahy's philosophy was supposed to protect",
+    "cardId": "roberto-jatahy/dis-39cecc"
+  },
+  {
+    "from": "roberto-jatahy",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett — shared instincts on cash discipline, opposite instincts on integration",
+    "cardId": "roberto-jatahy/dis-818822"
+  },
+  {
+    "from": "rodrigo-vidigal",
+    "to": "external",
+    "external": true,
+    "label": "How this figure diverges from other named council members on specific questions. Largely inferred from each side's separately documented record — no source s...",
+    "cardId": "rodrigo-vidigal/dis-b258ab"
+  },
+  {
+    "from": "rodrigo-vidigal",
+    "to": "manoel-conde-neto",
+    "external": false,
+    "label": "vs. Manoel Conde Neto (Farma Conde) — best-of-breed partnership vs. vertical integration as the growth engine",
+    "cardId": "rodrigo-vidigal/dis-045eaa"
+  },
+  {
+    "from": "rodrigo-vidigal",
+    "to": "jensen-huang",
+    "external": false,
+    "label": "vs. Jensen Huang (Nvidia) — ecosystem strategy from opposite starting points",
+    "cardId": "rodrigo-vidigal/dis-4f9eda"
+  },
+  {
+    "from": "rodrigo-vidigal",
+    "to": "denis-minev",
+    "external": false,
+    "label": "vs. Denis Benchimol Minev (Bemol) — the Zona Franca de Manaus as backdrop, read from opposite chairs",
+    "cardId": "rodrigo-vidigal/dis-e0b18f"
+  },
+  {
+    "from": "rodrigo-vidigal",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "vs. Frederico Trajano (Magazine Luiza) — direction of the innovation-transfer arrow",
+    "cardId": "rodrigo-vidigal/dis-9f95d8"
+  },
+  {
+    "from": "rodrigo-vidigal",
+    "to": "luiza-helena-trajano",
+    "external": false,
+    "label": "vs. Frederico Trajano (Magazine Luiza) — direction of the innovation-transfer arrow",
+    "cardId": "rodrigo-vidigal/dis-9f95d8"
+  },
+  {
+    "from": "rony-meisler",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "vs. frederico-trajano",
+    "cardId": "rony-meisler/dis-c5ba2a"
+  },
+  {
+    "from": "rony-meisler",
+    "to": "luiza-helena-trajano",
+    "external": false,
+    "label": "vs. frederico-trajano",
+    "cardId": "rony-meisler/dis-c5ba2a"
+  },
+  {
+    "from": "rony-meisler",
+    "to": "alexandre-birman",
+    "external": false,
+    "label": "vs. bernard-arnault",
+    "cardId": "rony-meisler/dis-77a535"
+  },
+  {
+    "from": "rony-meisler",
+    "to": "bernard-arnault",
+    "external": false,
+    "label": "vs. bernard-arnault",
+    "cardId": "rony-meisler/dis-77a535"
+  },
+  {
+    "from": "rony-meisler",
+    "to": "alexandre-birman",
+    "external": false,
+    "label": "vs. alexandre-birman",
+    "cardId": "rony-meisler/dis-a9549a"
+  },
+  {
+    "from": "rony-meisler",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "vs. alexandre-birman",
+    "cardId": "rony-meisler/dis-a9549a"
+  },
+  {
+    "from": "rony-meisler",
+    "to": "external",
+    "external": true,
+    "label": "vs. Milton Friedman",
+    "cardId": "rony-meisler/dis-f0cb75"
+  },
+  {
+    "from": "rony-meisler",
+    "to": "external",
+    "external": true,
+    "label": "vs. Beto Sicupira (3G Capital / AmBev)",
+    "cardId": "rony-meisler/dis-8533df"
+  },
+  {
+    "from": "rony-meisler",
+    "to": "naval-ravikant",
+    "external": false,
+    "label": "vs. warren-buffett / naval-ravikant",
+    "cardId": "rony-meisler/dis-057d76"
+  },
+  {
+    "from": "rony-meisler",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. warren-buffett / naval-ravikant",
+    "cardId": "rony-meisler/dis-057d76"
+  },
+  {
+    "from": "rony-meisler",
+    "to": "michael-seibel",
+    "external": false,
+    "label": "vs. paul-graham / michael-seibel",
+    "cardId": "rony-meisler/dis-1f6010"
+  },
+  {
+    "from": "rony-meisler",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "Aligned, not opposed",
+    "cardId": "rony-meisler/dis-4666f5"
+  },
+  {
+    "from": "rony-meisler",
+    "to": "luiz-seabra",
+    "external": false,
+    "label": "Aligned, not opposed",
+    "cardId": "rony-meisler/dis-4666f5"
+  },
+  {
+    "from": "rony-meisler",
+    "to": "luiza-helena-trajano",
+    "external": false,
+    "label": "Aligned, not opposed",
+    "cardId": "rony-meisler/dis-4666f5"
+  },
+  {
+    "from": "ryan-breslow",
+    "to": "garry-tan",
+    "external": false,
+    "label": "vs. Garry Tan — on whether Silicon Valley gatekeeping is a \"mob.\"",
+    "cardId": "ryan-breslow/dis-2e8f74"
+  },
+  {
+    "from": "ryan-breslow",
+    "to": "external",
+    "external": true,
+    "label": "vs. Shaun Maguire (Sequoia) — on the credibility of the \"Mob Bosses\" thread itself",
+    "cardId": "ryan-breslow/dis-851f9e"
+  },
+  {
+    "from": "ryan-breslow",
+    "to": "michael-seibel",
+    "external": false,
+    "label": "vs. Maju Kuruvilla (his own installed successor CEO) — on whether founder-conviction mode still fits Bolt",
+    "cardId": "ryan-breslow/dis-504186"
+  },
+  {
+    "from": "ryan-breslow",
+    "to": "pedro-franceschi",
+    "external": false,
+    "label": "vs. Maju Kuruvilla (his own installed successor CEO) — on whether founder-conviction mode still fits Bolt",
+    "cardId": "ryan-breslow/dis-504186"
+  },
+  {
+    "from": "ryan-breslow",
+    "to": "pedro-franceschi",
+    "external": false,
+    "label": "vs. Pedro Franceschi — on founder conduct and trust in fintech",
+    "cardId": "ryan-breslow/dis-da9800"
+  },
+  {
+    "from": "ryan-breslow",
+    "to": "michael-seibel",
+    "external": false,
+    "label": "vs. Michael Seibel / Y Combinator worldview — on the value of the accelerator system",
+    "cardId": "ryan-breslow/dis-1b7a98"
+  },
+  {
+    "from": "ryan-breslow",
+    "to": "ben-horowitz",
+    "external": false,
+    "label": "vs. Ben Horowitz — on wartime CEO done right",
+    "cardId": "ryan-breslow/dis-428f06"
+  },
+  {
+    "from": "sam-altman",
+    "to": "elon-musk",
+    "external": false,
+    "label": "vs. Elon Musk — on why Musk left OpenAI and what \"open\" ever meant",
+    "cardId": "sam-altman/dis-e4e873"
+  },
+  {
+    "from": "sam-altman",
+    "to": "external",
+    "external": true,
+    "label": "vs. Marc Andreessen (and Bill Gurley) — on whether Altman's regulatory asks are self-serving \"regulatory capture.\"",
+    "cardId": "sam-altman/dis-1f8c57"
+  },
+  {
+    "from": "sam-altman",
+    "to": "external",
+    "external": true,
+    "label": "vs. an unnamed camp of AI-safety researchers — on which risks deserve the most attention",
+    "cardId": "sam-altman/dis-f7062f"
+  },
+  {
+    "from": "sam-altman",
+    "to": "external",
+    "external": true,
+    "label": "vs. DeepMind's organizational model (implicit, not a personal dispute) — on how to structure an AI research org",
+    "cardId": "sam-altman/dis-6f7126"
+  },
+  {
+    "from": "sergey-brin",
+    "to": "luiza-helena-trajano",
+    "external": false,
+    "label": "vs. Luiza Helena Trajano (on work intensity)",
+    "cardId": "sergey-brin/dis-bc305e"
+  },
+  {
+    "from": "sergey-brin",
+    "to": "larry-page",
+    "external": false,
+    "label": "vs. Larry Page (his co-founder — degree, not direction)",
+    "cardId": "sergey-brin/dis-4cad39"
+  },
+  {
+    "from": "sergey-brin",
+    "to": "warren-buffett",
+    "external": false,
+    "label": "vs. Warren Buffett (on long-term, differently expressed)",
+    "cardId": "sergey-brin/dis-74235e"
+  },
+  {
+    "from": "sergey-brin",
+    "to": "reed-hastings",
+    "external": false,
+    "label": "vs. Reed Hastings / safety-and-process cultures (on caution)",
+    "cardId": "sergey-brin/dis-072679"
+  },
+  {
+    "from": "sergey-brin",
+    "to": "elon-musk",
+    "external": false,
+    "label": "vs. Elon Musk (alignment, with a twist)",
+    "cardId": "sergey-brin/dis-4d3b9e"
+  },
+  {
+    "from": "sergey-brin",
+    "to": "jensen-huang",
+    "external": false,
+    "label": "vs. Jensen Huang (on-roster; NVIDIA CEO)",
+    "cardId": "sergey-brin/dis-978b2f"
+  },
+  {
+    "from": "sergey-brin",
+    "to": "sam-altman",
+    "external": false,
+    "label": "vs. Sam Altman (off-roster; OpenAI CEO)",
+    "cardId": "sergey-brin/dis-23e9ba"
+  },
+  {
+    "from": "sergey-brin",
+    "to": "external",
+    "external": true,
+    "label": "vs. Andy Grove (off-roster; former Intel CEO/chairman, Parkinson's patient/advocate)",
+    "cardId": "sergey-brin/dis-112997"
+  },
+  {
+    "from": "sergey-brin",
+    "to": "external",
+    "external": true,
+    "label": "vs. Demis Hassabis (off-roster; DeepMind CEO, close collaborator, not an adversary)",
+    "cardId": "sergey-brin/dis-615ef9"
+  },
+  {
+    "from": "stephane-maquaire",
+    "to": "bernard-arnault",
+    "external": false,
+    "label": "vs. Bernard Arnault (LVMH) — what a controlling shareholder owes minority investors",
+    "cardId": "stephane-maquaire/dis-7a743b"
+  },
+  {
+    "from": "stephane-maquaire",
+    "to": "frederico-trajano",
+    "external": false,
+    "label": "vs. Frederico Trajano (Magalu) — founder/controller governance vs. an installed expatriate executive answering to a distant controller",
+    "cardId": "stephane-maquaire/dis-45dec4"
+  },
+  {
+    "from": "stephane-maquaire",
+    "to": "paulo-correa",
+    "external": false,
+    "label": "vs. Paulo Corrêa (C&A) — naming the adversary",
+    "cardId": "stephane-maquaire/dis-e157ce"
+  },
+  {
+    "from": "tom-brown",
+    "to": "external",
+    "external": true,
+    "label": "Whether the GPT-3 paper's headline scaling result is strong evidence of continued few-shot gains at larger scale | Treats the scaling-law fit itself — \"the v...",
+    "cardId": "tom-brown/dis-bbafdf"
+  },
+  {
+    "from": "tom-brown",
+    "to": "external",
+    "external": true,
+    "label": "Whether fluent output implies real-world comprehension / proximity to AGI | Frames current models as already \"weak AGI\" and treats capability growth as an \"I...",
+    "cardId": "tom-brown/dis-827d49"
+  },
+  {
+    "from": "tom-brown",
+    "to": "external",
+    "external": true,
+    "label": "Whether naive scaling under the current (passive, internet-scraped) data paradigm has a hard ceiling | His own conversion narrative treats the scaling-law tr...",
+    "cardId": "tom-brown/dis-63aaae"
+  },
+  {
+    "from": "tom-brown",
+    "to": "external",
+    "external": true,
+    "label": "Whether documenting a model's bias is a sufficient response | The GPT-3 paper (which Brown led) documents extensive measured gender/race/religion association...",
+    "cardId": "tom-brown/dis-48f068"
+  },
+  {
+    "from": "tom-brown",
+    "to": "dario-amodei",
+    "external": false,
+    "label": "Default public register when discussing frontier AI's trajectory | Engineering-and-infrastructure framed: measures compute-doubling times, chip strategy, and...",
+    "cardId": "tom-brown/dis-744fd1"
+  },
+  {
+    "from": "tom-brown",
+    "to": "jack-clark",
+    "external": false,
+    "label": "Default public register when discussing frontier AI's trajectory | Engineering-and-infrastructure framed: measures compute-doubling times, chip strategy, and...",
+    "cardId": "tom-brown/dis-744fd1"
+  },
+  {
+    "from": "warren-buffett",
+    "to": "naval-ravikant",
+    "external": false,
+    "label": "Is a scarce, non-productive store of value (crypto, gold) a sound holding? | No — own productive assets. Bitcoin \"is a gambling token… doesn't have any intri...",
+    "cardId": "warren-buffett/dis-270c2c"
+  },
+  {
+    "from": "warren-buffett",
+    "to": "elon-musk",
+    "external": false,
+    "label": "Do moats matter, or does pace of innovation make them \"lame\"? | The durable moat is the whole game: \"a truly great business must have an enduring 'moat'… com...",
+    "cardId": "warren-buffett/dis-f933db"
+  },
+  {
+    "from": "warren-buffett",
+    "to": "jeff-bezos",
+    "external": false,
+    "label": "Reinvest into unproven long-horizon growth, or only where returns are demonstrated? | Reinvest aggressively — but demand \"demonstrated consistent earning pow...",
+    "cardId": "warren-buffett/dis-c96d93"
+  },
+  {
+    "from": "warren-buffett",
+    "to": "paul-graham",
+    "external": false,
+    "label": "Is growth the point of an early company? | Growth is \"simply a component — usually a plus, sometimes a minus — in the value equation\" (1992); pay a *fair* pr...",
+    "cardId": "warren-buffett/dis-2220ee"
+  },
+  {
+    "from": "warren-buffett",
+    "to": "reid-hoffman",
+    "external": false,
+    "label": "Blitzscale — trade efficiency and safety for speed and market capture? | No: \"it is insane to risk what you have and need in order to obtain what you don't n...",
+    "cardId": "warren-buffett/dis-99f2b0"
+  },
+  {
+    "from": "warren-buffett",
+    "to": "larry-ellison",
+    "external": false,
+    "label": "Build a debt-fueled, founder-controlled empire via aggressive/hostile M&A? | All-equity acquisitions, \"we will not engage in unfriendly takeovers\" (1986/1991...",
+    "cardId": "warren-buffett/dis-7a32b7"
+  }
+]

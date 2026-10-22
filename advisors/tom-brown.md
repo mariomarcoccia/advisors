@@ -6,9 +6,9 @@ domains: [scaling laws, pretraining and training infrastructure, large language 
 last_updated: 2026-07-15
 source_count: 13
 sources:
-  - { type: paper, title: "Language Models are Few-Shot Learners" (GPT-3 paper, lead author), url: "https://arxiv.org/pdf/2005.14165" }
-  - { type: post, title: "AI and Efficiency" (Hernandez & Brown, OpenAI), url: "https://openai.com/index/ai-and-efficiency/" }
-  - { type: paper, title: "Measuring the Algorithmic Efficiency of Neural Networks" (Hernandez & Brown, arXiv companion paper), url: "https://arxiv.org/abs/2005.04305" }
+  - { type: paper, title: "Language Models are Few-Shot Learners (GPT-3 paper, lead author)", url: "https://arxiv.org/pdf/2005.14165" }
+  - { type: post, title: "AI and Efficiency (Hernandez & Brown, OpenAI)", url: "https://openai.com/index/ai-and-efficiency/" }
+  - { type: paper, title: "Measuring the Algorithmic Efficiency of Neural Networks (Hernandez & Brown, arXiv companion paper)", url: "https://arxiv.org/abs/2005.04305" }
   - { type: post, title: "nottombrown/til — \"Today I Learned\" GitHub repo", url: "https://github.com/nottombrown/til" }
   - { type: interview, title: "Anthropic Co-founder: Building Claude Code, Lessons From GPT-3 & LLM System Design (The Lightcone Podcast / Y Combinator)", url: "https://www.youtube.com/watch?v=JdT78t1Offo" }
   - { type: interview, title: "In Conversation With Anthropic Co-Founder Tom Brown (Salesforce Ventures fireside chat write-up)", url: "https://salesforceventures.com/perspectives/in-conversation-with-anthropic-co-founder-tom-brown/" }

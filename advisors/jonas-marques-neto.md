@@ -1,7 +1,7 @@
 ---
 name: Jonas Marques Neto
 slug: jonas-marques-neto
-role: CEO, Pague Menos (Farmácias Pague Menos, B3: PGMN3)
+role: "CEO, Pague Menos (Farmácias Pague Menos, B3: PGMN3)"
 domains: [varejo farmacêutico, turnaround, liderança, psicologia organizacional, saúde, cultura corporativa, governança em empresa familiar, mercado de capitais, Brasil]
 last_updated: 2026-07-13
 source_count: 26

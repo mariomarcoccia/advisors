@@ -1,7 +1,7 @@
 ---
 name: Stéphane Maquaire
 slug: stephane-maquaire
-role: CEO, Grupo Carrefour Brasil (B3: CRFB3) — French national, in role since September 2021
+role: "CEO, Grupo Carrefour Brasil (B3: CRFB3) — French national, in role since September 2021"
 domains: [crisis leadership, retail strategy, M&A integration, corporate governance, atacarejo/wholesale format, supply chain and ESG, e-commerce and omnichannel, cross-cultural leadership, capital structure and delisting, Brazil]
 last_updated: 2026-07-13
 source_count: 21
