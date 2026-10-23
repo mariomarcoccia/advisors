@@ -17,5 +17,8 @@
       "label": "criticas",
       "prompt": "Enumerate CRITIQUES and adversarial material on {{PERSON}} beyond what's already known (SEC fraud settlement, NLRB anti-union tweet case, X antisemitic-post advertiser exodus, Reuters FSD safety-stats investigation, \"demon mode\" Isaacson framing).\n1. Labor/workplace critiques, Tesla factory safety records, union-busting beyond the NLRB case, SpaceX workplace-culture lawsuits (sexual harassment, wrongful termination).\n2. Critiques of his political turn, DOGE efficacy critiques beyond the Axios \"somewhat successful\" self-assessment, conflict-of-interest critiques (government contracts vs. DOGE role), critiques of his 2024-2025 political statements/endorsements from former allies or employees.\n3. Critiques of specific broken promises/timelines, Full Self-Driving \"next year\" pattern, Hyperloop, Mars timeline slippage, Neuralink safety/animal-testing critiques, from named critics with direct quotes, not just aggregator roundups.\nReturn exact URLs, type=critique, 8-12 items, this is a high-controversy figure, prioritize primary-sourced critique (named critics, court filings, investigative journalism) over tabloid aggregation."
     }
-  ]
+  ],
+  "notes": {
+    "exclude": "Jeffrey Epstein and any Epstein-related litigation, allegations, or insinuations (including subpoenas and third parties' claims) are out of scope for this dossier."
+  }
 }
