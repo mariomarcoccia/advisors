@@ -17,5 +17,8 @@
       "label": "criticas",
       "prompt": "Enumerate CRITIQUES and adversarial material on {{PERSON}} beyond what's already known (the 2018 Senate hearing no-show/written-testimony episode).\n1. Critiques of his reclusiveness/lack of public accountability specifically (vs. generic Google/Alphabet criticism), named critics, journalists, or governance advocates who've called out his absence from public accountability moments.\n2. Any critique of the Alphabet super-voting-share structure he and Brin maintained, this may overlap with material already found for the Brin dossier; check if a Page-specific angle exists.\n3. Any critique of specific \"Other Bets\" failures under his moonshot strategy (Google Glass, Loon, or others) attributed to his personal decision-making specifically, not just Google generally.\nReturn exact URLs, type=critique, 4-8 items, be honest if adversarial material specifically targeting Page personally (vs. Google/Alphabet generally) is thin."
     }
-  ]
+  ],
+  "notes": {
+    "exclude": "Jeffrey Epstein and any Epstein-related litigation, allegations, or insinuations (including subpoenas and third parties' claims) are out of scope for this dossier."
+  }
 }

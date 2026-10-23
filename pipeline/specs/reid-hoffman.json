@@ -3,5 +3,8 @@
   "name": "Reid Hoffman",
   "lang": "en",
   "corpus": "large",
-  "person": "Reid Hoffman: Co-founder, LinkedIn; Partner, Greylock; co-founder, Manas AI; host, Masters of Scale. Reid Hoffman is the \"theory-of-the-firm\" venture capitalist, LinkedIn co-founder, PayPal exec (\"PayPal Mafia\"), Greylock partner, *Masters of Scale* host, and the most prolific framework-author among operators (Blitzscaling, The Start-Up of You, The Alliance, Masters of Scale, Impromptu, Superagency). NOT any other Reid Hoffman."
+  "person": "Reid Hoffman: Co-founder, LinkedIn; Partner, Greylock; co-founder, Manas AI; host, Masters of Scale. Reid Hoffman is the \"theory-of-the-firm\" venture capitalist, LinkedIn co-founder, PayPal exec (\"PayPal Mafia\"), Greylock partner, *Masters of Scale* host, and the most prolific framework-author among operators (Blitzscaling, The Start-Up of You, The Alliance, Masters of Scale, Impromptu, Superagency). NOT any other Reid Hoffman.",
+  "notes": {
+    "exclude": "Jeffrey Epstein and any Epstein-related litigation, allegations, or insinuations (including subpoenas and third parties' claims) are out of scope for this dossier."
+  }
 }

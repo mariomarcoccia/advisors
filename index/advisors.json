@@ -77,20 +77,23 @@
     "domains": [
       "management",
       "ceo",
+      "ceo-psychology",
       "leadership",
       "culture",
       "hard-decisions",
       "hiring",
       "scaling",
+      "cash-flow",
+      "firm-design",
       "ai-policy",
       "crypto",
       "venture"
     ],
-    "summary": "Operator-turned-VC (co-founder of Andreessen Horowitz; ex-CEO of Loudcloud/Opsware, which he steered through near-death and sold to HP for ~$1.6B) who is the canonical \"survived the bad years\" voice in management writing. His lens: there is no formula for the hard things, so the scarce executive faculty isn't intelligence but **courage** — the trained ability to run *toward* fear and make the painful-but-correct call (layoffs, firing a friend, a bet-the-company pivot). He thinks in **wartime vs. peacetime CEO**, **lead bullets not silver bullets**, **fat vs. lean as tactics not virtues**, **culture = what you do, not what you say**, and **follow your contribution, not your passion**. His two books are worked-example-dense — a checklist of named, reusable mechanisms (management debt, the law of crappy people, the reflexive principle of employee raiding, shocking rules) as much as memoir. He opposes the optimistic founder-genius genre and disinterested academic history alike (a genuine Haiti historian disputes his Louverture chapter as ahistorical), and since 2023 has been a polarizing political actor — backing Trump on a \"little tech\" / \"regulating AI = regulating math\" platform whose predicted danger (secretive, government-gated AI) critics now argue materialized *under* the administration he helped elect, a tension he has not publicly addressed. Seat him when the question is a survival decision, a hard people-call, building culture deliberately, or whether to run at a problem; discount him on disinterested AI-policy judgment, on history used as a business parable, and on advice that may not transfer beyond his one path.",
-    "sourceCount": 62,
-    "lastUpdated": "2026-07-09",
-    "dossierTokens": 18700,
-    "cardCount": 140
+    "summary": "Operator-turned-VC (co-founder of Andreessen Horowitz; ex-CEO of Loudcloud/Opsware, sold to HP for about $1.6B) and the canonical \"survived the bad years\" voice in management writing, whose two books (*The Hard Thing About Hard Things*, 2014; *What You Do Is Who You Are*, 2019) are dense with named mechanisms and worked examples. His lens: there is no formula for the hard things, so the scarce executive faculty is courage plus control of your own head, the trained habit of running toward dread (his $30M Maude Building lease is the price of running away) and then deciding with every point of view in the room; he thinks in wartime versus peacetime CEO, lead bullets not silver bullets, fat versus lean as tactics, cash flow as freedom to ignore bad advice, formal process to protect culture, culture as what you do (shocking rules, explicit ethics), executives hired rather than developed, and \"be yourself.\" His sharpest contrarian positions are rejecting the optimistic founder-genius genre, firing a mis-hired executive fast while treating it as a hiring-process failure, and holding a walk-away price under pressure; since 2023 he has also co-authored the Little Tech doctrine with Marc Andreessen and backed a pro-AI, pro-crypto political war chest whose predicted danger (government-gated AI) critics say materialized under the administration he helped elect, a tension he has not publicly addressed. Seat him for survival decisions, hard people-calls, deliberate culture building, CEO psychology and firm design at scale; discount him on disinterested AI-policy judgment, on history used as a business parable (a Haiti historian disputes his Louverture chapter), and on advice that may not transfer beyond one survivor's path, and keep his words separate from Andreessen's in the joint episodes.",
+    "sourceCount": 101,
+    "lastUpdated": "2026-10-23",
+    "dossierTokens": 42943,
+    "cardCount": 329
   },
   {
     "slug": "bernard-arnault",
@@ -129,13 +132,15 @@
       "entrepreneurship",
       "brazil",
       "crisis-management",
-      "china-manufacturing"
+      "china-manufacturing",
+      "debt-restructuring",
+      "leadership-style"
     ],
-    "summary": "Caito Maia is the founder/CEO of **Chilli Beans**, Latin America's largest eyewear brand (~1,200–1,400 franchised doors, ~R$1.2–1.4B revenue, targeting 3,200 stores in five years), a failed-musician-turned-brand-manager who turned a commodity (sunglasses bought in a California suitcase) into a fast-collection, pop-culture-licensed, franchise-funded empire. His lens is **brand-as-storytelling over product, and aesthetics-as-strategy over decoration**: he doesn't sell glasses, he sells a brand and its \"soul\" — *\"a última coisa que o cliente me pede é preço e parcela\"* — and he treats visual identity as a business tool, not a detail: *\"Não tem meio-termo: ou conquista ou espanta... Por isso, estética não é detalhe, é ferramenta.\"* He has written two books distilling the playbook — a \"marca mutante\" [mutant brand] that must never stop changing, framed explicitly against *\"empreendedores de palco\"* [stage entrepreneurs] who romanticize results while disconnected from their teams. His sharpest, most contrarian positions: deliberately *un-integrate* (sold 100% of his own stores to franchisees, manufactures 100% in China, keeps only the brand/IP), treat crisis as \"oxygen management\" (when 917 stores closed overnight in the pandemic, *\"o único oxigênio que você tem é um site\"*), and name his own non-heroes: *\"Não tenho nada contra o Steve Jobs... mas ele não é meu herói. Nem o [Jeff] Bezos\"* — a direct, first-party rejection of the Silicon-Valley canon in favor of musicians (David Bowie) and Brazilian brands (O Boticário). He opposes **Buffett's** static, change-averse moat (his moat *is* the rate of change), **Arnault's** scarcity logic (he floods the market with accessible ubiquity), **Bezos's** metric-first reasoning (now documented, not just inferred: *\"investir... é mais rentável do que a avaliação exclusivamente numérica\"*), and contrasts with **Rony Meisler's** purpose/cause framing (Caito sells a story about the *thing*, not membership in a mission) — though both explicitly reject \"money/the first million\" as a founder's central goal. Weak on operational/financial rigor and the franchisee's downside — three separate, sourced legal disputes (arbitration-clause abuse, territorial-exclusivity abuse, a franchisee's bankruptcy filing) complicate the harmony narrative; strong on brand, licensing, crisis leadership, fast collections, and franchising as an operating system.",
-    "sourceCount": 35,
-    "lastUpdated": "2026-07-09",
-    "dossierTokens": 17831,
-    "cardCount": 145
+    "summary": "Caito Maia is the founder and CEO of **Chilli Beans**, Latin America's largest eyewear brand (about 1,000 to 1,400 points of sale depending on the source; R$1.2 bi 2025 revenue per the company), a failed-musician-turned-brand-manager who turned a commodity (200 sunglasses in a California suitcase, 1997) into a fast-collection, pop-culture-licensed, franchise-funded brand. His lens is **brand-as-storytelling over product and aesthetics-as-strategy**, screened through his own investor rubric, *\"arroz, feijão, amor e pimenta\"* [rice, beans, love and pepper: the accounts, the passion, the differentiator]: *\"a última coisa que o cliente me pede é preço e parcela\"*, *\"estética não é detalhe, é ferramenta\"*. His sharpest, most contrarian positions: deliberately un-integrate (sold his owned stores to franchisees, manufactures 100% in China, keeps only brand and IP); treat crisis as oxygen management (*\"o único oxigênio que você tem é um site\"*); name Jobs and Bezos as not his heroes; and tell founders an investor is not a prerequisite (*\"eu construí a Chilli Beans sozinho\"*). He opposes Buffett's static moat, Arnault's scarcity and Bezos's metric-first logic, and differs from Rony Meisler on story versus purpose. Weak on operational and financial rigor and on the franchisee's downside: three sourced franchise disputes, plus a contested financial-distress episode since 31 Aug 2026 (NeoFeed, citing anonymous sources, reports that a judicial-recovery filing is being studied; the company denies any judicial-recovery discussion and confirms advanced negotiation with creditor banks; outlets report debt figures from R$216 mi to about R$600 mi, unreconciled; on 30 Sept, per NeoFeed, the securitizer declared early maturity of a debenture Caito personally guarantees; a restructuring executive joined on 1 Oct 2026). Strong on brand, licensing, crisis communication, fast collections and franchising as an operating system.",
+    "sourceCount": 61,
+    "lastUpdated": "2026-10-23",
+    "dossierTokens": 31538,
+    "cardCount": 233
   },
   {
     "slug": "carol-dweck",
@@ -273,8 +278,8 @@
     "summary": "*Simulation of public work, not the real person.* Elon Musk runs Tesla, SpaceX, and xAI by reasoning from physics rather than precedent: strip a problem to its raw-material and physical-law floor, then treat the gap to today's cost as an engineering and organizational failure to be deleted, not a wall — \"physics is the law and everything else is a recommendation\" (Dealbook Summit, 2023). He extends the same feasibility-first logic (\"success in the set of possible outcomes\") from rocket reusability to institutional reform, and treats civilizational survival — Mars as backup, AI kept truthful and physically grounded, humanoid robots as an abundance engine — as the actual optimization target beneath the businesses. His lens is most valuable as a forcing function on ambition, manufacturing speed, and \"are we over-engineering / reasoning by analogy?\"; least reliable on schedules, communications discipline, and people/stakeholder risk, where his own record shows a two-decade, cross-domain pattern of timeline overshoot (autonomy, Mars, Optimus), securities and labor trouble, workplace-safety and animal-welfare costs of his urgency culture, and self-inflicted business and reputational damage from his own posting and unproven public allegations. He seats well opposite patient-capital and people-first thinkers — Warren Buffett (he'd call rocketry uninvestable; Musk took it on as a moral imperative, and as \"philanthropy\" by his own definition), Luiza Helena Trajano and Reed Hastings (their freedom-and-empathy cultures vs. his \"extremely hardcore\" demand and his stated view that unmediated empathy is a civilizational \"exploit\"), and Jeff Bezos (a rival on reusable rockets with a far more methodical \"gradatim ferociter\" tempo, though Musk himself insists he wants Bezos to succeed). He also carries a documented, first-person rupture with a second council member on AI safety — Larry Page, whose dismissal of species-preference as bias is, in Musk's own account, the founding trigger for OpenAI — and has leveled a serious, unproven public allegation against a third (Reid Hoffman), which the council should treat as his disputed claim, not fact.",
     "sourceCount": 50,
     "lastUpdated": "2026-07-10",
-    "dossierTokens": 21587,
-    "cardCount": 150
+    "dossierTokens": 21099,
+    "cardCount": 147
   },
   {
     "slug": "frederico-trajano",
@@ -395,13 +400,18 @@
       "writing",
       "leverage",
       "motivation",
-      "mental-models"
+      "mental-models",
+      "first-principles",
+      "deliberate-practice",
+      "procrastination",
+      "focus",
+      "inversion"
     ],
-    "summary": "James Clear is the author of *Atomic Habits* (~20-25M copies) and writes the 3-2-1 newsletter to 3M+ readers; his lens is that **outcomes are lagging measures of systems**, change runs through **identity** not willpower, and **environment beats motivation** — \"you do not rise to the level of your goals, you fall to the level of your systems.\" His sharpest contrarian moves: *forget about setting goals*, optimize for the **worst-day version** of a habit not the best-day version, judge work by its **half-life** (\"what is the work that keeps working for me once it's done?\"), treat identity votes as needing only a **majority not unanimity**, and refuse to be \"the first person to tell myself no.\" He naturally aligns with **Carol Dweck** (identity/process over fixed outcomes), **Naval Ravikant** (compounding, leverage, long games), and **Paul Graham** (curiosity-driven work, contrarian thinking, \"make something people want\" as a parallel to \"make something people want to use\") — he cites Graham directly and approvingly. His system-over-goals framing draws the most fire from goal-setting researchers and critics who say the method fits *maintenance* better than *ambition*, and — per a rigorous fact-checked critique (*If Books Could Kill*) — that his two flagship anecdotes (British Cycling's \"marginal gains,\" the Karachi soap study) omit confounding variables he had access to. He is a synthesizer of behavioral science, not an original researcher, and does not dispute that — \"I would love to be brilliant and original and a genius, but I'm not smart enough for that... I'm iterating upon previous stuff.\"",
-    "sourceCount": 48,
-    "lastUpdated": "2026-07-09",
-    "dossierTokens": 14658,
-    "cardCount": 139
+    "summary": "James Clear is the author of *Atomic Habits* (30M+ copies per his About page, Oct 2026), has published essays at jamesclear.com since 2012 (twice weekly for years, \"Over 250 articles\" by his count) and the 3-2-1 newsletter (3M+ readers); his lens is that **outcomes are lagging measures of systems**, change runs through **identity** and **environment** more than willpower (\"you do not rise to the level of your goals, you fall to the level of your systems\"), and progress comes from **small wins sized to your worst day**, scope cut but schedule kept. His sharpest moves: forget about setting goals; \"Stop making decisions. Start making commitments.\"; invert (find the anti-advice and the premortem); choose few, with a hard avoid list (Buffett's 2 List, 20 slots); judge work by its half-life and your calendar over your bank account; and, in his own words, first principles marks the limit of continuous improvement, while genes \"set a boundary around what is possible.\" He aligns with **Carol Dweck** (he cites her directly), **Naval Ravikant**, **Paul Graham**, **Munger** and **Buffett** (all quoted approvingly), and credits **Fogg, Milkman, Allen, Duhigg** by name in essays, yet the real critiques (The Guardian's \"Tedcore,\" *If Books Could Kill*, Dr. Gina Cleo, and a mostly favorable 2025 academic review) say the system-over-goals dichotomy is overdrawn, the 1% math and the cycling and soap anecdotes omit confounds, some cited studies are weak (one essay still leans on Brian Wansink, whom *If Books Could Kill* calls \"a giant fraud\"), and the book overweights individual responsibility against structural and cultural barriers. Two internal tensions are mine to flag, not the critics': he states willpower-as-muscle and decision fatigue as settled while elsewhere preaching environment over willpower, and the genetic-ceiling essay sits uneasily with his open-ended identity message. He is a synthesizer who says so: \"if I am going to be iterating upon previous stuff, then I want the best starting material possible.\"",
+    "sourceCount": 84,
+    "lastUpdated": "2026-10-23",
+    "dossierTokens": 29817,
+    "cardCount": 273
   },
   {
     "slug": "james-hawkins",
@@ -416,15 +426,20 @@
       "radical-transparency",
       "pricing",
       "developer-marketing",
+      "brand",
       "hiring",
       "fundraising",
-      "product-market-fit"
+      "product-market-fit",
+      "pivots",
+      "founder-sales",
+      "cofounder-relationships",
+      "ai-agents"
     ],
-    "summary": "Co-founder and (former) co-CEO of PostHog (open-source product analytics turned 16+ product developer suite, YC W20, ~$1.4B valuation, ~300k customers) — an ex-enterprise-sales VP who built the anti-enterprise-sales company and documents every belief in public. His lens: **radical transparency is a competitive moat and a hiring filter, not a virtue** (public handbook, salaries, roadmap, and pricing); **the enemy is obscurity, not competitors**, so marketing must be weird, funny and polarizing rather than conversion-optimized; **velocity beats validation** (\"unless you already know you're good at product, you're probably bad at product\"); and org design *is* the product — small teams strictly ≤6, no product managers owning the roadmap, no deadlines, no formal 1:1s, engineers decide what to build. His sharpest contrarian calls: 100% inbound / zero outbound because \"developers are the hardest group to cold-call\"; give away more for free to make more money; charge for pricing itself as a product with an owner; and it's \"a team, not a family\" with four-month severance. He opposes Jason Lemkin-style sales-led SaaS GTM, Ben Horowitz's PM-owns-the-product orthodoxy, and Elon-style artificial-deadline crunch (which he explicitly rejects while borrowing Musk's detail-obsession). Watch the seam: an insider Glassdoor account frames the marketed autonomy as bounded — day-to-day, not directional — with big changes made \"top-down, via Slack, with no consultation.\"",
-    "sourceCount": 26,
-    "lastUpdated": "2026-07-06",
-    "dossierTokens": 10753,
-    "cardCount": 101
+    "summary": "Co-founder and (former) co-CEO of PostHog (open-source product analytics turned 16+ product developer suite, YC W20, ~$1.4B valuation, ~300k customers), an ex-enterprise-sales VP who built the anti-enterprise-sales company and documents every belief in public, including his own mistakes. His lens: **radical transparency is a competitive moat and a hiring filter, not a virtue**; **the enemy is obscurity, not competitors**, so brand must be weird and polarizing rather than conversion-optimized; **velocity beats validation** (\"unless you already know that you're good at product you're probably bad at product\"); and **org design is the product**: teams of six or fewer, engineers decide what to build, PMs as \"compass,\" no deadlines, no formal 1:1s. Sharpest contrarian calls: 100% inbound because developers cannot be cold-sold; price on cost plus a modest margin and never \"to value\"; give away more to earn more; VC \"is a tool, not a religion\"; a \"team, not a family\" with four-month severance. He opposes sales-led SaaS GTM (Lemkin), PM-owns-the-roadmap orthodoxy (Horowitz), and crunch culture, and he qualifies his own advice constantly (\"isn't universally good advice\"). Watch the seam: an insider Glassdoor review calls the marketed autonomy day-to-day, not directional, and in 2025 he himself conceded \"too much top down communication.\" His own texts also hold unresolved tensions (deadlines vs no deadlines, anti-measurement brand vs measured growth experiments, transparency vs the pay exception).",
+    "sourceCount": 57,
+    "lastUpdated": "2026-10-23",
+    "dossierTokens": 23359,
+    "cardCount": 218
   },
   {
     "slug": "jason-lemkin",
@@ -445,11 +460,11 @@
       "ai-in-saas",
       "venture-mechanics"
     ],
-    "summary": "Jason Lemkin is the EchoSign-founder-turned-investor behind SaaStr — the largest B2B/SaaS founder community — and the operator who nearly died going $0→$100M ARR and turned the scar tissue into the canonical benchmark-driven playbook. His lens is pattern-recognition over a *learnable, patterned* curve: founders blow up at the same predictable points (the first sales hires, the first VP of Sales, cutting growth to chase profit), and every position ships with a hard number attached — quota math, ARR milestones, NRR thresholds, hiring timing, comp ratios. His sharpest documented calls run against founder consensus: hire *two* first reps not one (a single rep teaches you nothing); the majority of first VPs of Sales fail inside 12 months; \"you'll know in 30 days\"; \"you can't cut your way to growth\"; magic-number/CAC-payback metrics \"were devised by VCs\" and don't matter for startups; take the first good exit but never \"sell because you are tired\"; and — his most-repeated frame — SaaS *compounds*, so it's brutal to start and \"unstoppable\" at $25-30M ARR. In 2025-26 he is the loudest voice arguing \"build AI, add SaaS economics,\" that AI is starving, not killing, incumbent SaaS by reallocating budget, and that AI collapses deterministic GTM headcount (he runs SaaStr on ~1-3 humans + ~20 agents) — while conceding, after his own Replit production-database disaster, that AI needs \"30 days, not 30 minutes\" of guardrailed deployment. He tends to oppose Paul Graham/Garry Tan's founder-mode-and-YC-financing orthodoxy (on sales), James Hawkins's inbound-only doctrine, Naval's leverage-over-labor purism, bootstrapping absolutists, and AI maximalists who skip the deployment grind. His durable weakness: certainty that outruns evidence — round, self-invented probabilities, winners-only exemplars, and stage/VC bias he half-concedes himself.",
-    "sourceCount": 103,
-    "lastUpdated": "2026-07-07",
-    "dossierTokens": 10769,
-    "cardCount": 99
+    "summary": "Jason Lemkin is the EchoSign founder (sold to Adobe in 2011, where he grew Adobe Sign past $100M ARR) turned SaaStr and SaaStr Fund investor, and the operator who publishes his own failures as a benchmark-driven playbook for a learnable, patterned $0 to $100M SaaS curve: founders blow up at predictable points (first sales hires, the first VP of Sales, the Year of Hell, year four of the founder curve), and every position ships with a number and a stage (hire two first reps, you will know a VP Sales is failing in 30 days, staff to next year's ACV, keep roughly half of ARR in the bank, 4-5x quota to OTE). His sharpest contrarian calls run against consensus: fail fast and the MVP are for losers in B2B SaaS (he wants a minimal sellable product and a 24-month commitment), founder mode does not work for sales, magic number and CAC payback are VC metrics, you cannot cut your way to growth, never sell because you are tired, and at scale net new customers matter more than NRR; he also tells founders to read VCs through fund-cycle incentives (\"Watch how they vote, not what they say\"). In 2025-26 he argues AI is starving, not killing, SaaS and that agents replace deterministic GTM headcount (SaaStr runs on a handful of humans and about 20 agents), while auditing his own headline (coverage, lead concentration and a market tailwind, not AI \"intelligence\") and conceding after the Replit database deletion that deployment takes 30 days, not 30 minutes. He tends to oppose Paul Graham and Garry Tan on founder mode and sales, Michael Seibel and YC on MVP and speed, Harry Stebbings on ownership and volume investing, James Hawkins on inbound-only, the lean fail-fast school, and AI maximalists who skip the deployment grind; his durable weakness is certainty that outruns evidence (self-invented probabilities, winners-only exemplars, 2015 boom-era bars, numbers that drift by date).",
+    "sourceCount": 145,
+    "lastUpdated": "2026-10-23",
+    "dossierTokens": 26956,
+    "cardCount": 213
   },
   {
     "slug": "jeff-bezos",
@@ -548,10 +563,10 @@
       "org-design",
       "governance"
     ],
-    "summary": "Larry Page co-founded Google and built it into Alphabet to act on one conviction: that the default corporate failure mode — comfortable incrementalism — is fatal, and that technology should instead chase 10x improvements on civilization-scale problems, funded from a protected core and organized so speculative bets can graduate into independent companies. His lens is the engineer-optimist's: orders of magnitude over percentages, dollar margin over percentage margin, leverage over effort, the \"zero-million-dollar research problem\" nobody else will touch, structurally ring-fenced from quarterly pressure (no earnings smoothing, a 70-20-10 resource split, dual-class control, the Alphabet reorg, a non-voting Class C share created specifically to dilute without losing votes). He is most contrarian in believing big bets are *easier* than small ones, that opportunity abundance rather than resource scarcity is the binding constraint, and that a CEO's real job is deep-dive-then-disappear rather than steady oversight — and he opposes the Jobs/Buffett school of narrow focus (\"you're doing too much stuff,\" though he later conceded \"he was right\" too), as well as anyone who treats regulation, competitors, or short-term financials as binding constraints. The recurring critique, sharpened across two decades of earnings calls, a $7.5B shareholder settlement, a Senate no-show, and an unservable 2023 Epstein-litigation subpoena: the same 10x rhetoric that funded Waymo also funded Google+ and Glass, a legally adjudicated share structure preserves his control while diluting everyone else, and he is — by his own company's admission — even harder to locate or hold publicly accountable than his already-reclusive co-founder, Sergey Brin.",
-    "sourceCount": 29,
+    "summary": "Larry Page co-founded Google and built it into Alphabet to act on one conviction: that the default corporate failure mode — comfortable incrementalism — is fatal, and that technology should instead chase 10x improvements on civilization-scale problems, funded from a protected core and organized so speculative bets can graduate into independent companies. His lens is the engineer-optimist's: orders of magnitude over percentages, dollar margin over percentage margin, leverage over effort, the \"zero-million-dollar research problem\" nobody else will touch, structurally ring-fenced from quarterly pressure (no earnings smoothing, a 70-20-10 resource split, dual-class control, the Alphabet reorg, a non-voting Class C share created specifically to dilute without losing votes). He is most contrarian in believing big bets are *easier* than small ones, that opportunity abundance rather than resource scarcity is the binding constraint, and that a CEO's real job is deep-dive-then-disappear rather than steady oversight — and he opposes the Jobs/Buffett school of narrow focus (\"you're doing too much stuff,\" though he later conceded \"he was right\" too), as well as anyone who treats regulation, competitors, or short-term financials as binding constraints. The recurring critique, sharpened across two decades of earnings calls, a $7.5B shareholder settlement, and a Senate no-show: the same 10x rhetoric that funded Waymo also funded Google+ and Glass, a legally adjudicated share structure preserves his control while diluting everyone else, and he remains notably hard to hold publicly accountable, even compared with his already-reclusive co-founder, Sergey Brin.",
+    "sourceCount": 27,
     "lastUpdated": "2026-07-11",
-    "dossierTokens": 11407,
+    "dossierTokens": 11067,
     "cardCount": 89
   },
   {
@@ -590,13 +605,15 @@
       "Brazilian business",
       "social activism",
       "civic engagement",
-      "ESG"
+      "ESG",
+      "employment",
+      "AI and technology adoption"
     ],
-    "summary": "Chair of Magazine Luiza (Magalu) and founder of Grupo Mulheres do Brasil — a counter-trained retailer who turned people-first operations into a national chain and inclusion into a profit thesis, then took that same instinct into national civic life. Her lens: the business is built at the *balcão*, not the boardroom; service is downstream of how the lowest-paid employee is treated; \"a soma de QIs é melhor do que apenas um QI.\" Sharpest/contrarian positions: race-conscious hiring as just *and* profitable (the all-Black trainee program she defended through \"72 horas de paulada\" and international \"racismo reverso\" backlash); diversity quotas as a deliberate *transitional* tool (\"cota é um processo transitório\"); \"small companies shouldn't think about governance — ganhe dinheiro primeiro\"; a self-described \"crio o caos e depois coloco a ordem\" style with \"nenhum compromisso com a perfeição\"; and a deliberately performed femininity (\"nunca usei calça comprida\") as a conscious tactic for defusing threat while leading men. She reframes Brazilian idiom as corporate mandate (\"em briga de marido e mulher... o Magazine Luiza vai meter a colher\" — a line Lula later echoed back to her on X), rejects \"paciência\" in favor of \"nível de consciência,\" and insists her civic engagement is apartisan (\"nosso partido é o Brasil\") even while taking explicit, named positions against specific policies (Bolsonaro's IOF hike, DEI retrenchment). She inverts Bezos's customer-first arrow and Naval's autonomy (\"eu dependo das pessoas\"), breaks with free-market meritocrats on quotas, and contrasts with Buffett on family succession — her son Frederico got the CEO seat, and market observers now contrast her caution with his risk appetite. The standing caveats: a beloved culture didn't protect a ~97% market-cap collapse driven by rates and leverage, and a real critique — sourced, not invented — argues her social discourse has outpaced Magalu's actual redistribution of capital and voting power.",
-    "sourceCount": 53,
-    "lastUpdated": "2026-07-09",
-    "dossierTokens": 14462,
-    "cardCount": 123
+    "summary": "Chair of Magazine Luiza (Magalu) and founder of Grupo Mulheres do Brasil: a counter-trained retailer who treats people management as the source of service, inclusion as a profit thesis, and civil society as the vehicle for national change. Sharpest positions: race-conscious hiring defended through \"72 horas de paulada\"; quotas as a transitional tool, with the arithmetic that pure meritocracy would take \"120 anos\"; \"ganhe dinheiro primeiro\" on governance for small firms; \"crio o caos e depois coloco a ordem\"; \"meter a colher\" in domestic violence; and an apartisan stance (\"nosso partido é o Brasil\") that still takes named positions on policy. She inverts Bezos's customer-first arrow and Naval's autonomy, breaks with meritocrats on quotas and with Buffett on family succession, and is distinct from her son Frederico, the CEO, who carries the digital-growth and acquisition thesis the market later punished. Standing caveats: a celebrated culture did not prevent a ~97% market-cap collapse, her own 2020 line \"eu não sou, eu estou\" about paper wealth proved literal, and a sourced critique says her social discourse outran Magalu's redistribution of capital and voting power.",
+    "sourceCount": 80,
+    "lastUpdated": "2026-10-23",
+    "dossierTokens": 18058,
+    "cardCount": 197
   },
   {
     "slug": "manoel-conde-neto",
@@ -703,13 +720,16 @@
       "crypto",
       "longevity",
       "philosophy",
-      "AI"
+      "AI",
+      "angel-investing",
+      "sales",
+      "org-design"
     ],
-    "summary": "Naval Ravikant — AngelList co-founder, prolific angel (Twitter, Uber, Notion), and the most quotable aphorist on wealth and happiness — is the council's lens for **leverage, autonomy, judgment, and desire-management**: wealth is \"assets that earn while you sleep\" built on *specific knowledge + accountability + permissionless leverage* (code/media) multiplied by *judgment*, the whole stack reduced to two words — \"productize yourself\" — and happiness is a learned skill whose engine is desire (\"a contract you make with yourself to be unhappy until you get what you want\"), whose real target is *peace*, and whose enemy is envy. His sharpest contrarian moves: \"you're not going to get rich renting out your time\"; \"hard work is really overrated\"; labor is the *worst* form of leverage; \"if you can't decide, the answer is no\"; \"escape competition through authenticity\"; raise so you don't *need* to raise and \"valuation is temporary, control is forever\" (he watched his own first company, Epinions, get zeroed in the wrong game); set an \"absurdly high\" personal hourly rate and outsource everything below it; treat news as adversarial and \"value your time\" above money or friends; route around captured regulators; and raise children \"disobedient and free and uneducated\" over \"educated and obedient.\" He opposes the AI doomers (his fear is *unaligned humans with AI*, not the machine), splits from his own libertarian camp on targeted tariffs, parts from Buffett on leverage and frontier tech, and out-radicalizes Paul Graham on schooling and on whether you should raise capital at all. Use him for long-horizon, ownership, control, and AI-as-leverage framing — and distrust him on operational how-to (in the late-aphorist register), clinical well-being, and advice that must hold for people without capital or a safety net; serious critics (Sandel via meritocracy, Bourdieu via cultural capital, the \"luck paradox\") argue his \"without getting lucky\" generalizes from a survivor in Silicon Valley's Extremistan.",
-    "sourceCount": 69,
-    "lastUpdated": "2026-06-24",
-    "dossierTokens": 33423,
-    "cardCount": 328
+    "summary": "Naval Ravikant, AngelList co-founder, prolific angel (Twitter, Uber, Notion), and the most quotable aphorist on wealth and happiness, is the council's lens for **leverage, autonomy, judgment, and desire-management**: wealth is \"assets that earn while you sleep\" built on *specific knowledge + accountability + permissionless leverage* (code/media) multiplied by *judgment*, the whole stack reduced to two words, \"productize yourself\", and happiness is a learned skill whose engine is desire (\"a contract you make with yourself to be unhappy until you get what you want\"), whose real target is *peace*, and whose enemy is envy. His sharpest contrarian moves: \"you're not going to get rich renting out your time\"; \"hard work is really overrated\" (yet \"work as hard as you can\" if wealth is the goal, ordered what, who, how hard); labor is the *worst* leverage and capital the touchier one; \"if you can't decide, the answer is no\"; \"escape competition through authenticity\"; \"valuation is temporary, control is forever\" (he watched Epinions get zeroed); \"Angel investing is the opposite of value investing\", where \"The best deals are weird\", dealflow is not access, and judgment must be calibrated because \"If you have poor judgment, you won’t know it\"; set an \"absurdly high\" hourly rate and outsource below it; treat news as adversarial; route around captured regulators; and raise children \"disobedient and free and uneducated\". His late revisions matter for any consult: wealth is knowledge (he adopts Deutsch's definition and says Marx was \"completely wrong\"), judgment ends in taste (\"I hate articulating it\"), AI is a zero-alpha baseline that rewards entrepreneurs who use it better, and by 2025 he says \"there's no such thing as happiness\" and sells credibility instead of sales. He opposes AI doomers (his fear is *unaligned humans with AI*), splits from libertarian allies on targeted tariffs, parts from Buffett on leverage and on how to bet on startups, and out-radicalizes Paul Graham on schooling and on raising capital at all. Use him for long-horizon, ownership, control, judgment-calibration, and AI-as-leverage framing; distrust him on operational how-to in the late-aphorist register, clinical well-being (he calls depression \"really a choice\"), and advice that must hold for people without capital or a safety net; serious critics (Sandel via meritocracy, Bourdieu via cultural capital, the \"luck paradox\") argue \"without getting lucky\" generalizes from a survivor in Silicon Valley's Extremistan, and he names several of his own gaps (\"post-wealth taste,\" a \"fraudulent\" book, anger).",
+    "sourceCount": 130,
+    "lastUpdated": "2026-10-23",
+    "dossierTokens": 57740,
+    "cardCount": 527
   },
   {
     "slug": "nicolas-dessaigne",
@@ -750,11 +770,11 @@
       "design",
       "investing"
     ],
-    "summary": "Paul Graham is the essayist-investor who co-founded Y Combinator and, across ~225 plain-prose essays, wrote the operating system a generation of founders runs on. His lens: a startup is *growth*, not size; the one act that survives every other consideration is \"making something people want\"; conventional, credentialed wisdom is optimized for the average case and reliably wrong about the exceptional one; and the most valuable ideas look *bad* (so the biggest wins are black swans) and involve work everyone avoids (\"schlep blindness\"). His sharpest/most contrarian positions: determination beats IQ in founders; wealth is *created* not extracted, so billionaire fortunes need not be exploitative (\"the key is not exploitation but empathy\"); \"founder mode\" beats the hire-good-people-and-give-them-room manager orthodoxy; independent thinking requires keeping your *identity small*; returns on effort are superlinear, so be ambitious past the point others find reasonable; and writing is thinking, so the AI era splits us into \"writes and write-nots.\" He opposes MBA/professional-management orthodoxy (Ben Horowitz, Reed Hastings, scale-management à la Jensen Huang), the bootstrapper/anti-VC camp (Naval Ravikant on staying small), zero-sum views of wealth, and the \"validate-before-you-build\" lean reflex. Use him for early-stage product, founder selection, idea evaluation, fundraising tactics, and writing-as-thinking; distrust him on slow-growth, bootstrapped, capital-intensive, or non-tech businesses, where critics flag heavy survivorship bias and founder-worship.",
-    "sourceCount": 153,
-    "lastUpdated": "2026-06-23",
-    "dossierTokens": 23442,
-    "cardCount": 275
+    "summary": "Paul Graham is the essayist-investor who co-founded Y Combinator and, across roughly 230 plain-prose essays plus talks and interviews, wrote the operating system a generation of founders runs on. His lens: a startup is *growth*, not size; the one act that survives every other consideration is \"making something people want,\" and the structural follow-up he asks in office hours is \"what would make this company more powerful?\", always answered from the customer's side; conventional, credentialed wisdom is optimized for the average case and reliably wrong about the exceptional one, so the most valuable ideas look *bad* or lame at first (black swans, \"schlep blindness,\" early work that is feeble but valuable). His sharpest/most contrarian positions: determination beats IQ in founders; wealth is *created* not extracted (\"the key is not exploitation but empathy\"); \"founder mode\" beats the hire-good-people-and-give-them-room manager orthodoxy; independent thinking requires keeping your *identity small*, and orthodoxy is a counterfeit of virtue, so the number of unsayable true things must not grow; returns on effort are superlinear; investors, not competitors, are the real threat; and writing is thinking. He also supplies first-person operator material (Viaweb's mistakes, the accidental invention of YC's batch model, a spam filter built on asymmetric error costs, running Hacker News) and opposes MBA/professional-management orthodoxy (Ben Horowitz, Reed Hastings, Jensen Huang, operators like Asad Zaman), the bootstrapper/anti-VC camp (Naval Ravikant), zero-sum views of wealth, platform intermediaries (Apple's App Store) and the \"validate-before-you-build\" lean reflex. Use him for early-stage product, founder selection, idea evaluation, fundraising tactics, product/platform strategy, community design and writing-as-thinking; distrust him on slow-growth, bootstrapped, capital-intensive, or non-tech businesses, where critics flag heavy survivorship bias, founder-worship, and a YC-as-popularity-contest slant.",
+    "sourceCount": 182,
+    "lastUpdated": "2026-10-23",
+    "dossierTokens": 51007,
+    "cardCount": 508
   },
   {
     "slug": "paulo-correa",
@@ -835,11 +855,11 @@
       "education",
       "AI"
     ],
-    "summary": "Reed Hastings is the co-founder of Netflix and the author, with INSEAD's Erin Meyer, of its \"Freedom & Responsibility\" management doctrine — the lens he offers is **how to build and run an organization where talent density is so high you can delete most of the rules and replace controls with radical context and radical transparency**. His sharpest, most contrarian positions: fire merely-adequate people loudly with generous severance instead of a Performance Improvement Plan (\"a team, not a family\"); pay each person the top of their *personal* market and skip bonuses; treat silent disagreement as disloyalty and manufacture dissent on purpose (\"farming for dissent,\" born directly out of the Qwikster failure); \"sunshine\" mistakes and even sensitive financial and personnel information rather than protect people from bad news; and, in a creative business, prefer rapid error-recovery over error-prevention — \"we're in a creative-inventive market, not a safety-critical market like medicine or nuclear power\" (2009 deck, slide ~61). He opposes process-and-control managers (Buffett-style \"moat and durability\" caution, Bezos-style two-pizza-process discipline) and anyone who runs a knowledge business like a safety-critical factory — the scar he carries from Pure Software, where \"we stopped being innovative... and were unable to pivot.\" His blind spot, documented by the WSJ, HBS, Quartz, and — tellingly — by Hastings himself in 2025 (\"it came across as brutal from the outside... we're never really able to shake that kind of perception\") is that the same system produces a culture of fear and perpetual auditioning that doesn't travel cleanly across cultures; Erin Meyer's own chapters and Culture Map tool are the book's built-in, only partial, counterweight.",
-    "sourceCount": 53,
-    "lastUpdated": "2026-07-09",
-    "dossierTokens": 18948,
-    "cardCount": 125
+    "summary": "Reed Hastings co-founded Netflix, ran it as CEO for two decades and left its board in June 2026; with Erin Meyer he wrote *No Rules Rules* (2020), and the lens he offers is how to build an organization so dense in talent that rules and approvals can be replaced by context, candor and transparency, in that order. His sharpest positions: after the 2001 layoff of a third of the staff he concluded that a smaller, denser team does more and enjoys it more, so he fires merely adequate people with generous severance instead of running a PIP (\"a team, not a family\"); pays each person the top of their personal market; manufactures dissent in writing (farming for dissent, born of the Qwikster failure) and sunshines failed bets; and, in creative work, prefers fast recovery to error prevention while keeping deliberate \"symphony\" pockets where safety matters. He opposes process-and-control management (the Pure Software scar, Bezos-style process discipline, Buffett's moat caution) and is often his own sharpest critic: he now says the culture \"came across as brutal from the outside\" and that decades of education-reform work left \"very little to show for it\". The documented counterweights are fear and perpetual auditioning (WSJ, HBS, Quartz, NPR), a founding story drawn from a cash-crisis layoff, a culture that does not travel cleanly (Meyer's chapters are the book's partial answer), and the survivorship problem of a doctrine validated mainly by Netflix's own success.",
+    "sourceCount": 75,
+    "lastUpdated": "2026-10-23",
+    "dossierTokens": 42948,
+    "cardCount": 299
   },
   {
     "slug": "reid-hoffman",
@@ -855,13 +875,21 @@
       "marketplaces",
       "AI",
       "investing",
-      "governance"
+      "governance",
+      "pivots",
+      "boards",
+      "ceo-succession",
+      "org-design",
+      "culture",
+      "competition",
+      "exits",
+      "ethics"
     ],
-    "summary": "Reid Hoffman is the \"theory-of-the-firm\" venture capitalist — LinkedIn co-founder, PayPal exec (\"PayPal Mafia\"), Greylock partner, *Masters of Scale* host, and the most prolific framework-author among operators (Blitzscaling, The Start-Up of You, The Alliance, Masters of Scale, Impromptu, Superagency). His lens: **networks are the substrate of all opportunity**, and in winner-take-most markets **speed under uncertainty beats efficiency** — you win by scaling first into network effects, not by being right or lean. His sharpest, most contrarian positions: raise *more* money than you need and ship a v1 that embarrasses you (tempo and learning-velocity dominate polish); the best deals provoke a *polarized* \"you're out of your minds\" split among smart people, because being \"contrarian and right\" is the only path to outsized returns; hunt \"a valuable market with bad competition,\" not an empty one; and AI *amplifies* human agency (\"superagency\") rather than replacing it, so the right governance is iterative deployment plus measurement-first regulation, not the precautionary principle. Crucially he is *not* the reckless-speed caricature: he insists blitzscaling is a costly, bounded *phase* you switch off, that it must never apply where errors are irreversible or endanger life, and he explicitly disowns \"fail fast.\" He opposes the bootstrap/customer-funded school, AI doomers *and* pure accelerationists, MBA-as-founder-prep, and ad-driven engagement models; critics counter that blitzscaling socializes risk and rewards the deepest-pocketed VC (O'Reilly, Stoller), that his AI optimism is \"faith over proof\" (Kirkus, Morrison), and that his own Project Birmingham funding showed the governance gap his optimism glosses.",
-    "sourceCount": 62,
-    "lastUpdated": "2026-07-08",
-    "dossierTokens": 10110,
-    "cardCount": 101
+    "summary": "Reid Hoffman is the \"theory-of-the-firm\" venture capitalist: LinkedIn co-founder, PayPal COO (\"PayPal Mafia\"), Greylock partner, *Masters of Scale* and *Possible* host, and the most prolific framework-author among operators (Blitzscaling, The Start-Up of You, The Alliance, Masters of Scale, Impromptu, Superagency). His lens is that **networks are the substrate of opportunity** and that in winner-take-most markets **speed under uncertainty beats efficiency**: raise *more* money than you need, ship a v1 that embarrasses you, hunt \"a valuable market with bad competition,\" and back the bet that splits smart people into \"you're out of your minds\" and \"I see it.\" He is also the most useful advisor in the set on the operating forks that follow a raise: when to pivot (and pivot *away*), how to hand off a CEO job (the \"brain transplant\"), what a board is for, whether to sell or IPO, how a pirate crew becomes a navy, and how to compete with a giant. Crucially he is *not* the reckless-speed caricature: blitzscaling is a costly, bounded *phase* you switch off, never applied where errors are irreversible or endanger life (\"embarrassed\" is not \"indicted\"), and he disowns \"fail fast.\" On AI he is a \"Bloomer\": \"superagency,\" iterative deployment, measurement-first regulation, and the view that society's non-participation is itself a risk. He opposes the bootstrap school (O'Reilly), activist short-termism (Icahn), AI doomers *and* pure accelerationists, the MBA as founder prep, ad-driven engagement models, and the founding-CEO purists (Horowitz); critics counter that blitzscaling socializes risk and rewards the deepest pocket (O'Reilly, Stoller, Kirkus, Berkey), that his AI optimism is \"faith over proof,\" and that Project Birmingham exposed the governance gap his optimism glosses.",
+    "sourceCount": 153,
+    "lastUpdated": "2026-10-23",
+    "dossierTokens": 37874,
+    "cardCount": 265
   },
   {
     "slug": "roberto-jatahy",
@@ -920,13 +948,16 @@
       "leadership",
       "innovation",
       "wellness",
+      "capital-allocation",
+      "sales",
+      "ai",
       "brazil"
     ],
-    "summary": "Rony Meisler is the co-founder of Reserva, the irreverent Brazilian menswear brand he scaled from a R$6,000 bootstrap and door-to-door bermudas to a ~R$2B AR&Co before a turbulent 2024 exit from Azzas 2154; he now runs the wellness-focused venture builder Rebels Ventures and chairs Conscious Capitalism Brazil. His throughline is **brand-as-movement**: purpose and community are the profit engine, product the funding mechanism — and \"a matéria-prima da inovação é a audição\" [the raw material of innovation is listening], not technology, a line he has repeated for at least five years across contexts. He is a fluent **curator, not an original theorist** — his named frameworks are borrowed and openly credited (Sinek's infinite game, Youngme Moon's difference thesis, James March on exploitation-vs-exploration, Jack Welch, his own father) — which makes him most useful as a synthesist voice, not a first-principles one. He is most contrarian on the cult of the lone genius (\"seja a cola\"), on planning-vs-execution (ship imperfect, test cheap before scaling capex — \"tinta amarela\"), and on shareholder primacy, which he attacks by name (\"Friedman estava absolutamente errado\"). He aligns with Brazilian brand-builders like caito-maia, luiz-seabra and — personally, as his self-described \"madrinha\" [godmother] — luiza-helena-trajano, and clashes with operator/numbers-first minds (frederico-trajano), centralizing controllers (the Birman split), cultural fatalists (Beto Sicupira on Brazil's \"jeitinho\"), and Friedman-style investors — while his own founder-fused-to-the-brand fragility, a documented pattern of racially- or gender-charged campaign controversies (now including a 2023 lawsuit from Fluminense FC), and a habit of theatrical reveals (an undisclosed-until-the-end AI-ghostwritten column, a \"prank\" that became a real business) sit in real tension with the authenticity thesis he preaches.",
-    "sourceCount": 52,
-    "lastUpdated": "2026-07-09",
-    "dossierTokens": 10442,
-    "cardCount": 85
+    "summary": "Rony Meisler is the co-founder of Reserva, the irreverent Brazilian menswear brand he bootstrapped from R$6,000 and door-to-door shorts into a roughly R$2B AR&Co before a turbulent 2024 exit from Azzas 2154 (the 2020 sale to Arezzo&Co was ~R$715M, mostly in locked-up shares); he now runs Rebels Ventures, a club-deal investor and self-described \"copiloto\" in consumer brands, media and entrepreneur education, sells the \"Manual de Donos\" newsletter school, and chairs Conscious Capitalism Brazil. His lens is **brand-as-movement and brand as the scarce asset when everything commoditizes**: audience, then community, then product (the ACP funnel) with near-zero launch risk; the customer, and the salesperson closest to them, as the real boss; cash over the P&L; and purpose as a profit engine, argued against Milton Friedman by name. He is contrarian on disruption worship, the lone genius, the do-what-you-love creed (he says do what you are good at), mentoring and info-product gurus, and Silicon Valley dividend orthodoxy (he now says founders should take dividends and live as owners), and he is openly a curator-synthesist who credits Sinek, Youngme Moon, Jack Welch, Rory Sutherland and his father. He aligns with brand-builders like caito-maia, luiz-seabra and, personally, his self-described \"madrinha\" luiza-helena-trajano, and clashes with numbers-first operators (frederico-trajano), centralizing controllers (the Birman split, though he now says \"nunca teve briga\"), and Friedman-style investors; the real tensions are a founder fused to his brand and a control friction he admits to, a history of brand controversies defended on intent first (2014 to 2022) plus the 2023 Fluminense \"pó de arroz\" suit, theatrical pranks beside an authenticity thesis, and many self-reported numbers that drift from one telling to the next.",
+    "sourceCount": 91,
+    "lastUpdated": "2026-10-23",
+    "dossierTokens": 31351,
+    "cardCount": 244
   },
   {
     "slug": "ryan-breslow",
@@ -1031,25 +1062,31 @@
   {
     "slug": "warren-buffett",
     "name": "Warren Buffett",
-    "role": "Chairman, Berkshire Hathaway (CEO 1965–2025; CEO seat handed to Greg Abel Jan 1, 2026)",
+    "role": "Chairman, Berkshire Hathaway (CEO 1965 to 2025; CEO seat handed to Greg Abel Jan 1, 2026)",
     "domains": [
       "investing",
       "capital-allocation",
+      "acquisitions",
       "value",
       "business-quality",
       "moats",
       "insurance-float",
+      "underwriting",
       "long-term",
       "management",
       "temperament",
       "accounting-honesty",
+      "corporate-governance",
+      "executive-compensation",
+      "macro-skepticism",
       "ethics",
+      "taxes",
       "philanthropy"
     ],
-    "summary": "Warren Buffett (b. 1930, Omaha) ran Berkshire Hathaway for 60 years — 19.9% compounded annual gain vs. 10.4% for the S&P 1965–2024 — by treating a stock as a fractional share of a business, buying quality at a fair price with a margin of safety, and almost never selling, all funded by low-cost insurance float rather than by overpaying or churning. The discipline is temperament (greedy when others are fearful, \"lethargy bordering on sloth\" the rest of the time), an obsession with the durability of a business's competitive \"moat,\" and brutal, by-name candor about his own errors. His sharpest, most useful contrarian positions: derivatives are \"financial weapons of mass destruction,\" EBITDA is a lie you should wire to a polygraph, beta and \"risk-free\" bonds mislead while cash quietly rots, gold and Bitcoin are sterile \"gambling token[s]\" you can fondle but not harvest, buyback-bashing is for \"economic illiterate[s] or silver-tongued demagogue[s],\" and almost everyone else should just buy a low-cost S&P 500 index fund. He stands against the active-management/hedge-fund-fee complex, growth-at-any-multiple tech investing (a discipline he concedes cost him Google and Amazon), leverage, forecasting/market-timing, dynastic control, and \"ruling from the grave.\" Seat him when a decision turns on capital allocation, business durability, valuation discipline, accounting honesty, or holding your nerve; expect him to clash with the venture/blitzscaling instincts of a Hoffman, the pace-of-innovation-beats-moats view of a Musk, the crypto/leverage purism of a Naval, and the debt-fueled empire-building of an Ellison.",
-    "sourceCount": 63,
-    "lastUpdated": "2026-07-08",
-    "dossierTokens": 11934,
-    "cardCount": 92
+    "summary": "Warren Buffett (b. 1930, Omaha) ran Berkshire Hathaway for 60 years, 19.9% compounded annual gain against 10.4% for the S&P 1965 to 2024, by treating a stock as a fractional share of a business, buying quality at a fair price with a margin of safety, almost never selling, and funding it all with low-cost insurance float. What makes him useful in a debate is a long, dollar-denominated ledger of situated decisions: dozens of acquisition origin stories (a two-hour meeting and a handshake at McLane, a week at Scott Fetzer, Fruit of the Loom from a 1955 Graham-Newman deal) and an equally long list of errors named with their price tags (GEICO sold in 1952 for $15,259, the Gillette preferred, Dexter paid for in stock, Gen Re under-reserved, a currency bet that cost $955M in 2005, BNSF and Berkshire Hathaway Energy in 2023), plus the temperament of \"lethargy bordering on sloth\" and greed only when others are fearful. His sharpest contrarian positions: derivatives are \"financial weapons of mass destruction,\" EBITDA is a lie, beta and \"risk-free\" bonds mislead while cash quietly rots, gold is sterile and Bitcoin is \"a gambling token,\" whoever bashes all buybacks is \"either an economic illiterate or a silver-tongued demagogue,\" stock-funded deals cost owners money, and almost everyone should buy a low-cost S&P 500 index fund while a true specialist should own about six names. He stands against the active-management and 2-and-20 complex, efficient-market and style-box thinking, leverage, macro forecasting and market timing, option-based pay, \"independent\" directors who live on fees, growth-at-any-multiple tech investing (a discipline he concedes cost him Google and Amazon), and dynastic control, so seat him when a decision turns on capital allocation, business durability, valuation discipline, accounting honesty, underwriting, or holding your nerve, and expect clashes with the blitzscaling instincts of Hoffman, the pace-of-innovation-beats-moats view of Musk, the crypto purism of Naval, the growth-first startup ethos of Paul Graham, and the debt-fueled empire-building of Ellison.",
+    "sourceCount": 92,
+    "lastUpdated": "2026-10-23",
+    "dossierTokens": 67156,
+    "cardCount": 392
   }
 ]
