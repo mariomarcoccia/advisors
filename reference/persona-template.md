@@ -61,6 +61,18 @@ The four passes above are model-agnostic, but they don't cost the same to get ri
 
 ---
 
+## Writing for the index (cards)
+
+The `council` CLI splits every dossier into **cards**: one per top-level bullet (nested bullets and wrapped lines fold into their parent), one per table row, one per paragraph; Summary, Bio, and Voice & style stay whole. Retrieval ranks cards against a decision and packs the best ones, so each card is read **alone**. Write accordingly:
+
+- **One self-contained position per bullet**, opened with a bold title (`**Default alive vs. default dead.**`) that says what it is about. A bullet that only makes sense after the previous one will be retrieved without it.
+- **Keep the worked example inside the same bullet** as the idea it supports, with its verbatim quote and source hint. Splitting them across bullets strands the quote.
+- **Name the other advisor** in every "Where they disagree" entry (full name, as in their dossier's `name:`): that is how the disagreement graph links members for `/second-opinion` and `/boardroom`.
+- **Quote frontmatter values that contain a colon** (`role: "CEO, Example (B3: EXMP3)"`) and escape inner double quotes in source titles; invalid YAML fails `council lint`.
+- After writing or editing: `council lint` (zero errors), then `council index`, and commit the updated `index/`. CI fails on a stale index.
+
+---
+
 ## Hard rules
 - **Never fabricate a quote.** Anything in quotation marks must trace to a real URL from the research. If you can't source it, write it as your own paraphrase and mark it as such.
 - **Verify quotes against the raw source, never trust a WebFetch summary's verbatim text** — reader tools hallucinate plausible quotes; confirm against raw HTML or an independent reproduction.

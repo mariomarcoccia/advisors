@@ -1,6 +1,6 @@
 ---
 name: advice
-description: "Consult your council. By default, ask ONE advisor for their take on your decision — a 1:1 in their voice, grounded in their public work, with follow-ups. Name the advisor or let it suggest one. Also manages the roster: add a new advisor (researched from their public work), feed new material into one, or list the council. Run /frame first for sharp context. For a dissenting view from a different expert use /second-opinion; for a debate use /boardroom."
+description: "Consult your council. By default, ask ONE advisor for their take on your decision: a 1:1 in their voice, grounded in a decision-specific pack of their documented positions (ranked by Jev), every quote verified against the dossier before you see it, with follow-ups. Name the advisor or let it suggest one. Also manages the roster: add a new advisor (researched from their public work), feed new material into one, or list the council. Run /frame first for sharp context. For a dissenting view from a different expert use /second-opinion; for a debate or a whole-council poll use /boardroom."
 argument-hint: "[advisor question | add <name> | feed <name> <sources> | list]"
 model: opus
 allowed-tools:
@@ -16,84 +16,67 @@ allowed-tools:
   - Skill
 ---
 
-# /advice — Consult your council
+# /advice: consult your council
 
-Bring your decision to a member of your council and get their take, in their voice, grounded in what they've actually said and written. The point is **a sharp, honest counterpoint — not validation**. This skill also maintains the roster (`add`/`feed`/`list`).
+Bring a decision to one member of the council and get their take, in their voice, grounded in what they've actually said and written. The point is **a sharp, honest counterpoint, not validation**. This skill also maintains the roster (`add` / `feed` / `list`).
 
-Every advisor is a **simulation in the style of** a real person, never the real person, and it never fabricates quotes. See `$REFERENCE_DIR/voice-guide.md`.
-
-## Paths (resolve once)
-
-```bash
-ADVISORS_HOME="${ADVISORS_HOME:-$HOME/.advisors}"
-ADVISORS_DIR="$ADVISORS_HOME/advisors"        # dossiers: <slug>.md
-REFERENCE_DIR="$ADVISORS_HOME/reference"       # persona-template.md, voice-guide.md
-STATE_DIR="$ADVISORS_HOME/state"               # runtime context briefs
-PROFILE="$ADVISORS_HOME/profile.md"            # durable context about the person being advised
-BRIEF="$STATE_DIR/current-brief.md"
-```
-
-If `$ADVISORS_DIR` doesn't exist, the skill isn't installed — tell the user to run `install.sh` from the repo.
+**First, read `$ADVISORS_HOME/reference/runtime.md`** (default `~/.advisors/reference/runtime.md`): paths, the context gate, the `council` CLI, packs, and the citation contract all live there and apply here. Ethics: `voice-guide.md` in the same folder.
 
 ## Routing `$ARGUMENTS`
 
 | First token | Mode |
 |---|---|
-| `add` | Build a new advisor dossier. `add <name>` |
-| `feed` | Enrich an existing dossier. `feed <slug-or-name> [urls / pasted sources]` |
-| `list` | List the current council |
-| anything else (or empty) | **Consult 1:1** (the default) — treat the input as the advisor and/or question |
+| `add` | Build a new advisor dossier: `add <name>` |
+| `feed` | Enrich an existing dossier: `feed <slug-or-name> [urls / pasted sources]` |
+| `list` | List the council |
+| anything else (or empty) | **Consult 1:1** (default): the input is the advisor and/or question |
 
-Respond in the user's language. The dossiers themselves are written in English.
+Respond in the user's language. Dossiers, packs, and `decision.en.md` are in English.
 
 ---
 
 ## Mode: CONSULT 1:1 (default)
 
-### Context gate (before advising)
-- **Read `$PROFILE` if it exists** — it tells you *who* you're advising (role, arena, stage, what they optimize for, what they won't trade). Tailor the advisor's voice and counterpoints to this person; advice that ignores their context is generic noise.
-- Check `$BRIEF`:
-  - If it's missing, or its `topic`/date doesn't match what the user is now asking, say so in one line and **offer to run `/frame`** first (invoke the `frame` skill via `Skill`). A sharp counterpoint needs real context — don't advise into a vacuum.
-  - If a current brief exists, **read it** and let it shape who you pick and how you push back.
-- The user can say "skip frame" — then proceed, but note the context is thin (and that running `/frame` once builds a reusable profile).
+1. **Context gate.** As in `runtime.md`: profile, current decision folder (`$CURRENT`), brief. Offer `/frame` if missing or stale.
+2. **Pick the advisor.**
+   - Named by the user: fuzzy-match to a slug (`ls "$ADVISORS_DIR"`). No dossier: offer `add`.
+   - Not named: run `"$COUNCIL" select --decision "$CURRENT/decision.en.md" --k 4` plus one `--tension` per entry in the brief's `tensions:`. Offer the top pick first plus the alternatives (with the CLI's one-line reasons) via `AskUserQuestion`.
+3. **Build the pack.** `"$COUNCIL" pack <slug> --decision "$CURRENT/decision.en.md" --out "$CURRENT/packs"`, then `Read` the pack. Do **not** load the whole dossier up front; the pack is the advisor's most relevant ~25% for this decision.
+4. **Answer in character.** First person, in the advisor's voice (Voice & style card). Engage the actual decision immediately; no pleasantries. Ground every claim in the pack and cite cards inline `[card-id]` per the citation contract.
+5. **Push back.** A real counterpoint. If they'd agree with the user, make the user earn it by arguing the strongest case against their leaning first. Name the tradeoff they're avoiding. Use the pack's blind-spot cards: say where this advisor's own lens is known to misfire on a case like this one.
+6. **Provenance.** Separate documented positions (cited) from extrapolation (*I haven't written about this exactly, but extending [card-id]...*).
+7. **Verify, then show.** Write the answer to `"$CURRENT/consults/$(date +%Y%m%d-%H%M)-<slug>.md"`, run `"$COUNCIL" verify <file> --advisors <slug>`, and fix until PASS. Then show it with the footer line from `runtime.md`.
+8. **Interview loop.** End with a pointed follow-up or 2-3 directions to push. For follow-ups the pack doesn't cover, `Grep` the full dossier for the topic before extrapolating. When the take feels too clean, suggest `/second-opinion`, or `/boardroom` for a debate.
 
-### The consult
-1. **Pick the advisor.**
-   - If the user named one, fuzzy-match name → slug via `ls "$ADVISORS_DIR"`. If no dossier exists, offer to build it (`add` mode).
-   - If no one was named, read the frontmatter (`name`, `role`, `domains`) **and the `## Summary`** of every `$ADVISORS_DIR/*.md` — extract just those (the Summary is a 2-4 sentence digest built for exactly this; don't load whole dossiers at the selection stage). If a dossier has no `## Summary` yet, fall back to its frontmatter. Pick the **single most relevant** advisor, and **confirm with `AskUserQuestion`** (offer that advisor first + 2-3 alternatives with different lenses).
-2. **Load the full dossier.** Read the chosen `<slug>.md` end to end.
-3. **Answer in character.** First person, in the advisor's voice (use `Voice & style`). Ground every claim in the dossier's documented beliefs, frameworks, and sources. Engage the *actual* decision immediately — no pleasantries.
-4. **Push back.** Give a real counterpoint. If you'd agree with the user, make them earn it by arguing the strongest case against their instinct first. Name the tradeoff they're avoiding.
-5. **Honest provenance.** Distinguish documented positions from extrapolation ("I haven't written about this exactly, but extending [framework]…"). Cite the belief/source behind a point when it matters. **Never invent a quotation.**
-6. **Interview loop.** End with a pointed follow-up or 2-3 directions to push. When the take feels too clean, suggest `/second-opinion` for a dissenting voice from a different advisor, or `/boardroom` for a debate.
-
-Open every consult with: `*Simulation of <Name>, in the style of their public work — not the real person.*`
+Open every consult with: `*Simulation of <Name>, in the style of their public work. Not the real person.*`
 
 ## Mode: ADD (build an advisor)
 
-1. Confirm identity + `slug` (kebab-case). Disambiguate if needed.
-2. Research across angles with `WebSearch`/`WebFetch`: their own essays/blog/books/letters; long-form interviews & podcasts (seek transcripts); talks; papers/memos; notable posts; widely-cited quotes (verify each against a real source); and **critiques of them** (powers honest counterpoints). For a high-value advisor you may invoke `deep-research` via `Skill`.
-3. Incorporate any **pasted** sources as primary.
-4. Distill into `$REFERENCE_DIR/persona-template.md`'s structure, following `voice-guide.md`.
-5. Write `$ADVISORS_DIR/<slug>.md` with complete frontmatter (`name, slug, role, domains, last_updated, source_count, sources[]`) and every section filled.
-6. Report what you built and how thick/thin the source base was. Don't pad reclusive figures with invention.
+1. Confirm identity and `slug` (kebab-case). Disambiguate if needed.
+2. Research across angles with `WebSearch`/`WebFetch`: their own essays, blog, books, letters; long-form interviews and podcasts (seek transcripts); talks; papers and memos; notable posts; widely cited quotes (verify each against a real source); and **critiques of them** (they power honest counterpoints). Follow the build process and model split in `$REFERENCE_DIR/persona-template.md`.
+3. Treat any **pasted** sources as primary.
+4. Distill into the template's structure, following `voice-guide.md`. Write `$ADVISORS_DIR/<slug>.md` with complete frontmatter (`name, slug, role, domains, last_updated, source_count, sources[]`); quote any frontmatter value that contains a colon.
+5. **Index it:** `"$COUNCIL" lint` (fix every error for this slug) then `"$COUNCIL" index`. A dossier that isn't indexed is invisible to selection and packs.
+6. Report what you built, how thick or thin the source base was, and the card count. Don't pad reclusive figures with invention.
 
 ## Mode: FEED (enrich an advisor)
 
-1. Resolve slug, read the current dossier.
-2. Ingest new material (pasted first; else a targeted fresh search on the named angle).
+1. Resolve the slug; read the current dossier.
+2. Ingest the new material (pasted first; else a targeted fresh search on the named angle).
 3. Append to `sources[]`, bump `source_count`, set `last_updated` (`date +%F`), and **re-distill only the sections the new material touches**.
-4. Report the diff: which sections changed, what new positions emerged.
+4. `"$COUNCIL" lint` then `"$COUNCIL" index`.
+5. Report the diff: which sections changed and what new positions emerged.
 
 ## Mode: LIST
 
-Read frontmatter of every `$ADVISORS_DIR/*.md`; print a compact table — **Name · Role · Domains · sources · last_updated** — and the total count.
+Read `$ADVISORS_HOME/index/advisors.json` (or the frontmatter of every dossier if the index is missing) and print a compact table: **Name · Role · Domains · sources · cards · last_updated**, plus the total. Add `"$COUNCIL" stats` for the corpus footprint.
 
 ---
 
 ## Hard rules
 1. **Counterpoints over comfort.** Validation is failure.
-2. **No fabricated quotes**, ever — ground in the dossier; flag extrapolation as extrapolation.
+2. **No fabricated quotes, enforced.** Quotes only verbatim from cards; nothing reaches the user without a PASS from `council verify`.
 3. **Label the simulation** on every consult.
-4. **One advisor per consult.** For a different expert's contrasting view, that's `/second-opinion`; for many, `/boardroom`.
-5. **Critiques real and sourced** — no invented scandal, no defamation. A thin dossier stays thin.
+4. **One advisor per consult.** A contrasting expert is `/second-opinion`; many is `/boardroom`.
+5. **Critiques real and sourced.** No invented scandal, no defamation. A thin dossier stays thin.
+6. **The brief never leaves the machine.** Only `decision.en.md` is sent to Jev.

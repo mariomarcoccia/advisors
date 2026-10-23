@@ -1,0 +1,4 @@
+---
+topic: harvest a mature niche business vs. pivot into an adjacent market with momentum
+---
+A founder has run a profitable but small B2B software company for five years. The serviceable market is real but static: the company is a meaningful share of it and there is no credible path to 10x inside it. The founder is worn down and has roughly a year of personal savings; the company's cash is not theirs to draw on. Options: (A) harvest the business (sell it, pay dividends, or install a CEO) and use the freedom to find the next big game; (B) pivot the team and know-how into an adjacent market with strong tailwinds where their domain knowledge is an unfair wedge; (C) keep grinding for slow growth. Investors on the cap table care about the outcome. The founder is 50/50 between A and B and fears both a long bootstrapped pivot and walking away too early.

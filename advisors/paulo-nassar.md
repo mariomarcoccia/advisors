@@ -1,7 +1,7 @@
 ---
 name: Paulo Nassar
 slug: paulo-nassar
-role: Co-founder & CEO, Cobasi — now CEO, Petz Cobasi (União Pet Participações S.A., B3: AUAU3)
+role: "Co-founder & CEO, Cobasi — now CEO, Petz Cobasi (União Pet Participações S.A., B3: AUAU3)"
 domains: [pet retail, garden retail, omnichannel retail, family business governance, M&A integration, antitrust/regulatory strategy, organic growth discipline, store-format strategy, Brazil]
 last_updated: 2026-07-13
 source_count: 16

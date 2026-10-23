@@ -1,0 +1,10 @@
+[
+  { "decision": "decisions/harvest-vs-pivot.md", "advisors": ["paul-graham", "naval-ravikant", "jason-lemkin"] },
+  { "decision": "decisions/raise-vs-bootstrap.md", "advisors": ["paul-graham", "ryan-breslow", "warren-buffett"] },
+  { "decision": "decisions/underperforming-executive.md", "advisors": ["ben-horowitz", "reed-hastings", "jensen-huang"] },
+  { "decision": "decisions/raise-prices.md", "advisors": ["jason-lemkin", "james-hawkins", "luiza-helena-trajano"] },
+  { "decision": "decisions/enterprise-vs-smb.md", "advisors": ["james-hawkins", "michael-seibel", "jeff-bezos"] },
+  { "decision": "decisions/ai-first-reorg.md", "advisors": ["garry-tan", "dario-amodei", "jensen-huang"] },
+  { "decision": "decisions/international-expansion.md", "advisors": ["frederico-trajano", "rony-meisler", "bernard-arnault"] },
+  { "decision": "decisions/acquisition-offer.md", "advisors": ["naval-ravikant", "reid-hoffman", "harry-stebbings"] }
+]

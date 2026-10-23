@@ -1,7 +1,7 @@
 ---
 name: Roberto Jatahy
 slug: roberto-jatahy
-role: Co-founder of Animale; founder/ex-CEO of Grupo Soma; now Chief Brand Officer and co-controlling shareholder, Azzas 2154 (B3: AZZA3, formerly SOMA3)
+role: "Co-founder of Animale; founder/ex-CEO of Grupo Soma; now Chief Brand Officer and co-controlling shareholder, Azzas 2154 (B3: AZZA3, formerly SOMA3)"
 domains: [fashion retail, M&A, roll-up strategy, multi-brand portfolio management, brand accelerators, e-commerce/omnichannel, IPO, governance, shareholder disputes, entrepreneurship, Brazilian retail]
 last_updated: 2026-07-13
 source_count: 29
