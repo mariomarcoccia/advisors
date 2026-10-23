@@ -77,6 +77,8 @@ const FOCUS = spec.notes?.focus ? `\nEXPLICIT PRIORITY: ${spec.notes.focus}` : '
 const EXCLUDE = spec.notes?.exclude
   ? `\nOUT OF SCOPE (hard rule): ${spec.notes.exclude} Do not search for it, extract it, cite it, or mention it, even as a blind spot or provenance note; skip any source whose main subject it is.`
   : ''
+// Style rules (no em dashes, etc.) govern prose we write, never the source's words.
+const VERBATIM = 'Text inside quotation marks is the source\'s exact words: never alter its wording or punctuation (dashes included) to satisfy a style rule.'
 const STRAY_NOTES = `If the notes directory is empty or incomplete (known bug: agents sometimes write to "undefined/" relative to their own working directory), look for stray batch-*.md files in ${repo}/undefined/, ~/undefined/, and ~/.advisors/undefined/ before proceeding, and move them into ${notesDir}/.`
 const BASELINE = mode === 'rebuild'
   ? `Read the CURRENT dossier at ${dossierPath} first: it is the baseline. This is an EXPANSION: nothing distinct and sourced in it may be lost.`
@@ -155,7 +157,7 @@ Process EACH of these sources (curl -sL --compressed; try a browser user-agent f
 ${JSON.stringify(batch, null, 2)}
 
 For each source extract, with the EXACT URL attached to every item:
-(a) VERBATIM quotes: exact wording only inside quotation marks (${LANGUAGE_QUOTES}); otherwise clearly-marked paraphrase
+(a) VERBATIM quotes: exact wording only inside quotation marks (${LANGUAGE_QUOTES}); otherwise clearly-marked paraphrase. ${VERBATIM}
 (b) named frameworks/mental models + a worked example of each (the payload: a framework without an example is half-built)
 (c) decision heuristics and positions on specific hard-call situations
 (d) explicit or implicit disagreements with named thinkers
@@ -177,7 +179,7 @@ const draft = await agent(`Write ${mode === 'rebuild' ? 'a DRAFT rebuild of the'
 2. Read the template at ${templatePath} and the voice guide at ${voiceGuidePath}; follow the section structure EXACTLY, including "Writing for the index (cards)" if present.
 3. ${CORPUS_CALIBRATION} ${LANGUAGE_CONVENTION}
 4. Read ALL research notes: every .md file in ${notesDir}/ (list the directory first). ${STRAY_NOTES}
-5. ${mode === 'rebuild' ? 'OVERWRITE' : 'WRITE'} ${dossierPath} as a complete file: slug: ${spec.slug}, last_updated: ${date}; sources[] = every source actually cited; source_count matches exactly; quote any frontmatter value containing a colon.${mode === 'rebuild' ? ' Keep every existing mental model, heuristic, worked example, and "Where they disagree" row; add new ones.' : ''} Never quote anything the notes don't show verbatim with a URL. Where a section is thin, say so honestly in Provenance notes rather than padding. Write the Summary last.${FOCUS}${ATTRIBUTION}${EXCLUDE}
+5. ${mode === 'rebuild' ? 'OVERWRITE' : 'WRITE'} ${dossierPath} as a complete file: slug: ${spec.slug}, last_updated: ${date}; sources[] = every source actually cited; source_count matches exactly; quote any frontmatter value containing a colon.${mode === 'rebuild' ? ' Keep every existing mental model, heuristic, worked example, and "Where they disagree" row; add new ones.' : ''} Never quote anything the notes don't show verbatim with a URL. ${VERBATIM} Where a section is thin, say so honestly in Provenance notes rather than padding. Write the Summary last.${FOCUS}${ATTRIBUTION}${EXCLUDE}
 6. Return: final source_count, the enumerated source URLs NOT cited in the final draft (for the completeness audit downstream), and a 3-4 sentence report. Do NOT return placeholder or example values: every field must reflect this run's real output.`,
   { label: 'synthesize:draft', phase: 'Synthesize', model: SONNET, effort: 'high',
     schema: { type: 'object', required: ['sourceCount', 'unusedSources', 'report'], properties: {
@@ -196,7 +198,7 @@ const QUOTES_SCHEMA = { type: 'object', required: ['quotes'], properties: { quot
 } } } }
 // The picker reads the file itself: relaying ~30 KB of dossier through another
 // model's output is slow and can alter the very text being verified.
-const quotesToCheck = await agent(`Read the dossier at ${dossierPath} and extract the 15-24 most LOAD-BEARING verbatim quotes (in quotation marks) with the source URL each is attributed to (check sources[] in the frontmatter and inline citations). Prioritize quotes used in Core ideas, Mental models, and Signature quotes. Return each quote in its ORIGINAL language exactly as it appears (do not translate) so it can be string-matched against the raw source. Do NOT return placeholder values.`,
+const quotesToCheck = await agent(`Read the dossier at ${dossierPath} and extract the 15-24 most LOAD-BEARING verbatim quotes (in quotation marks) with the source URL each is attributed to (check sources[] in the frontmatter and inline citations). Prioritize quotes used in Core ideas, Mental models, and Signature quotes.${mode === 'rebuild' ? ' This is a rebuild: favor quotes from sources new in this draft, since the rest were verified in an earlier build.' : ''} Return each quote in its ORIGINAL language exactly as it appears (do not translate) so it can be string-matched against the raw source. Do NOT return placeholder values.`,
   { label: 'pre-verify:pick-quotes', phase: 'Pre-verify', model: SONNET, schema: QUOTES_SCHEMA })
 
 const VERDICTS_SCHEMA = { type: 'object', required: ['verdicts'], properties: { verdicts: { type: 'array', items: {

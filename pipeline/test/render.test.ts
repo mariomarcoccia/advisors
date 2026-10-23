@@ -96,6 +96,13 @@ describe("rendered workflow", () => {
     expect(extract).not.toContain("already-cited");
   });
 
+  it("protects quotation punctuation and focuses rebuild checks on new quotes", async () => {
+    const rebuild = (await simulate("paul-graham")).prompts.join("\n");
+    expect(rebuild).toContain("never alter its wording or punctuation");
+    expect(rebuild).toContain("favor quotes from sources new in this draft");
+    expect((await simulate("tom-brown", "create")).prompts.join("\n")).not.toContain("favor quotes from sources new");
+  });
+
   it("create mode never claims a baseline dossier exists", async () => {
     const { prompts } = await simulate("tom-brown", "create");
     expect(prompts.join("\n")).toContain("from-scratch build");
