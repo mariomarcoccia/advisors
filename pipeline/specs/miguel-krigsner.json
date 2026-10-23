@@ -1,0 +1,21 @@
+{
+  "slug": "miguel-krigsner",
+  "name": "Miguel Krigsner",
+  "lang": "pt",
+  "corpus": "normal",
+  "person": "Miguel Krigsner, fundador e presidente do conselho do Grupo Boticário (O Boticário, Eudora, quem disse, berenice?, The Beauty Box). Fundou em 1977 em Curitiba. Autor do livro-memória \"A Essência de Empreender\" (2024, Portfolio-Penguin), vencedor do Prêmio Jabuti 2025 na categoria Negócios. NÃO é nenhum outro Miguel Krigsner.",
+  "enumPrompts": [
+    {
+      "label": "livro-a-fundo",
+      "prompt": "Enumere conteúdo PRIMÁRIO do livro-memória de {{PERSON}}, \"A Essência de Empreender\" (2024, Portfolio-Penguin, vencedor Prêmio Jabuti 2025 categoria Negócios), PRIORIDADE MÁXIMA desta rodada. O dossier atual confirma que o livro existe mas NÃO foi lido a fundo, só uma linha (\"tudo ou nada\") vem de cobertura de imprensa sobre o livro, não do texto em si.\n1. Busque trechos/excertos publicados do livro (Google Books, Amazon \"look inside\", resenhas longas que citam passagens extensas com página).\n2. Busque entrevistas de LANÇAMENTO do livro (2024) onde ele leia/cite trechos diretamente, e cobertura do prêmio Jabuti 2025 que cite o livro.\n3. Busque resenhas de crítica literária/de negócios sobre o livro (não só nota de prêmio), o que a resenha diz sobre o conteúdo, estrutura, tom.\nRetorne URLs exatas, prioridade alta para qualquer trecho verbatim do livro (não só ficha técnica/sinopse/nota de prêmio)."
+    },
+    {
+      "label": "negocios-esg",
+      "prompt": "Enumere imprensa de NEGÓCIOS/ESG sobre {{PERSON}} além do já conhecido (Brazil Journal perfil, Consumidor Moderno, Exame x3, Hospital INC, (o)eco, MAGG Portugal, Eu Quero Investir, Click Petróleo e Gás, Exame/Modé conflito de canal, CONIB museu, Reclame Aqui).\n1. Entrevistas/perfis adicionais em Forbes BR, Época Negócios, Veja, Valor Econômico sobre a trajetória do Grupo Boticário, sucessão, ou governança familiar.\n2. Cobertura mais recente (2025-2026) sobre resultados do Grupo Boticário, expansão internacional, ou novidades na Fundação Grupo Boticário de Proteção à Natureza.\n3. Qualquer podcast de negócios (Braincast, Market Makers, PrimoCast) com participação dele.\nRetorne URLs exatas, priorize citações diretas dele, 10-15 itens."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumere CRÍTICAS e material adversarial sobre {{PERSON}} além do já conhecido (reclamações de revendedoras no Reclame Aqui sobre comissão baixa/\"mixaria\", frete, estoque, cobranças abusivas).\n1. Reportagens adicionais sobre disputas com revendedoras ou franqueados do Grupo Boticário.\n2. Qualquer crítica ao modelo de conflito de canal (loja própria vs. revenda direta vs. e-commerce) além da já mapeada.\n3. Cobertura trabalhista/sindical sobre fábricas do grupo, se existir.\n4. Crítica ao \"greenwashing\" ou à autenticidade do posicionamento ESG/conservação do grupo, se existir alguma.\nRetorne URLs exatas, tipo=critique, 6-10 itens."
+    }
+  ]
+}

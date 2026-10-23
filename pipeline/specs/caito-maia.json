@@ -1,0 +1,21 @@
+{
+  "slug": "caito-maia",
+  "name": "Caito Maia",
+  "lang": "pt",
+  "corpus": "normal",
+  "person": "Caito Maia (Antonio Caio Gomes Pereira Filho), fundador e CEO da Chilli Beans, a maior marca de óculos da América Latina (~1.200-1.400 lojas franqueadas). Ex-músico, virou \"gestor de marca\" puro (vendeu 100% das lojas próprias, fabrica 100% na China). Jurado histórico do Shark Tank Brasil. NÃO é nenhum outro Caito/Maia, é o fundador da Chilli Beans, nascido em São Paulo em 1969.",
+  "enumPrompts": [
+    {
+      "label": "livros-site",
+      "prompt": "Enumere o corpus PRIMÁRIO ESCRITO de {{PERSON}}\n1. Livro \"E se Colocar Pimenta?\" (2018, com Rodolfo Araújo), ache a página oficial da editora/Amazon/Skoob com resumo/trecho, e qualquer resenha longa que cite trechos verbatim.\n2. Livro \"Se Parar o Sangue Esfria\", mesma coisa: editora, Amazon, Skoob, resenhas com trechos.\n3. Site pessoal caitomaia.com, liste todas as páginas/posts substanciais (bio, blog, \"sobre\", artigos de opinião) se existirem.\n4. Qualquer coluna/artigo de opinião assinado por ele (não uma entrevista, texto escrito por ele mesmo) em veículos como Forbes BR, Exame, Época Negócios, LinkedIn.\nRetorne URLs exatas, com prioridade alta para os dois livros e qualquer texto autoral."
+    },
+    {
+      "label": "podcasts-video",
+      "prompt": "Enumere aparições em ÁUDIO/VÍDEO de {{PERSON}}\n1. Flow Podcast, episódio solo #457 e a participação #168 (com André Gaigher). Ache a página do episódio (Spotify/YouTube) e, se existir, transcrição ou pelo menos os melhores momentos cobertos pela imprensa.\n2. CEO Talks #250.\n3. Shark Tank Brasil, temporadas 2017-2022 como tubarão fixo + retorno como convidado em 2024/2025: ache clipes/trechos citados pela imprensa (ISTOÉ Dinheiro, outros) com falas dele sobre o que busca em fundadores.\n4. Outras aparições relevantes: Manual do Homem Moderno, Eu Tava Lá #173, The Noite (SBT), palestras em eventos (Franchising Summit/ABF, NEEX, Sicomércio se houver).\nPriorize fontes com transcrição ou cobertura jornalística detalhada com citações diretas (não apenas descrição de episódio). Retorne 10-20 itens com prioridade."
+    },
+    {
+      "label": "imprensa-criticas",
+      "prompt": "Enumere IMPRENSA e CRÍTICAS sobre {{PERSON}} e a Chilli Beans, além dos já conhecidos (Money Times, Seu Dinheiro, Consumidor Moderno, ISTOÉ Dinheiro, Agência Sebrae, Exame, Jornal do Comércio, Museu da Pessoa, ABF, não repita esses, busque NOVOS).\n1. Perfis/entrevistas adicionais em Forbes BR, Época Negócios, Pequenas Empresas Grandes Negócios, Mercado&Consumo, Veja, Estadão/Folha (retomar o item que deu 403 na Mercado&Consumo se conseguir outra via, ex: web.archive.org).\n2. Críticas sérias e sourced: reclamações de franqueados (Reclame Aqui já coberto, busque processos judiciais, disputas de franquia, reportagem sobre insatisfação de franqueados), críticas ao modelo \"100% fabricado na China\" sob ótica de trabalho/sustentabilidade, qualquer controvérsia de marketing ou campanha.\n3. Números financeiros mais recentes (2025/2026) sobre faturamento, expansão de óticas, eventual venda de participação.\nRetorne URLs exatas, tipo=critique para críticas, 10-15 itens."
+    }
+  ]
+}

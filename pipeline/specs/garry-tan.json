@@ -1,0 +1,24 @@
+{
+  "slug": "garry-tan",
+  "name": "Garry Tan",
+  "lang": "en",
+  "corpus": "normal",
+  "person": "Garry Tan, President & CEO of Y Combinator since 2022. Co-founder Posterous (YC S08), first Coinbase check, co-founder Initialized Capital. Designer-turned-founder-turned-investor. Also a divisive civic figure in SF/CA politics (Garry's List). NOT any other Garry Tan.",
+  "notes": {
+    "attribution": "Some quotes may be from another YC partner, an interviewer, or someone he is quoting rather than his own words."
+  },
+  "enumPrompts": [
+    {
+      "label": "lightcone-essays",
+      "prompt": "Enumerate PRIMARY content from {{PERSON}} beyond what's already known (Co-founder Conflict essays x2, \"I Said the Wrong Thing\" essay, \"Roll your way to a billion dollar startup\" essay, Design for Startups transcript).\n1. YC's \"Lightcone\" podcast (co-hosted by Tan), find 5-10 of the most substantive episodes where HE specifically speaks at length (not just other partners), covering AI/startup trends, YC batch patterns, founder advice.\n2. Any other Medium/Initialized/YC blog essays by him not yet listed, check his full essay archive.\n3. Recent (2025-2026) X/Twitter posts beyond the 5 already cited, look for more on AI, YC batch trends, founder advice, or political statements.\nReturn exact URLs, priority=high for anything with substantial first-person content."
+    },
+    {
+      "label": "entrevistas-recentes",
+      "prompt": "Enumerate INTERVIEW/TALK appearances of {{PERSON}} beyond the 8 already known (Acquired ACQ2, TechCrunch Coinbase, Stanford SIER 2026, The Spindle/Turner Novak, Knowledge Project #226, Mixergy, Vanta, Punchbowl News).\n1. Any 2025-2026 podcast appearances (All-In, Lex Fridman, 20VC, other startup podcasts) discussing YC's current strategy, AI's effect on startups, or batch outcomes.\n2. Any YC Demo Day speech or YC Startup School talk beyond \"Design for Startups\" already cited.\n3. Any interview specifically about becoming YC president (2022) or his vision for YC's future.\nReturn exact URLs, priority-marked, 8-12 items with transcripts preferred."
+    },
+    {
+      "label": "criticas-politica",
+      "prompt": "Enumerate CRITIQUES and political material on {{PERSON}} beyond what's already known (the \"die slow\" tweet scandal, the Gil Duran \"parasite\" feud, Garry's List dark-money critique, The New Republic \"tech plutocrats\" piece).\n1. Any 2026 follow-up coverage on Garry's List expanding statewide, new critiques, funding disclosures, political outcomes.\n2. Critiques of YC itself under his leadership (batch quality, equity terms, competition from other accelerators, founder complaints).\n3. Any critique of his AI optimism or \"Little Tech\" antitrust positions from established voices (academics, other VCs, policy critics).\nReturn exact URLs, type=critique, 6-10 items."
+    }
+  ]
+}

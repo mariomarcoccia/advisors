@@ -1,0 +1,29 @@
+{
+  "slug": "jeff-bezos",
+  "name": "Jeff Bezos",
+  "lang": "en",
+  "corpus": "large",
+  "person": "Jeff Bezos, founder of Amazon (CEO 1994-2021, then Executive Chairman), founder of Blue Origin, owner of the Washington Post, co-CEO of Project Prometheus since Nov 2025. Wrote an annual shareholder letter every year 1997-2020 (his last as CEO); the compilation \"Invent and Wander: The Collected Writings of Jeff Bezos\" (2020, intro by Walter Isaacson) reprints all the letters plus additional speeches/interviews Isaacson selected.",
+  "notes": {
+    "focus": "The payload is the shareholder-letter corpus: dedup hard (he restates \"Day 1\" and customer obsession for decades), keep the sharpest verbatim instance of each idea with the letter year, and add every genuinely distinct year-specific lesson, bet, or mistake.",
+    "attribution": "Some quotes may be Walter Isaacson's introduction text, an interviewer's question, a journalist's paraphrase, or a documented-practice description (\"working backwards\") rather than his own words."
+  },
+  "enumPrompts": [
+    {
+      "label": "cartas-completas",
+      "prompt": "Enumerate ALL 24 Amazon annual shareholder letters by {{PERSON}}, 1997 through 2020 (his last as CEO; he stepped down in 2021). The canonical index is at aboutamazon.com/news/company-news (search \"letter to shareholders\" for each year) or the official investor-relations PDF archive (ir.aboutamazon.com or the s2.q4cdn.com PDF pattern already seen for 2015/2016). This dossier currently only has 1997, 2015, 2016, 2017, 2018, 2020, you need to find and list the MISSING years: 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2019. Prioritize ones known for distinct ideas: 2005 (the actual primary source for \"willing to be misunderstood for long periods\", this dossier only has it secondhand via GeekWire, find the real 2005 letter), 2008-2009 (financial-crisis-era discipline), 2011-2012 (Kindle/tablet era), 2013 (drone delivery announcement), 2014 (post-Fire-Phone-failure reflection, if any), 2019 (pre-pandemic, sustainability pledge). Return the complete list of what you find with exact URLs, priority=high for ones with genuinely new ideas per your read of the letter, medium for operationally-focused years. Completeness of this list matters, that's the job."
+    },
+    {
+      "label": "invent-wander-talks",
+      "prompt": "Enumerate content specific to \"Invent and Wander: The Collected Writings of Jeff Bezos\" (2020, Harvard Business Review Press, intro by Walter Isaacson) BEYOND the shareholder letters (which are covered separately), the book's value-add over the freely-available letters is Isaacson's introduction/framing AND additional non-letter material he selected: early interviews, speeches, and Bezos's own reflections written specifically for the book. Find:\n1. Any legitimate excerpt, Google Books preview, publisher excerpt, or extended book review that quotes Isaacson's introduction directly (his framing of what makes Bezos distinctive) or quotes the book's non-letter content.\n2. The original, non-letter material likely included: his 1999 Time \"Person of the Year\" era interviews, early Amazon-era press (mid-1990s), and any commencement/graduation speech beyond the already-known 2010 Princeton one.\n3. Reviews of the book itself (not just of Bezos) that assess what the compilation adds.\nReturn exact URLs, priority=high for genuinely NEW (non-letter) Bezos material, with a note on what's new."
+    },
+    {
+      "label": "podcasts-talks",
+      "prompt": "Enumerate PODCAST/TALK/interview appearances of {{PERSON}} beyond the 4 already known (Princeton Baccalaureate 2010, Economic Club of Washington w/ David Rubenstein 2018, Academy of Achievement 2001, Lex Fridman #405 2023).\nLook for: his 2025-2026 interviews on Project Prometheus and AI in more depth, any Blue Origin-specific talk/interview (space vision, New Glenn), the 2021 \"step down as CEO\" announcement/farewell letter to employees, any interview specifically about Amazon's early years (pre-2000) with useful founding-story detail, Italian Tech Week 2025 in fuller form if a transcript exists beyond what's cited, and any appearance discussing the Washington Post ownership in more depth. Prefer sources with full transcripts. Return 8-15 items with exact URLs, priority-marked."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material on {{PERSON}} beyond what's already known (Senate HELP Committee/Sanders warehouse report, FTC 2023 antitrust suit/NPR, Lina Khan's \"Amazon's Antitrust Paradox,\" Brad Stone's \"The Everything Store,\" Washington Post 2026 layoffs/NPR).\n1. Any additional labor/union critique (Amazon Labor Union organizing, warehouse conditions reporting beyond the Senate report, ProPublica, Reveal News, or similar investigative pieces).\n2. Climate/environmental critique of Amazon's logistics/AWS footprint vs. the Bezos Earth Fund's stated goals, any documented tension.\n3. Critique of Blue Origin specifically (safety record, competition with SpaceX, \"billionaire space race\" commentary).\n4. Fresh 2025-2026 critiques of the Project Prometheus venture or conflicts of interest with Amazon/Washington Post ownership.\n5. Any serious critique of \"Invent and Wander\" or the shareholder-letter genre as self-serving mythology (management scholars on survivorship bias in founder narratives).\nReturn exact URLs, type=critique, 8-12 items."
+    }
+  ]
+}

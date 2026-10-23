@@ -1,0 +1,29 @@
+{
+  "slug": "reed-hastings",
+  "name": "Reed Hastings",
+  "lang": "en",
+  "corpus": "large",
+  "person": "Reed Hastings, co-founder and former Executive Chairman of Netflix; author (with Erin Meyer) of \"No Rules Rules: Netflix and the Culture of Reinvention\" (2020). Left the Netflix board June 2026. Now on Anthropic's board, active in AI/humanities philanthropy (Bowdoin) and education reform philanthropy. Founded Pure Software before Netflix.",
+  "notes": {
+    "focus": "Book content is the highest-priority payload: do not leave \"No Rules Rules\" (2020, with Erin Meyer) underrepresented. Weave real book content, including Erin Meyer's cross-cultural commentary sections, through Core ideas, Mental models, and Positions (sunshining, Live 360 mechanics, the culture-map material, the closing argument).",
+    "attribution": "\"No Rules Rules\" alternates Hastings' first-person narrative with Erin Meyer's research commentary: never conflate the two voices. Some quotes may be a Netflix executive's or an interviewer's."
+  },
+  "enumPrompts": [
+    {
+      "label": "livro-a-fundo",
+      "prompt": "Enumerate PRIMARY BOOK content for {{PERSON}}'s \"No Rules Rules: Netflix and the Culture of Reinvention\" (with Erin Meyer, 2020), this is the HIGHEST-PRIORITY target for this rebuild; make sure the book is well covered, not just cited via a Goodreads quotes page (which is the current dossier's only book source).\nFind ways to read MORE of the actual book content: Google Books preview pages, publisher (Penguin Random House) excerpt pages, any legitimate book-summary site that quotes extended passages with page numbers (e.g. Blinkist-style summaries, Four Minute Books, Sam Thomas Davies notes, Derek Sivers' book notes if he has one), long-form reviews that quote extended passages verbatim, and especially content from Erin Meyer's own chapters/sections (the book alternates between Hastings' narrative and Meyer's cross-cultural research commentary, her material is often under-covered). Look specifically for content on: the 3-step model (talent density → candor → reduce controls, and its reverse order framing), the \"sunshining\" practice, Live 360s/written 360s specifics, the \"context not control\" chapter's Netflix-vs-traditional-company contrast, any chapter on international/cultural adaptation (Erin Meyer's culture-map framework applied to Netflix globally), and the book's own closing chapter/conclusion. Return exact URLs, priority=high, with a note on what NEW book content each source would surface beyond what a Goodreads quote page gives."
+    },
+    {
+      "label": "deck-memo-video",
+      "prompt": "Enumerate additional PRIMARY material beyond the book: the various versions of Netflix's \"Culture: Freedom & Responsibility\" deck (the original 2009 SlideShare version is known; find later official revisions, Netflix has re-published the culture memo/deck multiple times over the years, e.g. 2017 rewrite), the current jobs.netflix.com/culture page in full, and any Hastings-authored blog posts, LinkedIn posts, or shareholder letters (Netflix quarterly letters to shareholders, which Hastings co-signed for years) that contain his own words on strategy/culture/decisions, pick 5-8 shareholder letters spanning different eras (early streaming pivot ~2011-2013, content-spend ramp ~2018-2019, password-sharing crackdown/ads-tier pivot ~2022-2023) for genuinely new strategic-decision material. Return exact URLs, priority-marked."
+    },
+    {
+      "label": "podcasts-talks",
+      "prompt": "Enumerate PODCAST/TALK/interview appearances of {{PERSON}} beyond the 2 already known (Tim Ferriss Show #730, CNBC 2024 farming-for-dissent piece).\nLook for: Lex Fridman podcast, Stanford GSB/Y Combinator talks, Davos/WEF appearances, any interview specifically about the Anthropic board appointment or his AI views in more depth, interviews about Powder Mountain, and any older (pre-2020) interview about the book launch itself (2020 press tour). Prefer sources with full transcripts. Return 8-15 items with exact URLs, priority-marked."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material on {{PERSON}} beyond what's already known (2018 WSJ investigation via The Week, HBS Joly & Schlesinger case, Hollywood Reporter on layoffs, Quartz x2, Salt Lake Tribune/Hollywood Reporter on Powder Mountain).\n1. Any academic/management-theory critique of \"No Rules Rules\" specifically (not just the culture generally), does the book's own methodology or Erin Meyer's research get critiqued anywhere?\n2. Fresh critiques of Netflix under his post-2023 Executive Chairman role or since his June 2026 board exit, succession commentary, any retrospective assessment of his tenure.\n3. Critiques of the password-sharing crackdown and ads-tier pivot (2022-2023) as tests of the \"no rules\" philosophy under real business pressure, did it hold up?\n4. Any critique of the Bowdoin AI/humanities gift or his education-reform philanthropy (charter schools), is there pushback on his education politics?\nReturn exact URLs, type=critique, 8-12 items."
+    }
+  ]
+}

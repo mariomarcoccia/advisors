@@ -1,0 +1,21 @@
+{
+  "slug": "mark-zuckerberg",
+  "name": "Mark Zuckerberg",
+  "lang": "en",
+  "corpus": "normal",
+  "person": "Mark Zuckerberg, co-founder and CEO of Meta (formerly Facebook), founded 2004 at Harvard with Eduardo Saverin, Dustin Moskovitz, Chris Hughes, Andrew McCollum. NOT any other Mark Zuckerberg.",
+  "enumPrompts": [
+    {
+      "label": "ensaios-talks",
+      "prompt": "Enumerate PRIMARY content from {{PERSON}} beyond what's already known (the S-1 \"Hacker Way\" letter, \"Personal Superintelligence\" letter/announcement, \"Open Source AI Is the Path Forward,\" the 2023 Year of Efficiency memo, the Meta Superintelligence Labs internal memo).\n1. Walk about.fb.com/news and meta.com for any Zuckerberg-authored letter, memo, or blog post not yet cited, especially annual \"personal challenge\" posts, Metaverse/Reality Labs vision letters, and any 2025-2026 AI strategy memos.\n2. Find any Facebook-era founder letters/memos (pre-2020) not yet cited, the original 2012 S-1 is there, but look for internal memos, Answers site posts, or SEC filings with substantial first-person Zuckerberg language on product philosophy.\n3. Any 2025-2026 earnings-call transcript with extended first-person Zuckerberg commentary on AI capex, the metaverse pivot's status, or Llama strategy, beyond the one Q1 2026 Fortune piece already cited.\nReturn exact URLs, priority=high for anything with substantial first-person content, one-line \"why\" per item."
+    },
+    {
+      "label": "entrevistas-recentes",
+      "prompt": "Enumerate INTERVIEW/PODCAST appearances of {{PERSON}} beyond the ones already known (Dwarkesh Apr 2024, Lex Fridman #398, Joe Rogan Jan 2025/Bloomberg coverage, Alex Heath's \"Access\" podcast, Rowan Cheung \"State of AI\").\n1. Any 2025-2026 long-form podcast/interview appearance discussing Meta Superintelligence Labs, the AI talent war with OpenAI, or the \"personal superintelligence\" vision in more depth.\n2. Any interview specifically about the Facebook founding story at Harvard (2004), the Winklevoss/ConnectU litigation, or the Eduardo Saverin equity-dilution episode, first-person Zuckerberg account, not just secondary/Social-Network-movie retellings.\n3. Any interview about the 2021 Metaverse pivot/rebrand decision, why he bet the company on it, how he now assesses that bet given the 2025-2026 AI pivot.\nReturn exact URLs, priority-marked, 8-12 items with transcripts preferred."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material on {{PERSON}} beyond what's already known (the Joe Rogan \"masculine energy\" controversy, the fact-checking-program end, the Sam Altman $100M-bonus poaching claim, Meta superintelligence hires leaving quickly).\n1. Congressional testimony critiques, any hearing where he was directly confronted (child safety, Cambridge Analytica follow-ups, antitrust) with named senators/representatives and his actual responses quoted.\n2. Critiques of the Metaverse pivot as a costly failure, Reality Labs cumulative losses, named analyst/employee critiques of the strategic reversal to AI.\n3. Critiques of his political repositioning (2024-2025 shift toward the Trump administration, ending fact-checking, Rogan appearance) from former Meta employees, civil-rights groups, or media-literacy researchers, named critics with direct quotes.\nReturn exact URLs, type=critique, 8-12 items, this is a high-controversy figure, prioritize primary-sourced critique (named critics, court/hearing transcripts, investigative journalism) over tabloid aggregation."
+    }
+  ]
+}

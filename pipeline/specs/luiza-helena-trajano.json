@@ -1,0 +1,24 @@
+{
+  "slug": "luiza-helena-trajano",
+  "name": "Luiza Helena Trajano",
+  "lang": "pt",
+  "corpus": "normal",
+  "person": "Luiza Helena Trajano, presidente do conselho de administração do Magazine Luiza (Magalu), fundadora do Grupo Mulheres do Brasil, uma das empresárias mais influentes do Brasil. Assumiu a direção da Magalu em 1991, passou o cargo de CEO ao filho Frederico Trajano em 2016. Nasceu em 1948, Franca-SP. NÃO confundir com Luiza Trajano de outros contextos.",
+  "notes": {
+    "attribution": "Do not confuse her with her son, Frederico Trajano (CEO of Magalu), who has a separate dossier."
+  },
+  "enumPrompts": [
+    {
+      "label": "biografia-mulheres-brasil",
+      "prompt": "Enumere o corpus PRIMÁRIO sobre {{PERSON}}\n1. A biografia \"Luiza Helena, Mulher do Brasil\" (Pedro Bial, Editora Gente, 2022), página da editora, Amazon, Skoob, qualquer resenha longa ou entrevista de lançamento com trechos/citações dela verbatim (não só do biógrafo).\n2. Grupo Mulheres do Brasil, site oficial, manifestos, publicações, entrevistas dela especificamente como fundadora/presidente (não material genérico do movimento sem ela citada).\n3. Perfil na Time 100 (2021), o texto oficial da Time sobre ela, e qualquer entrevista dela sobre a inclusão na lista.\n4. Qualquer carta/coluna/artigo de opinião assinado por ela mesma (LinkedIn, Exame, Valor Econômico, Folha, Estadão).\nRetorne URLs exatas com prioridade alta para a biografia, Mulheres do Brasil e Time 100."
+    },
+    {
+      "label": "palestras-video",
+      "prompt": "Enumere aparições em PALESTRA/ÁUDIO/VÍDEO de {{PERSON}}\n1. Fóruns internacionais: Fórum Econômico Mundial (Davos), se ela participou de algum painel, busque especificamente por nome dela + \"Davos\" ou \"World Economic Forum\".\n2. NRF (National Retail Federation), ela menciona ir há 20+ anos; busque cobertura de falas específicas dela em edições da NRF.\n3. Entrevistas em TV/vídeo longas: Fantástico, Roda Viva (TV Cultura, checar se ela já foi entrevistada lá, é o formato mais rico em citações), Globonews, podcasts de negócios BR (Flow Podcast, PrimoCast, G4 Educação).\n4. Palestras em eventos de varejo/liderança (ABF, Endeavor, eventos de diversidade corporativa).\nPriorize fontes com transcrição ou cobertura jornalística detalhada com citações diretas. Retorne 10-20 itens com prioridade."
+    },
+    {
+      "label": "imprensa-criticas",
+      "prompt": "Enumere IMPRENSA e CRÍTICAS sobre {{PERSON}}, além das já conhecidas (IDV, Exame x4, Jornal do Comércio, NeoFeed, InfoMoney x2, Museu da Pessoa, Wikipedia, InvestNews x2, Poder360, ConJur, Suno, CNN Brasil, não repita, busque NOVAS).\n1. Cobertura adicional sobre a queda do valor de mercado do Magalu (2021-2024) e a recuperação/estratégia recente (2025-2026).\n2. Perfis/entrevistas em Forbes BR, Veja, Época Negócios, Pequenas Empresas Grandes Negócios, Valor Econômico.\n3. Cobertura sobre o papel dela no Conselhão do Lula, discurso político, e qualquer controvérsia adicional além do episódio Bolsonaro já mapeado.\n4. Críticas sérias e sourced sobre governança corporativa do Magalu, ou sobre o programa de trainee exclusivo para negros (além das já mapeadas).\nRetorne URLs exatas, tipo=critique para críticas, 10-15 itens."
+    }
+  ]
+}

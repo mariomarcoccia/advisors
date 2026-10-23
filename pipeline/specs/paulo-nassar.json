@@ -1,0 +1,21 @@
+{
+  "slug": "paulo-nassar",
+  "name": "Paulo Nassar",
+  "lang": "pt",
+  "corpus": "normal",
+  "person": "Paulo Nassar, CEO and co-founder of Cobasi (Brazilian pet-and-garden retail chain). Multiple long-form podcast appearances, including \"Do Zero ao Topo\" (InfoMoney) and \"De Frente com CEO\" (Exame). Led Cobasi through its 2024 merger with Petz, forming a combined pet-retail giant in Brazil. Classic founder-operator narrative. NOT any other Paulo Nassar.",
+  "enumPrompts": [
+    {
+      "label": "podcasts-longform",
+      "prompt": "Enumerate PRIMARY long-form podcast/interview content on {{PERSON}}.\n1. Find the full \"Do Zero ao Topo\" (InfoMoney) episode featuring him, get the fullest transcript or extensive write-up with direct quotes.\n2. Find the full \"De Frente com CEO\" (Exame) episode/interview featuring him, same, fullest version.\n3. Find any other long-form interview or podcast where he discusses founding and building Cobasi from the ground up.\nReturn exact URLs, priority=high for anything with substantial first-person verbatim content, one-line \"why\" per item. Content will mostly be in Portuguese, that's expected and correct."
+    },
+    {
+      "label": "fusao-petz",
+      "prompt": "Enumerate INTERVIEWS and PRESS COVERAGE by/about {{PERSON}} regarding the 2024 Cobasi-Petz merger.\n1. Find his own interviews/statements about the strategic logic of merging with Petz (market consolidation, competitive response, synergies), his own words on why and how.\n2. Find press coverage (Bloomberg Línea, NeoFeed, Exame, InfoMoney) of the merger process, governance structure post-merger, and his role in the combined company.\n3. Find any interview about competing against pet-retail rivals (Petlove, or others) before and after the merger.\nReturn exact URLs, priority-marked, prioritizing full transcripts or extensive direct quotation over short event-listing pages."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial or complicating material on {{PERSON}}.\n1. Any critique of the Cobasi-Petz merger (antitrust/CADE scrutiny, market concentration concerns, integration execution risk).\n2. Any analyst or press skepticism about Cobasi's growth strategy, financial performance, or competitive position before the merger.\n3. Any controversy connected to labor practices, animal welfare (relevant given the pet-retail business), or governance that names him specifically.\nReturn exact URLs, type=critique, 4-8 items, be honest if adversarial material specifically targeting him personally (vs. generic merger-antitrust process coverage) is thin."
+    }
+  ]
+}

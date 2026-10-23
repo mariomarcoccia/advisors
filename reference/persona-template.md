@@ -12,6 +12,8 @@ Copy the structure below into `advisors/<slug>.md`. Fill every section. Keep it 
 
 ## Build process (run all four passes)
 
+The automated version of this process lives in [`pipeline/`](../pipeline/README.md): one spec per advisor, rendered into the `build-advisor` Claude Code workflow.
+
 Building or refreshing a dossier is a four-pass pipeline. Don't skip passes — Verify in particular is non-negotiable.
 
 ### 1. Research

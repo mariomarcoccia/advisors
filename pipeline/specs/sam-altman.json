@@ -1,0 +1,21 @@
+{
+  "slug": "sam-altman",
+  "name": "Sam Altman",
+  "lang": "en",
+  "corpus": "normal",
+  "person": "Sam Altman, CEO of OpenAI (since 2019 as CEO, briefly ousted and reinstated in Nov 2023). President of Y Combinator (2014-2019), succeeding Paul Graham; before that co-founder & CEO of Loopt (YC S05, location-based social app, acquired by Green Dot in 2012). Prolific personal blogger at blog.samaltman.com since ~2009 (essays like \"How to Be Successful,\" \"Moore's Law for Everything,\" \"The Merge,\" \"What I Wish Someone Had Told Me,\" \"Startup Playbook\"). Author of the essay series/blog \"The Intelligence Age.\" Frequent Congressional witness on AI regulation. Countless long-form interviews (Lex Fridman, various). Also known for OpenAI's rapid commercialization (ChatGPT launch Nov 2022) and public disputes with Elon Musk over OpenAI's nonprofit-to-for-profit transition. NOT the actor Sam Altman or any unrelated person of the same name.",
+  "enumPrompts": [
+    {
+      "label": "ensaios-blog",
+      "prompt": "Enumerate PRIMARY WRITTEN material authored by {{PERSON}}.\n1. Walk his personal blog archive at blog.samaltman.com, find as many of his own essays as possible (e.g. \"How to Be Successful,\" \"Startup Playbook,\" \"Moore's Law for Everything,\" \"What I Wish Someone Had Told Me,\" \"The Merge,\" \"Idea Generation,\" \"Productivity,\" and others). Enumerate the actual archive/index page, don't rely only on the most-famous ones surfacing via search.\n2. Find his essay series \"The Intelligence Age\" and any other essays published on openai.com or under his own byline about AGI/AI policy.\n3. Find his written Congressional testimony (US Senate/House AI hearings), the submitted written statements.\nReturn exact URLs, priority=high for anything with substantial first-person authored content, one-line \"why\" per item."
+    },
+    {
+      "label": "entrevistas-talks",
+      "prompt": "Enumerate LONG-FORM INTERVIEWS, PODCASTS, and TALKS featuring {{PERSON}}.\n1. His appearance(s) on Lex Fridman's podcast (check for more than one episode).\n2. His talks/interviews around the Nov 2023 OpenAI board ouster-and-reinstatement saga, his own account of what happened, in his own words (not just news coverage).\n3. Any other substantial long-form interview or fireside chat (e.g. Y Combinator events, Bloomberg, Stratechery/Ben Thompson, Cheeky Pint, or similar) about AGI timelines, startup advice, or OpenAI strategy.\nPrioritize sources with full transcripts over short clips. Return exact URLs, priority-marked, one-line \"why\" per item."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material about {{PERSON}}.\n1. The Nov 2023 OpenAI board crisis, the board's stated reasons for firing him (\"not consistently candid\"), and any credible reporting on what specifically triggered it.\n2. Elon Musk's public criticisms and lawsuit(s) against OpenAI/Altman over the nonprofit-to-for-profit transition and alleged departure from the founding mission.\n3. Other named critiques: e.g. former OpenAI safety researchers (Jan Leike, Ilya Sutskever, or others) who left citing concerns about safety culture under his leadership; critiques of his equity/compensation structure or of Worldcoin (his eyeball-scanning crypto venture).\nReturn exact URLs, type=critique, 4-8 items, be honest about how substantial vs. thin the critical material is."
+    }
+  ]
+}

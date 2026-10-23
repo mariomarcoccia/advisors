@@ -1,0 +1,21 @@
+{
+  "slug": "larry-page",
+  "name": "Larry Page",
+  "lang": "en",
+  "corpus": "thin",
+  "person": "Larry Page, co-founder of Google (1998, with Sergey Brin) and Alphabet, CEO 1998-2001 and 2011-2015 (Alphabet CEO through Dec 2019), now reclusive and reportedly building an AI-manufacturing startup (Dynatomics). NOT any other Larry Page. IMPORTANT: he is even more reclusive than Sergey Brin (co-founder counterpart already rebuilt in this project), near-zero public appearances since ~2015, sent written testimony instead of appearing at the 2018 Senate hearing. Do NOT pad the corpus with weak secondary sources or inflate thin material to look like more than it is. If the honest count of primary/substantial sources is modest, report that honestly rather than force it toward this project's usual scale.",
+  "enumPrompts": [
+    {
+      "label": "ensaios-talks",
+      "prompt": "Enumerate PRIMARY content from {{PERSON}} beyond what's already known (2004 IPO letter, 2013 and 2015 Founders' Letters, 2009 Michigan commencement, 2013 Wired interview, TED2014 with Charlie Rose, 2014 Khosla Ventures fireside, 2013 Google I/O fireside).\n1. Look for any other founders' letters he co-authored beyond 2004/2013/2015, check abc.xyz/investor/founders-letters/ for the full archive (2007, 2009, 2011, 2012 letters may exist and could carry his own authored voice in some years, similar to how the Brin dossier found year-by-year authorship variance).\n2. Search for any 2015-2026 appearance, interview, or statement, post-Alphabet-CEO he has been almost totally silent publicly; be honest if nothing substantial exists in this window beyond the 2018 Senate written-testimony episode and the 2025 Dynatomics reporting.\n3. Any Kitty Hawk (flying car venture, wound down 2022) statement, interview, or company communication with his own first-person voice about that project.\nReturn exact URLs, priority=high for anything with substantial first-person content, one-line \"why\" per item. If you find fewer than 8 genuinely new items, that is an accurate result, report it as such rather than padding with low-value sources."
+    },
+    {
+      "label": "entrevistas-recentes",
+      "prompt": "Enumerate INTERVIEW/PODCAST appearances of {{PERSON}} beyond the ones already known (2013 Wired, TED2014, 2014 Khosla fireside, 2013 Google I/O).\n1. Any interview/appearance from 2015 onward, be thorough but honest if the count is genuinely at or near zero, which is plausible for this subject.\n2. Any interview specifically about the 2001-2011 \"adult supervision\" era under Eric Schmidt and his own account of returning as CEO in 2011, first-person reflection on that period.\n3. Any interview or statement about Kitty Hawk, Dynatomics, or his post-Google technical interests (flying cars, AI-driven manufacturing) in his own words.\nReturn exact URLs, priority-marked. A very short list, or even confirming near-zero new material, is an acceptable, honest result for this reclusive a figure."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material on {{PERSON}} beyond what's already known (the 2018 Senate hearing no-show/written-testimony episode).\n1. Critiques of his reclusiveness/lack of public accountability specifically (vs. generic Google/Alphabet criticism), named critics, journalists, or governance advocates who've called out his absence from public accountability moments.\n2. Any critique of the Alphabet super-voting-share structure he and Brin maintained, this may overlap with material already found for the Brin dossier; check if a Page-specific angle exists.\n3. Any critique of specific \"Other Bets\" failures under his moonshot strategy (Google Glass, Loon, or others) attributed to his personal decision-making specifically, not just Google generally.\nReturn exact URLs, type=critique, 4-8 items, be honest if adversarial material specifically targeting Page personally (vs. Google/Alphabet generally) is thin."
+    }
+  ]
+}

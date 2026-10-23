@@ -28,6 +28,10 @@ These keep the project honest and safe — see [`reference/voice-guide.md`](refe
 4. Complete the frontmatter: `name, slug, role, domains, last_updated` (today's date), `source_count`, and a `sources` list with working URLs.
 5. Open a PR. The checklist will appear automatically.
 
+## Add a build spec for the advisor
+
+Every dossier also needs `pipeline/specs/<slug>.json`, so anyone can rebuild it later with the same process. See [`pipeline/README.md`](pipeline/README.md) for the format, then run `npm ci && npm run render` in `pipeline/` and commit the regenerated `.claude/workflows/build-advisor.js`. CI fails if a dossier has no spec. With Claude Code, the `build-advisor` workflow can also draft the dossier from the spec.
+
 ## How to enrich an existing advisor
 
 1. Edit `advisors/<slug>.md`.

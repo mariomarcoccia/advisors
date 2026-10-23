@@ -1,0 +1,21 @@
+{
+  "slug": "rony-meisler",
+  "name": "Rony Meisler",
+  "lang": "pt",
+  "corpus": "normal",
+  "person": "Rony Meisler, cofundador e ex-CEO da Reserva (marca de moda masculina, vendida à Arezzo&Co em 2020 por ~R$715M) e da AR&Co (Reserva, Reserva Mini/Go/Ink, Eva, Oficina), saiu em dez/2024 num split turbulento com Alexandre Birman. Hoje comanda a Rebels Ventures. Presidente do movimento Capitalismo Consciente no Brasil. NÃO é nenhum outro Rony Meisler.",
+  "enumPrompts": [
+    {
+      "label": "livro-blog",
+      "prompt": "Enumere o corpus PRIMÁRIO ESCRITO de {{PERSON}}\n1. Livro \"Rebeldes Têm Asas\" (com Sérgio Pugliese, Editora Sextante/Gente), página da editora, Amazon, Skoob, qualquer resenha longa com trechos verbatim (o dossier atual só tem a página da editora, sem trecho do texto, busque resenhas/excertos).\n2. O blog completo em ronymeisler.com.br/blog, LISTE TODOS os posts do índice/arquivo do blog, não só os 7 já conhecidos (Seja a cola, Community is the new king, Déjà vu, A ordem dos fatores, O presente é o passado do futuro, Feliz Vida Nova, A grama do vizinho). Ache posts NOVOS que ainda não estão nessa lista.\n3. Qualquer artigo de opinião assinado por ele em veículos externos (LinkedIn, Forbes BR, Exame, Época Negócios).\n4. Material do movimento Capitalismo Consciente Brasil onde ele é citado como presidente/porta-voz, site oficial, publicações, entrevistas ligadas ao cargo.\nRetorne URLs exatas com prioridade alta para o livro, posts novos do blog e material do Capitalismo Consciente."
+    },
+    {
+      "label": "podcasts-video",
+      "prompt": "Enumere aparições em ÁUDIO/VÍDEO de {{PERSON}}\n1. Os Sócios #110, TalksbyLeo #238, 10&Faixa #09, É Negócio, Valuable Young Leaders, Papo de Gestão, Performance Líder, Sambatalks, Como Viver Até os 100, ache a página de cada episódio (Spotify/YouTube), e se existir transcrição ou cobertura jornalística com citações diretas daquele episódio específico.\n2. Sicomércio 2025 (já coberto via Portal do Comércio), busque cobertura ADICIONAL do mesmo evento ou de outras falas em eventos de varejo/franchising.\n3. Qualquer painel/palestra sobre a saída da Reserva/Azzas ou sobre a Rebels Ventures em 2025/2026.\nPriorize fontes com transcrição ou cobertura jornalística detalhada com citações diretas. Retorne 10-20 itens com prioridade."
+    },
+    {
+      "label": "imprensa-criticas",
+      "prompt": "Enumere IMPRENSA e CRÍTICAS sobre {{PERSON}}, além das já conhecidas (meusucesso x2, NeoFeed x4, Exame INSIGHT, Suno, Poder360, Portal do Comércio, não repita, busque NOVAS).\n1. Cobertura adicional da saída da Azzas/Arezzo em 2024-2025 (valores do acordo, disputas, entrevistas de despedida).\n2. Cobertura da Rebels Ventures (2025-2026): investimentos feitos, teses, entrevistas sobre o pivot para wellness/longevidade.\n3. Críticas sérias e sourced ADICIONAIS às já mapeadas (campanha \"Gemidão do WhatsApp\" 2018, campanha 2015 comparando mulheres/pessoas negras a animais, \"brincadeira inocente\" 2014): busque se há mais alguma controvérsia de marketing, disputa trabalhista, ou crítica ao modelo de franquia/expansão da Reserva.\n4. Números financeiros mais recentes da AR&Co/Azzas pós-saída dele, se disponíveis.\nRetorne URLs exatas, tipo=critique para críticas, 10-15 itens."
+    }
+  ]
+}
