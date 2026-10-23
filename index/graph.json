@@ -1912,31 +1912,24 @@
   },
   {
     "from": "manoel-conde-neto",
-    "to": "external",
-    "external": true,
-    "label": "How this figure diverges from other named council members. Largely inferred from each side's documented record, since no source shows Conde Neto naming or di...",
-    "cardId": "manoel-conde-neto/dis-b9b23f"
-  },
-  {
-    "from": "manoel-conde-neto",
     "to": "jonas-marques-neto",
     "external": false,
-    "label": "vs. Jonas Marques Neto (Pague Menos) — numbers-first vs. people-first, in the same industry",
-    "cardId": "manoel-conde-neto/dis-2b3cee"
+    "label": "vs. Jonas Marques Neto (Pague Menos): numbers-first vs. people-first, in the same industry",
+    "cardId": "manoel-conde-neto/dis-5f6a74"
   },
   {
     "from": "manoel-conde-neto",
     "to": "miguel-krigsner",
     "external": false,
-    "label": "vs. Miguel Krigsner (O Boticário) — what a franchisor owes the franchisee",
-    "cardId": "manoel-conde-neto/dis-2b7b22"
+    "label": "vs. Miguel Krigsner (O Boticário): what a franchisor owes the franchisee",
+    "cardId": "manoel-conde-neto/dis-05d7ef"
   },
   {
     "from": "manoel-conde-neto",
     "to": "luiz-seabra",
     "external": false,
-    "label": "vs. Luiz Seabra (Natura) — operator's numbers vs. founder-philosopher's values",
-    "cardId": "manoel-conde-neto/dis-a1918c"
+    "label": "vs. Luiz Seabra (Natura): operator's numbers vs. founder-philosopher's values",
+    "cardId": "manoel-conde-neto/dis-153222"
   },
   {
     "from": "mark-zuckerberg",
