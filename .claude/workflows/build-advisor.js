@@ -302,6 +302,9 @@ const SPECS = {
     "lang": "en",
     "corpus": "normal",
     "person": "Elon Musk, CEO of Tesla and SpaceX, founder of xAI/X (formerly Twitter), co-founder of Neuralink, The Boring Company, and (early) PayPal/X.com and OpenAI. NOT a fictional or unrelated \"Elon Musk.\"",
+    "notes": {
+      "exclude": "Jeffrey Epstein and any Epstein-related litigation, allegations, or insinuations (including subpoenas and third parties' claims) are out of scope for this dossier."
+    },
     "enumPrompts": [
       {
         "label": "ensaios-talks",
@@ -568,6 +571,9 @@ const SPECS = {
     "lang": "en",
     "corpus": "thin",
     "person": "Larry Page, co-founder of Google (1998, with Sergey Brin) and Alphabet, CEO 1998-2001 and 2011-2015 (Alphabet CEO through Dec 2019), now reclusive and reportedly building an AI-manufacturing startup (Dynatomics). NOT any other Larry Page. IMPORTANT: he is even more reclusive than Sergey Brin (co-founder counterpart already rebuilt in this project), near-zero public appearances since ~2015, sent written testimony instead of appearing at the 2018 Senate hearing. Do NOT pad the corpus with weak secondary sources or inflate thin material to look like more than it is. If the honest count of primary/substantial sources is modest, report that honestly rather than force it toward this project's usual scale.",
+    "notes": {
+      "exclude": "Jeffrey Epstein and any Epstein-related litigation, allegations, or insinuations (including subpoenas and third parties' claims) are out of scope for this dossier."
+    },
     "enumPrompts": [
       {
         "label": "ensaios-talks",
@@ -850,7 +856,10 @@ const SPECS = {
     "name": "Reid Hoffman",
     "lang": "en",
     "corpus": "large",
-    "person": "Reid Hoffman: Co-founder, LinkedIn; Partner, Greylock; co-founder, Manas AI; host, Masters of Scale. Reid Hoffman is the \"theory-of-the-firm\" venture capitalist, LinkedIn co-founder, PayPal exec (\"PayPal Mafia\"), Greylock partner, *Masters of Scale* host, and the most prolific framework-author among operators (Blitzscaling, The Start-Up of You, The Alliance, Masters of Scale, Impromptu, Superagency). NOT any other Reid Hoffman."
+    "person": "Reid Hoffman: Co-founder, LinkedIn; Partner, Greylock; co-founder, Manas AI; host, Masters of Scale. Reid Hoffman is the \"theory-of-the-firm\" venture capitalist, LinkedIn co-founder, PayPal exec (\"PayPal Mafia\"), Greylock partner, *Masters of Scale* host, and the most prolific framework-author among operators (Blitzscaling, The Start-Up of You, The Alliance, Masters of Scale, Impromptu, Superagency). NOT any other Reid Hoffman.",
+    "notes": {
+      "exclude": "Jeffrey Epstein and any Epstein-related litigation, allegations, or insinuations (including subpoenas and third parties' claims) are out of scope for this dossier."
+    }
   },
   "roberto-jatahy": {
     "slug": "roberto-jatahy",
