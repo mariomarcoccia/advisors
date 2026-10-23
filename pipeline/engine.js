@@ -77,6 +77,10 @@ const FOCUS = spec.notes?.focus ? `\nEXPLICIT PRIORITY: ${spec.notes.focus}` : '
 const EXCLUDE = spec.notes?.exclude
   ? `\nOUT OF SCOPE (hard rule): ${spec.notes.exclude} Do not search for it, extract it, cite it, or mention it, even as a blind spot or provenance note; skip any source whose main subject it is.`
   : ''
+// Style rules (no em dashes, etc.) govern prose we write, never the source's words.
+const VERBATIM = 'Text inside quotation marks is the source\'s exact words: never alter its wording or punctuation (dashes included) to satisfy a style rule.'
+// Each bullet becomes one retrieval card in the council index, read alone.
+const CARD_SHAPE = 'Write each bullet as one self-contained position with a bold title and its own source, at most about 1,200 characters; split anything longer into separate bullets rather than chaining several situations into one.'
 const STRAY_NOTES = `If the notes directory is empty or incomplete (known bug: agents sometimes write to "undefined/" relative to their own working directory), look for stray batch-*.md files in ${repo}/undefined/, ~/undefined/, and ~/.advisors/undefined/ before proceeding, and move them into ${notesDir}/.`
 const BASELINE = mode === 'rebuild'
   ? `Read the CURRENT dossier at ${dossierPath} first: it is the baseline. This is an EXPANSION: nothing distinct and sourced in it may be lost.`
@@ -109,16 +113,28 @@ const enumerated = (await parallel(enumPrompts.map((p) => () =>
   agent(p.prompt, { label: `enumerate:${p.label}`, phase: 'Enumerate', schema: SOURCES_SCHEMA, model: SONNET })
 ))).filter(Boolean).flatMap((r) => r.sources)
 
-const normUrl = (u) => u.replace(/[?#].*$/, '').replace(/\/+$/, '').toLowerCase()
+// Same page, different spelling: ignore scheme, a leading www., query, fragment, trailing slash, case.
+const normUrl = (u) => u.trim().toLowerCase().replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/[?#].*$/, '').replace(/\/+$/, '')
 const seen = new Set()
 const all = []
 for (const s of enumerated) {
   const key = normUrl(s.url)
   if (!seen.has(key)) { seen.add(key); all.push(s) }
 }
-const ordered = ['high', 'medium', 'low'].flatMap((p) => all.filter((s) => s.priority === p))
+// In a rebuild, sources the dossier already cites are not worth an extraction
+// slot: without this, a large corpus spends the whole cap re-reading its own
+// baseline and the rebuild adds almost nothing.
+let cited = new Set()
+if (mode === 'rebuild') {
+  const baseline = await agent(`Read the frontmatter of ${dossierPath} and return every URL in its sources[] list, exactly as written. No commentary, no placeholder values.`,
+    { label: 'enumerate:baseline-sources', phase: 'Enumerate', model: SONNET,
+      schema: { type: 'object', required: ['urls'], properties: { urls: { type: 'array', items: { type: 'string' } } } } })
+  cited = new Set(baseline.urls.map(normUrl))
+}
+const fresh = all.filter((s) => !cited.has(normUrl(s.url)))
+const ordered = ['high', 'medium', 'low'].flatMap((p) => fresh.filter((s) => s.priority === p))
 const sources = ordered.slice(0, SOURCE_CAP)
-log(`${all.length} unique sources enumerated; processing ${sources.length} (${Math.max(0, all.length - SOURCE_CAP)} lowest-priority left out)`)
+log(`${all.length} unique sources enumerated, ${all.length - fresh.length} already cited; processing ${sources.length} (${Math.max(0, fresh.length - SOURCE_CAP)} lowest-priority left out)`)
 
 // ---------- 2. extract ----------
 
@@ -143,7 +159,7 @@ Process EACH of these sources (curl -sL --compressed; try a browser user-agent f
 ${JSON.stringify(batch, null, 2)}
 
 For each source extract, with the EXACT URL attached to every item:
-(a) VERBATIM quotes: exact wording only inside quotation marks (${LANGUAGE_QUOTES}); otherwise clearly-marked paraphrase
+(a) VERBATIM quotes: exact wording only inside quotation marks (${LANGUAGE_QUOTES}); otherwise clearly-marked paraphrase. ${VERBATIM}
 (b) named frameworks/mental models + a worked example of each (the payload: a framework without an example is half-built)
 (c) decision heuristics and positions on specific hard-call situations
 (d) explicit or implicit disagreements with named thinkers
@@ -165,7 +181,7 @@ const draft = await agent(`Write ${mode === 'rebuild' ? 'a DRAFT rebuild of the'
 2. Read the template at ${templatePath} and the voice guide at ${voiceGuidePath}; follow the section structure EXACTLY, including "Writing for the index (cards)" if present.
 3. ${CORPUS_CALIBRATION} ${LANGUAGE_CONVENTION}
 4. Read ALL research notes: every .md file in ${notesDir}/ (list the directory first). ${STRAY_NOTES}
-5. ${mode === 'rebuild' ? 'OVERWRITE' : 'WRITE'} ${dossierPath} as a complete file: slug: ${spec.slug}, last_updated: ${date}; sources[] = every source actually cited; source_count matches exactly; quote any frontmatter value containing a colon.${mode === 'rebuild' ? ' Keep every existing mental model, heuristic, worked example, and "Where they disagree" row; add new ones.' : ''} Never quote anything the notes don't show verbatim with a URL. Where a section is thin, say so honestly in Provenance notes rather than padding. Write the Summary last.${FOCUS}${ATTRIBUTION}${EXCLUDE}
+5. ${mode === 'rebuild' ? 'OVERWRITE' : 'WRITE'} ${dossierPath} as a complete file: slug: ${spec.slug}, last_updated: ${date}; sources[] = every source actually cited; source_count matches exactly; quote any frontmatter value containing a colon.${mode === 'rebuild' ? ' Keep every existing mental model, heuristic, worked example, and "Where they disagree" row; add new ones.' : ''} Never quote anything the notes don't show verbatim with a URL. ${VERBATIM} ${CARD_SHAPE} Where a section is thin, say so honestly in Provenance notes rather than padding. Write the Summary last.${FOCUS}${ATTRIBUTION}${EXCLUDE}
 6. Return: final source_count, the enumerated source URLs NOT cited in the final draft (for the completeness audit downstream), and a 3-4 sentence report. Do NOT return placeholder or example values: every field must reflect this run's real output.`,
   { label: 'synthesize:draft', phase: 'Synthesize', model: SONNET, effort: 'high',
     schema: { type: 'object', required: ['sourceCount', 'unusedSources', 'report'], properties: {
@@ -184,7 +200,7 @@ const QUOTES_SCHEMA = { type: 'object', required: ['quotes'], properties: { quot
 } } } }
 // The picker reads the file itself: relaying ~30 KB of dossier through another
 // model's output is slow and can alter the very text being verified.
-const quotesToCheck = await agent(`Read the dossier at ${dossierPath} and extract the 15-24 most LOAD-BEARING verbatim quotes (in quotation marks) with the source URL each is attributed to (check sources[] in the frontmatter and inline citations). Prioritize quotes used in Core ideas, Mental models, and Signature quotes. Return each quote in its ORIGINAL language exactly as it appears (do not translate) so it can be string-matched against the raw source. Do NOT return placeholder values.`,
+const quotesToCheck = await agent(`Read the dossier at ${dossierPath} and extract the 15-24 most LOAD-BEARING verbatim quotes (in quotation marks) with the source URL each is attributed to (check sources[] in the frontmatter and inline citations). Prioritize quotes used in Core ideas, Mental models, and Signature quotes.${mode === 'rebuild' && cited.size > 0 ? ` This is a rebuild: favor quotes from sources new in this draft, since the rest were verified in an earlier build. Sources cited before this rebuild (compare ignoring scheme and "www."): ${[...cited].join(', ')}` : ''} Return each quote in its ORIGINAL language exactly as it appears (do not translate) so it can be string-matched against the raw source. Do NOT return placeholder values.`,
   { label: 'pre-verify:pick-quotes', phase: 'Pre-verify', model: SONNET, schema: QUOTES_SCHEMA })
 
 const VERDICTS_SCHEMA = { type: 'object', required: ['verdicts'], properties: { verdicts: { type: 'array', items: {
@@ -217,7 +233,7 @@ For each: re-read the dossier text around it first (the preliminary check someti
 ${JSON.stringify(draft.unusedSources, null, 2)}
 For each, check the research notes in ${notesDir}/ (${STRAY_NOTES}): did the draft skip genuinely novel material? If so, fold it in. Also judge independently whether enumeration walked the person's full canonical index or stopped at the famous top slice; if you spot an obvious gap (a known essay, talk, letter, or interview series), do one targeted search and fetch, and add it only if it is real and citable. ${spec.corpus === 'thin' ? 'This figure has a thin public corpus: an honest, modest source_count is correct; never pad with weak secondary sources.' : 'Do not pad with weak secondary sources just to look thicker.'}${FOCUS}
 
-3. **Depth repair.** Read the whole dossier critically. Where synthesis went shallow (a mental model with no worked example, a generic "Where they disagree" row, a Core idea without a concrete situation), REWRITE that section in place with specific, sourced content from the notes. ${LANGUAGE_CONVENTION}
+3. **Depth repair.** Read the whole dossier critically. Where synthesis went shallow (a mental model with no worked example, a generic "Where they disagree" row, a Core idea without a concrete situation), REWRITE that section in place with specific, sourced content from the notes. Also split any bullet longer than about 1,200 characters into self-contained bullets (no distinct example or quote may be lost). ${LANGUAGE_CONVENTION}
 
 Rules: never invent a quote; anything in quotation marks must trace to a URL in the notes or one you verified yourself.${EXCLUDE ? ` If the dossier contains any out-of-scope material, remove it and its sources.${EXCLUDE}` : ''} Keep slug, last_updated, and source_count consistent. Edit ${dossierPath} in place (Edit/Write tools).
 
