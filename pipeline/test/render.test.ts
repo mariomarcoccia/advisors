@@ -101,6 +101,7 @@ describe("rendered workflow", () => {
     expect(rebuild).toContain("never alter its wording or punctuation");
     expect(rebuild).toContain("at most about 1,200 characters");
     expect(rebuild).toContain("favor quotes from sources new in this draft");
+    expect(rebuild).toContain("Sources cited before this rebuild (compare ignoring scheme and \"www.\"): example.com/already-cited");
     expect((await simulate("tom-brown", "create")).prompts.join("\n")).not.toContain("favor quotes from sources new");
   });
 
