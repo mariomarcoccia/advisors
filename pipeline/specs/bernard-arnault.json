@@ -1,0 +1,21 @@
+{
+  "slug": "bernard-arnault",
+  "name": "Bernard Arnault",
+  "lang": "en",
+  "corpus": "normal",
+  "person": "Bernard Arnault, Chairman and CEO of LVMH (Moët Hennessy Louis Vuitton), the world's largest luxury conglomerate, built via decades of brand acquisitions (Dior, Louis Vuitton, Moët, and dozens more). French. NOT any other Bernard Arnault.",
+  "enumPrompts": [
+    {
+      "label": "ensaios-talks",
+      "prompt": "Enumerate PRIMARY content from {{PERSON}} beyond what's already known (the 2001 HBR interview, the 2016 Oxford Union Q&A, quotes from \"La Passion créative,\" the 2026 AGM \"two futures for luxury\" remarks).\n1. Walk for any additional long-form interview or speech transcript (French or English) where he lays out his business philosophy directly, LVMH investor days, AGM speeches, French business-press interviews (Les Echos, Le Figaro, Challenges) not yet cited.\n2. Find excerpts from \"La Passion créative\" (his book with Yves Messarovitch) beyond the Investment Masters Class secondary compilation, look for direct excerpts or reviews quoting substantial passages verbatim.\n3. Any recent (2024-2026) interview or speech specifically about succession planning among his five children (who now hold senior LVMH roles), his own framing of family governance and the transition plan.\nReturn exact URLs, priority=high for anything with substantial first-person content, one-line \"why\" per item."
+    },
+    {
+      "label": "entrevistas-recentes",
+      "prompt": "Enumerate INTERVIEW/PODCAST appearances of {{PERSON}} beyond the ones already known (2001 HBR, 2016 Oxford Union).\n1. Any 2023-2026 interview discussing the luxury slowdown, China demand, or LVMH's strategy amid slowing growth (the dossier cites secondary press on this but likely lacks direct Arnault interview quotes).\n2. Any interview about the Gucci Group hostile-takeover battle (LVMH vs. PPR/Pinault, 1999-2001) in his own words, strategy, regrets, lessons.\n3. Any interview about becoming the world's richest person (multiple times) and how he thinks about wealth, competition with other billionaires (Musk, Bezos), or his own ambition.\nReturn exact URLs, priority-marked, 6-10 items with transcripts preferred."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material on {{PERSON}} beyond what's already known (the Galliano firing, the Gucci hostile-takeover battle critique).\n1. Critiques of his acquisition/takeover tactics, named executives, founders, or rival conglomerates (Kering/Pinault) who've criticized his methods as predatory or aggressive.\n2. Critiques of LVMH's labor practices, supply chain, or environmental record, named labor unions, NGOs, or journalists with direct quotes.\n3. Critiques of his wealth/tax practices, the 2012 Belgian-citizenship bid controversy (widely reported, seek his own response too), or French political critiques of luxury-sector wealth concentration.\nReturn exact URLs, type=critique, 6-10 items."
+    }
+  ]
+}

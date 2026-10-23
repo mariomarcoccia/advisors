@@ -1,0 +1,21 @@
+{
+  "slug": "carol-dweck",
+  "name": "Carol S. Dweck",
+  "lang": "en",
+  "corpus": "normal",
+  "person": "Carol S. Dweck, Stanford psychologist, author of \"Mindset: The New Psychology of Success,\" creator of growth-mindset theory (fixed vs. growth mindset). NOT any other Carol Dweck.",
+  "enumPrompts": [
+    {
+      "label": "ensaios-talks",
+      "prompt": "Enumerate PRIMARY content from {{PERSON}} beyond what's already known (the Mindset book, TED talk, HBR articles 2014/2016, Education Week 2015 revisit essay, \"Even Geniuses Work Hard\" essay, several academic papers with Yeager/Mueller/Canning co-authors).\n1. Walk Stanford's own faculty pages, her lab site (mindsetscholarsnetwork.org if it exists, or Stanford SPARQ), and Google Scholar for any additional first-person essay, op-ed, or long-form written piece not yet cited, especially anything addressing the 2018-2023 replication-crisis controversy directly in her own words.\n2. Find any additional academic papers with substantial first-person theoretical framing (not just abstracts), particularly ones where she personally responds to critics (Sisk et al., Macnamara & Burgoyne) in her own voice.\n3. Any book excerpt, foreword, or updated-edition preface where she reflects on how \"growth mindset\" was popularized/commercialized beyond her original intent (the \"false growth mindset\" concern is already cited once, find more depth on this).\nReturn exact URLs, priority=high for anything with substantial first-person content, one-line \"why\" per item."
+    },
+    {
+      "label": "entrevistas-recentes",
+      "prompt": "Enumerate INTERVIEW/PODCAST appearances of {{PERSON}} beyond the ones already known (KQED MindShift \"false growth mindset\" interview, Tes Magazine interview on critics).\n1. Any long-form podcast/interview appearance (academic, business, or education-focused) where she discusses her own research career, how she arrived at mindset theory from earlier work on learned helplessness, her mentors/influences.\n2. Any interview specifically addressing the replication-crisis pushback on growth mindset research, her own point-by-point response to specific meta-analyses, not just general defenses.\n3. Any interview about how growth mindset got applied/misapplied in corporate and education settings, her own critique of the \"corporate mindset industry\" that grew around her work.\nReturn exact URLs, priority-marked, 6-10 items with transcripts preferred."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material on {{PERSON}} and growth-mindset theory beyond what's already known (Sisk et al. 2018 meta-analysis, Macnamara & Burgoyne 2023 meta-analysis, the KQED \"dueling meta-analyses\" piece).\n1. Named academic critics beyond Sisk/Macnamara/Burgoyne, any psychologist or education researcher who has published direct methodological critique of Dweck's original studies (small effect sizes, non-replication, the \"growth mindset industry\" critique).\n2. Critiques of the commercial/corporate application of growth mindset, consultants, HR critics, or journalists who've argued the theory got oversimplified or weaponized in ways she didn't intend.\n3. Any critique specifically of the 2019 Yeager/Dweck \"National Study of Learning Mindsets\", statisticians or education researchers who've challenged its methodology or interpretation.\nReturn exact URLs, type=critique, 6-10 items, this is an academic controversy, prioritize named researchers with published critique over journalistic hot-takes."
+    }
+  ]
+}

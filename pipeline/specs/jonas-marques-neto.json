@@ -1,0 +1,21 @@
+{
+  "slug": "jonas-marques-neto",
+  "name": "Jonas Marques Neto",
+  "lang": "pt",
+  "corpus": "normal",
+  "person": "Jonas Marques Neto, CEO of Pague Menos (Brazilian pharmacy/drugstore retail chain, B3 ticker PGMN3), the first CEO from outside the founding family. Background as a clinical psychologist before moving into corporate leadership, nicknamed the \"CEO-psicólogo\" [psychologist CEO] in Brazilian business press (Brazil Journal). Known for unorthodox early decisions as CEO (reportedly one of his first actions as CEO was buying air conditioners/microwaves for store employees rather than a typical cost-cutting move). Multiple video interviews (Exame, Pause/O POVO). NOT any other Jonas Marques, must be specifically the CEO of Pague Menos drugstore chain.",
+  "enumPrompts": [
+    {
+      "label": "perfil-psicologo-ceo",
+      "prompt": "Enumerate PRIMARY interview/profile content on {{PERSON}}, especially anything covering his unusual path from clinical psychologist to CEO and his \"psychologist-CEO\" people-management philosophy.\n1. Find the Brazil Journal profile/interview (or similar) that coined or used the \"CEO-psicólogo\" framing, get the fullest version (article or podcast) with direct quotes.\n2. Find video interviews (Exame, Pause/O POVO, or similar) where he discusses his approach to people, culture, or leadership at length in his own words.\n3. Find any interview describing concrete early decisions he made as CEO of Pague Menos (the air-conditioners/microwaves story or similar) and his own account of the reasoning behind them.\nReturn exact URLs, priority=high for anything with substantial first-person verbatim content, one-line \"why\" per item. Content will mostly be in Portuguese, that's expected and correct."
+    },
+    {
+      "label": "estrategia-farmacia",
+      "prompt": "Enumerate INTERVIEWS and TALKS by {{PERSON}} about Pague Menos' business strategy.\n1. Find interviews/talks about competing in the Brazilian drugstore sector against Raia Drogasil/RD, Droga Raia, Panvel, and other pharmacy chains.\n2. Find any earnings-call transcripts, investor-day talks, or press interviews about financial turnaround, digital transformation, or store-network strategy at Pague Menos (B3: PGMN3).\n3. Find interviews about being the first CEO from outside the founding family, his own account of that transition and what changed.\nReturn exact URLs, priority-marked, prioritizing full transcripts or extensive direct quotation over short event-listing pages."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial or complicating material on {{PERSON}}.\n1. Any critique of Pague Menos' financial performance, margins, or competitive position under his leadership.\n2. Any analyst or press skepticism about his unorthodox management style, or friction with the founding family/board during his tenure.\n3. Any controversy connected to labor practices, franchise disputes, or governance that names him specifically.\nReturn exact URLs, type=critique, 4-8 items, be honest if adversarial material specifically targeting him personally (vs. generic sector criticism) is thin."
+    }
+  ]
+}

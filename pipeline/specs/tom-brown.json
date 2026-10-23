@@ -1,0 +1,21 @@
+{
+  "slug": "tom-brown",
+  "name": "Tom Brown",
+  "lang": "en",
+  "corpus": "normal",
+  "person": "Tom Brown, Co-founder of Anthropic, leading work on pretraining/scaling of Claude models. Previously at OpenAI, where he was lead author of the landmark GPT-3 paper (\"Language Models are Few-Shot Learners,\" 2020) and a key engineer behind the GPT-3 training infrastructure. Earlier in his career worked at Google and at cybersecurity/ML startups. Left OpenAI in 2020/2021 with Dario and Daniela Amodei and others to found Anthropic. Known for engineering-and-scaling-focused public commentary (less policy-oriented than Jack Clark, less broad-strategy-oriented than Dario), talks and interviews specifically about what it takes to train frontier models, why scale matters, and his experience building GPT-3. NOT any unrelated Tom/Thomas Brown (e.g. the NFL quarterback).",
+  "enumPrompts": [
+    {
+      "label": "papers-ensaios",
+      "prompt": "Enumerate PRIMARY WRITTEN/AUTHORED material by {{PERSON}}.\n1. Find the GPT-3 paper \"Language Models are Few-Shot Learners\" (arxiv.org), he is lead author; look specifically for any parts of the paper or accompanying commentary (blog posts, Twitter/X threads at the time of release) where his personal framing/voice is identifiable, not just the anonymous multi-author technical text.\n2. Find any blog posts, technical write-ups, or company statements on the Anthropic website (anthropic.com/news) that he personally authored or is the named voice for, related to pretraining, scaling, or model training infrastructure.\n3. Find any of his personal website/blog posts or substantial X/Twitter threads about scaling laws, training infrastructure, or his engineering philosophy.\nReturn exact URLs, priority=high for anything with substantial first-person authored content, one-line \"why\" per item."
+    },
+    {
+      "label": "entrevistas-talks",
+      "prompt": "Enumerate LONG-FORM INTERVIEWS, PODCASTS, and TALKS featuring {{PERSON}}.\n1. His appearance on the Lightcone Podcast (~Aug 2025) discussing GPT-3, Claude Code, and scaling.\n2. His fireside chat with Salesforce Ventures (look for a blog post or video covering safety/AGI/LLM techniques).\n3. Video of his \"First Public Talk on GPT-3\" (look on YouTube) or any other early talk about the GPT-3 project specifically.\n4. Any other substantial interview about the decision to leave OpenAI and co-found Anthropic, or about what scaling frontier models actually requires operationally.\nPrioritize sources with full transcripts over short clips. Return exact URLs, priority-marked, one-line \"why\" per item."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material relevant to {{PERSON}} and his work.\n1. Critiques of the \"scale is all you need\" philosophy associated with GPT-3-style scaling, researchers (e.g. Gary Marcus, Yann LeCun, or others) who argue pure scaling has diminishing returns or that it's not the path to AGI.\n2. Any critique specifically of the GPT-3 paper's methodology, safety sections, or claims (e.g. concerns raised at release about bias, misuse potential, or overstated capability claims).\n3. Any public disagreement between him and other named AI researchers on the value of scale vs. architecture/algorithmic innovation.\nReturn exact URLs, type=critique, 4-8 items, be honest about how substantial vs. thin the critical material is (he is a more behind-the-scenes engineering figure with limited public profile relative to Dario or Sam Altman)."
+    }
+  ]
+}

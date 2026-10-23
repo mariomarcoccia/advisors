@@ -1,0 +1,21 @@
+{
+  "slug": "guilherme-horn",
+  "name": "Guilherme Horn",
+  "lang": "pt",
+  "corpus": "normal",
+  "person": "Guilherme Horn, Brazilian serial entrepreneur and corporate-innovation specialist. Founded/co-founded ~6 startups over 25 years, including Ágora (sold to Bradesco in 2008, considered Brazil's first \"unicorn\"-scale exit) and Órama (named by Amazon in 2012 as one of the world's most innovative fintechs). Director of Innovation at Accenture Latin America (from 2014). Board member at Banco do Brasil. Executive director at Banco BV (Dec 2019-Mar 2022). Since Mar 2022, Head of WhatsApp for Brazil, India, and Indonesia at Meta. Author of the bestseller \"O Mindset da Inovação.\" LinkedIn Top Voice, angel investor, keynote speaker. Master's from PUC-RJ, doctorate from UMSA, MIT executive education. NOT any other Guilherme Horn.",
+  "enumPrompts": [
+    {
+      "label": "livro-ensaios",
+      "prompt": "Enumerate PRIMARY written content from {{PERSON}}.\n1. Find excerpts, reviews, or interviews about his bestselling book \"O Mindset da Inovação\", direct quotes from the book itself (via Google Books preview, publisher excerpts, or extensive book-review quotations), not just marketing copy.\n2. Walk his HSM Management author page (hsmmanagement.com.br/autor/guilherme-horn) and any other columns/articles he's authored for business publications (Forbes Brasil, Exame, Valor Econômico, etc.), find the full archive.\n3. Find his LinkedIn posts/articles directly, he's a LinkedIn Top Voice, so search for his profile's published articles and highly-engaged posts on innovation, leadership, AI, or entrepreneurship.\nReturn exact URLs, priority=high for anything with substantial first-person content (verbatim text he wrote), one-line \"why\" per item. Most content will be in Portuguese, that's expected and correct for a Brazilian executive."
+    },
+    {
+      "label": "talks-entrevistas",
+      "prompt": "Enumerate TALKS, KEYNOTES, and INTERVIEW appearances of {{PERSON}}.\n1. Find video/transcript of his talks at conferences (HSM Expo, South Summit, ENECE 2019, or others), look for full recordings or transcripts, not just event listings.\n2. Find podcast or video interviews about his entrepreneurial journey (Ágora/Órama founding and exits), his time at Accenture/Banco do Brasil/Banco BV, or his current role as Head of WhatsApp Brazil/India/Indonesia at Meta.\n3. Find any interview specifically about the transition from serial founder/banking executive to Big Tech (Meta), his own account of why he made that move in 2022.\nReturn exact URLs, priority-marked, prioritizing sources with full transcripts or extensive direct quotation over short event-listing pages."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material on {{PERSON}}, plus any additional biographical/track-record detail that could sharpen or complicate his public \"innovation guru\" narrative.\n1. Any critique of his specific business decisions, the Ágora or Órama sales (were they seen as good exits or leaving value on the table?), his tenure at Banco BV, or his transition to Meta.\n2. Any critique of the \"innovation mindset\" thought-leadership genre he represents, skeptics of corporate-innovation consulting, LinkedIn thought-leadership, or the specific frameworks in his book.\n3. Any controversy, lawsuit, or public criticism connected to WhatsApp's operations in Brazil/India/Indonesia during his tenure as regional head (content moderation, misinformation during elections, regulatory friction with Brazilian or Indian authorities) that names him specifically or that he's had to publicly address.\nReturn exact URLs, type=critique, 4-8 items, be honest if adversarial material specifically targeting him personally (vs. generic Meta/WhatsApp criticism) is thin."
+    }
+  ]
+}

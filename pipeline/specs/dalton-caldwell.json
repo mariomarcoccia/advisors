@@ -1,0 +1,24 @@
+{
+  "slug": "dalton-caldwell",
+  "name": "Dalton Caldwell",
+  "lang": "en",
+  "corpus": "normal",
+  "person": "Dalton Caldwell, co-founder and General Partner of Standard Capital (AI-native Series A firm), Partner Emeritus at Y Combinator (formerly Managing Director/Group Partner), co-hosts the \"Dalton & Michael\" YC podcast with Michael Seibel. Previously founded App.net (2012, shut down 2017) and imeem. NOT any other Dalton Caldwell.",
+  "notes": {
+    "attribution": "He co-hosts the \"Dalton & Michael\" YC series with Michael Seibel: distinguish his words from Michael's."
+  },
+  "enumPrompts": [
+    {
+      "label": "ensaios-talks",
+      "prompt": "Enumerate PRIMARY content from {{PERSON}} beyond what's already known (the \"Dear Mark Zuckerberg\" 2012 open letter, Lenny's Podcast \"Lessons from 1,000+ YC startups,\" three \"Dalton & Michael\" YC Library talks, the Partner Emeritus announcement, Standard Capital's site).\n1. Walk the YC Startup Library and YC's YouTube channel for more \"Dalton & Michael\" episodes not yet cited, prioritize ones with substantial Caldwell-specific content (distinguish his words from Michael Seibel's, since they co-host).\n2. Find any blog posts he's authored on daltoncaldwell.com beyond the \"Dear Mark Zuckerberg\" letter, look for the full archive.\n3. Any 2025-2026 essay, interview, or talk specifically about founding Standard Capital and the thesis behind an \"AI-native Series A firm\", what changed for him going from YC partner to fund GP.\nReturn exact URLs, priority=high for anything with substantial first-person content, one-line \"why\" per item."
+    },
+    {
+      "label": "entrevistas-recentes",
+      "prompt": "Enumerate INTERVIEW/PODCAST appearances of {{PERSON}} beyond the ones already known (Lenny's Podcast \"Lessons from 1,000+ YC startups,\" Fortune 2024 on Requests for Startups).\n1. Any 2024-2026 interview/podcast where he's the primary guest discussing his YC tenure retrospectively, the transition to Partner Emeritus, or founding Standard Capital.\n2. Any interview specifically about the App.net story, founding it in 2012 as a paid Twitter alternative, the funding/pivot arc, and why it ultimately shut down in 2017, his own first-person retrospective on what he learned.\n3. Any interview about his working relationship/friendship with Michael Seibel, how the \"Dalton & Michael\" format came about, division of roles.\nReturn exact URLs, priority-marked, 6-10 items with transcripts preferred."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material on {{PERSON}} beyond what's already known.\n1. Any critique of App.net's business model or execution from former users, employees, or tech press at the time (2012-2017), named critics with direct quotes about why the paid-social-network bet failed.\n2. Any critique of his YC investment judgment/track record, named founders or peers who've pushed back on specific advice or calls he's made publicly (e.g., on the \"Dalton & Michael\" show).\n3. Any critique of Standard Capital's \"AI-native Series A\" thesis itself, skeptics of the fund's positioning or strategy.\nReturn exact URLs, type=critique, 4-8 items, be honest if adversarial material is thin (he's a lower-controversy figure than most of the roster)."
+    }
+  ]
+}

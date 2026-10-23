@@ -1,0 +1,29 @@
+{
+  "slug": "warren-buffett",
+  "name": "Warren Buffett",
+  "lang": "en",
+  "corpus": "large",
+  "person": "Warren Buffett, chairman/CEO of Berkshire Hathaway, the most documented investor alive. Primary corpus: Berkshire Hathaway shareholder letters (1977-2024, all at berkshirehathaway.com/letters/), Buffett Partnership letters (1957-1970), the Berkshire \"Owner's Manual\", annual meeting Q&A (CNBC Warren Buffett Archive has full transcripts/video since 1994), major interviews (CNBC, Charlie Rose, Salomon testimony 1991), \"The Essays of Warren Buffett\" (Cunningham), the 2006 giving pledge and philanthropy letters, and his op-eds (e.g. \"Buy American\" NYT 2008, \"Stop Coddling the Super-Rich\" NYT 2011).",
+  "notes": {
+    "focus": "The payload is worked examples with numbers: keep every distinct acquisition story, named mistake, and capital-allocation decision as situation, action, verbatim quote, source (letter year). Dedup the abstractions he restates for decades.",
+    "attribution": "Distinguish Buffett's words from Munger's. Buffett is among the most misquoted people online: default to skepticism."
+  },
+  "enumPrompts": [
+    {
+      "label": "letters-brk",
+      "prompt": "Enumerate the Berkshire Hathaway SHAREHOLDER LETTERS of {{PERSON}}\nWalk the canonical index at https://www.berkshirehathaway.com/letters/letters.html and list EVERY letter 1977-2024 with its exact URL (older ones are .html pages like berkshirehathaway.com/letters/1977.html, newer ones are PDFs). Every letter is priority=high EXCEPT: mark as medium the ones that are mostly operational recap years; the classics (1983 goodwill appendix, 1985 textile shutdown, 1988 Coca-Cola, 1989 \"mistakes of the first 25 years\", 1996 owner's manual era, 2001 9/11, 2008 crisis, 2014 50-year anniversary, 2023 Munger tribute, 2024 farewell-era) are all high. Also include the \"An Owner's Manual\" document. Return the complete list, completeness of this index is the whole job."
+    },
+    {
+      "label": "partnership-docs",
+      "prompt": "Enumerate OTHER PRIMARY WRITTEN documents of {{PERSON}}\n1. Buffett Partnership letters 1957-1970, find a reliable archive with exact URLs (e.g. the widely-mirrored PDF compilations; oldschoolvalue, rbcpa, or csinvesting mirrors). List them by year or as the compilation document(s).\n2. His op-eds: \"Buy American. I Am.\" (NYT 2008), \"Stop Coddling the Super-Rich\" (NYT 2011), the Giving Pledge letter (2006/2010), the 50th-anniversary \"Berkshire, Past, Present and Future\" (2014), his 2025 announcements if any.\n3. \"The Superinvestors of Graham-and-Doddsville\" (1984 Columbia talk, published text).\n4. Salomon Brothers congressional testimony (1991), transcript source.\n5. \"The Essays of Warren Buffett\" (Cunningham), as a book source for cross-reference.\nReturn exact URLs with priority (Superinvestors, Salomon testimony, partnership letters = high)."
+    },
+    {
+      "label": "audio-video",
+      "prompt": "Enumerate AUDIO/VIDEO material of {{PERSON}}\n1. CNBC Warren Buffett Archive (buffett.cnbc.com), annual meeting Q&A transcripts/videos since 1994: list the highest-value sessions (crisis years 2008-2009, 2020 pandemic solo meeting, 2023 post-Munger, 2024-2025 final meetings and CEO-transition announcement) rather than all ~30.\n2. Landmark interviews: CNBC Squawk Box multi-hour interviews, Charlie Rose interviews, the 2017 HBO documentary \"Becoming Warren Buffett\", his university talks (Florida 1998 MBA talk, transcript widely available, high priority).\n3. Podcast/long-form appearances if any.\nPrefer sources with full transcripts. Return exact URLs, 15-25 items, priority-marked."
+    },
+    {
+      "label": "criticas-perfis",
+      "prompt": "Enumerate CRITIQUES and third-party material for {{PERSON}}\n1. Serious, sourced critiques: hypocrisy critiques (taxes advocacy vs Berkshire's tax practices, ProPublica 2021), Kraft Heinz write-down, Wells Fargo/board-governance criticism, derivatives \"weapons of mass destruction\" vs his own derivatives book, missing tech/opportunity-cost critiques, succession-opacity criticism, the Sokol/Lubrizol affair, criticism of his silence on political issues. Each with a named outlet URL.\n2. The Snowball (Schroeder) and other biographies, as sources for verified anecdotes.\n3. Profiles with primary quotes not in the letters (Fortune pieces by Carol Loomis, \"Mr. Buffett on the Stock Market\" 1999/2001).\nReturn exact URLs, 15-25 items, critiques marked type=critique."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "paulo-correa",
+  "name": "Paulo Corrêa",
+  "lang": "pt",
+  "corpus": "normal",
+  "person": "Paulo Corrêa, CEO of C&A Brasil since 2004. Background: McKinsey, then Xerox, before joining C&A. Led C&A Brasil's transformation into a digitally-oriented, independent retailer (C&A Brasil became a standalone company from the global C&A/Cofra structure and went public via IPO on B3 in 2019, ticker CEAB3). Runs his own recurring video/interview series (referenced online as around episode #255) where he discusses retail strategy at length; recurring presence in Brazilian business media (NeoFeed, InfoMoney, Bloomberg Línea, XP Expert Talks) with a consistent thesis about reinventing the traditional fashion-retail logic (digital transformation, store-as-hub, data-driven merchandising). NOT any other Paulo Corrêa (common Brazilian name), must be specifically the CEO of C&A Brasil (moda/varejo, B3: CEAB3).",
+  "enumPrompts": [
+    {
+      "label": "primeira-pessoa",
+      "prompt": "Enumerate PRIMARY first-person content from {{PERSON}}.\n1. Find his own video/interview series (search for a YouTube channel or series where he appears as host/guest discussing retail strategy at length, reportedly numbered episodes, possibly referenced as around #255, confirm the real channel/series name via search rather than assuming).\n2. Find any columns, LinkedIn posts/articles, or bylined pieces he's authored for business publications (Valor Econômico, Exame, Forbes Brasil, NeoFeed) about retail strategy, digital transformation, or leadership.\n3. Find earnings-call transcripts or investor-day presentations where he speaks directly and extensively (Seeking Alpha, MZiQ, company IR site) since C&A Brasil is publicly traded.\nReturn exact URLs, priority=high for anything with substantial first-person verbatim content, one-line \"why\" per item. Content will mostly be in Portuguese, that's expected and correct."
+    },
+    {
+      "label": "entrevistas-podcasts",
+      "prompt": "Enumerate INTERVIEW and PODCAST appearances of {{PERSON}}.\n1. Find podcast/video interviews about the 2019 IPO and separation of C&A Brasil from the global C&A/Cofra group, his own account of that strategic decision.\n2. Find interviews/talks about the digital transformation strategy at C&A Brasil (omnichannel, store-as-fulfillment-hub, data/tech investment), NeoFeed, InfoMoney, Bloomberg Línea, XP Expert Talks, Google/Mercado&Consumo events are good places to search.\n3. Find any interview specifically about his career path (McKinsey → Xerox → C&A) and what shaped his leadership approach.\nReturn exact URLs, priority-marked, prioritizing full transcripts or extensive direct quotation over short event-listing pages."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial or complicating material on {{PERSON}}.\n1. Any critique of C&A Brasil's financial performance, stock performance since the 2019 IPO, or specific strategic decisions under his leadership.\n2. Any analyst or press skepticism about the digital transformation thesis, margin pressure, or competitive position vs. Renner/Riachuelo/Marisa.\n3. Any controversy connected to labor practices, supply chain, or governance during his tenure that names him specifically.\nReturn exact URLs, type=critique, 4-8 items, be honest if adversarial material specifically targeting him personally (vs. generic industry criticism) is thin."
+    }
+  ]
+}

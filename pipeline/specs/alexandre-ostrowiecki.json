@@ -1,0 +1,21 @@
+{
+  "slug": "alexandre-ostrowiecki",
+  "name": "Alexandre Ostrowiecki",
+  "lang": "pt",
+  "corpus": "thin",
+  "person": "Alexandre Ostrowiecki, acionista controlador, ex-CEO (até abr/2025) e atual presidente do conselho do Grupo Multi (ex-Multilaser, B3: MLAS3), a maior fabricante-varejista de eletrônicos de consumo do Brasil. Assumiu a empresa aos 24 anos após o desaparecimento do pai. Coautor de dois livros político-econômicos sobre o Brasil: \"Carregando o Elefante\" (2008, com Renato Feder) e \"O Moedor de Pobres\" (2021). NÃO é nenhum outro Alexandre Ostrowiecki.",
+  "enumPrompts": [
+    {
+      "label": "livros-a-fundo",
+      "prompt": "Enumere conteúdo PRIMÁRIO dos dois livros de {{PERSON}}, prioridade alta, é o material mais denso e menos explorado no dossier atual.\n1. \"Carregando o Elefante, Como transformar o Brasil no país mais rico do mundo\" (2008, com Renato Feder, Leopardo Editora), busque resenhas longas, resumos de capítulo, trechos citados, ou qualquer entrevista de lançamento que cite o livro diretamente.\n2. \"O Moedor de Pobres\" (2021, LVM Editora), mesma coisa: resenhas, entrevistas de lançamento, trechos citados com página. Esse livro NÃO está nem sequer citado como fonte no dossier atual (só o primeiro está), priorize achá-lo.\nRetorne URLs exatas, prioridade alta para qualquer trecho verbatim dos livros (não só ficha técnica/sinopse)."
+    },
+    {
+      "label": "negocios-turnaround-atualizado",
+      "prompt": "Enumere imprensa de NEGÓCIOS sobre {{PERSON}} além do já conhecido (InfoMoney várias, Seu Dinheiro 2021, NeoFeed out/2024, Exame INSIGHT, Tecnoblog abr/2024, meuSucesso x2, Exame IN 2021, Poder360 jul/2025, Canaltech, XP mar/2025, Guia do Investidor, Times Brasil).\n1. Cobertura MAIS RECENTE (2026, já que hoje é {{DATE}}) do turnaround do Grupo Multi, resultados trimestrais recentes, novos produtos/verticais, declarações dele especificamente (não só do novo CEO André Poroger).\n2. Qualquer podcast ou entrevista em vídeo mais longa (Braincast, Market Makers, Sala de Investimento, canais de YouTube de negócios) onde ele fale mais extensamente sobre a trajetória da empresa.\n3. Perfis/entrevistas em Forbes BR, Época Negócios, Valor Econômico, Veja não ainda cobertos.\nRetorne URLs exatas, 10-15 itens, priorize citações diretas dele."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumere CRÍTICAS e material adversarial sobre {{PERSON}} além do já conhecido (a queda de ~90% da ação MLAS3 pós-IPO, o prejuízo de R$836M em 2023, a percepção de marca/qualidade \"não compre TV da Multilaser\", e a nuvem de governança em torno do co-controlador Renato Feder nas vendas para redes de educação que ele supervisionava).\n1. Reportagens adicionais sobre a controvérsia Feder/educação (conflito de interesse, contratos públicos).\n2. Qualquer crítica de analistas de mercado (XP, BTG, Itaú BBA) sobre a governança ou a estratégia de longo prazo do Grupo Multi.\n3. Reclamações de consumidor sobre qualidade de produto (Reclame Aqui, Procon) que documentem o problema de percepção de marca de forma mais concreta.\n4. Cobertura trabalhista/sindical sobre as fábricas em Extrema/MG e Manaus/AM, se existir.\nRetorne URLs exatas, tipo=critique, 8-12 itens."
+    }
+  ]
+}

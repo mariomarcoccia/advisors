@@ -1,0 +1,21 @@
+{
+  "slug": "alexandre-birman",
+  "name": "Alexandre Birman",
+  "lang": "pt",
+  "corpus": "thin",
+  "person": "Alexandre Birman, CEO da Azzas 2154 (fusão Arezzo&Co + Grupo Soma, ago/2024), ex-CEO da Arezzo&Co, fundador da marca de luxo Alexandre Birman (2008). Filho de Anderson Birman, fundador da Arezzo. Sapateiro desde criança. NÃO é nenhum outro Alexandre Birman.",
+  "enumPrompts": [
+    {
+      "label": "marca-craft",
+      "prompt": "Enumere material sobre a MARCA PRÓPRIA e o lado \"designer/craft\" de {{PERSON}}, além do já conhecido (Esfera Brasil \"sapateiro desde criança\", SindiShopping \"chão de fábrica\").\n1. Cobertura de moda/calçados especificamente sobre a marca Alexandre Birman (2008-): WWD, Footwear News, Vogue Brasil, revistas de moda, filosofia de design, processo criativo, clientela de red carpet, prêmio FFANY Designer of the Year 2017.\n2. Qualquer entrevista sobre os anos de formação na Itália estudando sapataria, ou sobre aprender o ofício com o pai Anderson Birman.\n3. Material sobre a proposta de \"moda contemporânea sem pretensão de ser luxo\" para o grupo vs. a marca de luxo dele mesmo, qualquer entrevista que aprofunde essa tensão.\nRetorne URLs exatas, priorize itens com citações diretas dele (não só descrição de produto), 10-15 itens."
+    },
+    {
+      "label": "negocios-ma",
+      "prompt": "Enumere imprensa de NEGÓCIOS/M&A sobre {{PERSON}} além do já conhecido (NeoFeed pandemia 2020, Exame M&A, Brazil Journal Reserva 2020, Brazil Journal Insights/Bradesco, NeoFeed \"mudança de liga\", Estado de Minas \"rumo a 2154\").\n1. Entrevistas/perfis em Forbes BR, Época Negócios, Veja, Pequenas Empresas Grandes Negócios, Valor Econômico sobre a estratégia de M&A, o roll-up Arezzo&Co, ou a filosofia \"casa de marcas\".\n2. Cobertura do lançamento/tese da fusão Arezzo+Soma em Azzas 2154 (ago/2024), entrevistas dele especificamente sobre a lógica da fusão, não só nota de imprensa.\n3. Qualquer entrevista/podcast de negócios (Braincast, Market Makers, Sala de Investimento, etc.) onde ele fale sobre estratégia, sucessão ou governança.\nRetorne URLs exatas, 10-15 itens, priorize citações diretas dele."
+    },
+    {
+      "label": "azzas-jatahy-atualizado",
+      "prompt": "Enumere cobertura ATUALIZADA (2026, principalmente pós-junho/2026, já que hoje é 2026-07-10) da disputa societária entre {{PERSON}} e o co-CEO Roberto Jatahy na Azzas 2154, além do já conhecido (Seu Dinheiro, InfoMoney Kameyama, Portal Tela jun/2026 unificação de arbitragem, InvestNews \"risco de divórcio\").\n1. Desdobramentos mais recentes: resultado da arbitragem CAM-B3 nº 326/26, novas saídas de executivos, movimentação de ações, decisões judiciais.\n2. Qualquer entrevista ou declaração NOVA de Birman sobre o conflito (não apenas cobertura de terceiros), ele se pronunciou publicamente sobre isso além do que já está mapeado?\n3. Análises de mercado/investidores (JP Morgan, Morgan Stanley, XP, BTG) sobre o desfecho provável e o valuation da Azzas.\n4. Críticas ao estilo de gestão \"comando e controle\" dele, além do já citado, busque por mais fontes que caracterizem esse padrão.\nRetorne URLs exatas, tipo=critique quando aplicável, 10-15 itens, com datas o mais recentes possível."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "alice-walton",
+  "name": "Alice Walton",
+  "lang": "en",
+  "corpus": "thin",
+  "person": "Alice Walton, Walmart heiress (daughter of Sam Walton), philanthropist and art patron, founder of Crystal Bridges Museum of American Art, Art Bridges, and the Alice L. Walton School of Medicine. NOT any other Alice Walton. IMPORTANT: she is genuinely reclusive, very few interviews, no blog/essay habit, not a business theorist. Do NOT pad the corpus with weak secondary sources or inflate thin material to look like more than it is. If the honest count of primary/substantial sources is modest, report that honestly rather than force it toward this project's usual scale.",
+  "enumPrompts": [
+    {
+      "label": "ensaios-talks",
+      "prompt": "Enumerate PRIMARY content from {{PERSON}} beyond what's already known (W Magazine 2021 interview, Arkansas Business interview, Semafor 2025 healthcare interview, the Alice L. Walton School of Medicine grand-opening statement, a Thrive Global piece with Arianna Huffington).\n1. Search for any additional interview, op-ed, or written statement she's authored directly, Crystal Bridges annual reports, Art Bridges materials, or medical-school launch materials with her own first-person language.\n2. Look for any speech or remarks at a Crystal Bridges event, Art Bridges conference, or the medical school's opening ceremony beyond the grand-opening statement already cited.\n3. Any interview specifically about her own art-collecting philosophy or specific acquisition decisions (the Kindred Spirits/NYPL controversy is cited as critique, find her own account/defense if one exists).\nReturn exact URLs, priority=high for anything with substantial first-person content, one-line \"why\" per item. If you find fewer than 8 genuinely new items, that is an accurate result, report it as such rather than padding with low-value sources."
+    },
+    {
+      "label": "entrevistas-recentes",
+      "prompt": "Enumerate INTERVIEW/PODCAST appearances of {{PERSON}} beyond the ones already known (W Magazine, Arkansas Business, Semafor, PBS NewsHour, TIME100 Health, Thrive Global).\n1. Any 2024-2026 interview/podcast appearance beyond the ones cited, she gives very few, so be thorough but honest if the count is genuinely small.\n2. Any interview specifically about her relationship to Walmart itself (she's not an operator there), her own framing of her role vs. her siblings/family, and how Walmart wealth funds her philanthropy.\n3. Any interview about her personal art-collecting taste or specific acquisitions (beyond the \"everybody deserves access\" thesis already cited) with concrete named-artwork examples.\nReturn exact URLs, priority-marked. A short list (4-8 items) is an acceptable, honest result for this reclusive a figure."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material on {{PERSON}} beyond what's already known (the Forbes \"condescension\" quote controversy, the Kindred Spirits/NYPL sale backlash, Jobs With Justice and Arkansas Times tax-avoidance critiques).\n1. Named critics of Walmart labor practices who specifically target the Walton family's philanthropy as reputation-laundering, beyond the two already cited sources, find more direct/named critique.\n2. Any critique of the Alice L. Walton School of Medicine's funding model, admissions approach, or \"value-based care\" thesis from medical-education critics or health-policy researchers.\n3. Any critique of her art-world acquisitions/influence, museum-world critics of how Walton money has reshaped access to American art, beyond the Kindred Spirits case.\nReturn exact URLs, type=critique, 4-8 items, be honest if adversarial material specifically targeting her personally (vs. the Walton family generally) is thin."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "luiz-seabra",
+  "name": "Antônio Luiz Seabra",
+  "lang": "pt",
+  "corpus": "thin",
+  "person": "Antônio Luiz Seabra, fundador e presidente (emérito) do conselho da Natura (Natura&Co), empresa de cosméticos brasileira, fundada em 1969. Filósofo autodidata (Plotino, Teilhard de Chardin), construiu a Natura em torno de relacionamento e propósito, não produto. Está na casa dos 80 anos e fora do palco operacional. NÃO é o filósofo Murilo Seabra nem nenhum outro Seabra.",
+  "enumPrompts": [
+    {
+      "label": "entrevistas-filosoficas",
+      "prompt": "Enumere entrevistas/palestras FILOSÓFICAS de {{PERSON}} além das já conhecidas (Cottidianos I e II, zelmar \"O verdadeiramente belo\", LinkedIn/ExpoGestão 2010, Exame crise, NeoFeed, somosij, Sebrae).\n1. Busque mais entrevistas de longa duração onde ele fale sobre filosofia, Plotino, Teilhard de Chardin, propósito, ou a fundação da Natura, em veículos como Época, Veja, Trip, revistas de negócios ou filosofia.\n2. Confirme/localize a fonte primária viva da frase-motto \"o impossível é apenas o começo de várias possibilidades\" (o artigo original da Endeavor redireciona pra home e o Sebrae não mostra mais o texto), tente web.archive.org ou outras réplicas.\n3. Confirme/localize a fonte primária da frase-tríade fundadora \"a verdade como compromisso, o amor como força e a beleza como potência\", hoje marcada como paráfrase não confirmada no dossier atual.\n4. Qualquer podcast ou vídeo longo (YouTube, Instituto CPFL, TEDx, Fronteiras do Pensamento) com ele falando sobre negócios com propósito.\nRetorne URLs exatas, prioridade alta pra qualquer trecho verbatim novo dele."
+    },
+    {
+      "label": "natura-atual",
+      "prompt": "Enumere cobertura ATUAL (2025-2026, já que hoje é {{DATE}}) sobre a Natura/Natura&Co e qualquer declaração recente de {{PERSON}}, além do já conhecido (InvestNews sobre o desmonte do império global e prejuízo de R$8,9bi).\n1. Resultados/estratégia recentes da Natura pós-\"volta às origens\", houve recuperação? Ele comentou publicamente?\n2. Qualquer homenagem, prêmio, ou perfil de aniversário/trajetória recente sobre ele (está na casa dos 80 anos, pode haver perfis de \"legado\").\n3. Cobertura da posição atual dele na empresa (ainda é presidente emérito do conselho? Afastou-se mais?).\nRetorne URLs exatas, 8-12 itens."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumere CRÍTICAS e material adversarial sobre {{PERSON}}/Natura além do já conhecido (OTTS e Redalyc sobre precarização do trabalho de revendedoras, InvestNews sobre o colapso financeiro do Natura&Co).\n1. Críticas adicionais ao modelo de venda direta (SVD), reportagens sobre condições de revendedoras, pirâmide de vendas, ou comparação com outros modelos (Avon, Boticário).\n2. Qualquer crítica ao \"greenwashing\" ou à autenticidade do posicionamento de sustentabilidade da Natura, dado o tamanho da empresa.\n3. Análises críticas da era de expansão global (Aesop, The Body Shop, Avon) e de quem tomou essas decisões (ele pessoalmente ou o management profissional).\nRetorne URLs exatas, tipo=critique, 6-10 itens."
+    }
+  ]
+}

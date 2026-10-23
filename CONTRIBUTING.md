@@ -30,6 +30,10 @@ These keep the project honest and safe — see [`reference/voice-guide.md`](refe
 6. Run `cd tools/council && npm ci && node src/cli.ts lint && node src/cli.ts index`, and commit the updated `index/` with your dossier. CI fails on lint errors or a stale index.
 7. Open a PR. The checklist will appear automatically.
 
+## Add a build spec for the advisor
+
+Every dossier also needs `pipeline/specs/<slug>.json`, so anyone can rebuild it later with the same process. See [`pipeline/README.md`](pipeline/README.md) for the format, then run `npm ci && npm run render` in `pipeline/` and commit the regenerated `.claude/workflows/build-advisor.js`. CI fails if a dossier has no spec. With Claude Code, the `build-advisor` workflow can also draft the dossier from the spec.
+
 ## How to enrich an existing advisor
 
 1. Edit `advisors/<slug>.md`.

@@ -1,0 +1,21 @@
+{
+  "slug": "stephane-maquaire",
+  "name": "Stéphane Maquaire",
+  "lang": "pt",
+  "corpus": "normal",
+  "person": "Stéphane Maquaire, CEO of Carrefour Brasil (French national, B3 ticker CRFB3, the Brazilian arm of the French retail group Carrefour). Gives multiple video interviews (CNN Brasil, YouTube channels), featured in InfoMoney \"lições de liderança\" [leadership lessons] pieces, LIDE talks, and Mercado&Consumo interviews. Speaks recurrently and substantively about crisis leadership, corporate governance, and retail strategy in Brazil. NOT any other Stéphane Maquaire.",
+  "enumPrompts": [
+    {
+      "label": "lideranca-crise",
+      "prompt": "Enumerate PRIMARY interview/profile content on {{PERSON}}, especially around leadership philosophy and crisis management.\n1. Find the InfoMoney \"lições de liderança\" (or similarly-titled leadership-lessons) piece/interview, and any CNN Brasil video interview, get the fullest version with direct quotes.\n2. Find LIDE talks or events where he spoke, and any Mercado&Consumo interview about retail strategy in Brazil.\n3. Find any interview where he discusses a specific crisis he navigated at Carrefour Brasil (e.g., the 2020 Carrefour Osasco incident/store-death controversy, competitive pressure, integration of Grupo BIG/Walmart Brasil stores acquired in 2022) and his own account of how he handled it.\nReturn exact URLs, priority=high for anything with substantial first-person verbatim content, one-line \"why\" per item. Content may be in Portuguese or English, he is French but operates in Brazil, so expect both."
+    },
+    {
+      "label": "estrategia-carrefour-br",
+      "prompt": "Enumerate INTERVIEWS and TALKS by {{PERSON}} about Carrefour Brasil's business strategy.\n1. Find interviews/talks about the 2022 acquisition and integration of Grupo BIG (former Walmart Brasil stores), his own account of that decision and execution.\n2. Find earnings-call transcripts, investor-day talks, or press interviews about digital transformation, cash & carry (Atacadão) strategy, or competitive positioning vs. GPA/Pão de Açúcar and Assaí.\n3. Find any interview specifically about governance reforms or ESG/social-responsibility commitments made under his leadership (particularly any changes made in response to past controversies).\nReturn exact URLs, priority-marked, prioritizing full transcripts or extensive direct quotation over short event-listing pages."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial or complicating material on {{PERSON}}.\n1. Find coverage of the 2020 Carrefour Osasco incident (death of a Black customer in a Carrefour store parking lot, a major public controversy in Brazil) and how his leadership responded, this is likely the single most important critical episode to cover honestly.\n2. Any critique of Carrefour Brasil's financial performance, stock performance (CRFB3), or integration execution after the Grupo BIG acquisition.\n3. Any analyst or press skepticism about strategy, labor practices, or supply-chain governance during his tenure that names him specifically.\nReturn exact URLs, type=critique, 4-8 items, this is a figure where genuine, serious critique exists (the Osasco case); do not soften or omit it."
+    }
+  ]
+}

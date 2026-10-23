@@ -1,0 +1,29 @@
+{
+  "slug": "ben-horowitz",
+  "name": "Ben Horowitz",
+  "lang": "en",
+  "corpus": "large",
+  "person": "Ben Horowitz, co-founder of Andreessen Horowitz (a16z); former CEO of Loudcloud/Opsware (sold to HP for ~$1.6B); author of \"The Hard Thing About Hard Things\" (2014) and \"What You Do Is Who You Are\" (2019). Writes/speaks on management, hard decisions, hiring, culture, and, since ~2024, AI/crypto policy and politics.",
+  "notes": {
+    "focus": "Book content is the highest-priority payload: represent \"The Hard Thing About Hard Things\" (2014) and \"What You Do Is Who You Are\" (2019) thoroughly, with real worked examples and verbatim passages woven through Core ideas, Mental models, and \"Books distilled\" (e.g. \"How to Fire a Friend\", \"The Case for the Fat Startup\", the Louverture, Genghis Khan, and Shaka Senghor material).",
+    "attribution": "Some quotes may be a co-author's, an interviewer's, a journalist's description of the book, or someone he is quoting (Andy Grove, Cus D'Amato) rather than his own words."
+  },
+  "enumPrompts": [
+    {
+      "label": "livros-a-fundo",
+      "prompt": "Enumerate PRIMARY BOOK content for {{PERSON}}, this is the highest-priority target for this rebuild.\n1. \"The Hard Thing About Hard Things\" (2014), find any accessible way to read MORE of the actual book text beyond what's already summarized: Google Books preview pages, archive.org borrow/full-text-search-inside results, publisher excerpt pages, \"the moment\" you can search inside, long-form book reviews that quote extended passages verbatim (not just chapter-summary blogs), and specific chapters that do NOT have a standalone a16z blog-post equivalent (e.g. \"Take Care of the People, the Products, and the Profits\", \"The Case for the Fat Startup\", \"How to Minimize Politics in Your Company\", \"When Employees Misbehave\", \"How to Fire a Friend\", \"Ben's Fifteen Rules of Corporate Warfare\", \"Old People\", \"This Time With Feeling\", checklist chapters that aren't just reprinted essays). Return exact URLs, priority=high, with a note on what NEW book content (not already-known blog essays) each source would surface.\n2. \"What You Do Is Who You Are\" (2019), same treatment: find excerpt pages, Google Books preview, long reviews quoting extended passages, any chapter on Toussaint Louverture / Genghis Khan / Shaka Senghor / samurai that goes beyond what's already summarized, and the book's own introduction/closing chapter framing if excerptable.\nPrioritize sources that let you quote MORE of the actual book prose verbatim, not just re-confirm what a blog essay already covers."
+    },
+    {
+      "label": "ensaios-a16z",
+      "prompt": "Enumerate additional a16z ESSAYS by {{PERSON}} beyond the 8 already known (Peacetime CEO/Wartime CEO, Lead Bullets, The Struggle, The Right Kind of Ambition, Making Yourself a CEO, Why Startups Should Train Their People, The Sad Truth About Developing Executives, Don't Follow Your Passion).\nWalk a16z.com's blog/essay archive or index for Ben Horowitz specifically and find 8-15 MORE of his classic essays: candidates to check for, \"Old People\", \"The Case for the Fat Startup\", \"How to Minimize Politics in Your Company\", \"Some Advice for Founders on Fundraising\", \"A Good Place to Work\", \"How to Rate Your CEO\", \"When Employees Misbehave\", \"Managing Your Own Board\", \"The Freaky Friday Management Technique\", \"Why We Prefer Founding CEOs\", \"Should You Fire an Executive When Reference Checks Are Bad?\", \"Ones and Zeroes\", \"The Case for a16z crypto/American Dynamism\". Return exact URLs, priority-marked, one-line \"why\" per item."
+    },
+    {
+      "label": "podcasts-talks",
+      "prompt": "Enumerate PODCAST/TALK/interview appearances of {{PERSON}} beyond the 6 already known (Tim Ferriss #392, Lenny's Podcast 2025, a16z Speedrun, Uncapped #38/Jack Altman, a16z Show \"RSI Crypto Classified Physics\" Feb 2026, a16z Podcast \"AI and Crypto\" 2025, Columbia SEAS 2015 talk).\nLook for: Lex Fridman podcast appearances, All-In Podcast appearances, any recent (2025-2026) interview on AI policy/politics specifically, university commencement/guest lectures beyond Columbia, and any joint interview with Marc Andreessen. Prefer sources with full transcripts. Return 8-15 items with exact URLs, priority-marked."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material on {{PERSON}} beyond what's already known (Jane Psmith/The PSmiths book review, Eric Nehrlich review, the John O'Farrell rebuke, TechCrunch on Trump-backing/lobbying/Las Vegas police donations, Futurism).\n1. Any additional serious book critique (management-theory academics or practitioners critiquing \"The Hard Thing\" or \"What You Do Is Who You Are\" specifically), Goodreads/critical long-form reviews that engage substantively, not just star ratings.\n2. Fresh 2025-2026 political/policy critiques of a16z or Horowitz specifically beyond what's cited (AI safety advocates, other departed a16z people, journalism on a16z's PAC \"Leading the Future\" spending).\n3. Critiques of the \"wartime CEO\" framework specifically, management writers who've argued it enables abusive behavior (check if there's a named critique beyond generic mentions).\nReturn exact URLs, type=critique, 8-12 items."
+    }
+  ]
+}

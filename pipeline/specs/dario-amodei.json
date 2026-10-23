@@ -1,0 +1,24 @@
+{
+  "slug": "dario-amodei",
+  "name": "Dario Amodei",
+  "lang": "en",
+  "corpus": "normal",
+  "person": "Dario Amodei, Co-founder & CEO of Anthropic (founded 2021). Physicist by training (PhD Princeton, computational neuroscience/biophysics). Before Anthropic he was VP of Research at OpenAI (co-authored the GPT-2 and GPT-3 papers, drove the scaling-laws research direction), and before that worked at Google Brain and at Baidu under Andrew Ng. Left OpenAI in 2020/2021 along with his sister Daniela Amodei and several colleagues over disagreements about safety culture and commercialization pace, founding Anthropic to pursue AI safety research \"from the inside\" by building frontier models responsibly. Author of the essay \"Machines of Loving Grace\" (Oct 2024) on AI's potential positive impact, and of Anthropic's \"Responsible Scaling Policy\" framing. Frequent long-form interviewee (Dwarkesh Patel, Lex Fridman, Hard Fork/NYT, Big Technology) and has testified before the US Congress on AI policy/regulation. NOT his sister Daniela Amodei (Anthropic's President, a separate advisor) or any unrelated Dario Amodei.",
+  "notes": {
+    "attribution": "Do not confuse him with his sister, Daniela Amodei (Anthropic co-founder and President), who has a separate dossier."
+  },
+  "enumPrompts": [
+    {
+      "label": "ensaios-blog",
+      "prompt": "Enumerate PRIMARY WRITTEN material authored by {{PERSON}}.\n1. Find his essay \"Machines of Loving Grace\" (darioamodei.com, Oct 2024), the full text, not summaries.\n2. Find any other essays, blog posts, or long-form letters he has personally written or is the named/primary author of on the Anthropic website (anthropic.com/news) or his personal site darioamodei.com, e.g. writing on Anthropic's Responsible Scaling Policy, AI safety, economic impact of AI, or company strategy.\n3. Find his written Congressional testimony (US Senate/House AI hearings), the submitted written statements, not just news coverage of the hearing.\nReturn exact URLs, priority=high for anything with substantial first-person authored content, one-line \"why\" per item."
+    },
+    {
+      "label": "entrevistas-talks",
+      "prompt": "Enumerate LONG-FORM INTERVIEWS, PODCASTS, and TALKS featuring {{PERSON}}.\n1. His appearance(s) on the Dwarkesh Patel podcast (check for more than one episode).\n2. His appearance(s) on Lex Fridman's podcast.\n3. His appearance(s) on Hard Fork (NYT podcast, hosts Kevin Roose/Casey Newton) and on Big Technology Podcast (Alex Kantrowitz).\n4. Any other substantial long-form interview (video or audio, ideally with transcript) about AI safety, scaling, Anthropic's founding story, or AGI timelines.\nPrioritize sources with full transcripts over short clips. Return exact URLs, priority-marked, one-line \"why\" per item."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material about {{PERSON}} and Anthropic's strategy under his leadership.\n1. Critiques of Anthropic's \"safety-focused\" positioning being used as marketing while still racing to build frontier models (the \"safety-washing\" or \"race to the bottom\" critique from AI safety researchers or competitors).\n2. Critiques of his AGI timeline predictions or economic predictions (e.g. claims about AI curing diseases, mass job displacement, or being \"a country of geniuses in a datacenter\") being overstated or unfalsifiable.\n3. Any specific public disagreement between him and other named AI figures (e.g. Yann LeCun, Sam Altman, Elon Musk, Gary Marcus) on regulation, safety approach, or timelines.\nReturn exact URLs, type=critique, 4-8 items, be honest about how substantial vs. thin the critical material is."
+    }
+  ]
+}

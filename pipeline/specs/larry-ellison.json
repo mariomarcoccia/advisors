@@ -1,0 +1,21 @@
+{
+  "slug": "larry-ellison",
+  "name": "Larry Ellison",
+  "lang": "en",
+  "corpus": "normal",
+  "person": "Larry Ellison, co-founder, Chairman, and CTO of Oracle (founded 1977), one of the longest-tenured tech CEOs in history (CEO until 2014), now driving Oracle's cloud/AI-infrastructure strategy (OCI, Stargate). NOT any other Larry Ellison.",
+  "enumPrompts": [
+    {
+      "label": "ensaios-talks",
+      "prompt": "Enumerate PRIMARY content from {{PERSON}} beyond what's already known (2016 USC commencement address, Smithsonian oral history 1995, Academy of Achievement long-form interview, several OpenWorld conference statements 2011-2019).\n1. Walk Oracle OpenWorld / Oracle CloudWorld keynote transcripts across the years (2019-2026) for extended first-person Ellison keynotes on cloud/AI strategy not yet cited, he gives long, technical, competitive keynotes almost every year.\n2. Find any earnings-call transcripts with substantial first-person Ellison commentary (he still speaks on Oracle earnings calls despite not being CEO), especially 2024-2026 calls discussing Stargate, OCI growth, or AI infrastructure capex.\n3. Any biography excerpts (Mike Wilson's \"The Difference Between God and Larry Ellison\" is cited as a book reference but likely not quoted verbatim yet) or other long-form profile with extensive first-person Ellison quotes from early Oracle history (the near-bankruptcy 1990 restatement crisis, the sales-culture-building years).\nReturn exact URLs, priority=high for anything with substantial first-person content, one-line \"why\" per item."
+    },
+    {
+      "label": "entrevistas-recentes",
+      "prompt": "Enumerate INTERVIEW/PODCAST appearances of {{PERSON}} beyond the ones already known (60 Minutes \"World's Most Competitive Man\" profile, Academy of Achievement interview).\n1. Any 2024-2026 long-form interview/podcast appearance discussing the Stargate AI project, the TikTok deal, or Oracle's AI-infrastructure bet in depth.\n2. Any interview specifically about his early career, the multiple failed startups before Oracle, dropping out of college twice, the original 1977 founding with Bob Miner and Ed Oates, or the Oracle/CIA origin story (the company name itself comes from a CIA project).\n3. Any interview about his rivalries, with Bill Gates/Microsoft, with Salesforce's Marc Benioff (a former Oracle employee), or with SAP, first-person Ellison framing of these competitive relationships.\nReturn exact URLs, priority-marked, 8-12 items with transcripts preferred."
+    },
+    {
+      "label": "criticas",
+      "prompt": "Enumerate CRITIQUES and adversarial material on {{PERSON}} beyond what's already known (the securities class action over cloud sales, the Google v. Oracle Supreme Court case, the \"mass surveillance\" AI comments backlash, the \"roach motel\" Salesforce jab as evidence of his combative style).\n1. Critiques of Oracle's historically aggressive sales/licensing tactics (audit practices, licensing-fee lock-in), named customer or analyst critiques, not just general reputation.\n2. Critiques of his personal conduct/lifestyle choices that drew public scrutiny, property disputes, the Lanai (Hawaii island) ownership controversies, or governance critiques of his dual Chairman/CTO/major-shareholder role at Oracle.\n3. Critiques of the \"mass surveillance\" AI framing itself, named privacy advocates, journalists, or politicians who responded critically to his 2024 comments.\nReturn exact URLs, type=critique, 6-10 items."
+    }
+  ]
+}
