@@ -15,7 +15,7 @@ const workflow = new AsyncFunction("args", "agent", "parallel", "phase", "log", 
 function fakeAgent(prompts: string[]): Agent {
   return async (prompt, { label }) => {
     prompts.push(prompt);
-    if (label === "enumerate:baseline-sources") return { urls: ["https://example.com/already-cited/"] };
+    if (label === "enumerate:baseline-sources") return { urls: ["http://www.example.com/already-cited/"] };
     if (label.startsWith("enumerate:")) {
       return { sources: [
         { title: "t", url: `https://example.com/${label}`, type: "essay", priority: "high" },

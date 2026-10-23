@@ -1134,7 +1134,8 @@ const enumerated = (await parallel(enumPrompts.map((p) => () =>
   agent(p.prompt, { label: `enumerate:${p.label}`, phase: 'Enumerate', schema: SOURCES_SCHEMA, model: SONNET })
 ))).filter(Boolean).flatMap((r) => r.sources)
 
-const normUrl = (u) => u.replace(/[?#].*$/, '').replace(/\/+$/, '').toLowerCase()
+// Same page, different spelling: ignore scheme, a leading www., query, fragment, trailing slash, case.
+const normUrl = (u) => u.trim().toLowerCase().replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/[?#].*$/, '').replace(/\/+$/, '')
 const seen = new Set()
 const all = []
 for (const s of enumerated) {
