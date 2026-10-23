@@ -99,6 +99,7 @@ describe("rendered workflow", () => {
   it("protects quotation punctuation and focuses rebuild checks on new quotes", async () => {
     const rebuild = (await simulate("paul-graham")).prompts.join("\n");
     expect(rebuild).toContain("never alter its wording or punctuation");
+    expect(rebuild).toContain("at most about 1,200 characters");
     expect(rebuild).toContain("favor quotes from sources new in this draft");
     expect((await simulate("tom-brown", "create")).prompts.join("\n")).not.toContain("favor quotes from sources new");
   });

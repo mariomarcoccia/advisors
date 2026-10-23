@@ -1104,6 +1104,8 @@ const EXCLUDE = spec.notes?.exclude
   : ''
 // Style rules (no em dashes, etc.) govern prose we write, never the source's words.
 const VERBATIM = 'Text inside quotation marks is the source\'s exact words: never alter its wording or punctuation (dashes included) to satisfy a style rule.'
+// Each bullet becomes one retrieval card in the council index, read alone.
+const CARD_SHAPE = 'Write each bullet as one self-contained position with a bold title and its own source, at most about 1,200 characters; split anything longer into separate bullets rather than chaining several situations into one.'
 const STRAY_NOTES = `If the notes directory is empty or incomplete (known bug: agents sometimes write to "undefined/" relative to their own working directory), look for stray batch-*.md files in ${repo}/undefined/, ~/undefined/, and ~/.advisors/undefined/ before proceeding, and move them into ${notesDir}/.`
 const BASELINE = mode === 'rebuild'
   ? `Read the CURRENT dossier at ${dossierPath} first: it is the baseline. This is an EXPANSION: nothing distinct and sourced in it may be lost.`
@@ -1204,7 +1206,7 @@ const draft = await agent(`Write ${mode === 'rebuild' ? 'a DRAFT rebuild of the'
 2. Read the template at ${templatePath} and the voice guide at ${voiceGuidePath}; follow the section structure EXACTLY, including "Writing for the index (cards)" if present.
 3. ${CORPUS_CALIBRATION} ${LANGUAGE_CONVENTION}
 4. Read ALL research notes: every .md file in ${notesDir}/ (list the directory first). ${STRAY_NOTES}
-5. ${mode === 'rebuild' ? 'OVERWRITE' : 'WRITE'} ${dossierPath} as a complete file: slug: ${spec.slug}, last_updated: ${date}; sources[] = every source actually cited; source_count matches exactly; quote any frontmatter value containing a colon.${mode === 'rebuild' ? ' Keep every existing mental model, heuristic, worked example, and "Where they disagree" row; add new ones.' : ''} Never quote anything the notes don't show verbatim with a URL. ${VERBATIM} Where a section is thin, say so honestly in Provenance notes rather than padding. Write the Summary last.${FOCUS}${ATTRIBUTION}${EXCLUDE}
+5. ${mode === 'rebuild' ? 'OVERWRITE' : 'WRITE'} ${dossierPath} as a complete file: slug: ${spec.slug}, last_updated: ${date}; sources[] = every source actually cited; source_count matches exactly; quote any frontmatter value containing a colon.${mode === 'rebuild' ? ' Keep every existing mental model, heuristic, worked example, and "Where they disagree" row; add new ones.' : ''} Never quote anything the notes don't show verbatim with a URL. ${VERBATIM} ${CARD_SHAPE} Where a section is thin, say so honestly in Provenance notes rather than padding. Write the Summary last.${FOCUS}${ATTRIBUTION}${EXCLUDE}
 6. Return: final source_count, the enumerated source URLs NOT cited in the final draft (for the completeness audit downstream), and a 3-4 sentence report. Do NOT return placeholder or example values: every field must reflect this run's real output.`,
   { label: 'synthesize:draft', phase: 'Synthesize', model: SONNET, effort: 'high',
     schema: { type: 'object', required: ['sourceCount', 'unusedSources', 'report'], properties: {
@@ -1256,7 +1258,7 @@ For each: re-read the dossier text around it first (the preliminary check someti
 ${JSON.stringify(draft.unusedSources, null, 2)}
 For each, check the research notes in ${notesDir}/ (${STRAY_NOTES}): did the draft skip genuinely novel material? If so, fold it in. Also judge independently whether enumeration walked the person's full canonical index or stopped at the famous top slice; if you spot an obvious gap (a known essay, talk, letter, or interview series), do one targeted search and fetch, and add it only if it is real and citable. ${spec.corpus === 'thin' ? 'This figure has a thin public corpus: an honest, modest source_count is correct; never pad with weak secondary sources.' : 'Do not pad with weak secondary sources just to look thicker.'}${FOCUS}
 
-3. **Depth repair.** Read the whole dossier critically. Where synthesis went shallow (a mental model with no worked example, a generic "Where they disagree" row, a Core idea without a concrete situation), REWRITE that section in place with specific, sourced content from the notes. ${LANGUAGE_CONVENTION}
+3. **Depth repair.** Read the whole dossier critically. Where synthesis went shallow (a mental model with no worked example, a generic "Where they disagree" row, a Core idea without a concrete situation), REWRITE that section in place with specific, sourced content from the notes. Also split any bullet longer than about 1,200 characters into self-contained bullets (no distinct example or quote may be lost). ${LANGUAGE_CONVENTION}
 
 Rules: never invent a quote; anything in quotation marks must trace to a URL in the notes or one you verified yourself.${EXCLUDE ? ` If the dossier contains any out-of-scope material, remove it and its sources.${EXCLUDE}` : ''} Keep slug, last_updated, and source_count consistent. Edit ${dossierPath} in place (Edit/Write tools).
 
