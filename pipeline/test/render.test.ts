@@ -15,7 +15,13 @@ const workflow = new AsyncFunction("args", "agent", "parallel", "phase", "log", 
 function fakeAgent(prompts: string[]): Agent {
   return async (prompt, { label }) => {
     prompts.push(prompt);
-    if (label.startsWith("enumerate:")) return { sources: [{ title: "t", url: `https://example.com/${label}`, type: "essay", priority: "high" }] };
+    if (label === "enumerate:baseline-sources") return { urls: ["https://example.com/already-cited/"] };
+    if (label.startsWith("enumerate:")) {
+      return { sources: [
+        { title: "t", url: `https://example.com/${label}`, type: "essay", priority: "high" },
+        { title: "old", url: "https://example.com/already-cited", type: "essay", priority: "high" },
+      ] };
+    }
     if (label.startsWith("extract:")) return { file: "/n/batch-1.md", covered: 1, failed: [] };
     if (label === "synthesize:draft") return { sourceCount: 3, unusedSources: ["https://example.com/u"], report: "r" };
     if (label === "pre-verify:pick-quotes") return { quotes: [{ quote: "A real quote here", url: "https://example.com/q" }] };
@@ -77,10 +83,17 @@ describe("rendered workflow", () => {
 
   it("applies a spec's exclusion to every phase, and only for that spec", async () => {
     const manoel = await simulate("manoel-conde-neto");
-    const phases = manoel.prompts.filter((p) => !p.startsWith("Verify these quotes") && !p.startsWith("Read the dossier at"));
+    const phases = manoel.prompts.filter((p) => !p.startsWith("Verify these quotes") && !p.startsWith("Read the dossier at") && !p.startsWith("Read the frontmatter of"));
     expect(phases.every((p) => p.includes("OUT OF SCOPE (hard rule)"))).toBe(true);
     expect(manoel.prompts.join("\n")).not.toMatch(/governance that names him/);
     expect((await simulate("caito-maia")).prompts.join("\n")).not.toContain("OUT OF SCOPE");
+  });
+
+  it("in a rebuild, skips sources the dossier already cites", async () => {
+    const { prompts } = await simulate("paul-graham");
+    const extract = prompts.filter((p) => p.startsWith("You are extracting")).join("\n");
+    expect(extract).toContain("https://example.com/enumerate:own-writing");
+    expect(extract).not.toContain("already-cited");
   });
 
   it("create mode never claims a baseline dossier exists", async () => {

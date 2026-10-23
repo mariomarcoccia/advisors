@@ -1141,9 +1141,20 @@ for (const s of enumerated) {
   const key = normUrl(s.url)
   if (!seen.has(key)) { seen.add(key); all.push(s) }
 }
-const ordered = ['high', 'medium', 'low'].flatMap((p) => all.filter((s) => s.priority === p))
+// In a rebuild, sources the dossier already cites are not worth an extraction
+// slot: without this, a large corpus spends the whole cap re-reading its own
+// baseline and the rebuild adds almost nothing.
+let cited = new Set()
+if (mode === 'rebuild') {
+  const baseline = await agent(`Read the frontmatter of ${dossierPath} and return every URL in its sources[] list, exactly as written. No commentary, no placeholder values.`,
+    { label: 'enumerate:baseline-sources', phase: 'Enumerate', model: SONNET,
+      schema: { type: 'object', required: ['urls'], properties: { urls: { type: 'array', items: { type: 'string' } } } } })
+  cited = new Set(baseline.urls.map(normUrl))
+}
+const fresh = all.filter((s) => !cited.has(normUrl(s.url)))
+const ordered = ['high', 'medium', 'low'].flatMap((p) => fresh.filter((s) => s.priority === p))
 const sources = ordered.slice(0, SOURCE_CAP)
-log(`${all.length} unique sources enumerated; processing ${sources.length} (${Math.max(0, all.length - SOURCE_CAP)} lowest-priority left out)`)
+log(`${all.length} unique sources enumerated, ${all.length - fresh.length} already cited; processing ${sources.length} (${Math.max(0, fresh.length - SOURCE_CAP)} lowest-priority left out)`)
 
 // ---------- 2. extract ----------
 
